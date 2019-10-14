@@ -63,43 +63,40 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Rhythm\ButtonControls.cs" />
-    <Compile Include="Assets\Scripts\Rhythm\GameManger.cs" />
-    <Compile Include="Assets\Scripts\Rhythm\NoteObject.cs" />
-    <Compile Include="Assets\Scripts\Rhythm\RhythmSpeed.cs" />
+    <Compile Include="Assets\Scripts\Player\PLAYER_Movement.cs" />
     <Compile Include="Assets\Scripts\Scenes\SceneSwitcher.cs" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/tails/Desktop/SENIOR PROJECT/RaisingKane/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>/Users/u1075562/Documents/RaisingKane/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/tails/Desktop/SENIOR PROJECT/RaisingKane/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>/Users/u1075562/Documents/RaisingKane/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/tails/Desktop/SENIOR PROJECT/RaisingKane/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/u1075562/Documents/RaisingKane/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/tails/Desktop/SENIOR PROJECT/RaisingKane/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>/Users/u1075562/Documents/RaisingKane/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/tails/Desktop/SENIOR PROJECT/RaisingKane/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>/Users/u1075562/Documents/RaisingKane/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/tails/Desktop/SENIOR PROJECT/RaisingKane/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>/Users/u1075562/Documents/RaisingKane/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/tails/Desktop/SENIOR PROJECT/RaisingKane/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>/Users/u1075562/Documents/RaisingKane/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>C:/Users/tails/Desktop/SENIOR PROJECT/RaisingKane/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>/Users/u1075562/Documents/RaisingKane/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>C:/Users/tails/Desktop/SENIOR PROJECT/RaisingKane/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>/Users/u1075562/Documents/RaisingKane/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/tails/Desktop/SENIOR PROJECT/RaisingKane/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/u1075562/Documents/RaisingKane/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/tails/Desktop/SENIOR PROJECT/RaisingKane/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>/Users/u1075562/Documents/RaisingKane/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/2019.2.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
