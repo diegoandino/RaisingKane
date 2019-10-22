@@ -41,11 +41,11 @@ public class GameManger : MonoBehaviour
 
     public void NoteHit()
     {
-        Debug.Log("Hit");
+        //Debug.Log("Hit");
     }
 
     public void NoteMiss()
     {
-        Debug.Log("Miss");
+        //Debug.Log("Miss");
     }
 }

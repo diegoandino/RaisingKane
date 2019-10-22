@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class NoteObject : MonoBehaviour
 {
+    public GameObject ButtonLocation;
+    public float ButtonPos;
     public bool canBePressed;
     public KeyCode keyToPress;
     // Start is called before the first frame update
     void Start()
     {
-
+        //Get the x position of the button
+        ButtonPos = ButtonLocation.transform.position.x;
     }
 
     // Update is called once per frame
@@ -19,9 +22,25 @@ public class NoteObject : MonoBehaviour
         {
             if (canBePressed)
             {
-                gameObject.SetActive(false);
-
-                GameManger.instance.NoteHit();
+                //GameManger.instance.NoteHit();
+                if ((transform.position.x > ButtonPos + 0.15) || (transform.position.x < ButtonPos - 0.15))
+                {
+                    Debug.Log("Normal Hit");
+                    gameObject.SetActive(false);
+                    GameManger.instance.NoteHit();
+                }
+                else if ((transform.position.x > ButtonPos + 0.05) || (transform.position.x < ButtonPos - 0.05))
+                {
+                    Debug.Log("Good Hit");
+                    gameObject.SetActive(false);
+                    GameManger.instance.NoteHit();
+                }
+                else
+                {
+                    Debug.Log("Perfect Hit");
+                    gameObject.SetActive(false);
+                    GameManger.instance.NoteHit();
+                }
             }
         }
     }
