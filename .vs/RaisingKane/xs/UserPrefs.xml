@@ -1,29 +1,18 @@
 ﻿<Properties StartupConfiguration="{7BBC6D7A-050F-7091-4BAD-F4932F6D0ECD}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/PLAYER_Movement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Rhythm/ShrinkRythmManager.cs">
     <Files>
       <File FileName="Assets/Scripts/Player/PLAYER_Movement.cs" Line="45" Column="10" />
+      <File FileName="Assets/Scripts/Rhythm/ShrinkingRythm.cs" Line="24" Column="25" />
+      <File FileName="Assets/Scripts/Rhythm/ShrinkRythmManager.cs" Line="28" Column="8" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="RaisingKane" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="Player" expanded="True">
-                  <Node name="PLAYER_Movement.cs" selected="True" />
-                </Node>
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="031a76f8-2555-4d80-9ee9-b2e67dc16d33" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="bccba271-2bec-4de7-a194-6d3d60803688" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/davidross/Documents/RaisingKane/Temp/UnityTempFile-db92aa9751f7d4571b127c326a2ddbcf" relfile="Temp/UnityTempFile-db92aa9751f7d4571b127c326a2ddbcf" line="14" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
