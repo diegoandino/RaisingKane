@@ -1,18 +1,16 @@
 ﻿<Properties StartupConfiguration="{7BBC6D7A-050F-7091-4BAD-F4932F6D0ECD}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Rhythm/ShrinkRythmManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/Collision.cs">
     <Files>
       <File FileName="Assets/Scripts/Player/PLAYER_Movement.cs" Line="45" Column="10" />
-      <File FileName="Assets/Scripts/Rhythm/ShrinkingRythm.cs" Line="24" Column="25" />
-      <File FileName="Assets/Scripts/Rhythm/ShrinkRythmManager.cs" Line="28" Column="8" />
+      <File FileName="Assets/Scripts/Player/Movement.cs" Line="32" Column="10" />
+      <File FileName="Assets/Scripts/Player/Collision.cs" Line="19" Column="36" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="bccba271-2bec-4de7-a194-6d3d60803688" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/davidross/Documents/RaisingKane/Temp/UnityTempFile-db92aa9751f7d4571b127c326a2ddbcf" relfile="Temp/UnityTempFile-db92aa9751f7d4571b127c326a2ddbcf" line="14" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
