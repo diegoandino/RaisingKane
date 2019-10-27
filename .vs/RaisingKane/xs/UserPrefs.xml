@@ -1,14 +1,28 @@
 ﻿<Properties StartupConfiguration="{7BBC6D7A-050F-7091-4BAD-F4932F6D0ECD}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/Collision.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Rhythm/RhythmManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/Player/PLAYER_Movement.cs" Line="45" Column="10" />
-      <File FileName="Assets/Scripts/Player/Movement.cs" Line="32" Column="10" />
-      <File FileName="Assets/Scripts/Player/Collision.cs" Line="19" Column="36" />
+      <File FileName="Assets/Scripts/Rhythm/RhythmManager.cs" Line="23" Column="25" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="RaisingKane" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Player" expanded="True" />
+                <Node name="Rhythm" expanded="True">
+                  <Node name="RhythmManager.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="8be8b1b0-45b3-4fdd-abeb-2bd7f8161619" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
