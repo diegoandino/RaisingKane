@@ -114,12 +114,14 @@ public class ShrinkRythmManager: MonoBehaviour
         {
             if (str == "Bad" && ScoreInt > 0)
             {
-                ScoreInt--; 
+                ScoreInt--;
+                print(ScoreInt);
             }
 
             if(str == "Perfect!")
             {
                 ScoreInt++;
+                print(ScoreInt);
             }
         }
 
