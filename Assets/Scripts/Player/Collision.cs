@@ -4,29 +4,45 @@ using UnityEngine;
 
 public class Collision : MonoBehaviour
 {
+    GameObject instance;
+    public GameObject player;
+    public GameObject rhythmMechanic;
+    private bool collided;
+    Movement movementScript;
+    private ShrinkRythmManager shrinkManager;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        instance = (GameObject) Instantiate(rhythmMechanic);
+        instance.SetActive(false);
+
+        movementScript = GetComponent<Movement>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (collided == true)
+        {
+            instance.SetActive(true);
+        }
     }
 
     void OnTriggerStay2D(Collider2D collision)
     {
-        Debug.Log("entered trigger");
-        if (collision.gameObject.tag == "Door")
+        gameFlow(collision);
+    }
+
+    void gameFlow(Collider2D collision)
+    {
+        //Debug.Log("entered trigger");
+        if (collision.gameObject.tag == "Door" && Application.isPlaying == true)
         {
-            Debug.Log("collision with door detected");
-            if(Input.GetKey(KeyCode.E))
-            {
-                Debug.Log("player is interacting with this door, insert rhythm game here");
-                Debug.Log("after winning, more player to next room");
-            }
+            print("collision with door detected");
+
+            collided = true;
+            movementScript.moveSpeed = 0;
         }
     }
 }

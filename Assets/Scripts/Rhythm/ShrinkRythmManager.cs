@@ -12,6 +12,8 @@ public class ShrinkRythmManager: MonoBehaviour
     public float speedModifier = 1;
     private Transform[] circles;
     private List<string> Score;
+    [System.NonSerialized]
+    public bool destroyed;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +21,7 @@ public class ShrinkRythmManager: MonoBehaviour
         timer = delay;
         circles = new Transform[0];
         Score = new List<string>();
+        destroyed = false;
     }
 
     // Update is called once per frame
@@ -115,13 +118,13 @@ public class ShrinkRythmManager: MonoBehaviour
             if (str == "Bad" && ScoreInt > 0)
             {
                 ScoreInt--;
-                print(ScoreInt);
+                print("Your current score is: " + ScoreInt);
             }
 
             if(str == "Perfect!")
             {
                 ScoreInt++;
-                print(ScoreInt);
+                print("Your current score is: " + ScoreInt);
             }
         }
 
@@ -145,5 +148,6 @@ public class ShrinkRythmManager: MonoBehaviour
     void loseState()
     {
         Destroy(this.gameObject);
+        destroyed = true;
     }
 }
