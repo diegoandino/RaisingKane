@@ -1,8 +1,10 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - ShrinkRythmManager
-    - ShrinkingRythm
+    - ButtonControls
+    - GameManger
+    - NoteObject
+    - RhythmSpeed
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -12,51 +14,47 @@ ScriptsOnlyBuild:
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
-    UnityEngine.UI.dll:
-    - UnityEngine.EventSystems.EventSystem
-    - UnityEngine.EventSystems.StandaloneInputModule
-    - UnityEngine.UI.CanvasScaler
-    - UnityEngine.UI.GraphicRaycaster
-    - UnityEngine.UI.Image
   sceneClasses:
-    Assets/Scenes/Rhythm Testing2.unity:
+    Assets/Scenes/Rhythm Testing.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
       Script: {instanceID: 0}
     - Class: 20
       Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
     - Class: 28
       Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9670}
+      Script: {instanceID: 10194}
     - Class: 114
-      Script: {instanceID: 9872}
+      Script: {instanceID: 10688}
     - Class: 114
-      Script: {instanceID: 10274}
+      Script: {instanceID: 11086}
     - Class: 114
-      Script: {instanceID: 10412}
-    - Class: 114
-      Script: {instanceID: 10518}
-    - Class: 114
-      Script: {instanceID: 11126}
-    - Class: 114
-      Script: {instanceID: 11500}
+      Script: {instanceID: 11442}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
     - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -223,12 +221,6 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
-      Hash: cbeba0be93684d3bcd4b72542d830f58
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: RhythmManager
-  - hash:
-      serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -239,6 +231,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ControlPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 08877f11dd0f28854caef7d2ff2db5d3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RhythmManager
   - hash:
       serializedVersion: 2
       Hash: b8a5e8091ab0b8861d2add371082c5e0
@@ -301,6 +299,12 @@ ScriptsOnlyBuild:
     className: RemoteTestResultSender
   - hash:
       serializedVersion: 2
+      Hash: 5a7443adbd5a32871b3abca6114f7384
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BeatObserver
+  - hash:
+      serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -353,6 +357,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalReceiver
+  - hash:
+      serializedVersion: 2
+      Hash: 6e29cbb4454ec65fdfe635d7bd2c5542
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PatternCounter
   - hash:
       serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
@@ -445,6 +455,12 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
+      Hash: 9b5f516015d9ebf7b16f0bcad802e208
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BeatCounter
+  - hash:
+      serializedVersion: 2
       Hash: df434544c9f7b33d1cc7e635b180d279
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -505,6 +521,12 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
+      Hash: 08877f11dd0f28854caef7d2ff2db5d3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BeatSynchronizer
+  - hash:
+      serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -541,5 +563,5 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 2
   scenePathNames:
-  - Assets/Scenes/Rhythm Testing2.unity
-  playerPath: /Users/u1075562/Documents/RaisingKane_Builds/MacOS/RaisingKane_Mac.app
+  - Assets/Scenes/Rhythm Testing.unity
+  playerPath: /Users/u1075562/Documents/RaisingKane_Builds/MacOS/RaisingKane_Mac_2ndMech.app

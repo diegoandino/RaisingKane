@@ -7,6 +7,7 @@ public class ShrinkRythmManager: MonoBehaviour
 {
     public GameObject ShrinkingCircle;
     public GameObject GuideCircle;
+    Movement movement;
     public float delay = 15;
     public float timer;
     public float speedModifier = 1;
@@ -14,6 +15,7 @@ public class ShrinkRythmManager: MonoBehaviour
     private List<string> Score;
     [System.NonSerialized]
     public bool destroyed;
+    public bool win;
 
     // Start is called before the first frame update
     void Start()
@@ -22,19 +24,27 @@ public class ShrinkRythmManager: MonoBehaviour
         circles = new Transform[0];
         Score = new List<string>();
         destroyed = false;
+        win = false;
+
+        movement = GetComponent<Movement>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         timer -= Time.deltaTime;
+
         if (timer <= 0)
         {
             GameObject circle = Instantiate(ShrinkingCircle,this.gameObject.transform);
             circle.GetComponent<ShrinkingRythm>().shrinkMod = speedModifier;
             timer = delay;
         }
+
+
         circles = GetComponentsInChildren<Transform>();
+
+
         if (Input.GetKeyDown("space"))
         {
             if (circles.Length > 2)
@@ -43,22 +53,13 @@ public class ShrinkRythmManager: MonoBehaviour
                 circles[2].GetComponent<ShrinkingRythm>().ButtonPressed();
             }
         }
-        //Win Condition
-        if (FindScore() > 10)
-        {
-            Time.timeScale = 0;
-            print("Win");
 
-        }
 
-        //Loss Condition
-        if (BadCount() > 5)
-        {
-            loseState();
-        }
-
+        WinState();
+        LoseState();
     }
 
+    //-- Checks distance between circle objects --//
     public void DisCheck(float dis)
     {
         if (dis < -2)
@@ -66,22 +67,28 @@ public class ShrinkRythmManager: MonoBehaviour
             Score.Add("Bad");
             StartCoroutine(BlinkRoutine(Color.red));
         }
+
         else if (dis < 1.5)
         {
             Score.Add("Perfect!");
             StartCoroutine(BlinkRoutine(Color.green));
         }
+
         else if (dis < 3)
         {
             StartCoroutine(BlinkRoutine(Color.blue));
             Score.Add("Good");
-        } else
+        }
+
+        else
         {
             StartCoroutine(BlinkRoutine(Color.red));
             Score.Add("Bad");
         }
     }
 
+
+    //-- Color change in between button triggers --//
     IEnumerator BlinkRoutine(Color FlashColor)
     {
         Image Renderer = GuideCircle.GetComponent<Image>();
@@ -109,6 +116,8 @@ public class ShrinkRythmManager: MonoBehaviour
         Renderer.color = Color.white;
     }
 
+
+    //-- Finds and updates your current score --//
     public float FindScore()
     {
         float ScoreInt = 0;
@@ -131,6 +140,8 @@ public class ShrinkRythmManager: MonoBehaviour
         return ScoreInt; 
     }
 
+
+    //-- Counts how many bad triggers player had --//
     public float BadCount()
     {
         float Counter = 0;
@@ -142,12 +153,33 @@ public class ShrinkRythmManager: MonoBehaviour
                 Counter++;
             }
         }
+
         return Counter;
     }
 
-    void loseState()
+
+    //-- Win Condition --//
+   public void WinState()
     {
-        Destroy(this.gameObject);
-        destroyed = true;
+        if (FindScore() >= 7)
+        {
+            //-- Changed it so it destroys once won --//
+            this.destroyed = true;
+            win = true;
+            //movement.moveSpeed = 6f;
+
+            print("Win");
+        }
+    }
+
+
+    //-- Player Lose State --//
+   public void LoseState()
+    {
+        if (BadCount() > 5)
+        {
+            Destroy(this.gameObject);
+            destroyed = true;
+        }
     }
 }
