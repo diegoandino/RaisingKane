@@ -6,7 +6,7 @@ public class Collision : MonoBehaviour
 {
     GameObject rhythmInstance;
     Movement movementScript;
-    public GameObject player;
+    GameObject player;
     public GameObject rhythmMechanic;
     private bool collided;
     private ShrinkRythmManager shrinkManager;
@@ -54,6 +54,7 @@ public class Collision : MonoBehaviour
         else if (shrinkManager.win == true)
         {
             movementScript.moveSpeed = 6;
+            Destroy(this);
         }
     }
 }

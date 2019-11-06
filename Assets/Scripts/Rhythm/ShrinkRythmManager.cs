@@ -166,6 +166,7 @@ public class ShrinkRythmManager: MonoBehaviour
             //-- Changed it so it destroys once won --//
             this.destroyed = true;
             win = true;
+            destroyed = true;
             //movement.moveSpeed = 6f;
 
             print("Win");
@@ -178,8 +179,8 @@ public class ShrinkRythmManager: MonoBehaviour
     {
         if (BadCount() > 5)
         {
-            Destroy(this.gameObject);
-            destroyed = true;
+            this.gameObject.SetActive(true);
+            destroyed = false;
         }
     }
 }

@@ -147,9 +147,11 @@ MonoBehaviour:
   ShrinkingCircle: {fileID: 3924883544373427735, guid: f465907d1d0d449df839d773f427721b,
     type: 3}
   GuideCircle: {fileID: 6985751139983979582}
+  door: {fileID: 1255268054259827758, guid: b37da70853bfd4742bdb28fc1dbb6275, type: 3}
   delay: 0.5
   timer: 0
   speedModifier: 5
+  win: 0
 --- !u!1 &6985751139983979582
 GameObject:
   m_ObjectHideFlags: 0
