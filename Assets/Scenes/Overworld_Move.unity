@@ -351,8 +351,60 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3563008978263043771, guid: edc83783de9763742a34a25cb6a66ad3,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3563008978263043717, guid: edc83783de9763742a34a25cb6a66ad3,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3563008978263043717, guid: edc83783de9763742a34a25cb6a66ad3,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3563008978263043717, guid: edc83783de9763742a34a25cb6a66ad3,
+        type: 3}
+      propertyPath: m_UseAutoMass
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3563008978263043717, guid: edc83783de9763742a34a25cb6a66ad3,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edc83783de9763742a34a25cb6a66ad3, type: 3}
+--- !u!1 &1167138684 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3563008978263043716, guid: edc83783de9763742a34a25cb6a66ad3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1167138683}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1167138685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167138684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ecb3d72ea8064e4d995922b7ac30d6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 7
+  rb: {fileID: 1167138688}
+  movement: {x: 0, y: 0}
+--- !u!50 &1167138688 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 3563008978263043717, guid: edc83783de9763742a34a25cb6a66ad3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1167138683}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1410318027
 GameObject:
   m_ObjectHideFlags: 0
