@@ -1,0 +1,16 @@
+What is done:
+
+screen changes to black at combo
+time can speed up
+
+
+
+What needs to be done :
+
+Have speed be sped up during combo rush
+Have it expire
+
+
+Animation for change screen
+Animation on death
+Sound Effects on Death
