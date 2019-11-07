@@ -23,6 +23,7 @@ public class Movement : MonoBehaviour
         //Animator.SetFloat("Speed", move);
     }
 
+    //movement currently uses WASD
     void Move()
     {
         if (Input.GetKey(KeyCode.D))
@@ -41,7 +42,7 @@ public class Movement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.W))
         {
-            if (transform.position.y < 2)
+            if (transform.position.y < 4)
             {
                 transform.position = new Vector3(transform.position.x, transform.position.y + moveSpeed *
                                                                        Time.deltaTime, transform.position.z);

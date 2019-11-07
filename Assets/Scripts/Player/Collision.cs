@@ -8,7 +8,7 @@ public class Collision : MonoBehaviour
     Movement movementScript;
     GameObject player;
     public GameObject rhythmMechanic;
-    private bool collided;
+    private bool collided; //bool for if we have collided with a door
     private ShrinkRythmManager shrinkManager;
 
     // Start is called before the first frame update
@@ -24,9 +24,10 @@ public class Collision : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        //if we have collided with a door
         if (collided == true)
         {
+            //start rhythm game
             rhythmInstance.SetActive(true);
         }
     }
