@@ -120,6 +120,75 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &95096698
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8988833038118277995, guid: 536861f665270d2408cf99d28e906df0,
+        type: 3}
+      propertyPath: m_Name
+      value: Scene Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988833038118277996, guid: 536861f665270d2408cf99d28e906df0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0835069
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988833038118277996, guid: 536861f665270d2408cf99d28e906df0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.4292907
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988833038118277996, guid: 536861f665270d2408cf99d28e906df0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.828125
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988833038118277996, guid: 536861f665270d2408cf99d28e906df0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988833038118277996, guid: 536861f665270d2408cf99d28e906df0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988833038118277996, guid: 536861f665270d2408cf99d28e906df0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988833038118277996, guid: 536861f665270d2408cf99d28e906df0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988833038118277996, guid: 536861f665270d2408cf99d28e906df0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988833038118277996, guid: 536861f665270d2408cf99d28e906df0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988833038118277996, guid: 536861f665270d2408cf99d28e906df0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8988833038118277996, guid: 536861f665270d2408cf99d28e906df0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 536861f665270d2408cf99d28e906df0, type: 3}
 --- !u!1001 &633421723
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -135,12 +204,12 @@ PrefabInstance:
     - target: {fileID: 1255268054259827760, guid: b37da70853bfd4742bdb28fc1dbb6275,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.72
+      value: -8.61
       objectReference: {fileID: 0}
     - target: {fileID: 1255268054259827760, guid: b37da70853bfd4742bdb28fc1dbb6275,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.68
+      value: -3.82
       objectReference: {fileID: 0}
     - target: {fileID: 1255268054259827760, guid: b37da70853bfd4742bdb28fc1dbb6275,
         type: 3}
@@ -259,7 +328,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5b753c2245a25fd438e52b98e0c55183, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eaec36823eb733f43bd0485258f0abcc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -278,7 +347,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 661323759}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.41, y: 0.45, z: 0}
+  m_LocalPosition: {x: 0.41, y: 0.31, z: 0}
   m_LocalScale: {x: 4.1428, y: 4.1428, z: 4.1428}
   m_Children: []
   m_Father: {fileID: 0}
@@ -396,7 +465,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ecb3d72ea8064e4d995922b7ac30d6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 5
   rb: {fileID: 1167138688}
   movement: {x: 0, y: 0}
 --- !u!50 &1167138688 stripped

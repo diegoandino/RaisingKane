@@ -8,6 +8,11 @@ public class Collision : MonoBehaviour
     GameObject rhythmInstance;
     Movement movementScript;
     GameObject player;
+
+    //able to dictate where prefab spawns
+    public float xLocation;
+    public float yLocation;
+
     public GameObject rhythmMechanic;
     private bool collided; //bool for if we have collided with a door
     private ShrinkRythmManager shrinkManager;

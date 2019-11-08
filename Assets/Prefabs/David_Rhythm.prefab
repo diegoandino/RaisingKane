@@ -147,10 +147,9 @@ MonoBehaviour:
   ShrinkingCircle: {fileID: 3924883544373427735, guid: f465907d1d0d449df839d773f427721b,
     type: 3}
   GuideCircle: {fileID: 6985751139983979582}
-  door: {fileID: 1255268054259827758, guid: b37da70853bfd4742bdb28fc1dbb6275, type: 3}
   delay: 0.5
   timer: 0
-  speedModifier: 5
+  speedModifier: 4
   win: 0
 --- !u!1 &6985751139983979582
 GameObject:
@@ -179,14 +178,14 @@ RectTransform:
   m_GameObject: {fileID: 6985751139983979582}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.0506, y: 2.0506, z: 2.0506}
   m_Children: []
   m_Father: {fileID: 6985751139236588263}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 1, y: -1}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6985751139983979581

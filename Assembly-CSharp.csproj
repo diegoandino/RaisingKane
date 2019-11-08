@@ -64,9 +64,15 @@
   <ItemGroup>
     <Compile Include="Assets\DoorCollision.cs" />
     <Compile Include="Assets\Scripts\General\GameManager.cs" />
+    <Compile Include="Assets\Scripts\General\SceneManagerScript.cs" />
+    <Compile Include="Assets\Scripts\Gym\Boss1Click.cs" />
+    <Compile Include="Assets\Scripts\Gym\Boss2Click.cs" />
+    <Compile Include="Assets\Scripts\Gym\Level_Highlights.cs" />
+    <Compile Include="Assets\Scripts\Gym\OverworldClick.cs" />
     <Compile Include="Assets\Scripts\Player\Collision.cs" />
     <Compile Include="Assets\Scripts\Player\Movement.cs" />
     <Compile Include="Assets\Scripts\Player\Movement_Test.cs" />
+    <Compile Include="Assets\Scripts\Player\PlushMovement.cs" />
     <Compile Include="Assets\Scripts\Rhythm\Beat Synchronizer\BeatCounter.cs" />
     <Compile Include="Assets\Scripts\Rhythm\Beat Synchronizer\BeatObserver.cs" />
     <Compile Include="Assets\Scripts\Rhythm\Beat Synchronizer\BeatSynchronizer.cs" />

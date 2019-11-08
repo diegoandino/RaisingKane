@@ -5,8 +5,8 @@ using UnityEngine;
 public class ShrinkingRythm : MonoBehaviour
 {
     public float Timer;
-    public float scale = 15;
-    public float shrinkMod = 1;
+    public float scale;
+    public float shrinkMod;
     public float rotation;
 
     // Start is called before the first frame update

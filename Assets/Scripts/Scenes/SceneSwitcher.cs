@@ -5,19 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class SceneSwitcher : MonoBehaviour
 {
-	public void GoToGameScene()
+	public void Overworld()
 	{
-		SceneManager.LoadScene("Game");
+		SceneManager.LoadScene("Overworld_Move");
 	}
 
-	public void GoToMenuScene()
+	public void Boss2()
 	{
-		SceneManager.LoadScene("Main Menu");
-	}
-
-    public void QuitGame()
-	{
-		Application.Quit();
-		print("GAME IS QUITTING . . .");
+		SceneManager.LoadScene("Boss2");
 	}
 }
