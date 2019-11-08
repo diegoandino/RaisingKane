@@ -30,6 +30,7 @@ public class BP2_ButtonControls : MonoBehaviour
         //Button Pressed
         if (Input.GetKeyDown(keyToPress))
         {
+            musicManager.Playsound("plushFire");
             spriteChanger.sprite = pressedImage;
         }
 

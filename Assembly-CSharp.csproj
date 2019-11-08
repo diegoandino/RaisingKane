@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Assets\DoorCollision.cs" />
     <Compile Include="Assets\Scripts\General\GameManager.cs" />
+    <Compile Include="Assets\Scripts\General\musicManager.cs" />
     <Compile Include="Assets\Scripts\General\SceneManagerScript.cs" />
     <Compile Include="Assets\Scripts\Gym\Boss1Click.cs" />
     <Compile Include="Assets\Scripts\Gym\Boss2Click.cs" />

@@ -39,6 +39,7 @@ public class BP2_Projectiles : MonoBehaviour
                 if ((transform.position.x > ButtonPos + 0.15) || (transform.position.x < ButtonPos - 0.15))
                 {
                     Debug.Log("Normal Hit");
+                    musicManager.Playsound("implode");
                     gameObject.SetActive(false);
                     BP2_MusicSettings.instance.NoteHit();
                 }
@@ -47,6 +48,7 @@ public class BP2_Projectiles : MonoBehaviour
                 else if ((transform.position.x > ButtonPos + 0.05) || (transform.position.x < ButtonPos - 0.05))
                 {
                     Debug.Log("Good Hit");
+                    musicManager.Playsound("implode");
                     gameObject.SetActive(false);
                     BP2_MusicSettings.instance.NoteHit();
                 }
@@ -55,6 +57,7 @@ public class BP2_Projectiles : MonoBehaviour
                 else
                 {
                     Debug.Log("Perfect Hit");
+                    musicManager.Playsound("implode");
                     gameObject.SetActive(false);
                     BP2_MusicSettings.instance.NoteHit();
                 }
