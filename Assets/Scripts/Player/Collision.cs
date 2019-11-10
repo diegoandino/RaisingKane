@@ -58,11 +58,5 @@ public class Collision : MonoBehaviour
             collided = true;
             movementScript.moveSpeed = 0;
         }
-
-        else if (shrinkManager.win == true)
-        {
-            movementScript.moveSpeed = 6;
-            Destroy(this);
-        }
     }
 }
