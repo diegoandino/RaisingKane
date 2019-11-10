@@ -168,15 +168,16 @@ public class ShrinkRythmManager: MonoBehaviour
     //-- Win Condition --//
    public void WinState()
     {
-        if (FindScore() >= 1)
+        if (FindScore() >= 3)
         {
             //-- Changed it so it destroys once won --//
             this.gameObject.SetActive(false);
+
             Destroy(Door);
+
             win = true;
             destroyed = true;
-            //movement.moveSpeed = 6f;
-
+            
             print("Win");
         }
     }

@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Collision : MonoBehaviour
 {
     GameObject rhythmInstance;
-    Movement movementScript;
+    Movement_Test movementScript;
     GameObject player;
 
     //able to dictate where prefab spawns
@@ -24,7 +24,7 @@ public class Collision : MonoBehaviour
         rhythmInstance = (GameObject) Instantiate(rhythmMechanic);
         rhythmInstance.SetActive(false);
 
-        movementScript = GetComponent<Movement>();
+        movementScript = GetComponent<Movement_Test>();
         shrinkManager = GetComponent<ShrinkRythmManager>();
     }
 
@@ -56,7 +56,7 @@ public class Collision : MonoBehaviour
             print("collision with door detected");
 
             collided = true;
-            movementScript.moveSpeed = 0;
+            movementScript.speed = 0;
         }
     }
 }

@@ -33,6 +33,7 @@ public class Movement : MonoBehaviour
         if (Door == null)
         {
             moveSpeed = 6;
+            
         }
     }
 
