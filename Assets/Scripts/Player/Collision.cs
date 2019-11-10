@@ -7,7 +7,6 @@ public class Collision : MonoBehaviour
 {
     GameObject rhythmInstance;
     Movement_Test movementScript;
-    GameObject player;
 
     //able to dictate where prefab spawns
     public float xLocation;
@@ -15,8 +14,6 @@ public class Collision : MonoBehaviour
 
     public GameObject rhythmMechanic;
     private bool collided; //bool for if we have collided with a door
-    private ShrinkRythmManager shrinkManager;
-    public string nextRoom;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +22,6 @@ public class Collision : MonoBehaviour
         rhythmInstance.SetActive(false);
 
         movementScript = GetComponent<Movement_Test>();
-        shrinkManager = GetComponent<ShrinkRythmManager>();
     }
 
     // Update is called once per frame
