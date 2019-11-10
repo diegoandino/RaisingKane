@@ -25,15 +25,19 @@ public class ShrinkRythmManager: MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Main Variable Starts
         timer = delay;
         circles = new Transform[0];
         Score = new List<string>();
         destroyed = false;
         win = false;
+        movement = GetComponent<Movement>();
 
+        //Find Door Object
         Door = GameObject.FindGameObjectWithTag("Door");
 
-        movement = GetComponent<Movement>();
+        //Make object smaller Object
+        this.gameObject.transform.localScale = new Vector3(0.6f,0.6f,0.6f);
     }
 
     // Update is called once per frame
@@ -188,7 +192,7 @@ public class ShrinkRythmManager: MonoBehaviour
     {
         if (BadCount() > 5)
         {
-            //Destroy(this.gameObject);
+            this.gameObject.SetActive(false);
 
             StartCoroutine(Wait(3));
         }
