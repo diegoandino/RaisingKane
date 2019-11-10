@@ -26,6 +26,7 @@ public class BP2_Projectiles : MonoBehaviour
     {
         //Get the x position of the button
         ButtonPos = ButtonLocation.transform.position.x;
+        //print("button pos for new beat is = " + ButtonLocation.transform.position.x);
     }
 
     // Update is called once per frame

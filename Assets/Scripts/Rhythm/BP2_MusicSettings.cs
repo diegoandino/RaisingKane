@@ -14,7 +14,8 @@ using UnityEngine;
 /// </summary>
 public class BP2_MusicSettings : MonoBehaviour
 {
-    public AudioSource Music;       // song file
+    public AudioSource Music; //music file
+    public AudioSource ghostMusic;// ghost song file
     public BP2_RhythmSpeed RSpeed;
     public static BP2_MusicSettings instance;
 
@@ -33,6 +34,10 @@ public class BP2_MusicSettings : MonoBehaviour
         instance = this;
         //This slows or speeds up the song, while also effecting it's pitch
         Music.pitch = songSpeed;
+        //print("music pitch is "+ Music.pitch);
+        //slowing down start song as well
+        ghostMusic.pitch = songSpeed;
+        //print("ghost music pitch is " + ghostMusic.pitch);
     }
 
     // Update is called once per frame
@@ -41,11 +46,13 @@ public class BP2_MusicSettings : MonoBehaviour
         if (!startPlaying)
         {
             //The confirm button to start the music and projectiles 
-            if (Input.anyKeyDown)
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 startPlaying = true;
                 RSpeed.hasStarted = true;
-                Music.PlayDelayed(StartOffset/songSpeed); //Slows or speeds up the delay based on the speed given.
+                Music.PlayDelayed(StartOffset / songSpeed);
+                //playing ghost music as well
+                ghostMusic.PlayDelayed(StartOffset / songSpeed);//Slows or speeds up the delay based on the speed given.
             }
         }
     }
