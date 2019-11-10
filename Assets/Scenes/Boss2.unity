@@ -207,6 +207,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3563008978263043770, guid: edc83783de9763742a34a25cb6a66ad3,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3563008978263043774, guid: edc83783de9763742a34a25cb6a66ad3,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 667603782, guid: edc83783de9763742a34a25cb6a66ad3, type: 3}
       propertyPath: m_ColliderPaths.Array.size
       value: 0
@@ -278,16 +288,6 @@ PrefabInstance:
     - target: {fileID: 667603782, guid: edc83783de9763742a34a25cb6a66ad3, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[3].y
       value: -0.8203022
-      objectReference: {fileID: 0}
-    - target: {fileID: 3563008978263043770, guid: edc83783de9763742a34a25cb6a66ad3,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3563008978263043774, guid: edc83783de9763742a34a25cb6a66ad3,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edc83783de9763742a34a25cb6a66ad3, type: 3}
@@ -448,7 +448,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &669209604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -514,7 +514,7 @@ MonoBehaviour:
   RSpeed: {fileID: -4824432865078752702, guid: 7e0d683b84c66ff41b83d2e6736d4d53, type: 3}
   startPlaying: 0
   StartOffset: 5.295986
-  songSpeed: 0.75
+  songSpeed: 1
 --- !u!4 &710089133
 Transform:
   m_ObjectHideFlags: 0
@@ -1580,6 +1580,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Beat Scroller
       objectReference: {fileID: 0}
+    - target: {fileID: 8230606519795120018, guid: 5f4c1f5755420c3448bf46318241b5ee,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8230606519795120021, guid: 5f4c1f5755420c3448bf46318241b5ee,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8230606519795120021, guid: 5f4c1f5755420c3448bf46318241b5ee,
+        type: 3}
+      propertyPath: BPM
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 8230606519795120020, guid: 5f4c1f5755420c3448bf46318241b5ee,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1650,25 +1665,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.96586
       objectReference: {fileID: 0}
-    - target: {fileID: 8230606519795120021, guid: 5f4c1f5755420c3448bf46318241b5ee,
+    - target: {fileID: 8230606520386967030, guid: 5f4c1f5755420c3448bf46318241b5ee,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8230606519795120021, guid: 5f4c1f5755420c3448bf46318241b5ee,
-        type: 3}
-      propertyPath: BPM
-      value: 120
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8230606520386967033, guid: 5f4c1f5755420c3448bf46318241b5ee,
         type: 3}
       propertyPath: m_Enabled
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8230606520386967030, guid: 5f4c1f5755420c3448bf46318241b5ee,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8230606520386967032, guid: 5f4c1f5755420c3448bf46318241b5ee, type: 3}

@@ -13,7 +13,7 @@ public class BeatGenerator : MonoBehaviour
     30.832f, 31.18399f, 31.29599f, 31.42399f, 31.56798f, 31.872f, 32.41599f, 32.57598f, 32.95998f, 33.29599f, 33.632f, 34.30399f, 34.97599f, 35.69599f};
 
     //trvael time is how far the spawned beat is away from the target
-    public float travelTime = 4.911995f;
+    public float travelTime = 5.295986f;
     public float songTime;
     AudioSource boss2;
     //public float testBeat;
@@ -67,6 +67,7 @@ public class BeatGenerator : MonoBehaviour
             Invoke("beatCreation", 12.87998f);
             Invoke("beatCreation", 13.05599f);
             Invoke("beatCreation", 13.40798f);
+            
 
             // Instantiate(beatPrefab, new Vector3(2.53f, -2.46f, 0f), Quaternion.identity);
             // beat1 = false;
