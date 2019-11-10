@@ -6,12 +6,19 @@ public class Movement : MonoBehaviour
 {
     public float moveSpeed;
     public Animator Animator;
+    [System.NonSerialized]
     public bool isMoving;
+
+    private ShrinkRythmManager shrinkManager;
+    public GameObject Door;
 
     // Start is called before the first frame update
     void Start()
     {
         //Animator = GetComponent<Animator>();
+        moveSpeed = 6;
+        shrinkManager = GetComponent<ShrinkRythmManager>();
+        Door = GameObject.FindWithTag("Door");
     }
 
     // Update is called once per frame
@@ -20,7 +27,13 @@ public class Movement : MonoBehaviour
         Move();
 
         float move = Input.GetAxis("Horizontal");
+
         //Animator.SetFloat("Speed", move);
+
+        if (Door == null)
+        {
+            moveSpeed = 6;
+        }
     }
 
     //movement currently uses WASD

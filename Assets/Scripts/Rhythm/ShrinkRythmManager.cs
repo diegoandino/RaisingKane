@@ -6,13 +6,18 @@ using UnityEngine.UI;
 public class ShrinkRythmManager: MonoBehaviour
 {
     public GameObject ShrinkingCircle;
+    public GameObject Door;
     public GameObject GuideCircle;
+
     Movement movement;
+
     public float delay = 15;
     public float timer;
     public float speedModifier = 1;
+
     private Transform[] circles;
     private List<string> Score;
+
     [System.NonSerialized]
     public bool destroyed;
     public bool win;
@@ -25,6 +30,8 @@ public class ShrinkRythmManager: MonoBehaviour
         Score = new List<string>();
         destroyed = false;
         win = false;
+
+        Door = GameObject.FindGameObjectWithTag("Door");
 
         movement = GetComponent<Movement>();
     }
@@ -161,10 +168,11 @@ public class ShrinkRythmManager: MonoBehaviour
     //-- Win Condition --//
    public void WinState()
     {
-        if (FindScore() >= 7)
+        if (FindScore() >= 1)
         {
             //-- Changed it so it destroys once won --//
-            this.destroyed = true;
+            this.gameObject.SetActive(false);
+            Destroy(Door);
             win = true;
             destroyed = true;
             //movement.moveSpeed = 6f;
@@ -179,8 +187,24 @@ public class ShrinkRythmManager: MonoBehaviour
     {
         if (BadCount() > 5)
         {
-            this.gameObject.SetActive(true);
-            destroyed = false;
+            //Destroy(this.gameObject);
+
+            StartCoroutine(Wait(3));
         }
+
+       /* print("Object was null. . .");
+
+        GameObject rhythm = Instantiate(this.gameObject);
+
+        rhythm.SetActive(true); */
+    }
+
+    IEnumerator Wait(float time)
+    {
+        Debug.Log("Waiting before restarting. . .");
+
+        yield return new WaitForSeconds(time);
+
+        Debug.Log("3 seconds waited. . .");
     }
 }
