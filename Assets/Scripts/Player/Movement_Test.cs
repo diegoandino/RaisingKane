@@ -83,5 +83,4 @@ public class Movement_Test : MonoBehaviour
     {
         return Input.GetAxis("Horizontal") * speed;
     }
-
 }

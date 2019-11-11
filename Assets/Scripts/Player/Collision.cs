@@ -13,6 +13,9 @@ public class Collision : MonoBehaviour
     public float yLocation;
 
     public GameObject rhythmMechanic;
+    public Sprite Meditate;
+    public Sprite OlderKane;
+    public GameObject Player;
     private bool collided; //bool for if we have collided with a door
 
     // Start is called before the first frame update
@@ -32,6 +35,12 @@ public class Collision : MonoBehaviour
         {
             //start rhythm game
             rhythmInstance.SetActive(true);
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = Meditate;
+        }
+
+        else
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = OlderKane;
         }
     }
 
