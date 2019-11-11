@@ -33,47 +33,26 @@ public class Movement : MonoBehaviour
         if (Door == null)
         {
             moveSpeed = 6;
-            
+
         }
     }
 
     //movement currently uses WASD
     void Move()
     {
-        if (Input.GetKey(KeyCode.D))
+
+        if (Input.GetButton("Horizontal"))
         {
-            transform.position = new Vector3(transform.position.x + moveSpeed *
+            transform.localPosition = new Vector3(transform.position.x + Input.GetAxis("Horizontal") * moveSpeed *
                                              Time.deltaTime, transform.position.y, transform.position.z);
             isMoving = true;
         }
-
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetButton("Vertical"))
         {
-            transform.position = new Vector3(transform.position.x - moveSpeed *
-                                             Time.deltaTime, transform.position.y, transform.position.z);
+            transform.localPosition = new Vector3(transform.position.x, transform.position.y + Input.GetAxis("Vertical") * moveSpeed *
+                                             Time.deltaTime, transform.position.z);
             isMoving = true;
         }
-
-        if (Input.GetKey(KeyCode.W))
-        {
-            if (transform.position.y < 4)
-            {
-                transform.position = new Vector3(transform.position.x, transform.position.y + moveSpeed *
-                                                                       Time.deltaTime, transform.position.z);
-                isMoving = true;
-            }
-        }
-
-        if (Input.GetKey(KeyCode.S))
-        {
-            if (transform.position.y > 0)
-            {
-                transform.position = new Vector3(transform.position.x, transform.position.y - moveSpeed *
-                                                                       Time.deltaTime, transform.position.z);
-                isMoving = true;
-            }
-        }
-
         else
         {
             isMoving = false;
