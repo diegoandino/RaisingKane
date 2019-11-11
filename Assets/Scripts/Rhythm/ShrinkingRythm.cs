@@ -18,7 +18,7 @@ public class ShrinkingRythm : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        scale = scale - (Time.deltaTime * shrinkMod);
+        scale -= shrinkMod;
         transform.localScale = new Vector3(scale, scale, scale);
         // rotates on the z based on a serializable variable and time
         //transform.localRotation = new Quaternion(0, 0, Time.deltaTime * rotation, 0);'

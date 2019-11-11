@@ -23,8 +23,8 @@ public class Collision : MonoBehaviour
     {
         rhythmInstance = (GameObject) Instantiate(rhythmMechanic);
         rhythmInstance.SetActive(false);
-
-        movementScript = GetComponent<Movement_Test>();
+		rhythmInstance.GetComponent<RectTransform>().transform.position = new Vector3(xLocation, yLocation, 0);
+		movementScript = GetComponent<Movement_Test>();
     }
 
     // Update is called once per frame

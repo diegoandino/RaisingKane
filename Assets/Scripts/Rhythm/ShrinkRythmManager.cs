@@ -11,9 +11,12 @@ public class ShrinkRythmManager: MonoBehaviour
 
     Movement movement;
 
-    public float delay = 15;
+
     public float timer;
-    public float speedModifier = 1;
+	public int index = 0;
+    public List<Vector2> BeatList;
+    //beats.x is the delay between beats
+    //beats.y is the shrink speed modifier 
 
     private Transform[] circles;
     private List<string> Score;
@@ -26,7 +29,8 @@ public class ShrinkRythmManager: MonoBehaviour
     void Start()
     {
         //Main Variable Starts
-        timer = delay;
+        timer = BeatList[0].x;
+		index = 0;
         circles = new Transform[0];
         Score = new List<string>();
         destroyed = false;
@@ -47,9 +51,17 @@ public class ShrinkRythmManager: MonoBehaviour
 
         if (timer <= 0)
         {
+
             GameObject circle = Instantiate(ShrinkingCircle,this.gameObject.transform);
-            circle.GetComponent<ShrinkingRythm>().shrinkMod = speedModifier;
-            timer = delay;
+			circle.GetComponent<ShrinkingRythm>().shrinkMod = BeatList[index].y;
+			timer = BeatList[index].x;
+            if (index >= BeatList.Count-1)
+			{
+				index = 0;
+			} else
+			{
+				index += 1;
+			}
         }
 
 
