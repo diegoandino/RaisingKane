@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 6016567940834928434}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 23.935755, y: 6.2, z: -2}
-  m_LocalScale: {x: 2.7425606, y: 7.1294193, z: 14.258839}
+  m_LocalScale: {x: 0.237293, y: 0.237293, z: 0.237293}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -101,7 +101,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.5, y: 3.6}
+    oldSize: {x: 7.2, y: 3.6}
     newSize: {x: 2.5, y: 2.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -143,8 +143,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a6363344e4f88242adfe94163825721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultImage: {fileID: 21300000, guid: 443f059608439954d98660685bdb09ef, type: 3}
-  pressedImage: {fileID: 21300000, guid: 05d3f3164a9326c4e90414ed176e8537, type: 3}
+  defaultImage: {fileID: 21300000, guid: 05d3f3164a9326c4e90414ed176e8537, type: 3}
+  pressedImage: {fileID: 21300000, guid: 443f059608439954d98660685bdb09ef, type: 3}
   keyToPress: 32
 --- !u!114 &6016567940834928436
 MonoBehaviour:

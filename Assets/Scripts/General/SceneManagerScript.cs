@@ -29,5 +29,9 @@ public class SceneManagerScript : MonoBehaviour
         {
             SceneManager.LoadScene("Gymnasium Hub");
         }
+        else if (Input.GetKeyDown(KeyCode.Y))
+        {
+            SceneManager.LoadScene("BeatCreator");
+        }
     }
 }

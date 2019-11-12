@@ -42,7 +42,7 @@ public class BP2_Projectiles : MonoBehaviour
                     Debug.Log("Normal Hit");
                     musicManager.Playsound("implode");
                     gameObject.SetActive(false);
-                    BP2_MusicSettings.instance.NoteHit();
+                    //BP2_MusicSettings.instance.NoteHit();
                 }
 
                 //Good Check
@@ -51,7 +51,7 @@ public class BP2_Projectiles : MonoBehaviour
                     Debug.Log("Good Hit");
                     musicManager.Playsound("implode");
                     gameObject.SetActive(false);
-                    BP2_MusicSettings.instance.NoteHit();
+                    //BP2_MusicSettings.instance.NoteHit();
                 }
 
                 //Perfect Check
@@ -60,7 +60,7 @@ public class BP2_Projectiles : MonoBehaviour
                     Debug.Log("Perfect Hit");
                     musicManager.Playsound("implode");
                     gameObject.SetActive(false);
-                    BP2_MusicSettings.instance.NoteHit();
+                    //BP2_MusicSettings.instance.NoteHit();
                 }
             }
         }

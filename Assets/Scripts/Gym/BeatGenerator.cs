@@ -12,12 +12,13 @@ public class BeatGenerator : MonoBehaviour
     23.53599f, 24.06399f, 24.20798f, 24.57599f, 25.26399f, 25.632f, 25.74399f, 25.85599f, 25.98399f, 26.31998f, 26.832f, 27.00798f, 27.37599f, 27.712f, 28.04798f, 28.39998f, 28.512f, 28.60798f, 28.752f, 29.08798f, 29.632f, 29.82399f, 30.17599f, 30.47998f,
     30.832f, 31.18399f, 31.29599f, 31.42399f, 31.56798f, 31.872f, 32.41599f, 32.57598f, 32.95998f, 33.29599f, 33.632f, 34.30399f, 34.97599f, 35.69599f};
 
-    //trvael time is how far the spawned beat is away from the target
+    //travel time is how far the spawned beat is away from the target
     public float travelTime = 5.295986f;
     public float songTime;
     AudioSource boss2;
     //public float testBeat;
     public GameObject beatPrefab;
+    public bool bossAttack;
 
     //checked for each beat needing to be spawned
     public bool start;
@@ -28,8 +29,9 @@ public class BeatGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+       
         boss2 = GetComponent<AudioSource>();
-        start = true;
+       
         
     }
 
@@ -42,32 +44,67 @@ public class BeatGenerator : MonoBehaviour
         {
             start = false;
             Invoke("beatCreation", 0.04798186f);
-            Invoke("beatCreation", 0.7999773f);
-            Invoke("beatCreation", 1.503991f);
-            Invoke("beatCreation", 2.271996f);
-            Invoke("beatCreation", 2.943991f);
-            Invoke("beatCreation", 3.631995f);
-            Invoke("beatCreation", 4.367982f);
-            Invoke("beatCreation", 5.055986f);
-            Invoke("beatCreation", 5.407982f);
-            Invoke("beatCreation", 5.727982f);
-            Invoke("beatCreation", 6.431995f);
-            Invoke("beatCreation", 7.119977f);
-            Invoke("beatCreation", 7.839977f);
-            Invoke("beatCreation", 8.511995f);
-            Invoke("beatCreation", 9.263991f);
-            Invoke("beatCreation", 9.951996f);
-            Invoke("beatCreation", 10.63998f);
-            Invoke("beatCreation", 10.95998f);
-            Invoke("beatCreation", 11.312f);
-            Invoke("beatCreation", 11.632f);
-            Invoke("beatCreation", 11.80798f);
-            Invoke("beatCreation", 12.01599f);
-            Invoke("beatCreation", 12.352f);
-            Invoke("beatCreation", 12.87998f);
-            Invoke("beatCreation", 13.05599f);
-            Invoke("beatCreation", 13.40798f);
+            Invoke("beatCreation", 0.8693424f);
+            Invoke("beatCreation", 1.573333f);
+            Invoke("beatCreation", 2.277347f);
+            Invoke("beatCreation", 3.002676f);
+            Invoke("beatCreation", 3.664014f);
+            Invoke("beatCreation", 4.389342f);
+            Invoke("beatCreation", 5.114671f);
+            Invoke("beatCreation", 5.456009f);
+            Invoke("beatCreation", 5.776009f);
+            Invoke("beatCreation", 6.458685f);
+            Invoke("beatCreation", 7.141338f);
+            Invoke("beatCreation", 7.845352f);
+            Invoke("beatCreation", 8.570681f);
+            Invoke("beatCreation", 9.232018f);
+            Invoke("beatCreation", 9.936009f);
+            Invoke("beatCreation", 10.61868f);
+            Invoke("beatCreation", 10.96f);
+            Invoke("beatCreation", 11.30134f);
+            Invoke("beatCreation", 11.47202f);
+            Invoke("beatCreation", 12.02667f);
+            Invoke("beatCreation", 12.70934f);
+            Invoke("beatCreation", 13.41333f);
+            Invoke("beatCreation", 14.13869f);
+            Invoke("beatCreation", 14.84268f);
+            Invoke("beatCreation", 15.54667f);
+            Invoke("beatCreation", 16.25068f);
+            Invoke("beatCreation", 16.57068f);
+            Invoke("beatCreation", 16.91202f);
+            Invoke("beatCreation", 17.63735f);
+            Invoke("beatCreation", 18.32f);
+            Invoke("beatCreation", 19.00268f);
+            Invoke("beatCreation", 19.68535f);
+            Invoke("beatCreation", 20.38934f);
+            Invoke("beatCreation", 21.11467f);
+            Invoke("beatCreation", 21.73333f);
+            Invoke("beatCreation", 22.11735f);
+            Invoke("beatCreation", 22.50134f);
+            Invoke("beatCreation", 23.16268f);
+            Invoke("beatCreation", 23.84535f);
+            Invoke("beatCreation", 24.57068f);
+            Invoke("beatCreation", 25.29601f);
+            Invoke("beatCreation", 25.46667f);
+            Invoke("beatCreation", 26f);
+            Invoke("beatCreation", 26.55467f);
+            Invoke("beatCreation", 27.38667f);
+            Invoke("beatCreation", 27.74934f);
+            Invoke("beatCreation", 28.11202f);
+            Invoke("beatCreation", 28.79467f);
+            Invoke("beatCreation", 29.47735f);
+            Invoke("beatCreation", 30.20267f);
+            Invoke("beatCreation", 30.88535f);
+            Invoke("beatCreation", 31.58934f);
+            Invoke("beatCreation", 32.25068f);
+            Invoke("beatCreation", 32.95467f);
+            Invoke("beatCreation", 33.33868f);
+            Invoke("beatCreation", 33.68f);
+            Invoke("beatCreation", 34.40535f);
+            Invoke("beatCreation", 35.08801f);
+            Invoke("beatCreation", 35.77068f);
             
+
 
             // Instantiate(beatPrefab, new Vector3(2.53f, -2.46f, 0f), Quaternion.identity);
             // beat1 = false;
@@ -77,13 +114,14 @@ public class BeatGenerator : MonoBehaviour
             //print("travel time is" + travelTime);
             //print("Test beat is " + testBeat);
         }
-        
+
     }
 
     void beatCreation()
     {
         Instantiate(beatPrefab, new Vector3(2.53f, -2.46f, 0f), Quaternion.identity);
         //print("Object beat Spawned");
+        
     }
     
 }

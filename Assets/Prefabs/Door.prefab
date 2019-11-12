@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4740905152707555107}
   - component: {fileID: 4740905152707555104}
   m_Layer: 0
-  m_Name: Door 1
+  m_Name: Door
   m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 9809e20109b66194e9003105aa00d500, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0d7dd1397e4384f3697eec497a67b7cc, type: 3}
   m_Color: {r: 0.8490566, g: 0.80800325, b: 0.06007475, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -99,7 +99,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.5, y: 2.5}
+    oldSize: {x: 7.84, y: 10.45}
     newSize: {x: 2.5, y: 2.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -124,5 +124,6 @@ MonoBehaviour:
   yLocation: 0
   rhythmMechanic: {fileID: 6985751138914526500, guid: 174c371f1a0681047b92f31d40084d7c,
     type: 3}
-  player: {fileID: 0}
-  nextRoom: 
+  Meditate: {fileID: 0}
+  OlderKane: {fileID: 0}
+  Player: {fileID: 0}
