@@ -119,7 +119,9 @@ public class BeatGenerator : MonoBehaviour
 
     void beatCreation()
     {
-        Instantiate(beatPrefab, new Vector3(2.53f, -2.46f, 0f), Quaternion.identity);
+        Instantiate(beatPrefab, new Vector3(2.53f, -2.46f, 0f), Quaternion.identity); //add this under a parent
+        //maybe list of transform
+        // make list GetCompentsChildren<Transform>
         //print("Object beat Spawned");
         
     }

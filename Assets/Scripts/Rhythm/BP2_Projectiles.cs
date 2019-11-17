@@ -15,7 +15,7 @@ using UnityEngine;
 public class BP2_Projectiles : MonoBehaviour
 {
 
-    public GameObject ButtonLocation;
+    //public GameObject ButtonCenter;
     public float ButtonPos; //the x,y cordinates of the button
     public bool canBePressed; //If the button can be pressed or not. NOTE: Currently allows you not to miss early
     public KeyCode keyToPress; //What ever the button we assign it to
@@ -25,7 +25,7 @@ public class BP2_Projectiles : MonoBehaviour
     void Start()
     {
         //Get the x position of the button
-        ButtonPos = ButtonLocation.transform.position.x;
+        ButtonPos = -4.9f;
         //print("button pos for new beat is = " + ButtonLocation.transform.position.x);
     }
 
@@ -41,7 +41,11 @@ public class BP2_Projectiles : MonoBehaviour
     /// <param name="other"></param>
     private void OnTriggerEnter2D(Collider2D other)
     {
-        canBePressed = true;
+        //Make sure it is the button collider
+        if (other.tag == "Button")
+        {
+            canBePressed = true;
+        }
     }
 
     /// <summary>
@@ -50,10 +54,14 @@ public class BP2_Projectiles : MonoBehaviour
     /// <param name="other"></param>
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (gameObject.activeSelf)
+        //Make sure it is the button collider
+        if (other.tag == "Button")
         {
-            canBePressed = false;
-            BP2_MusicSettings.instance.NoteMiss();
+            if (gameObject.activeSelf)
+            {
+                canBePressed = false;
+                BP2_MusicSettings.instance.NoteMiss();
+            }
         }
     }
 
