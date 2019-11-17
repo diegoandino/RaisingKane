@@ -20,6 +20,7 @@ public class ShrinkRythmManager: MonoBehaviour
 
     private Transform[] circles;
     private List<string> Score;
+    private Collision coll;
 
     [System.NonSerialized]
     public bool destroyed;
@@ -48,13 +49,16 @@ public class ShrinkRythmManager: MonoBehaviour
     void FixedUpdate()
     {
         timer -= Time.deltaTime;
+        this.gameObject.transform.position = new Vector3(coll.xLocation, coll.yLocation, 0);
 
         if (timer <= 0)
         {
 
             GameObject circle = Instantiate(ShrinkingCircle,this.gameObject.transform);
-			circle.GetComponent<ShrinkingRythm>().shrinkMod = BeatList[index].y;
+
+            circle.GetComponent<ShrinkingRythm>().shrinkMod = BeatList[index].y;
 			timer = BeatList[index].x;
+
             if (index >= BeatList.Count-1)
 			{
 				index = 0;

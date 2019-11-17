@@ -23,7 +23,6 @@ public class Collision : MonoBehaviour
     {
         rhythmInstance = (GameObject) Instantiate(rhythmMechanic);
         rhythmInstance.SetActive(false);
-		rhythmInstance.GetComponent<RectTransform>().transform.position = new Vector3(xLocation, yLocation, 0);
 		movementScript = GetComponent<Movement_Test>();
     }
 

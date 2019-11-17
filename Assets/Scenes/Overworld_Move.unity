@@ -495,7 +495,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 661323759}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.41, y: 0.31, z: 0}
+  m_LocalPosition: {x: 0.44, y: 0.26, z: 0}
   m_LocalScale: {x: 4.1428, y: 4.1428, z: 4.1428}
   m_Children: []
   m_Father: {fileID: 0}
@@ -578,6 +578,33 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3563008978263043774, guid: edc83783de9763742a34a25cb6a66ad3,
+        type: 3}
+      propertyPath: OlderKane
+      value: 
+      objectReference: {fileID: 21300000, guid: 243f00fb83105b54d88a6a228b205890,
+        type: 3}
+    - target: {fileID: 3563008978263043774, guid: edc83783de9763742a34a25cb6a66ad3,
+        type: 3}
+      propertyPath: Meditate
+      value: 
+      objectReference: {fileID: 21300000, guid: f2c2fd18d922239489fffbdb564ba4ba,
+        type: 3}
+    - target: {fileID: 3563008978263043774, guid: edc83783de9763742a34a25cb6a66ad3,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1167138684}
+    - target: {fileID: 3563008978263043774, guid: edc83783de9763742a34a25cb6a66ad3,
+        type: 3}
+      propertyPath: xLocation
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3563008978263043774, guid: edc83783de9763742a34a25cb6a66ad3,
+        type: 3}
+      propertyPath: yLocation
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 3563008978263043717, guid: edc83783de9763742a34a25cb6a66ad3,
         type: 3}
       propertyPath: m_Mass
@@ -598,23 +625,6 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3563008978263043774, guid: edc83783de9763742a34a25cb6a66ad3,
-        type: 3}
-      propertyPath: OlderKane
-      value: 
-      objectReference: {fileID: 21300000, guid: 243f00fb83105b54d88a6a228b205890,
-        type: 3}
-    - target: {fileID: 3563008978263043774, guid: edc83783de9763742a34a25cb6a66ad3,
-        type: 3}
-      propertyPath: Meditate
-      value: 
-      objectReference: {fileID: 21300000, guid: f2c2fd18d922239489fffbdb564ba4ba,
-        type: 3}
-    - target: {fileID: 3563008978263043774, guid: edc83783de9763742a34a25cb6a66ad3,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 1167138684}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edc83783de9763742a34a25cb6a66ad3, type: 3}
 --- !u!1 &1167138684 stripped

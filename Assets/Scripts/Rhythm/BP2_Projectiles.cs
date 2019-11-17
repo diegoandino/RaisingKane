@@ -32,38 +32,7 @@ public class BP2_Projectiles : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(keyToPress))
-        {
-            if (canBePressed)
-            {
-                //Okay Check
-                if ((transform.position.x > ButtonPos + 0.15) || (transform.position.x < ButtonPos - 0.15))
-                {
-                    Debug.Log("Normal Hit");
-                    musicManager.Playsound("implode");
-                    gameObject.SetActive(false);
-                    //BP2_MusicSettings.instance.NoteHit();
-                }
-
-                //Good Check
-                else if ((transform.position.x > ButtonPos + 0.05) || (transform.position.x < ButtonPos - 0.05))
-                {
-                    Debug.Log("Good Hit");
-                    musicManager.Playsound("implode");
-                    gameObject.SetActive(false);
-                    //BP2_MusicSettings.instance.NoteHit();
-                }
-
-                //Perfect Check
-                else
-                {
-                    Debug.Log("Perfect Hit");
-                    musicManager.Playsound("implode");
-                    gameObject.SetActive(false);
-                    //BP2_MusicSettings.instance.NoteHit();
-                }
-            }
-        }
+        BeatCheck();
     }
 
     /// <summary>
@@ -85,6 +54,43 @@ public class BP2_Projectiles : MonoBehaviour
         {
             canBePressed = false;
             BP2_MusicSettings.instance.NoteMiss();
+        }
+    }
+
+
+    void BeatCheck()
+    {
+        if (Input.GetKeyDown(keyToPress))
+        {
+            if (canBePressed)
+            {
+                //Okay Check
+                if ((transform.position.x > ButtonPos + 0.15) || (transform.position.x < ButtonPos - 0.15))
+                {
+                    Debug.Log("Normal Hit");
+                    musicManager.Playsound("implode");
+                    gameObject.SetActive(false);
+                    //BP2_MusicSettings.instance.NoteHit();
+                }
+
+                //Good Check
+                else if ((transform.position.x > ButtonPos + 0.10) || (transform.position.x < ButtonPos - 0.10))
+                {
+                    Debug.Log("Good Hit");
+                    musicManager.Playsound("implode");
+                    gameObject.SetActive(false);
+                    //BP2_MusicSettings.instance.NoteHit();
+                }
+
+                //Perfect Check
+                else
+                {
+                    Debug.Log("Perfect Hit");
+                    musicManager.Playsound("implode");
+                    gameObject.SetActive(false);
+                    //BP2_MusicSettings.instance.NoteHit();
+                }
+            }
         }
     }
 }
