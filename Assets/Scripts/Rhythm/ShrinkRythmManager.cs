@@ -6,21 +6,32 @@ using UnityEngine.UI;
 public class ShrinkRythmManager: MonoBehaviour
 {
     public GameObject ShrinkingCircle;
-    public GameObject Door;
     public GameObject GuideCircle;
+	public AudioSource Music;
 
     Movement movement;
 
 
     public float timer;
+	public float localTime;
+	public float delay;
+	private float shrinkTime = -2.73998f;
+
+    float DisToShrink;
 	public int index = 0;
-    public List<Vector2> BeatList;
+    public List<float> BeatList;
     //beats.x is the delay between beats
     //beats.y is the shrink speed modifier 
 
+    private bool isPlaying = false;
+
     private Transform[] circles;
     private List<string> Score;
-    private Collision coll;
+
+	public float PerfectDis;
+	public float GoodDis;
+	public float NormalDis;
+	public float BadDis;
 
     [System.NonSerialized]
     public bool destroyed;
@@ -30,7 +41,6 @@ public class ShrinkRythmManager: MonoBehaviour
     void Start()
     {
         //Main Variable Starts
-        timer = BeatList[0].x;
 		index = 0;
         circles = new Transform[0];
         Score = new List<string>();
@@ -38,30 +48,43 @@ public class ShrinkRythmManager: MonoBehaviour
         win = false;
         movement = GetComponent<Movement>();
 
-        //Find Door Object
-        Door = GameObject.FindGameObjectWithTag("Door");
-
         //Make object smaller Object
         this.gameObject.transform.localScale = new Vector3(0.6f,0.6f,0.6f);
-    }
 
-    // Update is called once per frame
-    void FixedUpdate()
+        circles = GetComponentsInChildren<Transform>();
+		DisToShrink = ShrinkingCircle.transform.localScale.x - circles[1].localScale.x;
+		timer = delay + shrinkTime;
+
+
+
+	}
+
+	// Update is called once per frame
+	void FixedUpdate()
     {
-        timer -= Time.deltaTime;
-        this.gameObject.transform.position = new Vector3(coll.xLocation, coll.yLocation, 0);
+		if (!isPlaying)
+		{
+			if (Input.GetKeyDown(KeyCode.Space))
+			{
+				Music.PlayDelayed(delay);
+				isPlaying = true;
+			}
+		}
+        if (isPlaying)
+		{
+			localTime += Time.fixedDeltaTime;
+		}
 
-        if (timer <= 0)
+		if (localTime >= timer)
         {
 
             GameObject circle = Instantiate(ShrinkingCircle,this.gameObject.transform);
-
-            circle.GetComponent<ShrinkingRythm>().shrinkMod = BeatList[index].y;
-			timer = BeatList[index].x;
-
+            circle.GetComponent<ShrinkingRythm>().shrinkMod = 0.1f;
+			timer = BeatList[index] + delay + shrinkTime;
             if (index >= BeatList.Count-1)
 			{
 				index = 0;
+				timer = 1000003;
 			} else
 			{
 				index += 1;
@@ -78,9 +101,15 @@ public class ShrinkRythmManager: MonoBehaviour
             {
                 DisCheck(circles[2].localScale.x - circles[1].localScale.x); 
                 circles[2].GetComponent<ShrinkingRythm>().ButtonPressed();
+				print(circles[2].localScale.x - circles[1].localScale.x);
             }
         }
 
+
+		if (Input.GetKeyDown(KeyCode.W))
+		{
+			print(Music.time);
+		}
 
         WinState();
         LoseState();
@@ -89,25 +118,31 @@ public class ShrinkRythmManager: MonoBehaviour
     //-- Checks distance between circle objects --//
     public void DisCheck(float dis)
     {
-        if (dis < -2)
+        if (dis < BadDis)
         {
             Score.Add("Bad");
             StartCoroutine(BlinkRoutine(Color.red));
         }
 
-        else if (dis < 1.5)
+        else if (dis < PerfectDis)
         {
             Score.Add("Perfect!");
             StartCoroutine(BlinkRoutine(Color.green));
         }
 
-        else if (dis < 3)
+        else if (dis < GoodDis)
         {
             StartCoroutine(BlinkRoutine(Color.blue));
             Score.Add("Good");
         }
 
-        else
+		else if (dis < NormalDis)
+		{
+			StartCoroutine(BlinkRoutine(Color.yellow));
+			Score.Add("Good");
+		}
+
+		else
         {
             StartCoroutine(BlinkRoutine(Color.red));
             Score.Add("Bad");
@@ -154,13 +189,13 @@ public class ShrinkRythmManager: MonoBehaviour
             if (str == "Bad" && ScoreInt > 0)
             {
                 ScoreInt--;
-                print("Your current score is: " + ScoreInt);
+                //print("Your current score is: " + ScoreInt);
             }
 
             if(str == "Perfect!")
             {
                 ScoreInt++;
-                print("Your current score is: " + ScoreInt);
+                //print("Your current score is: " + ScoreInt);
             }
         }
 
@@ -188,12 +223,10 @@ public class ShrinkRythmManager: MonoBehaviour
     //-- Win Condition --//
    public void WinState()
     {
-        if (FindScore() >= 3)
+        if (FindScore() >= 100)
         {
             //-- Changed it so it destroys once won --//
             this.gameObject.SetActive(false);
-
-            Destroy(Door);
 
             win = true;
             destroyed = true;
@@ -206,7 +239,7 @@ public class ShrinkRythmManager: MonoBehaviour
     //-- Player Lose State --//
    public void LoseState()
     {
-        if (BadCount() > 5)
+        if (BadCount() > 100)
         {
             this.gameObject.SetActive(false);
 

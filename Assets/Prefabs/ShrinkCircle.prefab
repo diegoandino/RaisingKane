@@ -88,5 +88,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Timer: 0
   scale: 15
-  shrinkMod: 1
+  shrinkMod: 0.01
   rotation: 2

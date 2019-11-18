@@ -9,14 +9,17 @@ public class ShrinkingRythm : MonoBehaviour
     public float shrinkMod;
     public float rotation;
 
+    private float ShrinkTimer;
+
     // Start is called before the first frame update
     void Start()
     {
         transform.localScale = new Vector3(scale, scale, scale);
-    }
+		ShrinkTimer = 0;
+	}
 
-    // Update is called once per frame
-    void FixedUpdate()
+	// Update is called once per frame
+	void FixedUpdate()
     {
         scale -= shrinkMod;
         transform.localScale = new Vector3(scale, scale, scale);
@@ -28,11 +31,12 @@ public class ShrinkingRythm : MonoBehaviour
             gameObject.GetComponentInParent<ShrinkRythmManager>().DisCheck(-10f);
             Destroy(this.gameObject);
         }
+		ShrinkTimer += Time.fixedDeltaTime;
     }
 
     public void ButtonPressed()
     {
         Destroy(this.gameObject);
-    }
+	}
 
 }

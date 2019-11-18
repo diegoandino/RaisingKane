@@ -32,8 +32,6 @@ public class Collision : MonoBehaviour
         //if we have collided with a door
         if (collided == true)
         {
-            //start rhythm game
-            rhythmInstance.SetActive(true);
             this.gameObject.GetComponent<SpriteRenderer>().sprite = Meditate;
         }
 
@@ -56,11 +54,12 @@ public class Collision : MonoBehaviour
     {
         //Debug.Log("entered trigger");
         if (collision.gameObject.tag == "Door")
-        {
-            print("collision with door detected");
-
+        {            
             collided = true;
+
+			rhythmInstance.transform.GetChild(0).position = Camera.main.WorldToScreenPoint(collision.transform.position);
             movementScript.speed = 0;
-        }
-    }
+			rhythmInstance.SetActive(true);
+		}
+	}
 }
