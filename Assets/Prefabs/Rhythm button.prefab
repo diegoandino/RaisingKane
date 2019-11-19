@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6016567940834928434}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 23.935755, y: 6.2, z: -2}
+  m_LocalPosition: {x: -0.2999997, y: 0.03600001, z: -2}
   m_LocalScale: {x: 0.237293, y: 0.237293, z: 0.237293}
   m_Children: []
   m_Father: {fileID: 0}
@@ -97,7 +97,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.91627383}
+  m_Offset: {x: 1.2958841, y: -0.049782276}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -108,7 +108,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.5, y: 4.332547}
+  m_Size: {x: 1.311135, y: 2.4878974}
   m_EdgeRadius: 0
 --- !u!50 &6016567940834928433
 Rigidbody2D:
@@ -145,6 +145,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultImage: {fileID: 21300000, guid: 05d3f3164a9326c4e90414ed176e8537, type: 3}
   pressedImage: {fileID: 21300000, guid: 443f059608439954d98660685bdb09ef, type: 3}
+  plushLocation: {fileID: 0}
+  up: 0
+  down: 0
   keyToPress: 32
 --- !u!114 &6016567940834928436
 MonoBehaviour:

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Door
   - Beat
+  - Button
   layers:
   - Default
   - TransparentFX
