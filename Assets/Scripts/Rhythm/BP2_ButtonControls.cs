@@ -38,13 +38,20 @@ public class BP2_ButtonControls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(up))
+        SnapToPos();
+    }
+
+
+    //-- Snaps Plush to the different position to hit beats --//
+    void SnapToPos()
+    {
+        if (Input.GetKeyDown(up))
         {
-            if(plushLocation.transform.position == pos1)
+            if (plushLocation.transform.position == pos1)
             {
                 //play nope sound or something.
             }
-            else if(plushLocation.transform.position == pos2)
+            else if (plushLocation.transform.position == pos2)
             {
                 //2 -> 1
                 plushLocation.transform.position = pos1;

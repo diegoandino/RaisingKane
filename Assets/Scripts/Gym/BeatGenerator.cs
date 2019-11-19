@@ -16,23 +16,34 @@ public class BeatGenerator : MonoBehaviour
     public float travelTime = 5.295986f;
     public float songTime;
     AudioSource boss2;
+
     //public float testBeat;
+
     public GameObject beatPrefab;
     public bool bossAttack;
 
     //checked for each beat needing to be spawned
     public bool start;
+
+    //--Transform Positions--//
+    Vector3 pos1 = new Vector3(2.53f, -1.52f, 0f);
+    Vector3 pos2 = new Vector3(2.53f, -2.45f, 0f);
+    Vector3 pos3 = new Vector3(2.53f, -3.38f, 0f);
+    Vector3 pos4 = new Vector3(2.53f, -4.31f, 0f);
+
+    private Vector3[] posArr;
     
-
-
-
     // Start is called before the first frame update
     void Start()
     {
        
         boss2 = GetComponent<AudioSource>();
-       
-        
+        posArr = new Vector3[4];
+
+        posArr [0] = pos1;
+        posArr [1] = pos2;
+        posArr [2] = pos3;
+        posArr [3] = pos4;
     }
 
     // Update is called once per frame
@@ -119,11 +130,14 @@ public class BeatGenerator : MonoBehaviour
 
     void beatCreation()
     {
-        Instantiate(beatPrefab, new Vector3(2.53f, -2.46f, 0f), Quaternion.identity); //add this under a parent
+        //add this under a parent
         //maybe list of transform
         // make list GetCompentsChildren<Transform>
         //print("Object beat Spawned");
-        
+
+        foreach (var pos in posArr)
+        {
+            Instantiate(beatPrefab, pos, Quaternion.identity);
+        }
     }
-    
 }
