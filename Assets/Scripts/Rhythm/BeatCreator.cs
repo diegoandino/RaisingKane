@@ -39,7 +39,10 @@ public class BeatCreator : MonoBehaviour
         {
             boss2.Stop();
             replay = false;
+
             Invoke("playSong", 5.295986f);
+
+
             foreach (float logged in beatTime)
             {
                 Invoke("beatCreation", logged);
@@ -107,6 +110,5 @@ public class BeatCreator : MonoBehaviour
             log = songTime;
             beatTime.Add(log);
         }
-
     }
 }

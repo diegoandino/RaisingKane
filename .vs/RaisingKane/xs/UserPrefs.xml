@@ -1,16 +1,20 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Gym/BeatLogger.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Rhythm/BeatGenerator.cs">
     <Files>
-      <File FileName="Assets/Scripts/Rhythm/ShrinkingRythm.cs" Line="10" Column="27" />
-      <File FileName="Assets/Scripts/Player/Collision.cs" Line="63" Column="1" />
-      <File FileName="Assets/Scripts/Rhythm/ShrinkRythmManager.cs" Line="10" Column="10" />
-      <File FileName="Assets/Scripts/Player/Movement_Test.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/General/SceneManagerScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Rhythm/BeatCreator.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Rhythm/BP2_MusicSettings.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Rhythm/BP2_RhythmSpeed.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Gym/BeatLogger.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Rhythm/BeatCreator.cs" Line="62" Column="60" />
+      <File FileName="Assets/Scripts/Rhythm/BeatGenerator.cs" Line="134" Column="94" />
+      <File FileName="Assets/Scripts/Rhythm/BP2_ButtonControls.cs" />
+      <File FileName="Assets/Scripts/Rhythm/BP2_RhythmSpeed.cs" />
+      <File FileName="Assets/Scripts/Rhythm/BP2_Projectiles.cs" />
+      <File FileName="Assets/Scripts/Rhythm/ShrinkRythmManager.cs" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="RaisingKane" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <DisabledProjects>

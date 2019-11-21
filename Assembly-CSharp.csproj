@@ -66,10 +66,6 @@
     <Compile Include="Assets\Scripts\General\GameManager.cs" />
     <Compile Include="Assets\Scripts\General\musicManager.cs" />
     <Compile Include="Assets\Scripts\General\SceneManagerScript.cs" />
-    <Compile Include="Assets\Scripts\Gym\BeatCreatorSpeed.cs" />
-    <Compile Include="Assets\Scripts\Gym\BeatGenerator.cs" />
-    <Compile Include="Assets\Scripts\Gym\BeatLogger.cs" />
-    <Compile Include="Assets\Scripts\Gym\BeatMover.cs" />
     <Compile Include="Assets\Scripts\Gym\Boss1Click.cs" />
     <Compile Include="Assets\Scripts\Gym\Boss2Click.cs" />
     <Compile Include="Assets\Scripts\Gym\BossSprite.cs" />
@@ -85,6 +81,10 @@
     <Compile Include="Assets\Scripts\Rhythm\Beat Synchronizer\PatternCounter.cs" />
     <Compile Include="Assets\Scripts\Rhythm\BeatCreator.cs" />
     <Compile Include="Assets\Scripts\Rhythm\BeatCreator_Click.cs" />
+    <Compile Include="Assets\Scripts\Rhythm\BeatCreatorSpeed.cs" />
+    <Compile Include="Assets\Scripts\Rhythm\BeatGenerator.cs" />
+    <Compile Include="Assets\Scripts\Rhythm\BeatLogger.cs" />
+    <Compile Include="Assets\Scripts\Rhythm\BeatMover.cs" />
     <Compile Include="Assets\Scripts\Rhythm\BP2_ButtonControls.cs" />
     <Compile Include="Assets\Scripts\Rhythm\BP2_MusicSettings.cs" />
     <Compile Include="Assets\Scripts\Rhythm\BP2_Projectiles.cs" />
@@ -97,37 +97,37 @@
     <None Include="Assets\READ ME\readMe.txt" />
     <None Include="Assets\Art Assets\Background Art\stuff.txt" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/Ryan Shefffield/Documents/GitHub/RaisingKane/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>/Users/u1075562/Documents/RaisingKane/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/Ryan Shefffield/Documents/GitHub/RaisingKane/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>/Users/u1075562/Documents/RaisingKane/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/Ryan Shefffield/Documents/GitHub/RaisingKane/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/u1075562/Documents/RaisingKane/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/Ryan Shefffield/Documents/GitHub/RaisingKane/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>/Users/u1075562/Documents/RaisingKane/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/Ryan Shefffield/Documents/GitHub/RaisingKane/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>/Users/u1075562/Documents/RaisingKane/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/Ryan Shefffield/Documents/GitHub/RaisingKane/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>/Users/u1075562/Documents/RaisingKane/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/Ryan Shefffield/Documents/GitHub/RaisingKane/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>/Users/u1075562/Documents/RaisingKane/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>C:/Users/Ryan Shefffield/Documents/GitHub/RaisingKane/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>/Users/u1075562/Documents/RaisingKane/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>C:/Users/Ryan Shefffield/Documents/GitHub/RaisingKane/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>/Users/u1075562/Documents/RaisingKane/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Ryan Shefffield/Documents/GitHub/RaisingKane/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/u1075562/Documents/RaisingKane/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/Ryan Shefffield/Documents/GitHub/RaisingKane/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>/Users/u1075562/Documents/RaisingKane/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
