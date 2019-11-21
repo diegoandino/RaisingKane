@@ -13,22 +13,32 @@ public class BeatCreator : MonoBehaviour
     public float log;
 
     public bool replay;
-    //--------------------//
+	//--------------------//
 
 
-    //--Vector 3 Instantiantion Variables for location --//
-    Vector3 pos1 = new Vector3(2.53f, -1.52f, 0f);
-    Vector3 pos2 = new Vector3(2.53f, -2.45f, 0f);
-    Vector3 pos3 = new Vector3(2.53f, -3.38f, 0f);
-    Vector3 pos4 = new Vector3(2.53f, -4.31f, 0f);
-    //---------------------------------------------------//
+	//--Vector 3 Instantiantion Variables for location --//
+	float pos1 = -1.52f;
+	float pos2 = -2.45f;
+	float pos3 = -3.38f;
+	float pos4 = -4.31f;
 
-    // Start is called before the first frame update
-    void Start()
+	private float[] posArr;
+	//---------------------------------------------------//
+
+	// Start is called before the first frame update
+	void Start()
     {
         boss2 = this.GetComponent<AudioSource>();
         replay = true;
-    }
+
+		//Sets positions for Array indexes
+		posArr = new float[4];
+
+		posArr[0] = pos1;
+		posArr[1] = pos2;
+		posArr[2] = pos3;
+		posArr[3] = pos4;
+	}
 
     // Update is called once per frame
     void Update()
@@ -39,6 +49,7 @@ public class BeatCreator : MonoBehaviour
         {
             boss2.Stop();
             replay = false;
+
 
             Invoke("playSong", 5.295986f);
 
@@ -59,24 +70,10 @@ public class BeatCreator : MonoBehaviour
 
     public void beatCreation()
     {
-        Instantiate(beatPrefab, pos1, Quaternion.identity);
-        Instantiate(beatPrefab, pos2, Quaternion.identity);
-        Instantiate(beatPrefab, pos3, Quaternion.identity);
-        Instantiate(beatPrefab, pos4, Quaternion.identity);
+		float randPos = Random.Range(0f, 3f);
 
-
-        /*-- Explanation for the rest:
-         What's done above is a brute force method to test instantiation in different distances.
-
-         TO-DO:
-         1. Iterate through Rhythm Button game objects
-         2. Instantiate beatPreFab at each one WHILE keeping in mind the FLOAT TIMES in BEAT TIME
-
-         Meaning it might need some restructuring to get each different logged beat to instantiate at the different locations
-
-         3. Snap to each button and be able to move UP & DOWN using either WASD or ARROW KEYS
-        */
-    }
+		Instantiate(beatPrefab, new Vector3(2.53f, posArr[(int)randPos], 0f), Quaternion.identity);
+	}
 
 
     public void logger()
@@ -88,12 +85,14 @@ public class BeatCreator : MonoBehaviour
             songTime = boss2.time;
             boss2.Stop();
         }
+
         //resumes music at left off time
         if (Input.GetKeyDown(KeyCode.M))
         {
             boss2.time = songTime;
             boss2.Play();
         }
+
         //resets song and time log
         if (Input.GetKeyDown(KeyCode.B))
         {
@@ -102,6 +101,7 @@ public class BeatCreator : MonoBehaviour
             boss2.time = songTime;
             boss2.Play();
         }
+
         // logs time without pausing
         if (Input.GetKeyDown(KeyCode.V))
         {

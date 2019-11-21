@@ -98,9 +98,10 @@ public class BeatGenerator : MonoBehaviour
 	{
 
 		boss2 = GetComponent<AudioSource>();
+
+		//Sets positions for Array indexes
 		posArr = new float[4];
 
-        //Sets positions for Array indexes
 		posArr[0] = pos1;
 		posArr[1] = pos2;
 		posArr[2] = pos3;

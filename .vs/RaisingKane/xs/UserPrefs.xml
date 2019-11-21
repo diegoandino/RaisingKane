@@ -1,8 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Rhythm/BeatGenerator.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Rhythm/BeatCreator.cs">
     <Files>
-      <File FileName="Assets/Scripts/Rhythm/BeatCreator.cs" Line="62" Column="60" />
-      <File FileName="Assets/Scripts/Rhythm/BeatGenerator.cs" Line="134" Column="94" />
+      <File FileName="Assets/Scripts/Rhythm/BeatCreator.cs" Line="16" Column="26" />
+      <File FileName="Assets/Scripts/Rhythm/BeatGenerator.cs" Line="101" Column="1" />
       <File FileName="Assets/Scripts/Rhythm/BP2_ButtonControls.cs" />
       <File FileName="Assets/Scripts/Rhythm/BP2_RhythmSpeed.cs" />
       <File FileName="Assets/Scripts/Rhythm/BP2_Projectiles.cs" />
