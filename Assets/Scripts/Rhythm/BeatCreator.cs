@@ -58,7 +58,11 @@ public class BeatCreator : MonoBehaviour
             {
                 Invoke("beatCreation", logged);
             }
-        }
+
+            //Logs beats as an Array then to strings so it's easier to capture as a whole array of floats//
+			string loggedBeats = string.Join("f, ", beatTime.ToArray());
+			Debug.Log(loggedBeats);
+		}
     }
 
 
