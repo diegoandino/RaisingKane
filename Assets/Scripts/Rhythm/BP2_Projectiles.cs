@@ -9,25 +9,29 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-/// <summary>
-///  Controls what effects the projectiles.
-/// </summary>
+/**
+ * Controls the projectiles and their collisions
+ */
 public class BP2_Projectiles : MonoBehaviour
 {
-
-    //public GameObject ButtonCenter;
     public float ButtonPos; //the x,y cordinates of the button
     public bool canBePressed; //If the button can be pressed or not. NOTE: Currently allows you not to miss early
-    public KeyCode keyToPress; //What ever the button we assign it to
-    
-    
-    // Start is called before the first frame update
-    void Start()
+    public KeyCode aKey; //" A " key press 
+	public KeyCode sKey; //" S " key press 
+	public KeyCode dKey; //" D " key press 
+
+
+	// Start is called before the first frame update
+	void Start()
     {
-        //Get the x position of the button
-        ButtonPos = -4.9f;
+        
+        ButtonPos = -4.9f;  //Get the x position of the button
+
         //print("button pos for new beat is = " + ButtonLocation.transform.position.x);
-    }
+
+		canBePressed = false; 
+	}
+
 
     // Update is called once per frame
     void Update()
@@ -35,11 +39,12 @@ public class BP2_Projectiles : MonoBehaviour
         BeatCheck();
     }
 
-    /// <summary>
-    /// If projectil enters into button area, then the button can be pressed.
-    /// </summary>
-    /// <param name="other"></param>
-    private void OnTriggerEnter2D(Collider2D other)
+
+	/**
+     * Beat can be pressed when entering the collider
+     * @param 2D Collider
+     */
+	private void OnTriggerEnter2D(Collider2D other)
     {
         //Make sure it is the button collider
         if (other.tag == "Button")
@@ -48,10 +53,11 @@ public class BP2_Projectiles : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// When projectile leaves button area then it counts as a miss.
-    /// </summary>
-    /// <param name="other"></param>
+
+    /**
+     * Miss when beat exits the collider
+     * @param 2D Collider
+     */ 
     private void OnTriggerExit2D(Collider2D other)
     {
         //Make sure it is the button collider
@@ -66,9 +72,14 @@ public class BP2_Projectiles : MonoBehaviour
     }
 
 
-    void BeatCheck()
+	/**
+     * Checks for Beat position and key presses 
+     */
+	void BeatCheck()
     {
-        if (Input.GetKeyDown(keyToPress))
+
+        //" A " key press check
+        if (Input.GetKeyDown(aKey))
         {
             if (canBePressed)
             {
@@ -100,5 +111,74 @@ public class BP2_Projectiles : MonoBehaviour
                 }
             }
         }
-    }
+
+
+        //" S " key press check
+		if (Input.GetKeyDown(sKey))
+		{
+			if (canBePressed)
+			{
+				//Okay Check
+				if ((transform.position.x > ButtonPos + 0.15) || (transform.position.x < ButtonPos - 0.15))
+				{
+					Debug.Log("Normal Hit");
+					musicManager.Playsound("implode");
+					gameObject.SetActive(false);
+					//BP2_MusicSettings.instance.NoteHit();
+				}
+
+				//Good Check
+				else if ((transform.position.x > ButtonPos + 0.10) || (transform.position.x < ButtonPos - 0.10))
+				{
+					Debug.Log("Good Hit");
+					musicManager.Playsound("implode");
+					gameObject.SetActive(false);
+					//BP2_MusicSettings.instance.NoteHit();
+				}
+
+				//Perfect Check
+				else
+				{
+					Debug.Log("Perfect Hit");
+					musicManager.Playsound("implode");
+					gameObject.SetActive(false);
+					//BP2_MusicSettings.instance.NoteHit();
+				}
+			}
+		}
+
+        //" D " key press check
+		if (Input.GetKeyDown(dKey))
+		{
+			if (canBePressed)
+			{
+				//Okay Check
+				if ((transform.position.x > ButtonPos + 0.15) || (transform.position.x < ButtonPos - 0.15))
+				{
+					Debug.Log("Normal Hit");
+					musicManager.Playsound("implode");
+					gameObject.SetActive(false);
+					//BP2_MusicSettings.instance.NoteHit();
+				}
+
+				//Good Check
+				else if ((transform.position.x > ButtonPos + 0.10) || (transform.position.x < ButtonPos - 0.10))
+				{
+					Debug.Log("Good Hit");
+					musicManager.Playsound("implode");
+					gameObject.SetActive(false);
+					//BP2_MusicSettings.instance.NoteHit();
+				}
+
+				//Perfect Check
+				else
+				{
+					Debug.Log("Perfect Hit");
+					musicManager.Playsound("implode");
+					gameObject.SetActive(false);
+					//BP2_MusicSettings.instance.NoteHit();
+				}
+			}
+		}
+	}
 }
