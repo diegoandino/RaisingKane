@@ -143,7 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a6363344e4f88242adfe94163825721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultImage: {fileID: 21300000, guid: 05d3f3164a9326c4e90414ed176e8537, type: 3}
+  defaultImage: {fileID: 21300000, guid: d729ef8b72448104e931d80795efc8ca, type: 3}
   pressedImage: {fileID: 21300000, guid: 443f059608439954d98660685bdb09ef, type: 3}
   plushLocation: {fileID: 0}
   up: 0
