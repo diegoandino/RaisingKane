@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement; 
 
 public class ShrinkRythmManager: MonoBehaviour
 {
@@ -54,9 +55,6 @@ public class ShrinkRythmManager: MonoBehaviour
         circles = GetComponentsInChildren<Transform>();
 		DisToShrink = ShrinkingCircle.transform.localScale.x - circles[1].localScale.x;
 		timer = delay + shrinkTime;
-
-
-
 	}
 
 	// Update is called once per frame
@@ -70,6 +68,7 @@ public class ShrinkRythmManager: MonoBehaviour
 				isPlaying = true;
 			}
 		}
+
         if (isPlaying)
 		{
 			localTime += Time.fixedDeltaTime;
@@ -79,13 +78,19 @@ public class ShrinkRythmManager: MonoBehaviour
         {
 
             GameObject circle = Instantiate(ShrinkingCircle,this.gameObject.transform);
+
             circle.GetComponent<ShrinkingRythm>().shrinkMod = 0.1f;
+
 			timer = BeatList[index] + delay + shrinkTime;
+
+
             if (index >= BeatList.Count-1)
 			{
 				index = 0;
 				timer = 1000003;
-			} else
+			}
+
+            else
 			{
 				index += 1;
 			}
@@ -99,8 +104,10 @@ public class ShrinkRythmManager: MonoBehaviour
         {
             if (circles.Length > 2)
             {
-                DisCheck(circles[2].localScale.x - circles[1].localScale.x); 
+                DisCheck(circles[2].localScale.x - circles[1].localScale.x);
+
                 circles[2].GetComponent<ShrinkingRythm>().ButtonPressed();
+
 				print(circles[2].localScale.x - circles[1].localScale.x);
             }
         }
@@ -192,10 +199,10 @@ public class ShrinkRythmManager: MonoBehaviour
                 //print("Your current score is: " + ScoreInt);
             }
 
-            if(str == "Perfect!")
+            if(str == "Good")
             {
                 ScoreInt++;
-                //print("Your current score is: " + ScoreInt);
+                print("Your current score is: " + ScoreInt);
             }
         }
 
@@ -223,7 +230,7 @@ public class ShrinkRythmManager: MonoBehaviour
     //-- Win Condition --//
    public void WinState()
     {
-        if (FindScore() >= 100)
+        if (FindScore() >= 6)
         {
             //-- Changed it so it destroys once won --//
             this.gameObject.SetActive(false);
@@ -232,6 +239,8 @@ public class ShrinkRythmManager: MonoBehaviour
             destroyed = true;
             
             print("Win");
+
+			SceneManager.LoadScene("Boss2");
         }
     }
 
@@ -239,11 +248,9 @@ public class ShrinkRythmManager: MonoBehaviour
     //-- Player Lose State --//
    public void LoseState()
     {
-        if (BadCount() > 100)
+        if (BadCount() >= 4)
         {
-            this.gameObject.SetActive(false);
-
-            StartCoroutine(Wait(3));
+			SceneManager.LoadScene("Overworld_Move");
         }
 
        /* print("Object was null. . .");

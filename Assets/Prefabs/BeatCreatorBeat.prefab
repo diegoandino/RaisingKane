@@ -95,11 +95,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b75309d8904907f4c858ea2ea948155a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonLocation: {fileID: 6016567940834928434, guid: e6b9eabc19ed11346bbc0d393e7fadcf,
-    type: 3}
   ButtonPos: 0
   canBePressed: 0
-  keyToPress: 32
+  aKey: 97
+  sKey: 115
+  dKey: 100
 --- !u!114 &2924795701418540270
 MonoBehaviour:
   m_ObjectHideFlags: 0

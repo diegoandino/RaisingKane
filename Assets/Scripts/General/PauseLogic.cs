@@ -8,6 +8,9 @@ public class PauseLogic : MonoBehaviour
     public static bool isPaused = false;
     public GameObject pauseMenu;
 
+	[SerializeField]
+	private AudioSource Music; 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +28,7 @@ public class PauseLogic : MonoBehaviour
             {
                 Pause();
             }
+
             else
             {
                 Resume();
@@ -44,6 +48,7 @@ public class PauseLogic : MonoBehaviour
         isPaused = true;
         pauseMenu.gameObject.SetActive(true);
         Time.timeScale = 0f;
+		Music.Pause(); 
     }
 
     public void DisplayControls()
