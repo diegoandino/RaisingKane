@@ -7,6 +7,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI; 
 
 
 /**
@@ -19,7 +20,10 @@ public class BP2_Projectiles : MonoBehaviour
     public KeyCode aKey; //" A " key press 
 	public KeyCode sKey; //" S " key press 
 	public KeyCode dKey; //" D " key press 
-
+    
+	private bool normalHit;
+	private bool goodHit;
+	private bool perfectHit; 
 
 	// Start is called before the first frame update
 	void Start()
@@ -29,7 +33,11 @@ public class BP2_Projectiles : MonoBehaviour
 
         //print("button pos for new beat is = " + ButtonLocation.transform.position.x);
 
-		canBePressed = false; 
+		canBePressed = false;
+		
+		normalHit = false;
+		goodHit = false;
+		perfectHit = false;
 	}
 
 
@@ -37,7 +45,7 @@ public class BP2_Projectiles : MonoBehaviour
     void Update()
     {
         BeatCheck();
-    }
+	}
 
 
 	/**
@@ -67,6 +75,8 @@ public class BP2_Projectiles : MonoBehaviour
             {
                 canBePressed = false;
                 BP2_MusicSettings.instance.NoteMiss();
+
+				MissCount.miss++;
             }
         }
     }
@@ -89,8 +99,12 @@ public class BP2_Projectiles : MonoBehaviour
                     Debug.Log("Normal Hit");
                     musicManager.Playsound("implode");
                     gameObject.SetActive(false);
-                    //BP2_MusicSettings.instance.NoteHit();
-                }
+					//BP2_MusicSettings.instance.NoteHit();
+
+					normalHit = true;   perfectHit = false;     goodHit = false;
+
+					ScoreCount.score += 2;
+				}
 
                 //Good Check
                 else if ((transform.position.x > ButtonPos + 0.10) || (transform.position.x < ButtonPos - 0.10))
@@ -98,8 +112,12 @@ public class BP2_Projectiles : MonoBehaviour
                     Debug.Log("Good Hit");
                     musicManager.Playsound("implode");
                     gameObject.SetActive(false);
-                    //BP2_MusicSettings.instance.NoteHit();
-                }
+					//BP2_MusicSettings.instance.NoteHit();
+
+					normalHit = false; perfectHit = false; goodHit = true;
+
+					ScoreCount.score += 4;
+				}
 
                 //Perfect Check
                 else
@@ -107,8 +125,12 @@ public class BP2_Projectiles : MonoBehaviour
                     Debug.Log("Perfect Hit");
                     musicManager.Playsound("implode");
                     gameObject.SetActive(false);
-                    //BP2_MusicSettings.instance.NoteHit();
-                }
+					//BP2_MusicSettings.instance.NoteHit();
+
+					normalHit = false; perfectHit = true; goodHit = false;
+
+					ScoreCount.score += 6;
+				}
             }
         }
 
@@ -125,6 +147,10 @@ public class BP2_Projectiles : MonoBehaviour
 					musicManager.Playsound("implode");
 					gameObject.SetActive(false);
 					//BP2_MusicSettings.instance.NoteHit();
+
+					normalHit = true; perfectHit = false; goodHit = false;
+
+					ScoreCount.score += 2;
 				}
 
 				//Good Check
@@ -134,6 +160,10 @@ public class BP2_Projectiles : MonoBehaviour
 					musicManager.Playsound("implode");
 					gameObject.SetActive(false);
 					//BP2_MusicSettings.instance.NoteHit();
+
+					normalHit = false; perfectHit = false; goodHit = true;
+
+					ScoreCount.score += 4;
 				}
 
 				//Perfect Check
@@ -143,6 +173,10 @@ public class BP2_Projectiles : MonoBehaviour
 					musicManager.Playsound("implode");
 					gameObject.SetActive(false);
 					//BP2_MusicSettings.instance.NoteHit();
+
+					normalHit = false; perfectHit = true; goodHit = false;
+
+					ScoreCount.score += 6;
 				}
 			}
 		}
@@ -159,6 +193,10 @@ public class BP2_Projectiles : MonoBehaviour
 					musicManager.Playsound("implode");
 					gameObject.SetActive(false);
 					//BP2_MusicSettings.instance.NoteHit();
+
+					normalHit = true; perfectHit = false; goodHit = false;
+
+					ScoreCount.score += 2;
 				}
 
 				//Good Check
@@ -168,6 +206,10 @@ public class BP2_Projectiles : MonoBehaviour
 					musicManager.Playsound("implode");
 					gameObject.SetActive(false);
 					//BP2_MusicSettings.instance.NoteHit();
+
+					normalHit = false; perfectHit = false; goodHit = true;
+
+					ScoreCount.score += 4;
 				}
 
 				//Perfect Check
@@ -177,6 +219,10 @@ public class BP2_Projectiles : MonoBehaviour
 					musicManager.Playsound("implode");
 					gameObject.SetActive(false);
 					//BP2_MusicSettings.instance.NoteHit();
+
+					normalHit = false; perfectHit = true; goodHit = false;
+
+					ScoreCount.score += 6;
 				}
 			}
 		}

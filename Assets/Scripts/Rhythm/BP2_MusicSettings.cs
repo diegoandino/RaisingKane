@@ -18,6 +18,7 @@ public class BP2_MusicSettings : MonoBehaviour
     public AudioSource ghostMusic;// ghost song file
     public BP2_RhythmSpeed RSpeed;
     public static BP2_MusicSettings instance;
+	public GameObject UI; 
 
     public bool startPlaying = false;
     public float StartOffset;       //The wait before a the song plays 
@@ -37,7 +38,9 @@ public class BP2_MusicSettings : MonoBehaviour
         //print("music pitch is "+ Music.pitch);
         //slowing down start song as well
         ghostMusic.pitch = songSpeed;
-        //print("ghost music pitch is " + ghostMusic.pitch);
+		//print("ghost music pitch is " + ghostMusic.pitch);
+
+		UI.SetActive(true);
     }
 
     // Update is called once per frame
@@ -53,6 +56,8 @@ public class BP2_MusicSettings : MonoBehaviour
                 Music.PlayDelayed(StartOffset / songSpeed);
                 //playing ghost music as well
                 ghostMusic.PlayDelayed(StartOffset / songSpeed);//Slows or speeds up the delay based on the speed given.
+
+				UI.SetActive(false);
             }
         }
     }
