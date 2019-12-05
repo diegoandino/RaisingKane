@@ -63,13 +63,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\MissCount.cs" />
-    <Compile Include="Assets\ScoreCount.cs" />
     <Compile Include="Assets\Scripts\General\DoorCollision.cs" />
     <Compile Include="Assets\Scripts\General\GameManager.cs" />
+    <Compile Include="Assets\Scripts\General\MissCount.cs" />
     <Compile Include="Assets\Scripts\General\musicManager.cs" />
     <Compile Include="Assets\Scripts\General\PauseLogic.cs" />
     <Compile Include="Assets\Scripts\General\SceneManagerScript.cs" />
+    <Compile Include="Assets\Scripts\General\ScoreCount.cs" />
     <Compile Include="Assets\Scripts\Gym\Boss1Click.cs" />
     <Compile Include="Assets\Scripts\Gym\Boss2Click.cs" />
     <Compile Include="Assets\Scripts\Gym\BossSprite.cs" />

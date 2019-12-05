@@ -15,29 +15,19 @@ using UnityEngine.UI;
  */
 public class BP2_Projectiles : MonoBehaviour
 {
-    public float ButtonPos; //the x,y cordinates of the button
-    public bool canBePressed; //If the button can be pressed or not. NOTE: Currently allows you not to miss early
-    public KeyCode aKey; //" A " key press 
-	public KeyCode sKey; //" S " key press 
-	public KeyCode dKey; //" D " key press 
-    
 	private bool normalHit;
 	private bool goodHit;
-	private bool perfectHit; 
+	private bool perfectHit;
+	private bool canBePressed; //If the button can be pressed or not. NOTE: Currently allows you not to miss early
 
 	// Start is called before the first frame update
 	void Start()
     {
-        
-        ButtonPos = -4.9f;  //Get the x position of the button
-
-        //print("button pos for new beat is = " + ButtonLocation.transform.position.x);
+		normalHit    = false;
+		goodHit      = false;
+		perfectHit   = false;
 
 		canBePressed = false;
-		
-		normalHit = false;
-		goodHit = false;
-		perfectHit = false;
 	}
 
 
@@ -57,8 +47,8 @@ public class BP2_Projectiles : MonoBehaviour
         //Make sure it is the button collider
         if (other.tag == "Button")
         {
-            canBePressed = true;
-        }
+			canBePressed = true;
+		}
     }
 
 
@@ -73,10 +63,10 @@ public class BP2_Projectiles : MonoBehaviour
         {
             if (gameObject.activeSelf)
             {
-                canBePressed = false;
+				canBePressed = false;
                 BP2_MusicSettings.instance.NoteMiss();
 
-				MissCount.miss++;
+				MissCount.miss++; //Increments the Miss count on GUI
             }
         }
     }
@@ -88,18 +78,18 @@ public class BP2_Projectiles : MonoBehaviour
 	void BeatCheck()
     {
 
-        //" A " key press check
-        if (Input.GetKeyDown(aKey))
+        if (Input.GetKeyDown(BP2_ButtonControls.staticKey))
         {
-            if (canBePressed)
+            if (canBePressed == true)
             {
                 //Okay Check
-                if ((transform.position.x > ButtonPos + 0.15) || (transform.position.x < ButtonPos - 0.15))
+                if ((transform.position.x > BP2_ButtonControls.ButtonPos + 0.15) ||
+                   (transform.position.x < BP2_ButtonControls.ButtonPos - 0.15))
                 {
                     Debug.Log("Normal Hit");
-                    musicManager.Playsound("implode");
-                    gameObject.SetActive(false);
-					//BP2_MusicSettings.instance.NoteHit();
+					musicManager.Playsound("implode");
+
+					gameObject.SetActive(false);
 
 					normalHit = true;   perfectHit = false;     goodHit = false;
 
@@ -107,12 +97,13 @@ public class BP2_Projectiles : MonoBehaviour
 				}
 
                 //Good Check
-                else if ((transform.position.x > ButtonPos + 0.10) || (transform.position.x < ButtonPos - 0.10))
+                else if ((transform.position.x > BP2_ButtonControls.ButtonPos + 0.10) ||
+                        (transform.position.x < BP2_ButtonControls.ButtonPos - 0.10))
                 {
                     Debug.Log("Good Hit");
-                    musicManager.Playsound("implode");
-                    gameObject.SetActive(false);
-					//BP2_MusicSettings.instance.NoteHit();
+					musicManager.Playsound("implode");
+
+					gameObject.SetActive(false);
 
 					normalHit = false; perfectHit = false; goodHit = true;
 
@@ -123,9 +114,9 @@ public class BP2_Projectiles : MonoBehaviour
                 else
                 {
                     Debug.Log("Perfect Hit");
-                    musicManager.Playsound("implode");
                     gameObject.SetActive(false);
-					//BP2_MusicSettings.instance.NoteHit();
+
+					musicManager.Playsound("implode");
 
 					normalHit = false; perfectHit = true; goodHit = false;
 
@@ -133,98 +124,5 @@ public class BP2_Projectiles : MonoBehaviour
 				}
             }
         }
-
-
-        //" S " key press check
-		if (Input.GetKeyDown(sKey))
-		{
-			if (canBePressed)
-			{
-				//Okay Check
-				if ((transform.position.x > ButtonPos + 0.15) || (transform.position.x < ButtonPos - 0.15))
-				{
-					Debug.Log("Normal Hit");
-					musicManager.Playsound("implode");
-					gameObject.SetActive(false);
-					//BP2_MusicSettings.instance.NoteHit();
-
-					normalHit = true; perfectHit = false; goodHit = false;
-
-					ScoreCount.score += 2;
-				}
-
-				//Good Check
-				else if ((transform.position.x > ButtonPos + 0.10) || (transform.position.x < ButtonPos - 0.10))
-				{
-					Debug.Log("Good Hit");
-					musicManager.Playsound("implode");
-					gameObject.SetActive(false);
-					//BP2_MusicSettings.instance.NoteHit();
-
-					normalHit = false; perfectHit = false; goodHit = true;
-
-					ScoreCount.score += 4;
-				}
-
-				//Perfect Check
-				else
-				{
-					Debug.Log("Perfect Hit");
-					musicManager.Playsound("implode");
-					gameObject.SetActive(false);
-					//BP2_MusicSettings.instance.NoteHit();
-
-					normalHit = false; perfectHit = true; goodHit = false;
-
-					ScoreCount.score += 6;
-				}
-			}
-		}
-
-        //" D " key press check
-		if (Input.GetKeyDown(dKey))
-		{
-			if (canBePressed)
-			{
-				//Okay Check
-				if ((transform.position.x > ButtonPos + 0.15) || (transform.position.x < ButtonPos - 0.15))
-				{
-					Debug.Log("Normal Hit");
-					musicManager.Playsound("implode");
-					gameObject.SetActive(false);
-					//BP2_MusicSettings.instance.NoteHit();
-
-					normalHit = true; perfectHit = false; goodHit = false;
-
-					ScoreCount.score += 2;
-				}
-
-				//Good Check
-				else if ((transform.position.x > ButtonPos + 0.10) || (transform.position.x < ButtonPos - 0.10))
-				{
-					Debug.Log("Good Hit");
-					musicManager.Playsound("implode");
-					gameObject.SetActive(false);
-					//BP2_MusicSettings.instance.NoteHit();
-
-					normalHit = false; perfectHit = false; goodHit = true;
-
-					ScoreCount.score += 4;
-				}
-
-				//Perfect Check
-				else
-				{
-					Debug.Log("Perfect Hit");
-					musicManager.Playsound("implode");
-					gameObject.SetActive(false);
-					//BP2_MusicSettings.instance.NoteHit();
-
-					normalHit = false; perfectHit = true; goodHit = false;
-
-					ScoreCount.score += 6;
-				}
-			}
-		}
 	}
 }
