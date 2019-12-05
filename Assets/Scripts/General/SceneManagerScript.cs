@@ -13,25 +13,21 @@ public class SceneManagerScript : MonoBehaviour
     // Update is called once per frame
      void Update()
     {
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            SceneManager.LoadScene("Overworld_Move");
-        }
-        else if (Input.GetKeyDown(KeyCode.O))
-        {
-            SceneManager.LoadScene("Boss1");
-        }
-        else if (Input.GetKeyDown(KeyCode.P))
-        {
-            SceneManager.LoadScene("Boss2");
-        }
-        else if (Input.GetKeyDown(KeyCode.U))
-        {
-            SceneManager.LoadScene("Gymnasium Hub");
-        }
-        else if (Input.GetKeyDown(KeyCode.Y))
-        {
-            SceneManager.LoadScene("BeatCreator");
-        }
+		if (Input.GetKeyDown(KeyCode.H))
+		{
+			SceneManager.LoadScene("Gymnasium Hub");
+		}
+
+		else if (Input.GetKeyDown(KeyCode.R))
+		{
+			restartCurrentScene(); 
+		}
     }
+
+
+	public void restartCurrentScene()
+	{
+		Scene scene = SceneManager.GetActiveScene();
+		SceneManager.LoadScene(scene.name);
+	}
 }

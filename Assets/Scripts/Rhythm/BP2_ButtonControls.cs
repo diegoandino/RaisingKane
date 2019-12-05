@@ -65,7 +65,7 @@ public class BP2_ButtonControls : MonoBehaviour
 
 			musicManager.Playsound("plushFire");
 
-			staticKey = KEY; 
+			staticKey = KEY;
 		}
 
 		//Button Release
