@@ -1,17 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Rhythm/BeatGenerator.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Rhythm/GrowingRythm.cs">
     <Files>
-      <File FileName="Assets/Scripts/Rhythm/BP2_ButtonControls.cs" Line="59" Column="3" />
-      <File FileName="Assets/Scripts/Rhythm/BP2_Projectiles.cs" Line="68" Column="1" />
-      <File FileName="Assets/Scripts/Rhythm/BeatGenerator.cs" Line="103" Column="39" />
+      <File FileName="Assets/Scripts/Rhythm/ShrinkRythmManager.cs" Line="56" Column="1" />
+      <File FileName="Assets/Scripts/Rhythm/ShrinkingRythm.cs" />
+      <File FileName="Assets/Scripts/Rhythm/GrowingRythm.cs" Line="31" Column="1" />
+      <File FileName="Assets/Scripts/Rhythm/GrowRythmManager.cs" Line="232" Column="44" />
+      <File FileName="Assets/Scripts/General/DoorCollision.cs" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="RaisingKane" expanded="True" selected="True" />
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <DisabledProjects>

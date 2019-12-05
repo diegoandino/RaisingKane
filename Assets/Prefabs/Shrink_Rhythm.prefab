@@ -293,10 +293,10 @@ MonoBehaviour:
   - 9.665
   - 10.323
   - 10.5
-  PerfectDis: -1.6
-  GoodDis: -0.85
-  NormalDis: 0.45
-  BadDis: -5
+  largestDis: 2.070496
+  bigDis: 1.656397
+  mediumDis: 1.341682
+  smallestDis: 0.921638
   win: 0
 --- !u!1 &6985751139983979582
 GameObject:

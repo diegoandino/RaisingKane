@@ -18,21 +18,21 @@ public class ShrinkRythmManager: MonoBehaviour
 	public float delay;
 	private float shrinkTime = -2.73998f;
 
-    float DisToShrink;
 	public int index = 0;
     public List<float> BeatList;
     //beats.x is the delay between beats
     //beats.y is the shrink speed modifier 
 
     private bool isPlaying = false;
+	private bool played = false;
 
     private Transform[] circles;
     private List<string> Score;
 
-	public float PerfectDis;
-	public float GoodDis;
-	public float NormalDis;
-	public float BadDis;
+	public float largestDis;
+	public float bigDis;
+	public float mediumDis;
+	public float smallestDis;
 
     [System.NonSerialized]
     public bool destroyed;
@@ -53,20 +53,16 @@ public class ShrinkRythmManager: MonoBehaviour
         this.gameObject.transform.localScale = new Vector3(0.6f,0.6f,0.6f);
 
         circles = GetComponentsInChildren<Transform>();
-		DisToShrink = ShrinkingCircle.transform.localScale.x - circles[1].localScale.x;
 		timer = delay + shrinkTime;
 	}
 
 	// Update is called once per frame
 	void FixedUpdate()
     {
-		if (!isPlaying)
+		if (!isPlaying && !played)
 		{
-			if (Input.GetKeyDown(KeyCode.Space))
-			{
 				Music.PlayDelayed(delay);
 				isPlaying = true;
-			}
 		}
 
         if (isPlaying)
@@ -74,7 +70,7 @@ public class ShrinkRythmManager: MonoBehaviour
 			localTime += Time.fixedDeltaTime;
 		}
 
-		if (localTime >= timer)
+		if (localTime >= timer && isPlaying)
         {
 
             GameObject circle = Instantiate(ShrinkingCircle,this.gameObject.transform);
@@ -86,10 +82,10 @@ public class ShrinkRythmManager: MonoBehaviour
 
             if (index >= BeatList.Count-1)
 			{
-				index = 0;
-				timer = 1000003;
+				timer = 100000;
+				played = true;
+				isPlaying = false;
 			}
-
             else
 			{
 				index += 1;
@@ -104,11 +100,9 @@ public class ShrinkRythmManager: MonoBehaviour
         {
             if (circles.Length > 2)
             {
-                DisCheck(circles[2].localScale.x - circles[1].localScale.x);
+                DisCheck(circles[2].localScale.x);
 
                 circles[2].GetComponent<ShrinkingRythm>().ButtonPressed();
-
-				print(circles[2].localScale.x - circles[1].localScale.x);
             }
         }
 
@@ -118,43 +112,46 @@ public class ShrinkRythmManager: MonoBehaviour
 			print(Music.time);
 		}
 
-        WinState();
-        LoseState();
+        //WinState();
+        //LoseState();
+        if (played && Score.Count == BeatList.Count)
+		{
+			EndState();
+		}
+
     }
 
     //-- Checks distance between circle objects --//
-    public void DisCheck(float dis)
+    public bool DisCheck(float dis)
     {
-        if (dis < BadDis)
-        {
-            Score.Add("Bad");
-            StartCoroutine(BlinkRoutine(Color.red));
-        }
-
-        else if (dis < PerfectDis)
-        {
-            Score.Add("Perfect!");
-            StartCoroutine(BlinkRoutine(Color.green));
-        }
-
-        else if (dis < GoodDis)
-        {
-            StartCoroutine(BlinkRoutine(Color.blue));
-            Score.Add("Good");
-        }
-
-		else if (dis < NormalDis)
+        if (dis > smallestDis)
 		{
-			StartCoroutine(BlinkRoutine(Color.yellow));
-			Score.Add("Good");
-		}
+            if (dis > mediumDis)
+			{
+                if (dis > largestDis)
+				{
+					Score.Add("Bad");
+					StartCoroutine(BlinkRoutine(Color.red));
+					return true;
+				}
+                if (dis < bigDis)
+				{
+					Score.Add("Perfect");
+					StartCoroutine(BlinkRoutine(Color.green));
+					return true;
+				}
 
-		else
-        {
-            StartCoroutine(BlinkRoutine(Color.red));
-            Score.Add("Bad");
-        }
-    }
+			}
+			Score.Add("Good");
+			StartCoroutine(BlinkRoutine(Color.yellow));
+			return true;
+		} else
+		{
+			Score.Add("Bad");
+			StartCoroutine(BlinkRoutine(Color.red));
+			return true;
+		}
+	}
 
 
     //-- Color change in between button triggers --//
@@ -164,7 +161,7 @@ public class ShrinkRythmManager: MonoBehaviour
         bool IsBlinking = false;
 
         float StartTime = Time.time;
-        float BlinkTimer = 1;
+        float BlinkTimer = 0.5f;
 
         while (StartTime + BlinkTimer > Time.time)
         {
@@ -210,6 +207,36 @@ public class ShrinkRythmManager: MonoBehaviour
     }
 
 
+	public void EndState()
+	{
+		float PerfectCount = 0;
+		float GoodCount = 0;
+		float BadCount = 0;
+
+		foreach (string str in Score)
+		{
+			if (str == "Bad")
+			{
+				BadCount++;
+			}
+			if (str == "Good")
+			{
+				GoodCount++;
+			}
+			if (str == "Perfect")
+			{
+				PerfectCount++;
+			}
+		}
+        if (GoodCount+PerfectCount >= 8)
+		{
+			SceneManager.LoadScene("Boss2");
+		} else
+		{
+			SceneManager.LoadScene("Overworld_Move"); 
+		}
+	}
+
     //-- Counts how many bad triggers player had --//
     public float BadCount()
     {
@@ -226,7 +253,7 @@ public class ShrinkRythmManager: MonoBehaviour
         return Counter;
     }
 
-
+    /*
     //-- Win Condition --//
    public void WinState()
     {
@@ -248,7 +275,7 @@ public class ShrinkRythmManager: MonoBehaviour
     //-- Player Lose State --//
    public void LoseState()
     {
-        if (BadCount() >= 4)
+        if (BadCount() >= 400)
         {
 			SceneManager.LoadScene("Overworld_Move");
         }
@@ -257,8 +284,8 @@ public class ShrinkRythmManager: MonoBehaviour
 
         GameObject rhythm = Instantiate(this.gameObject);
 
-        rhythm.SetActive(true); */
-    }
+        rhythm.SetActive(true); 
+    }*/
 
     IEnumerator Wait(float time)
     {
