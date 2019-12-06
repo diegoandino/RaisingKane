@@ -124,7 +124,6 @@ public class GrowRythmManager: MonoBehaviour
     //-- Checks distance between circle objects --//
     public bool DisCheck(float dis)
     {
-		print(dis);
         if (dis > mediumDis && dis < bigDis)
 		{
 			Score.Add("Perfect");
