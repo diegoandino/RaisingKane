@@ -35,6 +35,10 @@ public class BP2_ButtonControls : MonoBehaviour
 	public static KeyCode staticKey;
     public static Vector3 staticPlushPos;
 
+	public GameObject button1;
+	public GameObject button2;
+	public GameObject button3;
+
 	//--Vector 3 Instantiantion Variables for location --//
 	Vector3 pos1 = new Vector3(-4.9f, -1.75f, -2f);
     Vector3 pos2 = new Vector3(-4.9f, -2.5f, -2f);
@@ -90,6 +94,10 @@ public class BP2_ButtonControls : MonoBehaviour
 		{
 			spriteChanger.sprite = defaultImage;
 			pressed = false;
+
+			button1.GetComponent<Collider2D>().enabled = true;
+			button2.GetComponent<Collider2D>().enabled = true;
+			button3.GetComponent<Collider2D>().enabled = true;
 		}
 	}
 
@@ -101,22 +109,34 @@ public class BP2_ButtonControls : MonoBehaviour
             aPressed = true;
             sPressed = false;
             dPressed = false;
-        }
+
+			button1.GetComponent<Collider2D>().enabled = true;
+			button2.GetComponent<Collider2D>().enabled = false;
+			button3.GetComponent<Collider2D>().enabled = false;
+		}
 
 
-        if (Input.GetKeyDown(KeyCode.S))
+        else if (Input.GetKeyDown(KeyCode.S))
         {
             aPressed = false;
             sPressed = true;
             dPressed = false;
-        }
+
+			button1.GetComponent<Collider2D>().enabled = false;
+			button2.GetComponent<Collider2D>().enabled = true;
+			button3.GetComponent<Collider2D>().enabled = false;
+		}
 
 
-        if (Input.GetKeyDown(KeyCode.D))
+        else if (Input.GetKeyDown(KeyCode.D))
         {
             aPressed = false;
             sPressed = false;
             dPressed = true;
-        }
+
+			button1.GetComponent<Collider2D>().enabled = false;
+			button2.GetComponent<Collider2D>().enabled = false;
+			button3.GetComponent<Collider2D>().enabled = true;
+		}
     }
 }
