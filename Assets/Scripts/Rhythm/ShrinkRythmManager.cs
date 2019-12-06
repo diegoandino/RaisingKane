@@ -124,24 +124,14 @@ public class ShrinkRythmManager: MonoBehaviour
     //-- Checks distance between circle objects --//
     public bool DisCheck(float dis)
     {
-        if (dis > smallestDis)
-		{
-            if (dis > mediumDis)
-			{
-                if (dis > largestDis)
-				{
-					Score.Add("Bad");
-					StartCoroutine(BlinkRoutine(Color.red));
-					return true;
-				}
-                if (dis < bigDis)
-				{
-					Score.Add("Perfect");
-					StartCoroutine(BlinkRoutine(Color.green));
-					return true;
-				}
 
-			}
+		if (dis > mediumDis && dis < bigDis)
+		{
+			Score.Add("Perfect");
+			StartCoroutine(BlinkRoutine(Color.green));
+			return true;
+		} else if ( dis > smallestDis && dis < largestDis)
+		{
 			Score.Add("Good");
 			StartCoroutine(BlinkRoutine(Color.yellow));
 			return true;
@@ -287,7 +277,7 @@ public class ShrinkRythmManager: MonoBehaviour
         rhythm.SetActive(true); 
     }*/
 
-    IEnumerator Wait(float time)
+		IEnumerator Wait(float time)
     {
         Debug.Log("Waiting before restarting. . .");
 
