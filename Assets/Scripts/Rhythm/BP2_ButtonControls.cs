@@ -21,11 +21,19 @@ public class BP2_ButtonControls : MonoBehaviour
 	[SerializeField]
 	private KeyCode KEY;
 
+    public Transform plush;
+    public Transform button; 
     public Sprite defaultImage;
     public Sprite pressedImage;
+
 	public static bool pressed;
-	public static float ButtonPos; //the x,y cordinates of the button
+    public static bool aPressed;
+    public static bool sPressed;
+    public static bool dPressed;
+
+    public static float ButtonPos; //the x,y cordinates of the button
 	public static KeyCode staticKey;
+    public static Vector3 staticPlushPos;
 
 	//--Vector 3 Instantiantion Variables for location --//
 	Vector3 pos1 = new Vector3(-4.9f, -1.75f, -2f);
@@ -43,12 +51,14 @@ public class BP2_ButtonControls : MonoBehaviour
 		pressed = false;
 
 		ButtonPos = -4.9f;
-	}
+    }
 
     // Update is called once per frame
     void Update()
     {
 		BeatControls(); 
+
+        Pressed();
     }
 
 
@@ -56,9 +66,10 @@ public class BP2_ButtonControls : MonoBehaviour
      * Beat Button Controls 
      */
 	void BeatControls()
-	{
-		//Button Pressed
-		if (Input.GetKeyDown(KEY))
+    { 
+
+        //Button Pressed
+        if (Input.GetKeyDown(KEY))
 		{
 			spriteChanger.sprite = pressedImage;
 			pressed = true;
@@ -66,6 +77,12 @@ public class BP2_ButtonControls : MonoBehaviour
 			musicManager.Playsound("plushFire");
 
 			staticKey = KEY;
+
+
+		    plush.position = new Vector3 (button.position.x - 1.17f, 
+		                                  button.position.y);
+
+		    staticPlushPos = plush.position;
 		}
 
 		//Button Release
@@ -75,4 +92,31 @@ public class BP2_ButtonControls : MonoBehaviour
 			pressed = false;
 		}
 	}
+
+
+    void Pressed()
+    {
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            aPressed = true;
+            sPressed = false;
+            dPressed = false;
+        }
+
+
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            aPressed = false;
+            sPressed = true;
+            dPressed = false;
+        }
+
+
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            aPressed = false;
+            sPressed = false;
+            dPressed = true;
+        }
+    }
 }

@@ -127,16 +127,22 @@ public class GrowRythmManager: MonoBehaviour
         if (dis > mediumDis && dis < bigDis)
 		{
 			Score.Add("Perfect");
+		    ScoreCount.score += 4;
+
 			StartCoroutine(BlinkRoutine(Color.green));
 			return true;
 		} else if ( dis > smallestDis && dis < largestDis)
 		{
 			Score.Add("Good");
+		    ScoreCount.score += 2;
+
 			StartCoroutine(BlinkRoutine(Color.yellow));
 			return true;
 		} else
 		{
 			Score.Add("Bad");
+		    MissCount.miss++;
+
 			StartCoroutine(BlinkRoutine(Color.red));
 			return true;
 		}

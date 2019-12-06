@@ -121,11 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b75309d8904907f4c858ea2ea948155a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonPos: 0
-  canBePressed: 0
-  aKey: 97
-  sKey: 115
-  dKey: 100
+  plush: {fileID: 5955757576241093755, guid: b100403492e1d2e44ad466cd9ea1459a, type: 3}
 --- !u!114 &-4824432865078752702
 MonoBehaviour:
   m_ObjectHideFlags: 0

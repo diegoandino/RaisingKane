@@ -9,44 +9,7 @@ public class BeatGenerator : MonoBehaviour
 	public float[] beatLog = new float[]
 	{
   0.9055783f,
-  2.159456f,
-  3.506213f,
-  4.94585f,
-  5.34059f,
-  5.712109f,
-  6.455147f,
-  7.732245f,
-  9.102222f,
-  10.49542f,
-  10.86694f,
-  11.23846f,
-  12.60844f,
-  13.37469f,
-  16.11465f,
-  16.78803f,
-  17.48463f,
-  17.87937f,
-  18.25089f,
-  18.92426f,
-  20.27102f,
-  21.66422f,
-  22.03574f,
-  22.43048f,
-  23.75401f,
-  24.40417f,
-  27.23701f,
-  27.58531f,
-  27.93361f,
-  28.65342f,
-  29.37324f,
-  30.00018f,
-  31.43982f,
-  32.85624f,
-  33.18132f,
-  33.55283f,
-  34.29587f,
-  34.99247f,
-  35.64263f
+  15.34059f,
  };
 
 	//travel time is how far the spawned beat is away from the target
@@ -100,8 +63,8 @@ public class BeatGenerator : MonoBehaviour
 	
 			for (int i = 0; i < beatLog.Length; i++)
 			{
-				Invoke("beatCreation", beatLog[i]);
-			}
+                Invoke("beatCreation", beatLog[i]);
+            }
 		}
 	}
 

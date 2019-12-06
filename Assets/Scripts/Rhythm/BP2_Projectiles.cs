@@ -20,6 +20,10 @@ public class BP2_Projectiles : MonoBehaviour
 	private bool perfectHit;
 	private bool canBePressed; //If the button can be pressed or not. NOTE: Currently allows you not to miss early
 
+    public Transform button1;
+    public Transform button2;
+    public Transform button3;
+
 	// Start is called before the first frame update
 	void Start()
     {
@@ -83,45 +87,50 @@ public class BP2_Projectiles : MonoBehaviour
             if (canBePressed == true)
             {
                 //Okay Check
-                if ((transform.position.x > BP2_ButtonControls.ButtonPos + 0.15) ||
-                   (transform.position.x < BP2_ButtonControls.ButtonPos - 0.15))
+                if (((transform.position.x > BP2_ButtonControls.ButtonPos + 0.15) || (transform.position.x < BP2_ButtonControls.ButtonPos - 0.15)) && (BP2_ButtonControls.aPressed == true))
                 {
                     Debug.Log("Normal Hit");
 					musicManager.Playsound("implode");
 
-					gameObject.SetActive(false);
-
 					normalHit = true;   perfectHit = false;     goodHit = false;
 
 					ScoreCount.score += 2;
-				}
+
+                    
+                    Destroy(this.gameObject);  
+                }
 
                 //Good Check
-                else if ((transform.position.x > BP2_ButtonControls.ButtonPos + 0.10) ||
-                        (transform.position.x < BP2_ButtonControls.ButtonPos - 0.10))
+                else if (((transform.position.x > BP2_ButtonControls.ButtonPos + 0.15) || (transform.position.x < BP2_ButtonControls.ButtonPos - 0.15)) && (BP2_ButtonControls.aPressed == true))
                 {
                     Debug.Log("Good Hit");
 					musicManager.Playsound("implode");
 
-					gameObject.SetActive(false);
+                   // Destroy(this.gameObject);
 
-					normalHit = false; perfectHit = false; goodHit = true;
+                    normalHit = false; perfectHit = false; goodHit = true;
 
 					ScoreCount.score += 4;
-				}
+                    
+                  
+                    Destroy(this.gameObject);  
+                }
 
                 //Perfect Check
-                else
+                else 
                 {
                     Debug.Log("Perfect Hit");
-                    gameObject.SetActive(false);
+                   // Destroy(this.gameObject);
 
-					musicManager.Playsound("implode");
+                    musicManager.Playsound("implode");
 
 					normalHit = false; perfectHit = true; goodHit = false;
 
 					ScoreCount.score += 6;
-				}
+                    
+                    
+                    Destroy(this.gameObject);
+                }
             }
         }
 	}
