@@ -1932,6 +1932,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Beat Target
       objectReference: {fileID: 0}
+    - target: {fileID: 2997508506960647968, guid: df13c5f1d0ae4430e9b812636fba34c5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2997508508662923892, guid: df13c5f1d0ae4430e9b812636fba34c5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1985,11 +1990,6 @@ PrefabInstance:
     - target: {fileID: 2997508508662923892, guid: df13c5f1d0ae4430e9b812636fba34c5,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2997508506960647968, guid: df13c5f1d0ae4430e9b812636fba34c5,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2997508506960647971, guid: df13c5f1d0ae4430e9b812636fba34c5,

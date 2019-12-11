@@ -1,0 +1,745 @@
+fileFormatVersion: 2
+guid: 8d4764e4c8d0a4c02892e73fc1802739
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2253374523202196073
+    second: Idle Sprite Sheet v2 (no bg)_0
+  - first:
+      213: 6594301249927571336
+    second: Idle Sprite Sheet v2 (no bg)_1
+  - first:
+      213: 5083737329926850220
+    second: Idle Sprite Sheet v2 (no bg)_2
+  - first:
+      213: -2054846970991699614
+    second: Idle Sprite Sheet v2 (no bg)_3
+  - first:
+      213: 7811890822074271758
+    second: Idle Sprite Sheet v2 (no bg)_4
+  - first:
+      213: 1572665686751843309
+    second: Idle Sprite Sheet v2 (no bg)_5
+  - first:
+      213: 929640471401238174
+    second: Idle Sprite Sheet v2 (no bg)_6
+  - first:
+      213: 3164081342599757755
+    second: Idle Sprite Sheet v2 (no bg)_7
+  - first:
+      213: -1580910316409173825
+    second: Idle Sprite Sheet v2 (no bg)_8
+  - first:
+      213: -4391607801001769542
+    second: Idle Sprite Sheet v2 (no bg)_9
+  - first:
+      213: -6967584652108484446
+    second: Idle Sprite Sheet v2 (no bg)_10
+  - first:
+      213: 9089023933818833199
+    second: Idle Sprite Sheet v2 (no bg)_11
+  - first:
+      213: 7612508023864761013
+    second: Idle Sprite Sheet v2 (no bg)_12
+  - first:
+      213: 2516272665782017811
+    second: Idle Sprite Sheet v2 (no bg)_13
+  - first:
+      213: -1059294263449542366
+    second: Idle Sprite Sheet v2 (no bg)_14
+  - first:
+      213: 6200859714606691194
+    second: Idle Sprite Sheet v2 (no bg)_15
+  - first:
+      213: 2994317415811873392
+    second: Idle Sprite Sheet v2 (no bg)_16
+  - first:
+      213: 2215989589418983185
+    second: Idle Sprite Sheet v2 (no bg)_17
+  - first:
+      213: -152096622906190033
+    second: Idle Sprite Sheet v2 (no bg)_18
+  - first:
+      213: 7730349909203254811
+    second: Idle Sprite Sheet v2 (no bg)_19
+  - first:
+      213: 3768898257479001901
+    second: Idle Sprite Sheet v2 (no bg)_20
+  - first:
+      213: 5803390725598353141
+    second: Idle Sprite Sheet v2 (no bg)_21
+  - first:
+      213: -6905947664267836981
+    second: Idle Sprite Sheet v2 (no bg)_22
+  - first:
+      213: 4549450026203182555
+    second: Idle Sprite Sheet v2 (no bg)_23
+  - first:
+      213: -6471342798485693571
+    second: Idle Sprite Sheet v2 (no bg)_24
+  - first:
+      213: -7404452089346257621
+    second: Idle Sprite Sheet v2 (no bg)_25
+  - first:
+      213: 5663893263943494771
+    second: Idle Sprite Sheet v2 (no bg)_26
+  - first:
+      213: 7476084524882175855
+    second: Idle Sprite Sheet v2 (no bg)_27
+  - first:
+      213: -706179907705008851
+    second: Idle Sprite Sheet v2 (no bg)_28
+  - first:
+      213: 6939472029571787473
+    second: Idle Sprite Sheet v2 (no bg)_29
+  - first:
+      213: -7102464875597260329
+    second: Idle Sprite Sheet v2 (no bg)_30
+  - first:
+      213: -267535155330018098
+    second: Idle Sprite Sheet v2 (no bg)_31
+  - first:
+      213: 4649754517870679195
+    second: Idle Sprite Sheet v2 (no bg)_32
+  - first:
+      213: 3903456821593877523
+    second: Idle Sprite Sheet v2 (no bg)_33
+  - first:
+      213: 7986076629435617071
+    second: Idle Sprite Sheet v2 (no bg)_34
+  - first:
+      213: -3522262330438173920
+    second: Idle Sprite Sheet v2 (no bg)_35
+  - first:
+      213: -666104388222894422
+    second: Idle Sprite Sheet v2 (no bg)_36
+  - first:
+      213: 8984733531136447958
+    second: Idle Sprite Sheet v2 (no bg)_37
+  - first:
+      213: 490760458947184841
+    second: Idle Sprite Sheet v2 (no bg)_38
+  - first:
+      213: -4510459501232365125
+    second: Idle Sprite Sheet v2 (no bg)_39
+  - first:
+      213: -1356219643705105354
+    second: Idle Sprite Sheet v2 (no bg)_40
+  - first:
+      213: -2392558992727183185
+    second: Idle Sprite Sheet v2 (no bg)_41
+  - first:
+      213: 3209185987903542416
+    second: Idle Sprite Sheet v2 (no bg)_42
+  - first:
+      213: 2115548370221882173
+    second: Idle Sprite Sheet v2 (no bg)_43
+  - first:
+      213: -6467274243706678598
+    second: Idle Sprite Sheet v2 (no bg)_44
+  - first:
+      213: 351074153524057089
+    second: Idle Sprite Sheet v2 (no bg)_45
+  - first:
+      213: 6666959214952747981
+    second: Idle Sprite Sheet v2 (no bg)_46
+  - first:
+      213: -1364252853484562216
+    second: Idle Sprite Sheet v2 (no bg)_47
+  - first:
+      213: 675459867396497375
+    second: Idle Sprite Sheet v2 (no bg)_48
+  - first:
+      213: -5738621496741804824
+    second: Idle Sprite Sheet v2 (no bg)_49
+  - first:
+      213: -1413703634170668548
+    second: Idle Sprite Sheet v2 (no bg)_50
+  - first:
+      213: -4720932074077111368
+    second: Idle Sprite Sheet v2 (no bg)_51
+  - first:
+      213: 2949787594722598801
+    second: Idle Sprite Sheet v2 (no bg)_52
+  - first:
+      213: 5626760719890760794
+    second: Idle Sprite Sheet v2 (no bg)_53
+  - first:
+      213: -4068611031483726126
+    second: Idle Sprite Sheet v2 (no bg)_54
+  - first:
+      213: 3885260167531431217
+    second: Idle Sprite Sheet v2 (no bg)_55
+  - first:
+      213: -7377008577072895642
+    second: Idle Sprite Sheet v2 (no bg)_56
+  - first:
+      213: 1123524356112604463
+    second: Idle Sprite Sheet v2 (no bg)_57
+  - first:
+      213: -2781464166106115444
+    second: Idle Sprite Sheet v2 (no bg)_58
+  - first:
+      213: -6535856636178636790
+    second: Idle Sprite Sheet v2 (no bg)_59
+  - first:
+      213: -8548820649586342391
+    second: Idle Sprite Sheet v2 (no bg)_60
+  - first:
+      213: -3055925831353301748
+    second: Idle Sprite Sheet v2 (no bg)_61
+  - first:
+      213: -7630803566303198511
+    second: Idle Sprite Sheet v2 (no bg)_62
+  - first:
+      213: -1575311747751017257
+    second: Idle Sprite Sheet v2 (no bg)_63
+  - first:
+      213: 2351272965453240494
+    second: Idle Sprite Sheet v2 (no bg)_64
+  - first:
+      213: -5236576531077040102
+    second: Idle Sprite Sheet v2 (no bg)_65
+  - first:
+      213: -9147611831229033830
+    second: Idle Sprite Sheet v2 (no bg)_66
+  - first:
+      213: -2037348570411367050
+    second: Idle Sprite Sheet v2 (no bg)_67
+  - first:
+      213: 3590135539547397452
+    second: Idle Sprite Sheet v2 (no bg)_68
+  - first:
+      213: -6273407147103136490
+    second: Idle Sprite Sheet v2 (no bg)_69
+  - first:
+      213: 710204940437279283
+    second: Idle Sprite Sheet v2 (no bg)_70
+  - first:
+      213: -13068079775478180
+    second: Idle Sprite Sheet v2 (no bg)_71
+  - first:
+      213: 5700335173876358845
+    second: Idle Sprite Sheet v2 (no bg)_72
+  - first:
+      213: 1293166905492368142
+    second: Idle Sprite Sheet v2 (no bg)_73
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Idle Sprite Sheet v2 (no bg)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1549.6
+        width: 505
+        height: 387.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c4af9e9cf620466a975ea9daf336376
+      internalID: -2253374523202196073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle Sprite Sheet v2 (no bg)_1
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 1549.6
+        width: 505
+        height: 387.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c654c0a0f554ee3971a9ec87e5be06
+      internalID: 6594301249927571336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle Sprite Sheet v2 (no bg)_2
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 1549.6
+        width: 505
+        height: 387.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13c134ec6e5684849ac03d21a3138521
+      internalID: 5083737329926850220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle Sprite Sheet v2 (no bg)_3
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 1549.6
+        width: 505
+        height: 387.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5df053a22be534d108cd92eb184528a8
+      internalID: -2054846970991699614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle Sprite Sheet v2 (no bg)_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1162.6
+        width: 505
+        height: 387.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ca96a64de10d4c2b98f527c0d8b5914
+      internalID: 7811890822074271758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle Sprite Sheet v2 (no bg)_5
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 1162.6
+        width: 505
+        height: 387.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55fe0273523ce4b50b3532328f6b415b
+      internalID: 1572665686751843309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle Sprite Sheet v2 (no bg)_6
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 1162.6
+        width: 505
+        height: 387.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98cb8d66864d1434088205c4f97268bb
+      internalID: 929640471401238174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle Sprite Sheet v2 (no bg)_7
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 1162.6
+        width: 505
+        height: 387.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee690296260d4a5ab2eab41cf216ab5
+      internalID: 3164081342599757755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle Sprite Sheet v2 (no bg)_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 775.6
+        width: 505
+        height: 387.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c13796090c67b40ab950ad3789e88bf7
+      internalID: -1580910316409173825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle Sprite Sheet v2 (no bg)_9
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 775.6
+        width: 505
+        height: 387.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c48df5f850b614db29d4e676be092554
+      internalID: -4391607801001769542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle Sprite Sheet v2 (no bg)_10
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 775.6
+        width: 505
+        height: 387.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477cd952fe0384961ab8831ecdfa60d3
+      internalID: -6967584652108484446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle Sprite Sheet v2 (no bg)_11
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 775.6
+        width: 505
+        height: 387.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccb7a8c8128a6456abd82d03375842eb
+      internalID: 9089023933818833199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle Sprite Sheet v2 (no bg)_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 388.6
+        width: 505
+        height: 387.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 166eea4f25533416fb70b9111023ecf3
+      internalID: 7612508023864761013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle Sprite Sheet v2 (no bg)_13
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 388.6
+        width: 505
+        height: 387.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa73f0bb863234f229606b72f1e35451
+      internalID: 2516272665782017811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle Sprite Sheet v2 (no bg)_14
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 388.6
+        width: 505
+        height: 387.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 649a94e104c8442dfae198ec33d7922b
+      internalID: -1059294263449542366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle Sprite Sheet v2 (no bg)_15
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 388.6
+        width: 505
+        height: 387.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5393d1298aa474bc199c3c567366b235
+      internalID: 6200859714606691194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle Sprite Sheet v2 (no bg)_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.6000061
+        width: 505
+        height: 387.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b0b628923eb9464ba1d8620a31cd499
+      internalID: 2994317415811873392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle Sprite Sheet v2 (no bg)_17
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 1.6000061
+        width: 505
+        height: 387.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f0d81ae52e2463a8b5fc935ed9313d
+      internalID: 2215989589418983185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle Sprite Sheet v2 (no bg)_18
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 1.6000061
+        width: 505
+        height: 387.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71dd771fda4f54e7f86d41017608ddb3
+      internalID: -152096622906190033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle Sprite Sheet v2 (no bg)_19
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 1.6000061
+        width: 505
+        height: 387.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57981259571414e45bf66d89157506eb
+      internalID: 7730349909203254811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

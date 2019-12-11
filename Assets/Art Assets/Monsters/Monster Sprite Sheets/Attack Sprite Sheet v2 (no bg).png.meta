@@ -1,0 +1,583 @@
+fileFormatVersion: 2
+guid: da46f3ae68e4d4888a904b8dee5bbd23
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7860143125597192077
+    second: Attack Sprite Sheet v2 (no bg)_0
+  - first:
+      213: 7268494616542379774
+    second: Attack Sprite Sheet v2 (no bg)_1
+  - first:
+      213: -138086728801840824
+    second: Attack Sprite Sheet v2 (no bg)_2
+  - first:
+      213: -1623515580704140910
+    second: Attack Sprite Sheet v2 (no bg)_3
+  - first:
+      213: -6003278813803328401
+    second: Attack Sprite Sheet v2 (no bg)_4
+  - first:
+      213: 237966443269337691
+    second: Attack Sprite Sheet v2 (no bg)_5
+  - first:
+      213: 4296433868923450766
+    second: Attack Sprite Sheet v2 (no bg)_6
+  - first:
+      213: -9182347890975407069
+    second: Attack Sprite Sheet v2 (no bg)_7
+  - first:
+      213: -438078360785869383
+    second: Attack Sprite Sheet v2 (no bg)_8
+  - first:
+      213: -1565353689016583885
+    second: Attack Sprite Sheet v2 (no bg)_9
+  - first:
+      213: -6888163308630387614
+    second: Attack Sprite Sheet v2 (no bg)_10
+  - first:
+      213: 6487038277564204354
+    second: Attack Sprite Sheet v2 (no bg)_11
+  - first:
+      213: -5775559671617286469
+    second: Attack Sprite Sheet v2 (no bg)_12
+  - first:
+      213: 6916617382680700714
+    second: Attack Sprite Sheet v2 (no bg)_13
+  - first:
+      213: -4079186097497440441
+    second: Attack Sprite Sheet v2 (no bg)_14
+  - first:
+      213: -7126500784846458693
+    second: Attack Sprite Sheet v2 (no bg)_15
+  - first:
+      213: 4062577935289880984
+    second: Attack Sprite Sheet v2 (no bg)_16
+  - first:
+      213: -4441371813981723502
+    second: Attack Sprite Sheet v2 (no bg)_17
+  - first:
+      213: 5881367323277434930
+    second: Attack Sprite Sheet v2 (no bg)_18
+  - first:
+      213: 26262842458805585
+    second: Attack Sprite Sheet v2 (no bg)_19
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Attack Sprite Sheet v2 (no bg)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1554.4
+        width: 497.75
+        height: 388.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfae9e9b6f0dc4f1da2b124e93c2ec96
+      internalID: -7860143125597192077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Sprite Sheet v2 (no bg)_1
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 1554.4
+        width: 497.75
+        height: 388.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc696629e5ab447ea859067016f2bfd6
+      internalID: 7268494616542379774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Sprite Sheet v2 (no bg)_2
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 1554.4
+        width: 497.75
+        height: 388.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37e2b411f03b344c78f79dcb541e4fee
+      internalID: -138086728801840824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Sprite Sheet v2 (no bg)_3
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 1554.4
+        width: 497.75
+        height: 388.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5446e5b605e4b47b9a19e73a65380583
+      internalID: -1623515580704140910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Sprite Sheet v2 (no bg)_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1166.4
+        width: 497.75
+        height: 388.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894d0212183ce4949aedcb144521716f
+      internalID: -6003278813803328401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Sprite Sheet v2 (no bg)_5
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 1166.4
+        width: 497.75
+        height: 388.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67816591e56ad4c1f8e8cd3905e2fe1c
+      internalID: 237966443269337691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Sprite Sheet v2 (no bg)_6
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 1166.4
+        width: 497.75
+        height: 388.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d3f31a33d8346d4a87ea60f194bc7d
+      internalID: 4296433868923450766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Sprite Sheet v2 (no bg)_7
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 1166.4
+        width: 497.75
+        height: 388.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 821af7d40e18645708df0d8bc342be16
+      internalID: -9182347890975407069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Sprite Sheet v2 (no bg)_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 778.4
+        width: 497.75
+        height: 388.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 531fa6d6eeec347c5baaa89ef6c11bd2
+      internalID: -438078360785869383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Sprite Sheet v2 (no bg)_9
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 778.4
+        width: 497.75
+        height: 388.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74beed456fff14ae095718844886371c
+      internalID: -1565353689016583885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Sprite Sheet v2 (no bg)_10
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 778.4
+        width: 497.75
+        height: 388.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a7125cd212c946baa0c1bec571a5de5
+      internalID: -6888163308630387614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Sprite Sheet v2 (no bg)_11
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 778.4
+        width: 497.75
+        height: 388.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 087d07a2dac134109843ff5b13dacc19
+      internalID: 6487038277564204354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Sprite Sheet v2 (no bg)_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 390.4
+        width: 497.75
+        height: 388.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71a0a81f568214734a7a762112a3e863
+      internalID: -5775559671617286469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Sprite Sheet v2 (no bg)_13
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 390.4
+        width: 497.75
+        height: 388.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e90eb75054d40da913fdcf6769925d
+      internalID: 6916617382680700714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Sprite Sheet v2 (no bg)_14
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 390.4
+        width: 497.75
+        height: 388.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6208de295744b449da3b0231f967e23d
+      internalID: -4079186097497440441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Sprite Sheet v2 (no bg)_15
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 390.4
+        width: 497.75
+        height: 388.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6240c2c05db4340de90c3c0554595200
+      internalID: -7126500784846458693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Sprite Sheet v2 (no bg)_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2.399994
+        width: 497.75
+        height: 388.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e02913184e3149c99388956b3766ae3
+      internalID: 4062577935289880984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Sprite Sheet v2 (no bg)_17
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 2.399994
+        width: 497.75
+        height: 388.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 854012f47bef0412cbb02533e7affd19
+      internalID: -4441371813981723502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Sprite Sheet v2 (no bg)_18
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 2.399994
+        width: 497.75
+        height: 388.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae0a7324672f4c798628b343ea9437b
+      internalID: 5881367323277434930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack Sprite Sheet v2 (no bg)_19
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 2.399994
+        width: 497.75
+        height: 388.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e58d3927a5a1f4dda94f899e62396f1f
+      internalID: 26262842458805585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
