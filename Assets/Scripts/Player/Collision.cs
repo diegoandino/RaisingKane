@@ -12,7 +12,7 @@ public class Collision : MonoBehaviour
     public float xLocation;
     public float yLocation;
 
-    public GameObject rhythmMechanic;
+    //public GameObject rhythmMechanic;
     public Sprite Meditate;
     public Sprite OlderKane;
     public GameObject Player;
@@ -21,8 +21,8 @@ public class Collision : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rhythmInstance = (GameObject) Instantiate(rhythmMechanic);
-        rhythmInstance.SetActive(false);
+        //rhythmInstance = (GameObject) Instantiate(rhythmMechanic);
+        //rhythmInstance.SetActive(false);
 		movementScript = GetComponent<Movement_Test>();
     }
 
@@ -57,9 +57,10 @@ public class Collision : MonoBehaviour
         {            
             collided = true;
 
-			rhythmInstance.transform.GetChild(0).position = Camera.main.WorldToScreenPoint(collision.transform.position);
+			//rhythmInstance.transform.GetChild(0).position = Camera.main.WorldToScreenPoint(collision.transform.position);
             movementScript.speed = 0;
-			rhythmInstance.SetActive(true);
+			collision.gameObject.GetComponent<DoorTransition>().startRhythm();
+			//rhythmInstance.SetActive(true);
 		}
 	}
 }

@@ -1,16 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Rhythm/BP2_ButtonControls.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Scenes/DoorTransition.cs">
     <Files>
-      <File FileName="Assets/Scripts/Rhythm/BP2_ButtonControls.cs" Line="97" Column="1" />
-      <File FileName="Assets/Scripts/Rhythm/BP2_Projectiles.cs" Line="99" Column="21" />
+      <File FileName="Assets/Scripts/Scenes/DoorTransition.cs" Line="21" Column="29" />
+      <File FileName="Assets/Scripts/Rhythm/ShrinkRythmManager.cs" Line="16" Column="1" />
+      <File FileName="Assets/Scripts/Player/Collision.cs" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="RaisingKane" expanded="True" selected="True" />
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <DisabledProjects>
