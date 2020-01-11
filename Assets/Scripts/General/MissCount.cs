@@ -12,6 +12,7 @@ public class MissCount : MonoBehaviour
 	void Start()
 	{
 		missScore = GetComponent<Text>();
+        miss = 0;
 	}
 
 	// Update is called once per frame

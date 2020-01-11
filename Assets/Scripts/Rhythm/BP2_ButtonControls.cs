@@ -83,8 +83,7 @@ public class BP2_ButtonControls : MonoBehaviour
 			staticKey = KEY;
 
 
-		    plush.position = new Vector3 (button.position.x - 1.17f, 
-		                                  button.position.y);
+		    plush.position = new Vector3 (button.position.x, button.position.y - 3f);
 
 		    staticPlushPos = plush.position;
 		}
@@ -113,7 +112,9 @@ public class BP2_ButtonControls : MonoBehaviour
 			button1.GetComponent<Collider2D>().enabled = true;
 			button2.GetComponent<Collider2D>().enabled = false;
 			button3.GetComponent<Collider2D>().enabled = false;
-		}
+
+            Debug.Log("BUTTON 1: " + button1.transform.position.x);
+        }
 
 
         else if (Input.GetKeyDown(KeyCode.S))
@@ -125,7 +126,9 @@ public class BP2_ButtonControls : MonoBehaviour
 			button1.GetComponent<Collider2D>().enabled = false;
 			button2.GetComponent<Collider2D>().enabled = true;
 			button3.GetComponent<Collider2D>().enabled = false;
-		}
+
+            Debug.Log("BUTTON 2: " + button2.transform.position.x);
+        }
 
 
         else if (Input.GetKeyDown(KeyCode.D))
@@ -137,6 +140,8 @@ public class BP2_ButtonControls : MonoBehaviour
 			button1.GetComponent<Collider2D>().enabled = false;
 			button2.GetComponent<Collider2D>().enabled = false;
 			button3.GetComponent<Collider2D>().enabled = true;
-		}
+
+            Debug.Log("BUTTON 3: " + button3.transform.position.x);
+        }
     }
 }

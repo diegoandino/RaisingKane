@@ -31,7 +31,7 @@ public class BP2_RhythmSpeed : MonoBehaviour
         { 
             //Vector3(x,y,z)
             //The function to move NoteObjects from left to right
-            transform.position -= new Vector3((BPM * Time.deltaTime)* BP2_MusicSettings.instance.songSpeed, 0f, 0f);
+            transform.position -= new Vector3(0f, (BPM * Time.deltaTime) * BP2_MusicSettings.instance.songSpeed, 0f);
         }
     }
 }
