@@ -17,9 +17,8 @@ public class BeatGenerator : MonoBehaviour
 	public float songTime;
 	AudioSource boss2;
 
-	//public float testBeat;
-
 	public GameObject beatPrefab;
+	public GameObject badBeat;
 	public bool bossAttack;
 
 	//checked for each beat needing to be spawned
@@ -72,7 +71,21 @@ public class BeatGenerator : MonoBehaviour
 	void beatCreation()
 	{
 		float randPos = Random.Range(0f, 3f);
+		float randVal = Random.value; 
 
-		GameObject beat = Instantiate(beatPrefab, new Vector3(posArr[(int)randPos], 2.53f, 0f), Quaternion.AngleAxis(90, Vector3.forward));
+		if (randVal < .45f) 
+		{
+			GameObject beat = Instantiate(beatPrefab, new Vector3(posArr[(int)randPos], 2.53f, 0f), Quaternion.AngleAxis(90, Vector3.forward));
+		}
+
+		else if (randVal < .9f) 
+		{
+			GameObject beat = Instantiate(beatPrefab, new Vector3(posArr[(int)randPos], 2.53f, 0f), Quaternion.AngleAxis(90, Vector3.forward));
+		}
+
+		else 
+		{
+			GameObject beat = Instantiate(badBeat, new Vector3(posArr[(int)randPos], 2.53f, 0f), Quaternion.AngleAxis(90, Vector3.forward));
+		}
 	}
 }

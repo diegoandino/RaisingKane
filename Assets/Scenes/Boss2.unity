@@ -1223,6 +1223,7 @@ MonoBehaviour:
   travelTime: 5.295986
   songTime: 0
   beatPrefab: {fileID: 588313872}
+  badBeat: {fileID: 8630136101723397850, guid: 8f493511a89a64393ace64848bc94848, type: 3}
   bossAttack: 0
   start: 1
 --- !u!1001 &1872834445

@@ -19,10 +19,13 @@ public class BP2_Projectiles : MonoBehaviour
 	private bool goodHit;
 	private bool perfectHit;
 	private bool canBePressed; //If the button can be pressed or not. NOTE: Currently allows you not to miss early
+	private bool pressed;
 
     public Transform button1;
     public Transform button2;
     public Transform button3;
+
+	public GameObject badBeat; 
 
 	// Start is called before the first frame update
 	void Start()
@@ -32,6 +35,7 @@ public class BP2_Projectiles : MonoBehaviour
 		perfectHit   = false;
 
 		canBePressed = false;
+		pressed      = true;
 	}
 
 
@@ -52,6 +56,11 @@ public class BP2_Projectiles : MonoBehaviour
         if (other.tag == "Button")
         {
 			canBePressed = true;
+		}
+
+        else if (other.tag == "Button" && pressed == true)
+		{
+			badBeat.transform.position = transform.position + (new Vector3(0, 0, 0) * Time.deltaTime);
 		}
     }
 
@@ -92,7 +101,7 @@ public class BP2_Projectiles : MonoBehaviour
                     Debug.Log("Normal Hit");
 					musicManager.Playsound("implode");
 
-					normalHit = true;   perfectHit = false;     goodHit = false;
+					normalHit = true;   perfectHit = false;     goodHit = false;    pressed = true;
 
 					ScoreCount.score += 2;
 
@@ -108,7 +117,7 @@ public class BP2_Projectiles : MonoBehaviour
 
                    // Destroy(this.gameObject);
 
-                    normalHit = false; perfectHit = false; goodHit = true;
+                    normalHit = false; perfectHit = false; goodHit = true; pressed = true;
 
 					ScoreCount.score += 4;
                     
@@ -124,7 +133,7 @@ public class BP2_Projectiles : MonoBehaviour
 
                     musicManager.Playsound("implode");
 
-					normalHit = false; perfectHit = true; goodHit = false;
+					normalHit = false; perfectHit = true; goodHit = false; pressed = true;
 
 					ScoreCount.score += 6;
                     

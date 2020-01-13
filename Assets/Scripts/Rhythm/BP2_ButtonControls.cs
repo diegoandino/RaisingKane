@@ -113,7 +113,7 @@ public class BP2_ButtonControls : MonoBehaviour
 			button2.GetComponent<Collider2D>().enabled = false;
 			button3.GetComponent<Collider2D>().enabled = false;
 
-            Debug.Log("BUTTON 1: " + button1.transform.position.x);
+            //Debug.Log("BUTTON 1: " + button1.transform.position.x);
         }
 
 
@@ -127,7 +127,7 @@ public class BP2_ButtonControls : MonoBehaviour
 			button2.GetComponent<Collider2D>().enabled = true;
 			button3.GetComponent<Collider2D>().enabled = false;
 
-            Debug.Log("BUTTON 2: " + button2.transform.position.x);
+            //Debug.Log("BUTTON 2: " + button2.transform.position.x);
         }
 
 
@@ -141,7 +141,7 @@ public class BP2_ButtonControls : MonoBehaviour
 			button2.GetComponent<Collider2D>().enabled = false;
 			button3.GetComponent<Collider2D>().enabled = true;
 
-            Debug.Log("BUTTON 3: " + button3.transform.position.x);
+            //Debug.Log("BUTTON 3: " + button3.transform.position.x);
         }
     }
 }
