@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 8630136101723397851}
   - component: {fileID: 8630136101723397846}
   - component: {fileID: 8630136101723397849}
-  - component: {fileID: 8630136101723397848}
-  - component: {fileID: -4824432865078752702}
   - component: {fileID: -1747357275528085221}
+  - component: {fileID: 7947968176016993557}
+  - component: {fileID: 8021096437308146044}
   m_Layer: 8
   m_Name: Bad Beat
-  m_TagString: Untagged
+  m_TagString: Bad Beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,35 +110,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0830029, y: 2.5}
   m_EdgeRadius: 0
---- !u!114 &8630136101723397848
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8630136101723397850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b75309d8904907f4c858ea2ea948155a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  button1: {fileID: 0}
-  button2: {fileID: 0}
-  button3: {fileID: 0}
---- !u!114 &-4824432865078752702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8630136101723397850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 065e69fbddcf9e040aa6178c6879a53e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BPM: 86
-  hasStarted: 1
 --- !u!50 &-1747357275528085221
 Rigidbody2D:
   serializedVersion: 4
@@ -160,3 +131,30 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 6
+--- !u!114 &7947968176016993557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8630136101723397850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12f29ef026ba0534baedfa76ee6bcc31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BPM: 86
+  hasStarted: 1
+  button: {fileID: 6016567940834928434, guid: e6b9eabc19ed11346bbc0d393e7fadcf, type: 3}
+--- !u!114 &8021096437308146044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8630136101723397850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38478da1291d3e746af772c01b7568f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

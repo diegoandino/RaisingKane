@@ -57,11 +57,6 @@ public class BP2_Projectiles : MonoBehaviour
         {
 			canBePressed = true;
 		}
-
-        else if (other.tag == "Button" && pressed == true)
-		{
-			badBeat.transform.position = transform.position + (new Vector3(0, 0, 0) * Time.deltaTime);
-		}
     }
 
 

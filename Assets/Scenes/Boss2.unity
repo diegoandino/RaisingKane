@@ -690,7 +690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 065e69fbddcf9e040aa6178c6879a53e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BPM: 120
+  BPM: 86
   hasStarted: 0
 --- !u!4 &669209605
 Transform:
@@ -1983,6 +1983,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Constraints
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997508506960647973, guid: df13c5f1d0ae4430e9b812636fba34c5,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997508507180376544, guid: df13c5f1d0ae4430e9b812636fba34c5,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997508507646783117, guid: df13c5f1d0ae4430e9b812636fba34c5,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2997508507966678469, guid: df13c5f1d0ae4430e9b812636fba34c5, type: 3}
