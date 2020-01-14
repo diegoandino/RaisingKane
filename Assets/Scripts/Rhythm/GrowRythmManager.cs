@@ -12,6 +12,8 @@ public class GrowRythmManager: MonoBehaviour
 
     Movement movement;
 
+    public string NextScene;
+
 
     public float timer;
 	public float localTime;
@@ -225,10 +227,10 @@ public class GrowRythmManager: MonoBehaviour
 		}
         if (GoodCount+PerfectCount >= 8)
 		{
-			SceneManager.LoadScene("Boss2");
+			SceneManager.LoadScene(NextScene);
 		} else
 		{
-			SceneManager.LoadScene("Overworld_Move 1"); 
+			SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
 		}
 	}
 

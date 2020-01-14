@@ -19,6 +19,7 @@ public class DoorTransition : MonoBehaviour
 		rhythmInstance.SetActive(false);
 		rhythmInstance.transform.GetChild(0).position = Camera.main.WorldToScreenPoint(this.transform.position);
 		rhythmInstance.transform.GetChild(0).GetComponent<ShrinkRythmManager>().NextScene = NextRoom;
+        rhythmInstance.transform.GetChild(0).GetComponent<GrowRythmManager>().NextScene = NextRoom;
 	}
 
 	// Update is called once per frame

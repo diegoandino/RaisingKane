@@ -19,6 +19,6 @@ public class OverWorld2_GYM : MonoBehaviour
 
 	private void OnMouseDown()
 	{
-		SceneManager.LoadScene("Overworld_Move1");
+		SceneManager.LoadScene("Overworld_Move");
 	}
 }
