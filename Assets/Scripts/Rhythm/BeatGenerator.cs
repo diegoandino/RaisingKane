@@ -20,6 +20,7 @@ public class BeatGenerator : MonoBehaviour
 	public GameObject beatPrefab;
 	public GameObject badBeat;
 	public bool bossAttack;
+    public float beatPositionY;
 
 	//checked for each beat needing to be spawned
 	public bool start;
@@ -75,17 +76,17 @@ public class BeatGenerator : MonoBehaviour
 
 		if (randVal < .45f) 
 		{
-			GameObject beat = Instantiate(beatPrefab, new Vector3(posArr[(int)randPos], 2.53f, 0f), Quaternion.AngleAxis(90, Vector3.forward));
+			GameObject beat = Instantiate(beatPrefab, new Vector3(posArr[(int)randPos], beatPositionY, 0f), Quaternion.AngleAxis(90, Vector3.forward));
 		}
 
 		else if (randVal < .9f) 
 		{
-			GameObject beat = Instantiate(beatPrefab, new Vector3(posArr[(int)randPos], 2.53f, 0f), Quaternion.AngleAxis(90, Vector3.forward));
+			GameObject beat = Instantiate(beatPrefab, new Vector3(posArr[(int)randPos], beatPositionY, 0f), Quaternion.AngleAxis(90, Vector3.forward));
 		}
 
 		else 
 		{
-			GameObject beat = Instantiate(badBeat, new Vector3(posArr[(int)randPos], 2.53f, 0f), Quaternion.AngleAxis(90, Vector3.forward));
+			GameObject beat = Instantiate(badBeat, new Vector3(posArr[(int)randPos], beatPositionY, 0f), Quaternion.AngleAxis(90, Vector3.forward));
 		}
 	}
 }
