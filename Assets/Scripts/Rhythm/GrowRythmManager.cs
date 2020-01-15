@@ -234,6 +234,8 @@ public class GrowRythmManager: MonoBehaviour
 		}
 	}
 
+ 
+
     //-- Counts how many bad triggers player had --//
     public float BadCount()
     {

@@ -45,7 +45,7 @@ public class Collision : MonoBehaviour
     //-- On Trigger Update -- //
     void OnTriggerStay2D(Collider2D collision)
     {
-        gameFlow(collision);
+        //gameFlow(collision);
     }
 
 
@@ -59,7 +59,7 @@ public class Collision : MonoBehaviour
 
 			//rhythmInstance.transform.GetChild(0).position = Camera.main.WorldToScreenPoint(collision.transform.position);
             movementScript.speed = 0;
-			collision.gameObject.GetComponent<DoorTransition>().startRhythm();
+			//collision.gameObject.GetComponent<DoorTransition>().startRhythm();
 			//rhythmInstance.SetActive(true);
 		}
 	}

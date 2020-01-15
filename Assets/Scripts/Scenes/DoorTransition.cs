@@ -1,35 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class DoorTransition : MonoBehaviour
 {
-	public string NextRoom;
-	public GameObject RhythmMechanic;
+    public string NextScene;
 
-	GameObject rhythmInstance;
-	bool AtDoor = false;
-
-	// Start is called before the first frame update
-	void Start()
-    {
-        rhythmInstance = (GameObject) Instantiate(RhythmMechanic);
-		rhythmInstance.SetActive(false);
-		rhythmInstance.transform.GetChild(0).position = Camera.main.WorldToScreenPoint(this.transform.position);
-		rhythmInstance.transform.GetChild(0).GetComponent<ShrinkRythmManager>().NextScene = NextRoom;
-        rhythmInstance.transform.GetChild(0).GetComponent<GrowRythmManager>().NextScene = NextRoom;
-	}
-
-	// Update is called once per frame
-	void Update()
+    // Start is called before the first frame update
+    void Start()
     {
         
     }
 
-    public void startRhythm()
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    void OnTriggerStay2D(Collider2D collision)
 	{
-		rhythmInstance.SetActive(true);
+        if (collision.gameObject.tag == "Player")
+        {
+            SceneManager.LoadScene(NextScene); 
+        }
 	}
 }

@@ -18,13 +18,13 @@ EditorBuildSettings:
     path: Assets/Scenes/Rhythm Testing.unity
     guid: fa531ad5ac2c3534181a1ec3ce93212a
   - enabled: 0
-    path: Assets/Scenes/Boss1.unity
+    path: 
     guid: d30052a2e471f054ebb1ec8dd4419e0b
   - enabled: 1
     path: Assets/Scenes/Boss2.unity
     guid: 6aac50a47273a1641887940deb9e8da5
   - enabled: 0
-    path: Assets/Scenes/Game(old).unity
+    path: 
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 0
     path: Assets/Scenes/Rhythm Testing2.unity
@@ -32,4 +32,43 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OverworldLevels/DR1.unity
     guid: 557e025dc8fe0441c96d7e3524c80e46
+  - enabled: 1
+    path: Assets/Scenes/OverworldLevels/BR1.unity
+    guid: f3c7577d049c45b44bebb4f57d3377c1
+  - enabled: 1
+    path: Assets/Scenes/OverworldLevels/BR2.unity
+    guid: 00cfc5107e3cb0147a4d355e2a3b0aa2
+  - enabled: 1
+    path: Assets/Scenes/OverworldLevels/BR3.unity
+    guid: 2d6c72bca5fbb484f85e0d1e6578c47b
+  - enabled: 1
+    path: Assets/Scenes/OverworldLevels/DR2.unity
+    guid: 59786813e789416489a16a3ebfe34120
+  - enabled: 1
+    path: Assets/Scenes/OverworldLevels/DR3.unity
+    guid: 80273077bd7119545b6c9ef9e82d5bad
+  - enabled: 1
+    path: Assets/Scenes/OverworldLevels/DR4.unity
+    guid: 68482279432982045aaa4857b6066d59
+  - enabled: 1
+    path: Assets/Scenes/OverworldLevels/DR5.unity
+    guid: 45a31e2e92dbac7428d0660a6bc3278f
+  - enabled: 1
+    path: Assets/Scenes/OverworldLevels/K1.unity
+    guid: 2544886f69cb02d4aae03cc50f120958
+  - enabled: 1
+    path: Assets/Scenes/OverworldLevels/K2.unity
+    guid: dc4a9c7e955fcb24e957bf03e4ec81e0
+  - enabled: 1
+    path: Assets/Scenes/OverworldLevels/K3.unity
+    guid: 9c87febb6aa1da84fb9d8565712e7bf6
+  - enabled: 1
+    path: Assets/Scenes/OverworldLevels/LR1.unity
+    guid: eb7ec7c5573c0e04e8faa76d08cb2adb
+  - enabled: 1
+    path: Assets/Scenes/OverworldLevels/LR2.unity
+    guid: 3045e773b5fef864cb3b06f02cd0dec8
+  - enabled: 1
+    path: Assets/Scenes/OverworldLevels/LR3.unity
+    guid: 17a7435ea1f99ae4eb46270b7170fd9f
   m_configObjects: {}
