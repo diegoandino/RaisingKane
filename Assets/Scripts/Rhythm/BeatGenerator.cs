@@ -77,16 +77,23 @@ public class BeatGenerator : MonoBehaviour
 		if (randVal < .45f) 
 		{
 			GameObject beat = Instantiate(beatPrefab, new Vector3(posArr[(int)randPos], beatPositionY, 0f), Quaternion.AngleAxis(90, Vector3.forward));
+            //Change the lane speed for left lane
+            beat.GetComponent<BP2_RhythmSpeed>().laneSpeed = 1f;
+
 		}
 
 		else if (randVal < .9f) 
 		{
 			GameObject beat = Instantiate(beatPrefab, new Vector3(posArr[(int)randPos], beatPositionY, 0f), Quaternion.AngleAxis(90, Vector3.forward));
-		}
+            //Change the lane speed for center lane
+            beat.GetComponent<BP2_RhythmSpeed>().laneSpeed = 1f;
+        }
 
-		else 
+        else 
 		{
 			GameObject beat = Instantiate(badBeat, new Vector3(posArr[(int)randPos], beatPositionY, 0f), Quaternion.AngleAxis(90, Vector3.forward));
-		}
-	}
+            //Change the lane speed for right lane
+            beat.GetComponent<BP2_RhythmSpeed>().laneSpeed = 1f;
+        }
+    }
 }
