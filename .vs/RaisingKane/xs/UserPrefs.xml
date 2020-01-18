@@ -1,15 +1,16 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Scenes/DoorTransition.cs">
     <Files>
-      <File FileName="Assets/Scripts/Rhythm/BeatGenerator.cs" Line="81" Column="1" />
+      <File FileName="Assets/Scripts/Rhythm/BeatGenerator.cs" Line="99" Column="2" />
       <File FileName="Assets/Scripts/Rhythm/BP2_Projectiles.cs" />
       <File FileName="Assets/Scripts/Rhythm/BP2_ButtonControls.cs" />
-      <File FileName="Assets/Scripts/Rhythm/GrowRythmManager.cs" />
-      <File FileName="Assets/Scripts/Rhythm/ShrinkRythmManager.cs" />
-      <File FileName="Assets/Scripts/Scenes/DoorTransition.cs" Line="30" Column="1" />
-      <File FileName="Assets/Scripts/Player/Collision.cs" />
-      <File FileName="Assets/Scripts/Scenes/RhythmDoorTransition.cs" />
-      <File FileName="Assets/Scripts/General/musicManager.cs" />
+      <File FileName="Assets/Scripts/Rhythm/GrowRythmManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Rhythm/ShrinkRythmManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Scenes/DoorTransition.cs" Line="37" Column="1" />
+      <File FileName="Assets/Scripts/Player/Collision.cs" Line="55" Column="40" />
+      <File FileName="Assets/Scripts/Scenes/RhythmDoorTransition.cs" Line="20" Column="3" />
+      <File FileName="Assets/Scripts/General/musicManager.cs" Line="40" Column="1" />
+      <File FileName="Assets/Scripts/Player/Movement_Test.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
