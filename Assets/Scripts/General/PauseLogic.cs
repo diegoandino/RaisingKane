@@ -58,6 +58,7 @@ public class PauseLogic : MonoBehaviour
 
     public void ReturnToHub()
     {
+        Resume();
         SceneManager.LoadScene("Gymnasium Hub");
     }
 
