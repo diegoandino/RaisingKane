@@ -8,6 +8,7 @@ TagManager:
   - Beat
   - Button
   - Bad Beat
+  - DontDelete
   layers:
   - Default
   - TransparentFX

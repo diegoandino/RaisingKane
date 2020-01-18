@@ -7,10 +7,12 @@ public class DoorTransition : MonoBehaviour
 {
     public string NextScene;
 
+    Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        anim = GameObject.Find("TransitionPanel").GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -23,7 +25,17 @@ public class DoorTransition : MonoBehaviour
 	{
         if (collision.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene(NextScene); 
+            StartCoroutine(LoadSceneAFterTransition()); 
         }
 	}
+
+    private IEnumerator LoadSceneAFterTransition()
+    {
+        //show animate out animation
+        anim.SetBool("AnimateOut", true);
+        yield return new WaitForSeconds(1f);
+        //load the scene we want
+        SceneManager.LoadScene(NextScene);
+    }
+
 }
