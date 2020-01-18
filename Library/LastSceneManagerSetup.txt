@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< Updated upstream
+- path: Assets/Scenes/Boss2 (Rhytm change).unity
+=======
 - path: Assets/Scenes/Overworld_Move.unity
+>>>>>>> Stashed changes
   isLoaded: 1
   isActive: 1
   isSubScene: 0
