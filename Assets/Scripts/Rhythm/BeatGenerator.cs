@@ -74,30 +74,35 @@ public class BeatGenerator : MonoBehaviour
 		float randPos = Random.Range(0f, 3f);
 		float randVal = Random.value; 
 
-		if (randVal < .45f) 
+		if (randVal < .25f) 
 		{
 			GameObject beat = Instantiate(beatPrefab, new Vector3(posArr[(int)randPos], beatPositionY, 0f), Quaternion.AngleAxis(90, Vector3.forward));
             //Change the lane speed for left lane
-            beat.GetComponent<BP2_RhythmSpeed>().laneSpeed = 1f;
+            //beat.GetComponent<BP2_RhythmSpeed>().laneSpeed = 1f;
 			beat.GetComponent<BP2_RhythmSpeed>().EndPoint = new Vector3 (-8.31f, -6.27f,1);
 
 		}
 
-		else if (randVal < .9f) 
+		else if (randVal < .65f) 
 		{
 			GameObject beat = Instantiate(beatPrefab, new Vector3(posArr[(int)randPos], beatPositionY, 0f), Quaternion.AngleAxis(90, Vector3.forward));
             //Change the lane speed for center lane
-            beat.GetComponent<BP2_RhythmSpeed>().laneSpeed = 1f;
-			beat.GetComponent<BP2_RhythmSpeed>().EndPoint = new Vector3(-7.14f, -6.27f, 1);
+            //beat.GetComponent<BP2_RhythmSpeed>().laneSpeed = 1f;
+			beat.GetComponent<BP2_RhythmSpeed>().EndPoint = new Vector3(-6.25f, -6.27f, 1);
 
 		}
 
-		else 
+		else  if (randVal <.9f)
 		{
-			GameObject beat = Instantiate(badBeat, new Vector3(posArr[(int)randPos], beatPositionY, 0f), Quaternion.AngleAxis(90, Vector3.forward));
+			GameObject beat = Instantiate(beatPrefab, new Vector3(posArr[(int)randPos], beatPositionY, 0f), Quaternion.AngleAxis(90, Vector3.forward));
             //Change the lane speed for right lane
-            beat.GetComponent<BP2_RhythmSpeed>().laneSpeed = 1f;
+            //beat.GetComponent<BP2_RhythmSpeed>().laneSpeed = 1f;
 			beat.GetComponent<BP2_RhythmSpeed>().EndPoint = new Vector3(-3.93f, -6.27f, 1);
+		}
+
+        else
+		{
+			//GameObject beat = Instantiate(badbeat, new Vector3(posArr[(int)randPos], beatPositionY, 0f), Quaternion.AngleAxis(90, Vector3.forward));
 		}
 	}
 }

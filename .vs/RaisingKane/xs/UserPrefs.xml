@@ -1,14 +1,16 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Rhythm/BeatGenerator.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Rhythm/BP2_ButtonControls.cs">
     <Files>
-      <File FileName="Assets/Scripts/Rhythm/BeatGenerator.cs" Line="82" Column="81" />
-      <File FileName="Assets/Scripts/Rhythm/BP2_Projectiles.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Rhythm/BP2_ButtonControls.cs" Line="86" Column="9" />
-      <File FileName="Assets/Scripts/Scenes/DoorTransition.cs" Line="30" Column="1" />
+      <File FileName="Assets/Scripts/Rhythm/BeatGenerator.cs" Line="81" Column="15" />
+      <File FileName="Assets/Scripts/Rhythm/BP2_Projectiles.cs" Line="94" Column="74" />
+      <File FileName="Assets/Scripts/Rhythm/BP2_ButtonControls.cs" Line="57" Column="9" />
+      <File FileName="Assets/Scripts/Scenes/DoorTransition.cs" />
       <File FileName="Assets/Scripts/Player/Collision.cs" />
-      <File FileName="Assets/Scripts/Scenes/RhythmDoorTransition.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/General/musicManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Rhythm/BP2_RhythmSpeed.cs" Line="27" Column="53" />
+      <File FileName="Assets/Scripts/Scenes/RhythmDoorTransition.cs" />
+      <File FileName="Assets/Scripts/General/musicManager.cs" />
+      <File FileName="Assets/Scripts/Rhythm/BP2_RhythmSpeed.cs" Line="31" Column="23" />
+      <File FileName="Assets/Scripts/Rhythm/BadBeatProjectile.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Rhythm/StickToButton.cs" Line="30" Column="42" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
