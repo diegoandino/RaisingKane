@@ -83,7 +83,7 @@ public class BP2_ButtonControls : MonoBehaviour
 			staticKey = KEY;
 
 
-		    plush.position = new Vector3 (button.position.x, button.position.y - 3f);
+		    //plush.position = new Vector3 (button.position.x, button.position.y - 3f);
 
 		    staticPlushPos = plush.position;
 		}
