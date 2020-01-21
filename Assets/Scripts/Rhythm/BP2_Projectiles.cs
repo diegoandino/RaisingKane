@@ -91,7 +91,7 @@ public class BP2_Projectiles : MonoBehaviour
             if (canBePressed == true)
             {
                 //Okay Check
-                if (((transform.position.y > BP2_ButtonControls.ButtonPos + 0.15) || (transform.position.y < BP2_ButtonControls.ButtonPos - 0.15)))
+                if (((transform.position.y > BP2_ButtonControls.ButtonPos + 0.25) || (transform.position.y < BP2_ButtonControls.ButtonPos - 0.25)))
                 {
                     Debug.Log("Normal Hit");
 					musicManager.Playsound("implode");
