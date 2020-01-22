@@ -314,7 +314,9 @@ PrefabInstance:
       propertyPath: button3
       value: 
       objectReference: {fileID: 1711812973}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -4824432865078752702, guid: 7e0d683b84c66ff41b83d2e6736d4d53, type: 3}
+    - {fileID: 8630136101723397848, guid: 7e0d683b84c66ff41b83d2e6736d4d53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7e0d683b84c66ff41b83d2e6736d4d53, type: 3}
 --- !u!1001 &448100295
 PrefabInstance:
@@ -780,6 +782,45 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 352246249}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &588313874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588313872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38478da1291d3e746af772c01b7568f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button1: {fileID: 2099657201}
+  button2: {fileID: 1152313338}
+  button3: {fileID: 1711812973}
+  BPM: 86
+  hasStarted: 0
+  button: {fileID: 0}
+--- !u!114 &588313875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588313872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9088cdab1d6167f41bf6b463e26c99cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button1: {fileID: 2099657201}
+  button2: {fileID: 1152313338}
+  button3: {fileID: 1711812973}
+  BPM: 86
+  laneSpeed: 0
+  ProjectileSpeed: 0.05
+  hasStarted: 1
+  StartPoint: {x: 0, y: 0, z: 0}
+  EndPoint: {x: 0, y: 0, z: 0}
 --- !u!1 &669209603
 GameObject:
   m_ObjectHideFlags: 0
@@ -811,6 +852,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BPM: 86
   hasStarted: 0
+  laneSpeed: 0
+  ProjectileSpeed: 0
+  StartPoint: {x: 0, y: 0, z: 0}
+  EndPoint: {x: 0, y: 0, z: 0}
 --- !u!4 &669209605
 Transform:
   m_ObjectHideFlags: 0
@@ -1558,6 +1603,9 @@ MonoBehaviour:
   bossAttack: 0
   beatPositionY: -0.16
   start: 1
+  Button1Pos: {fileID: 2099657201}
+  Button2Pos: {fileID: 1152313338}
+  Button3Pos: {fileID: 1711812973}
 --- !u!1001 &1872834445
 PrefabInstance:
   m_ObjectHideFlags: 0

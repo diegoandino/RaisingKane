@@ -202,7 +202,19 @@ PrefabInstance:
       propertyPath: button3
       value: 
       objectReference: {fileID: 1064439028}
-    m_RemovedComponents: []
+    - target: {fileID: 8630136101723397848, guid: 7e0d683b84c66ff41b83d2e6736d4d53,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4824432865078752702, guid: 7e0d683b84c66ff41b83d2e6736d4d53,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: -4824432865078752702, guid: 7e0d683b84c66ff41b83d2e6736d4d53, type: 3}
+    - {fileID: 8630136101723397848, guid: 7e0d683b84c66ff41b83d2e6736d4d53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7e0d683b84c66ff41b83d2e6736d4d53, type: 3}
 --- !u!1001 &242348901
 PrefabInstance:
@@ -2089,6 +2101,27 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 36824769}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1967779789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1967779788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9088cdab1d6167f41bf6b463e26c99cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button1: {fileID: 1433596191}
+  button2: {fileID: 1982015240}
+  button3: {fileID: 1064439028}
+  BPM: 86
+  laneSpeed: 0
+  ProjectileSpeed: 0.05
+  hasStarted: 1
+  StartPoint: {x: 0, y: 0, z: 0}
+  EndPoint: {x: 0, y: 0, z: 0}
 --- !u!4 &1967779793 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8630136101723397851, guid: 7e0d683b84c66ff41b83d2e6736d4d53,

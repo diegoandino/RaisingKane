@@ -1,10 +1,4 @@
-﻿/* Author: Rachel Hoffman
- * 
- * This program controls what effects the projectiles.
- * 
- */
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,19 +7,19 @@ using UnityEngine.UI;
 /**
  * Controls the projectiles and their collisions
  */
-public class BadBeatProjectile : MonoBehaviour
+public class StickyBeatProjectile : Projectile
 {
     private bool normalHit;
     private bool goodHit;
     private bool perfectHit;
     private bool canBePressed; //If the button can be pressed or not. NOTE: Currently allows you not to miss early
     private bool pressed;
+    private bool isWaiting;
+    private float _bpmReference;
 
-    public Transform button1;
-    public Transform button2;
-    public Transform button3;
-
-    public GameObject badBeat;
+    public float BPM = 86;           //Tells how fast the rhythm is going. (BPM - Beats per minute) 
+    public bool hasStarted;     //If gameplay has started 
+  
 
     // Start is called before the first frame update
     void Start()
@@ -33,57 +27,55 @@ public class BadBeatProjectile : MonoBehaviour
         normalHit = false;
         goodHit = false;
         perfectHit = false;
-
         canBePressed = false;
+        isWaiting = false;
         pressed = true;
+
+        BPM = BPM / 60f;        //I believe this is the tempo / by 60 seconds to make it a minute.
+        _bpmReference = BPM;
     }
 
 
     // Update is called once per frame
     void Update()
     {
-        BeatCheck();
-    }
+        stickyBeatCheck();
 
-
-    /**
-     * Beat can be pressed when entering the collider
-     * @param 2D Collider
-     */
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        //Make sure it is the button collider
-        if (other.tag == "Button")
+        if (hasStarted)
         {
-            canBePressed = true;
+            //Vector3(x,y,z)
+            //The function to move NoteObjects from left to right
+            transform.position -= new Vector3(0f, (BPM * Time.deltaTime) * BP2_MusicSettings.instance.songSpeed, 0f);
         }
     }
 
-
-    /**
-     * Miss when beat exits the collider
-     * @param 2D Collider
-     */
-    private void OnTriggerExit2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other)
     {
-        //Make sure it is the button collider
-        if (other.tag == "Button")
+        if (other.tag == "Button" && BP2_ButtonControls.pressed == true)
         {
-            if (gameObject.activeSelf)
-            {
-                canBePressed = false;
-                BP2_MusicSettings.instance.NoteMiss();
-
-                MissCount.miss++; //Increments the Miss count on GUI
-            }
+            BPM = 0f;
+            StartCoroutine(Wait());
         }
     }
 
+    IEnumerator Wait()
+    {
+        isWaiting = true;  //set the bool to stop moving
+
+        print("Start to wait");
+        yield return new WaitForSeconds(3); //Wait for 3 seconds
+        print("Wait complete");
+
+        BPM = _bpmReference; //Set BPM back to normal
+
+        isWaiting = false; // set the bool to start moving
+    }
 
     /**
-     * Checks for Beat position and key presses 
+     * Checks for Beat position and key presses
+     * Doesn't destroy objects ! ! ! 
      */
-    void BeatCheck()
+    void stickyBeatCheck()
     {
 
         if (Input.GetKeyDown(BP2_ButtonControls.staticKey))

@@ -30,7 +30,8 @@ public class BeatGenerator : MonoBehaviour
 	public Transform Button2Pos;
 	public Transform Button3Pos;
 
-	// Start is called before the first frame update
+	
+    // Start is called before the first frame update
 	void Start()
 	{
 		boss2 = GetComponent<AudioSource>();
@@ -66,7 +67,7 @@ public class BeatGenerator : MonoBehaviour
 			GameObject beat = Instantiate(beatPrefab, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
             //Change the lane speed for left lane
             //beat.GetComponent<BP2_RhythmSpeed>().laneSpeed = 1f;
-			beat.GetComponent<BP2_RhythmSpeed>().EndPoint = Button1Pos.position;
+			beat.GetComponent<ArchProjectile>().EndPoint = Button1Pos.position;
 
 		}
 
@@ -75,7 +76,7 @@ public class BeatGenerator : MonoBehaviour
 			GameObject beat = Instantiate(beatPrefab, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
             //Change the lane speed for center lane
             //beat.GetComponent<BP2_RhythmSpeed>().laneSpeed = 1f;
-			beat.GetComponent<BP2_RhythmSpeed>().EndPoint = Button2Pos.position;
+			beat.GetComponent<ArchProjectile>().EndPoint = Button2Pos.position;
 
 		}
 
@@ -84,7 +85,7 @@ public class BeatGenerator : MonoBehaviour
 			GameObject beat = Instantiate(beatPrefab, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
             //Change the lane speed for right lane
             //beat.GetComponent<BP2_RhythmSpeed>().laneSpeed = 1f;
-			beat.GetComponent<BP2_RhythmSpeed>().EndPoint = Button3Pos.position;
+			beat.GetComponent<ArchProjectile>().EndPoint = Button3Pos.position;
 		}
 
         else
