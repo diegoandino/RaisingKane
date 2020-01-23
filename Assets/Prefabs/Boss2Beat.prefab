@@ -123,6 +123,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b75309d8904907f4c858ea2ea948155a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  missedButton: {fileID: 21300000, guid: 981f0bf2b2aabdc4590355c0a01e79bb, type: 3}
+  hitButton: {fileID: 21300000, guid: 69367e94da6654846982c00d826b67f9, type: 3}
   button1: {fileID: 0}
   button2: {fileID: 0}
   button3: {fileID: 0}

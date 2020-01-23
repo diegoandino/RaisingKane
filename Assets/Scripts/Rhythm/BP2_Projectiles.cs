@@ -20,6 +20,10 @@ public class BP2_Projectiles : MonoBehaviour
 	private bool perfectHit;
 	private bool canBePressed; //If the button can be pressed or not. NOTE: Currently allows you not to miss early
 	private bool pressed;
+    private SpriteRenderer buttonSprite;
+
+    public Sprite missedButton;
+    public Sprite hitButton;
 
     public Transform button1;
     public Transform button2;
@@ -56,7 +60,8 @@ public class BP2_Projectiles : MonoBehaviour
         if (other.tag == "Button")
         {
 			canBePressed = true;
-		}
+            buttonSprite = other.gameObject.GetComponent<SpriteRenderer>();
+        }
     }
 
 
@@ -69,12 +74,16 @@ public class BP2_Projectiles : MonoBehaviour
         //Make sure it is the button collider
         if (other.tag == "Button")
         {
+            
             if (gameObject.activeSelf)
             {
 				canBePressed = false;
                 BP2_MusicSettings.instance.NoteMiss();
 
-				MissCount.miss++; //Increments the Miss count on GUI
+                buttonSprite.sprite = missedButton;
+
+
+                MissCount.miss++; //Increments the Miss count on GUI
             }
         }
     }
@@ -100,7 +109,9 @@ public class BP2_Projectiles : MonoBehaviour
 
 					ScoreCount.score += 2;
 
-                    
+                    buttonSprite.sprite = hitButton;
+
+
                     Destroy(this.gameObject);  
                 }
 
@@ -115,8 +126,10 @@ public class BP2_Projectiles : MonoBehaviour
                     normalHit = false; perfectHit = false; goodHit = true; pressed = true;
 
 					ScoreCount.score += 4;
-                    
-                  
+
+                    buttonSprite.sprite = hitButton;
+
+
                     Destroy(this.gameObject);  
                 }
 
@@ -131,8 +144,10 @@ public class BP2_Projectiles : MonoBehaviour
 					normalHit = false; perfectHit = true; goodHit = false; pressed = true;
 
 					ScoreCount.score += 6;
-                    
-                    
+
+                    buttonSprite.sprite = hitButton;
+
+
                     Destroy(this.gameObject);
                 }
             }

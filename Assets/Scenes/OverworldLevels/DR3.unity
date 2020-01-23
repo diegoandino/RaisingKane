@@ -416,17 +416,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door
       objectReference: {fileID: 0}
-    - target: {fileID: 1722930592715963268, guid: b62cde85625fb84478c9f2b04e130433,
-        type: 3}
-      propertyPath: NextRoom
-      value: BR1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1722930592715963268, guid: b62cde85625fb84478c9f2b04e130433,
-        type: 3}
-      propertyPath: RhythmMechanic
-      value: 
-      objectReference: {fileID: 6985751138914526500, guid: 77e4760a95f344e3785e850f2d2d1a43,
-        type: 3}
     - target: {fileID: 4740905152707555106, guid: b62cde85625fb84478c9f2b04e130433,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -497,6 +486,17 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1722930592715963268, guid: b62cde85625fb84478c9f2b04e130433,
+        type: 3}
+      propertyPath: NextRoom
+      value: BR1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1722930592715963268, guid: b62cde85625fb84478c9f2b04e130433,
+        type: 3}
+      propertyPath: RhythmMechanic
+      value: 
+      objectReference: {fileID: 6985751138914526500, guid: 77e4760a95f344e3785e850f2d2d1a43,
+        type: 3}
     - target: {fileID: 4740905152707555133, guid: b62cde85625fb84478c9f2b04e130433,
         type: 3}
       propertyPath: m_Sprite
@@ -550,6 +550,11 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 1167138684}
+    - target: {fileID: 4361141215309050288, guid: b62cde85625fb84478c9f2b04e130433,
+        type: 3}
+      propertyPath: NextScene
+      value: BR1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4740905152707555104, guid: b62cde85625fb84478c9f2b04e130433, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b62cde85625fb84478c9f2b04e130433, type: 3}
