@@ -91,7 +91,7 @@ public class BP2_ButtonControls : MonoBehaviour
 		//Button Release
 		if (Input.GetKeyUp(KEY))
 		{
-			spriteChanger.sprite = defaultImage;
+		    spriteChanger.sprite = defaultImage;
 			pressed = false;
 
 			button1.GetComponent<Collider2D>().enabled = true;

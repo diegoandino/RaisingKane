@@ -22,9 +22,6 @@ public class BP2_Projectiles : MonoBehaviour
 	private bool pressed;
     private SpriteRenderer buttonSprite;
 
-    public Sprite missedButton;
-    public Sprite hitButton;
-
     public Transform button1;
     public Transform button2;
     public Transform button3;
@@ -80,8 +77,6 @@ public class BP2_Projectiles : MonoBehaviour
 				canBePressed = false;
                 BP2_MusicSettings.instance.NoteMiss();
 
-                buttonSprite.sprite = missedButton;
-
 
                 MissCount.miss++; //Increments the Miss count on GUI
             }
@@ -107,9 +102,7 @@ public class BP2_Projectiles : MonoBehaviour
 
 					normalHit = true;   perfectHit = false;     goodHit = false;    pressed = true;
 
-					ScoreCount.score += 2;
-
-                    buttonSprite.sprite = hitButton;
+                    ScoreCount.score += 2;
 
 
                     Destroy(this.gameObject);  
