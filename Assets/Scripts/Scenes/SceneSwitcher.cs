@@ -14,10 +14,9 @@ public class SceneSwitcher : MonoBehaviour
 	{
 		SceneManager.LoadScene("Boss2");
 	}
-    /*
+
     public void startGame()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("DR1");
     }
-    */
 }
