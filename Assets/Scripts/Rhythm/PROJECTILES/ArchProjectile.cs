@@ -21,8 +21,7 @@ public class ArchProjectile : Projectile
     void Start()
     {
         BPM = BPM / 60f;        //I believe this is the tempo / by 60 seconds to make it a minute.
-        laneSpeed = 10f;
-        StartPoint = new Vector3(7.5f, -4, 1);
+        StartPoint = this.transform.position;
         points = new List<Vector3>();
 
         points.Add(StartPoint);
@@ -50,8 +49,6 @@ public class ArchProjectile : Projectile
             {
                 transform.position -= new Vector3(0f, (BPM * Time.deltaTime) * BP2_MusicSettings.instance.songSpeed * laneSpeed, 0f);
             }
-            //Vector3(x,y,z)
-            //The function to move NoteObjects from left to right
         }
     }
 }

@@ -120,7 +120,7 @@ public class BP2_Projectiles : MonoBehaviour
 
 					ScoreCount.score += 4;
 
-                    buttonSprite.sprite = hitButton;
+                    //buttonSprite.sprite = hitButton;
 
 
                     Destroy(this.gameObject);  
@@ -138,7 +138,7 @@ public class BP2_Projectiles : MonoBehaviour
 
 					ScoreCount.score += 6;
 
-                    buttonSprite.sprite = hitButton;
+                    //buttonSprite.sprite = hitButton;
 
 
                     Destroy(this.gameObject);
