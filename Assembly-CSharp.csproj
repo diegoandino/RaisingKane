@@ -87,6 +87,7 @@
     <Compile Include="Assets\Scripts\Rhythm\Beat Synchronizer\BeatSynchronizer.cs" />
     <Compile Include="Assets\Scripts\Rhythm\Beat Synchronizer\PatternCounter.cs" />
     <Compile Include="Assets\Scripts\Rhythm\BeatGenerator.cs" />
+    <Compile Include="Assets\Scripts\Rhythm\BeatGeneratorTest.cs" />
     <Compile Include="Assets\Scripts\Rhythm\BP2_ButtonControls.cs" />
     <Compile Include="Assets\Scripts\Rhythm\BP2_MusicSettings.cs" />
     <Compile Include="Assets\Scripts\Rhythm\BP2_Projectiles.cs" />
