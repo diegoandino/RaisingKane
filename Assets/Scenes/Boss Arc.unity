@@ -127,6 +127,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1688583057}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: button1
+      value: 
+      objectReference: {fileID: 1433596191}
+    - target: {fileID: 0}
+      propertyPath: button2
+      value: 
+      objectReference: {fileID: 1982015240}
+    - target: {fileID: 0}
+      propertyPath: button3
+      value: 
+      objectReference: {fileID: 1064439028}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8630136101723397850, guid: 7e0d683b84c66ff41b83d2e6736d4d53,
         type: 3}
       propertyPath: m_Name
@@ -187,34 +207,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8630136101723397848, guid: 7e0d683b84c66ff41b83d2e6736d4d53,
-        type: 3}
-      propertyPath: button1
-      value: 
-      objectReference: {fileID: 1433596191}
-    - target: {fileID: 8630136101723397848, guid: 7e0d683b84c66ff41b83d2e6736d4d53,
-        type: 3}
-      propertyPath: button2
-      value: 
-      objectReference: {fileID: 1982015240}
-    - target: {fileID: 8630136101723397848, guid: 7e0d683b84c66ff41b83d2e6736d4d53,
-        type: 3}
-      propertyPath: button3
-      value: 
-      objectReference: {fileID: 1064439028}
-    - target: {fileID: 8630136101723397848, guid: 7e0d683b84c66ff41b83d2e6736d4d53,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4824432865078752702, guid: 7e0d683b84c66ff41b83d2e6736d4d53,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: -4824432865078752702, guid: 7e0d683b84c66ff41b83d2e6736d4d53, type: 3}
-    - {fileID: 8630136101723397848, guid: 7e0d683b84c66ff41b83d2e6736d4d53, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e0d683b84c66ff41b83d2e6736d4d53, type: 3}
 --- !u!1001 &242348901
 PrefabInstance:
@@ -829,7 +822,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Music: {fileID: 1905619272}
   ghostMusic: {fileID: 1002287160}
-  RSpeed: {fileID: -4824432865078752702, guid: 7e0d683b84c66ff41b83d2e6736d4d53, type: 3}
+  RSpeed: {fileID: 0}
   UI: {fileID: 1340253418}
   startPlaying: 0
   StartOffset: 2.5
@@ -2197,8 +2190,9 @@ MonoBehaviour:
   button2: {fileID: 1982015240}
   button3: {fileID: 1064439028}
   BPM: 86
-  laneSpeed: 0
+  dropSpeed: 1
   ProjectileSpeed: 0.05
+  ArchMod: 60
   hasStarted: 1
   StartPoint: {x: 0, y: 0, z: 0}
   EndPoint: {x: 0, y: 0, z: 0}
