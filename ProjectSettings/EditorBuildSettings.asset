@@ -71,4 +71,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OverworldLevels/LR3.unity
     guid: 17a7435ea1f99ae4eb46270b7170fd9f
+  - enabled: 1
+    path: Assets/Scenes/OpeningAnimatic.unity
+    guid: 2ce202eb5faea4729a7a49fab1e75b12
   m_configObjects: {}

@@ -17,6 +17,6 @@ public class SceneSwitcher : MonoBehaviour
 
     public void startGame()
     {
-        SceneManager.LoadScene("DR1");
+        SceneManager.LoadScene("OpeningAnimatic");
     }
 }
