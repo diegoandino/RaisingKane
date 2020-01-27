@@ -39,8 +39,12 @@ public class BP2_ButtonControls : MonoBehaviour
     public GameObject button2;
     public GameObject button3;
 
-    //--Vector 3 Instantiantion Variables for location --//
-    Vector3 pos1 = new Vector3(-4.9f, -1.75f, -2f);
+	public static GameObject _button1;
+	public static GameObject _button2;
+	public static GameObject _button3;
+
+	//--Vector 3 Instantiantion Variables for location --//
+	Vector3 pos1 = new Vector3(-4.9f, -1.75f, -2f);
     Vector3 pos2 = new Vector3(-4.9f, -2.5f, -2f);
     Vector3 pos3 = new Vector3(-4.9f, -3.25f, -2f);
     Vector3 pos4 = new Vector3(-4.9f, -4f, -2f);
@@ -108,6 +112,8 @@ public class BP2_ButtonControls : MonoBehaviour
             button1.GetComponent<Collider2D>().enabled = true;
             button2.GetComponent<Collider2D>().enabled = false;
             button3.GetComponent<Collider2D>().enabled = false;
+
+			_button1 = button1;
         }
 
 
@@ -120,7 +126,9 @@ public class BP2_ButtonControls : MonoBehaviour
             button1.GetComponent<Collider2D>().enabled = false;
             button2.GetComponent<Collider2D>().enabled = true;
             button3.GetComponent<Collider2D>().enabled = false;
-        }
+
+			_button2 = button2;
+		}
 
 
         else if (Input.GetKeyDown(KeyCode.D))
@@ -132,6 +140,8 @@ public class BP2_ButtonControls : MonoBehaviour
             button1.GetComponent<Collider2D>().enabled = false;
             button2.GetComponent<Collider2D>().enabled = false;
             button3.GetComponent<Collider2D>().enabled = true;
-        }
+
+			_button3 = button3;
+		}
     }
 }

@@ -224,12 +224,12 @@ PrefabInstance:
     - target: {fileID: 2997508507966678521, guid: df13c5f1d0ae4430e9b812636fba34c5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.32
+      value: 0.411
       objectReference: {fileID: 0}
     - target: {fileID: 2997508507966678521, guid: df13c5f1d0ae4430e9b812636fba34c5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.21
+      value: -2.208
       objectReference: {fileID: 0}
     - target: {fileID: 2997508507966678521, guid: df13c5f1d0ae4430e9b812636fba34c5,
         type: 3}
@@ -490,7 +490,7 @@ PrefabInstance:
     - target: {fileID: 2997508507966678468, guid: df13c5f1d0ae4430e9b812636fba34c5,
         type: 3}
       propertyPath: m_Name
-      value: plush_b2
+      value: Kane Sitting
       objectReference: {fileID: 0}
     - target: {fileID: 2997508506960647972, guid: df13c5f1d0ae4430e9b812636fba34c5,
         type: 3}
@@ -678,6 +678,11 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 3.38
       objectReference: {fileID: 0}
+    - target: {fileID: 2997508507966678471, guid: df13c5f1d0ae4430e9b812636fba34c5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2997508506960647974, guid: df13c5f1d0ae4430e9b812636fba34c5,
         type: 3}
       propertyPath: m_Sprite
@@ -712,6 +717,9 @@ PrefabInstance:
     - {fileID: 2997508507180376544, guid: df13c5f1d0ae4430e9b812636fba34c5, type: 3}
     - {fileID: 2997508506960647973, guid: df13c5f1d0ae4430e9b812636fba34c5, type: 3}
     - {fileID: 2997508506960647970, guid: df13c5f1d0ae4430e9b812636fba34c5, type: 3}
+    - {fileID: 2997508507180376557, guid: df13c5f1d0ae4430e9b812636fba34c5, type: 3}
+    - {fileID: 2997508507646783114, guid: df13c5f1d0ae4430e9b812636fba34c5, type: 3}
+    - {fileID: 2997508507966678471, guid: df13c5f1d0ae4430e9b812636fba34c5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: df13c5f1d0ae4430e9b812636fba34c5, type: 3}
 --- !u!1 &258434664
 GameObject:

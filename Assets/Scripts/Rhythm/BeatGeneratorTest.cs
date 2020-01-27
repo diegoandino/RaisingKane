@@ -18,7 +18,6 @@ public class BeatGeneratorTest : MonoBehaviour
 			Row = R;
 			BeatType = BT;
         }
-
 	};
 
 	//-- Float Array of logged distances for the beats --//

@@ -11,8 +11,11 @@ public class StickyBeatProjectile : Projectile
 {
 
     private bool isWaiting;
+	private bool stuck_A;
+	private bool stuck_S;
+	private bool stuck_D;
 
-    public float BPM = 86;           //Tells how fast the rhythm is going. (BPM - Beats per minute)
+	public float BPM = 86;           //Tells how fast the rhythm is going. (BPM - Beats per minute)
     public float dropSpeed;     //added Lanespeed for the different arcs of the lanes
     public float ProjectileSpeed;
     public float ArchMod; //Higher the Value, higher the arch;
@@ -27,6 +30,10 @@ public class StickyBeatProjectile : Projectile
     void Start()
     {
         SetPoints();
+
+		stuck_A = false;
+		stuck_S = false;
+		stuck_D = false;
     }
 
 
@@ -35,7 +42,9 @@ public class StickyBeatProjectile : Projectile
     {
         BeatCheck(false);
         ArchMove();
+		Stick();
     }
+
 
     //Checks for specific buttons and their tags and starts coroutine
     private void OnTriggerStay2D(Collider2D other)
@@ -43,66 +52,88 @@ public class StickyBeatProjectile : Projectile
         if (other.tag == "Button1" && Input.GetKeyDown(KeyCode.A))
         {
             ProjectileSpeed = 0f;
-            button1.GetComponent<Collider2D>().enabled = false;
-            StartCoroutine(Wait_A());
+			stuck_A = true;
         }
 
         else if (other.tag == "Button2" && Input.GetKeyDown(KeyCode.S))
         {
             ProjectileSpeed = 0f;
-            button2.GetComponent<Collider2D>().enabled = false;
-            StartCoroutine(Wait_S());
+			stuck_S = true;
         }
 
         else if (other.tag == "Button3" && Input.GetKeyDown(KeyCode.D))
         {
             ProjectileSpeed = 0f;
-            button3.GetComponent<Collider2D>().enabled = false;
-            StartCoroutine(Wait_D());
+			stuck_D = true;
         }
     }
 
-    //Coroutine for wait time after stick
-    IEnumerator Wait_A()
+    //Checks if stuck in key
+	public void Stick()
     {
-        isWaiting = true;  //set the bool to stop moving
-        yield return new WaitForSeconds(4); //Wait for 4 seconds
+		if (stuck_A == true)
+		{
+			BP2_ButtonControls._button1.GetComponent<Collider2D>().enabled = false;
+			StartCoroutine(Wait_A());
+		}
 
-        button1.GetComponent<Collider2D>().enabled = true;
-        hasStarted = true;  // set the bool to start moving
-        isWaiting = false;
-    }
+		else if (stuck_S == true)
+        {
+			BP2_ButtonControls._button2.GetComponent<Collider2D>().enabled = false;
+			StartCoroutine(Wait_S());
+		}
+
+		else if (stuck_D == true)
+		{
+			BP2_ButtonControls._button3.GetComponent<Collider2D>().enabled = false;
+			StartCoroutine(Wait_D());
+		}
+	}
 
 
     //Coroutine for wait time after stick
-    IEnumerator Wait_S()
-    {
-        isWaiting = true;  //set the bool to stop moving
-        yield return new WaitForSeconds(4); //Wait for 4 seconds
+	IEnumerator Wait_A()
+	{
+		isWaiting = true;  //set the bool to stop moving
+		yield return new WaitForSeconds(4); //Wait for 4 seconds
 
-        button2.GetComponent<Collider2D>().enabled = true;
-        hasStarted = true;  // set the bool to start moving
-        isWaiting = false;
-    }
-
-
-    //Coroutine for wait time after stick
-    IEnumerator Wait_D()
-    {
-        isWaiting = true;  //set the bool to stop moving
-        yield return new WaitForSeconds(4); //Wait for 4 seconds
-
-        button3.GetComponent<Collider2D>().enabled = true;
-        hasStarted = true;   // set the bool to start moving
-        isWaiting = false;
-    }
+		ProjectileSpeed = 0.5f;
+		BP2_ButtonControls._button1.GetComponent<Collider2D>().enabled = true;
+		isWaiting = false;
+		stuck_A = false;
+	}
 
 
-    /*
+	//Coroutine for wait time after stick
+	IEnumerator Wait_S()
+	{
+		isWaiting = true;  //set the bool to stop moving
+		yield return new WaitForSeconds(4); //Wait for 4 seconds
+
+		ProjectileSpeed = 0.05f;
+		BP2_ButtonControls._button2.GetComponent<Collider2D>().enabled = true;
+		isWaiting = false;
+		stuck_S = false;
+	}
+
+
+	//Coroutine for wait time after stick
+	IEnumerator Wait_D()
+	{
+		isWaiting = true;  //set the bool to stop moving
+		yield return new WaitForSeconds(4); //Wait for 4 seconds
+
+		ProjectileSpeed = 0.05f;
+		BP2_ButtonControls._button3.GetComponent<Collider2D>().enabled = true;
+		isWaiting = false;
+		stuck_D = false;
+	}
+
+	/*
      * Had to re-import this function as well as set because it wasn't calling it correctly through inheritance.
      * Am looking into it and will refactor.
      */
-    public void ArchMove()
+	public void ArchMove()
     {
         if (hasStarted)
         {
