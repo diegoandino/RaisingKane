@@ -19,4 +19,14 @@ public class SceneSwitcher : MonoBehaviour
     {
         SceneManager.LoadScene("OpeningAnimatic");
     }
+
+    public void returnToMainMenu()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
+
+    public void levelSelect()
+    {
+        SceneManager.LoadScene("Level Select");
+    }
 }
