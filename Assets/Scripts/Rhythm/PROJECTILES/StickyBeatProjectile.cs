@@ -9,116 +9,139 @@ using UnityEngine.UI;
  */
 public class StickyBeatProjectile : Projectile
 {
-    private bool normalHit;
-    private bool goodHit;
-    private bool perfectHit;
-    private bool canBePressed; //If the button can be pressed or not. NOTE: Currently allows you not to miss early
-    private bool pressed;
-    private bool isWaiting;
-    private float _bpmReference;
 
-    public float BPM = 86;           //Tells how fast the rhythm is going. (BPM - Beats per minute) 
+    private bool isWaiting;
+
+    public float BPM = 86;           //Tells how fast the rhythm is going. (BPM - Beats per minute)
+    public float dropSpeed;     //added Lanespeed for the different arcs of the lanes
+    public float ProjectileSpeed;
+    public float ArchMod; //Higher the Value, higher the arch;
+    private float count = 0.0f;
+    private List<Vector3> points;
+
     public bool hasStarted;     //If gameplay has started 
-  
+    public Vector3 StartPoint;
+    public Vector3 EndPoint;
 
     // Start is called before the first frame update
     void Start()
     {
-        normalHit = false;
-        goodHit = false;
-        perfectHit = false;
-        canBePressed = false;
-        isWaiting = false;
-        pressed = true;
-
-        BPM = BPM / 60f;        //I believe this is the tempo / by 60 seconds to make it a minute.
-        _bpmReference = BPM;
+        SetPoints();
     }
 
 
     // Update is called once per frame
     void Update()
     {
-        stickyBeatCheck();
-
-        if (hasStarted)
-        {
-            //Vector3(x,y,z)
-            //The function to move NoteObjects from left to right
-            transform.position -= new Vector3(0f, (BPM * Time.deltaTime) * BP2_MusicSettings.instance.songSpeed, 0f);
-        }
+        BeatCheck(false);
+        ArchMove();
     }
 
+    //Checks for specific buttons and their tags and starts coroutine
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.tag == "Button" && BP2_ButtonControls.pressed == true)
+        if (other.tag == "Button1" && Input.GetKeyDown(KeyCode.A))
         {
-            BPM = 0f;
-            StartCoroutine(Wait());
+            ProjectileSpeed = 0f;
+            button1.GetComponent<Collider2D>().enabled = false;
+            StartCoroutine(Wait_A());
+        }
+
+        else if (other.tag == "Button2" && Input.GetKeyDown(KeyCode.S))
+        {
+            ProjectileSpeed = 0f;
+            button2.GetComponent<Collider2D>().enabled = false;
+            StartCoroutine(Wait_S());
+        }
+
+        else if (other.tag == "Button3" && Input.GetKeyDown(KeyCode.D))
+        {
+            ProjectileSpeed = 0f;
+            button3.GetComponent<Collider2D>().enabled = false;
+            StartCoroutine(Wait_D());
         }
     }
 
-    IEnumerator Wait()
+    //Coroutine for wait time after stick
+    IEnumerator Wait_A()
     {
         isWaiting = true;  //set the bool to stop moving
+        yield return new WaitForSeconds(4); //Wait for 4 seconds
 
-        print("Start to wait");
-        yield return new WaitForSeconds(3); //Wait for 3 seconds
-        print("Wait complete");
-
-        BPM = _bpmReference; //Set BPM back to normal
-
-        isWaiting = false; // set the bool to start moving
+        button1.GetComponent<Collider2D>().enabled = true;
+        hasStarted = true;  // set the bool to start moving
+        isWaiting = false;
     }
 
-    /**
-     * Checks for Beat position and key presses
-     * Doesn't destroy objects ! ! ! 
-     */
-    void stickyBeatCheck()
+
+    //Coroutine for wait time after stick
+    IEnumerator Wait_S()
     {
+        isWaiting = true;  //set the bool to stop moving
+        yield return new WaitForSeconds(4); //Wait for 4 seconds
 
-        if (Input.GetKeyDown(BP2_ButtonControls.staticKey))
+        button2.GetComponent<Collider2D>().enabled = true;
+        hasStarted = true;  // set the bool to start moving
+        isWaiting = false;
+    }
+
+
+    //Coroutine for wait time after stick
+    IEnumerator Wait_D()
+    {
+        isWaiting = true;  //set the bool to stop moving
+        yield return new WaitForSeconds(4); //Wait for 4 seconds
+
+        button3.GetComponent<Collider2D>().enabled = true;
+        hasStarted = true;   // set the bool to start moving
+        isWaiting = false;
+    }
+
+
+    /*
+     * Had to re-import this function as well as set because it wasn't calling it correctly through inheritance.
+     * Am looking into it and will refactor.
+     */
+    public void ArchMove()
+    {
+        if (hasStarted)
         {
-            if (canBePressed == true)
+            if (count < 1f)
             {
-                //Okay Check
-                if (((transform.position.x > BP2_ButtonControls.ButtonPos + 0.15) || (transform.position.x < BP2_ButtonControls.ButtonPos - 0.15)))
-                {
-                    Debug.Log("Normal Hit");
-                    musicManager.Playsound("implode");
+                count += ProjectileSpeed * Time.deltaTime;
 
-                    normalHit = true; perfectHit = false; goodHit = false; pressed = true;
+                Vector3 m1 = Vector3.Lerp(points[0], points[2], count);
+                Vector3 m2 = Vector3.Lerp(points[2], points[1], count);
+                transform.position = Vector3.Lerp(m1, m2, count);
 
-                    ScoreCount.score += 2;
-                }
+                // Determine which direction to rotate towards
+                Vector3 targetDirection = m2 - transform.position;
+                Quaternion rot = Quaternion.LookRotation(targetDirection, Vector3.up);
+                Quaternion NewRot = Quaternion.identity;
+                NewRot.eulerAngles = new Vector3(0, 0, (rot.eulerAngles.x - 90));
+                transform.rotation = NewRot;
 
-                //Good Check
-                else if (((transform.position.x > BP2_ButtonControls.ButtonPos + 0.15) || (transform.position.x < BP2_ButtonControls.ButtonPos - 0.15)))
-                {
-                    Debug.Log("Good Hit");
-                    musicManager.Playsound("implode");
+            }
 
-                    // Destroy(this.gameObject);
-
-                    normalHit = false; perfectHit = false; goodHit = true; pressed = true;
-
-                    ScoreCount.score += 4;
-                }
-
-                //Perfect Check
-                else
-                {
-                    Debug.Log("Perfect Hit");
-                    // Destroy(this.gameObject);
-
-                    musicManager.Playsound("implode");
-
-                    normalHit = false; perfectHit = true; goodHit = false; pressed = true;
-
-                    ScoreCount.score += 6;
-                }
+            if (count > 1f)
+            {
+                transform.position -= new Vector3(0f, (BPM * Time.deltaTime) * BP2_MusicSettings.instance.songSpeed * dropSpeed, 0f);
+                Quaternion downRot = Quaternion.identity;
+                downRot.eulerAngles = new Vector3(0, 0, 0);
+                transform.rotation = downRot;
             }
         }
+    }
+
+
+    public void SetPoints()
+    {
+        BPM = BPM / 60f;        //I believe this is the tempo / by 60 seconds to make it a minute.
+        StartPoint = this.transform.position;
+        points = new List<Vector3>();
+
+        points.Add(new Vector3(StartPoint.x, StartPoint.y, 1));
+        points.Add(new Vector3(EndPoint.x, EndPoint.y, 1));
+        points.Add(points[0] + (points[1] - points[0]) / 2 + Vector3.up * ArchMod);
     }
 }

@@ -1065,7 +1065,8 @@ MonoBehaviour:
   travelTime: 6.661315
   songTime: 0
   beatPrefab: {fileID: 1967779788}
-  badBeat: {fileID: 8630136101723397850, guid: 8f493511a89a64393ace64848bc94848, type: 3}
+  stickyBeat: {fileID: 8630136101723397850, guid: 8f493511a89a64393ace64848bc94848,
+    type: 3}
   bossAttack: 0
   beatPositionY: 6
   start: 1

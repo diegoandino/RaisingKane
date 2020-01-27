@@ -9,6 +9,9 @@ TagManager:
   - Button
   - Bad Beat
   - DontDelete
+  - Button1
+  - Button2
+  - Button3
   layers:
   - Default
   - TransparentFX

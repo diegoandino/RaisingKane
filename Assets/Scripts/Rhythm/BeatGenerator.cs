@@ -18,7 +18,7 @@ public class BeatGenerator : MonoBehaviour
 	AudioSource boss2;
 
 	public GameObject beatPrefab;
-	public GameObject badBeat;
+	public GameObject stickyBeat;
 	public bool bossAttack;
     public float beatPositionY;
 
@@ -47,7 +47,6 @@ public class BeatGenerator : MonoBehaviour
 		{
 			start = false;
 
-	
 			for (int i = 0; i < beatLog.Length; i++)
 			{
                 Invoke("beatCreation", beatLog[i]);
@@ -67,26 +66,27 @@ public class BeatGenerator : MonoBehaviour
 			GameObject beat = Instantiate(beatPrefab, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
             //Change the lane speed for left lane
             //beat.GetComponent<BP2_RhythmSpeed>().laneSpeed = 1f;
-			beat.GetComponent<ArchProjectile>().EndPoint = Button1Pos.position;
-
-		}
+			//beat.GetComponent<ArchProjectile>().EndPoint = Button1Pos.position;
+		    beat.GetComponent<StickyBeatProjectile>().EndPoint = Button1Pos.position;
+        }
 
 		else if (randVal < .65f) 
 		{
 			GameObject beat = Instantiate(beatPrefab, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
             //Change the lane speed for center lane
             //beat.GetComponent<BP2_RhythmSpeed>().laneSpeed = 1f;
-			beat.GetComponent<ArchProjectile>().EndPoint = Button2Pos.position;
-
-		}
+			//beat.GetComponent<ArchProjectile>().EndPoint = Button2Pos.position;
+		    beat.GetComponent<StickyBeatProjectile>().EndPoint = Button2Pos.position;
+        }
 
 		else  if (randVal <.9f)
 		{
 			GameObject beat = Instantiate(beatPrefab, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
             //Change the lane speed for right lane
             //beat.GetComponent<BP2_RhythmSpeed>().laneSpeed = 1f;
-			beat.GetComponent<ArchProjectile>().EndPoint = Button3Pos.position;
-		}
+			//beat.GetComponent<ArchProjectile>().EndPoint = Button3Pos.position;
+		    beat.GetComponent<StickyBeatProjectile>().EndPoint = Button3Pos.position;
+        }
 
         else
 		{

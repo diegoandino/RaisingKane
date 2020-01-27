@@ -4,6 +4,7 @@
  * 
  */
 
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -25,6 +26,9 @@ public class Projectile : MonoBehaviour
     public Transform button2;
     public Transform button3;
 
+    private GameObject stickyBeat;
+    private GameObject archBeat;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,13 +38,15 @@ public class Projectile : MonoBehaviour
 
         canBePressed = false;
         pressed = true;
+
+        stickyBeat.GetComponent<StickyBeatProjectile>();
     }
 
 
     // Update is called once per frame
     void Update()
     {
-        BeatCheck();
+        BeatCheck(true);
     }
 
 
@@ -78,10 +84,11 @@ public class Projectile : MonoBehaviour
     }
 
 
+
     /**
      * Checks for Beat position and key presses 
      */
-    public void BeatCheck()
+    public void BeatCheck(Boolean destroy)
     {
 
         if (Input.GetKeyDown(BP2_ButtonControls.staticKey))
@@ -99,7 +106,10 @@ public class Projectile : MonoBehaviour
                     ScoreCount.score += 2;
 
 
-                    Destroy(this.gameObject);
+                    if (destroy == true)
+                        Destroy(this.gameObject);
+                    else
+                        destroy = false;
                 }
 
                 //Good Check
@@ -114,8 +124,10 @@ public class Projectile : MonoBehaviour
 
                     ScoreCount.score += 4;
 
-
-                    Destroy(this.gameObject);
+                    if (destroy == true)
+                        Destroy(this.gameObject);
+                    else
+                        destroy = false;
                 }
 
                 //Perfect Check
@@ -130,8 +142,10 @@ public class Projectile : MonoBehaviour
 
                     ScoreCount.score += 6;
 
-
-                    Destroy(this.gameObject);
+                    if (destroy == true)
+                        Destroy(this.gameObject);
+                    else
+                        destroy = false;
                 }
             }
         }
