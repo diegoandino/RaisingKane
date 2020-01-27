@@ -32,11 +32,8 @@ public class BeatGeneratorTest : MonoBehaviour
 	public float songTime;
 	AudioSource boss2;
 
-	public GameObject BasicBeat;
-	public GameObject StickBeat;
-	public GameObject BouncBeat;
-	public GameObject MultiTapBeat;
-
+	public GameObject beatPrefab;
+	public GameObject badBeat;
 	public bool bossAttack;
 
 	//checked for each beat needing to be spawned
@@ -65,85 +62,48 @@ public class BeatGeneratorTest : MonoBehaviour
 			start = false;
 			for (int i = 0; i < beatLog.Length; i++)
 			{
-				StartCoroutine(SpawnBeat(beatLog[i]));
+                Invoke("beatCreation", beatLog[i].SpawnTimer);
             }
 		}
 	}
 
-	private IEnumerator SpawnBeat(BeatItem beat)
+
+    //-- This function generates beats in the different locations individually and randomly --//
+	void beatCreation()
 	{
-        yield return new WaitForSeconds(beat.SpawnTimer);
-        if (beat.BeatType == 1)
-        {
-			if (beat.Row == 1)
-			{
-				GameObject NewBeat = Instantiate(BasicBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
-				NewBeat.GetComponent<ArchProjectile>().EndPoint = Button1Pos.position;
-			}
-			else if (beat.Row == 2)
-			{
-				GameObject NewBeat = Instantiate(BasicBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
-				NewBeat.GetComponent<ArchProjectile>().EndPoint = Button2Pos.position;
-			}
-			else if (beat.Row == 3)
-			{
-				GameObject NewBeat = Instantiate(BasicBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
-				NewBeat.GetComponent<ArchProjectile>().EndPoint = Button3Pos.position;
-			}
-		} else if (beat.BeatType == 2)
-        {
-			if (beat.Row == 1)
-			{
-				GameObject NewBeat = Instantiate(StickBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
-				NewBeat.GetComponent<ArchProjectile>().EndPoint = Button1Pos.position;
-			}
-			else if (beat.Row == 2)
-			{
-				GameObject NewBeat = Instantiate(StickBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
-				NewBeat.GetComponent<ArchProjectile>().EndPoint = Button2Pos.position;
-			}
-			else if (beat.Row == 3)
-			{
-				GameObject NewBeat = Instantiate(StickBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
-				NewBeat.GetComponent<ArchProjectile>().EndPoint = Button3Pos.position;
-			}
-		}
-		else if (beat.BeatType == 3)
+		float randPos = Random.Range(0f, 3f);
+		float randVal = Random.value; 
+
+		if (randVal < .25f) 
 		{
-			if (beat.Row == 1)
-			{
-				GameObject NewBeat = Instantiate(BouncBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
-				NewBeat.GetComponent<ArchProjectile>().EndPoint = Button1Pos.position;
-			}
-			else if (beat.Row == 2)
-			{
-				GameObject NewBeat = Instantiate(BouncBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
-				NewBeat.GetComponent<ArchProjectile>().EndPoint = Button2Pos.position;
-			}
-			else if (beat.Row == 3)
-			{
-				GameObject NewBeat = Instantiate(BouncBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
-				NewBeat.GetComponent<ArchProjectile>().EndPoint = Button3Pos.position;
-			}
-		}
-		else if (beat.BeatType == 4)
-		{
-			if (beat.Row == 1)
-			{
-				GameObject NewBeat = Instantiate(MultiTapBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
-				NewBeat.GetComponent<ArchProjectile>().EndPoint = Button1Pos.position;
-			}
-			else if (beat.Row == 2)
-			{
-				GameObject NewBeat = Instantiate(MultiTapBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
-				NewBeat.GetComponent<ArchProjectile>().EndPoint = Button2Pos.position;
-			}
-			else if (beat.Row == 3)
-			{
-				GameObject NewBeat = Instantiate(MultiTapBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
-				NewBeat.GetComponent<ArchProjectile>().EndPoint = Button3Pos.position;
-			}
+			GameObject beat = Instantiate(beatPrefab, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
+			//Change the lane speed for left lane
+			//beat.GetComponent<BP2_RhythmSpeed>().laneSpeed = 1f;
+			print(Button1Pos.position);
+			beat.GetComponent<ArchProjectile>().EndPoint = Button1Pos.position;
+
 		}
 
+		else if (randVal < .65f) 
+		{
+			GameObject beat = Instantiate(beatPrefab, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
+            //Change the lane speed for center lane
+            //beat.GetComponent<BP2_RhythmSpeed>().laneSpeed = 1f;
+			beat.GetComponent<ArchProjectile>().EndPoint = Button2Pos.position;
+
+		}
+
+		else  if (randVal <.9f)
+		{
+			GameObject beat = Instantiate(beatPrefab, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
+            //Change the lane speed for right lane
+            //beat.GetComponent<BP2_RhythmSpeed>().laneSpeed = 1f;
+			beat.GetComponent<ArchProjectile>().EndPoint = Button3Pos.position;
+		}
+
+        else
+		{
+			//GameObject beat = Instantiate(badbeat, new Vector3(posArr[(int)randPos], beatPositionY, 0f), Quaternion.AngleAxis(90, Vector3.forward));
+		}
 	}
 }

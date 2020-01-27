@@ -1,13 +1,23 @@
-﻿<Properties StartupConfiguration="{7BBC6D7A-050F-7091-4BAD-F4932F6D0ECD}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Rhythm/BeatGeneratorTest.cs">
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/General/PauseLogic.cs">
     <Files>
+      <File FileName="Assets/Scripts/Rhythm/BP2_Projectiles.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Rhythm/BP2_ButtonControls.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Scenes/DoorTransition.cs" Line="3" Column="19" />
+      <File FileName="Assets/Scripts/Player/Collision.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/General/musicManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Rhythm/BeatGeneratorTest.cs" Line="143" Column="50" />
+      <File FileName="Assets/Scripts/Rhythm/PROJECTILES/ArchProjectile.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Rhythm/BeatGeneratorTest.cs" Line="8" Column="9" />
+      <File FileName="Assets/Scripts/Scenes/AfterAnimaticTransition.cs" Line="7" Column="37" />
+      <File FileName="Assets/Scripts/Scenes/SceneSwitcher.cs" Line="20" Column="48" />
+      <File FileName="Assets/Scripts/General/PauseLogic.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>Assembly-CSharp.csproj</String>
+  </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0506145d-092b-47fa-bfd6-2810644f06e0" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
