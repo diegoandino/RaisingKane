@@ -906,6 +906,7 @@ GameObject:
   - component: {fileID: 1002287162}
   - component: {fileID: 1002287161}
   - component: {fileID: 1002287160}
+  - component: {fileID: 1002287163}
   m_Layer: 0
   m_Name: BeatGenerator
   m_TagString: Untagged
@@ -1016,7 +1017,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1002287159}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d67b119a2a48bc45bb57e2a8285d0f2, type: 3}
   m_Name: 
@@ -1086,6 +1087,39 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1002287163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002287159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43706e30f126347618bb8ccfcfc297f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beatLog:
+  - SpawnTimer: 0
+    Row: 1
+    BeatType: 1
+  - SpawnTimer: 0.5
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 1
+    Row: 3
+    BeatType: 1
+  travelTime: 5.295986
+  songTime: 0
+  BasicBeat: {fileID: 1967779788}
+  StickBeat: {fileID: 0}
+  BouncBeat: {fileID: 0}
+  MultiTapBeat: {fileID: 0}
+  bossAttack: 0
+  start: 1
+  Button1Pos: {fileID: 1433596191}
+  Button2Pos: {fileID: 1982015240}
+  Button3Pos: {fileID: 1064439028}
 --- !u!1001 &1030405494
 PrefabInstance:
   m_ObjectHideFlags: 0

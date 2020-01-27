@@ -1,5 +1,13 @@
 sceneSetups:
+<<<<<<< Updated upstream
 - path: Assets/Scenes/Boss Arc.unity
+=======
+<<<<<<< Updated upstream
+- path: Assets/Scenes/Main Menu.unity
+=======
+- path: Assets/Scenes/Boss Arc.unity
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
   isLoaded: 1
   isActive: 1
   isSubScene: 0
