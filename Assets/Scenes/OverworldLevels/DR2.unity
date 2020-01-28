@@ -420,11 +420,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4361141215309050288, guid: b62cde85625fb84478c9f2b04e130433,
-        type: 3}
-      propertyPath: NextScene
-      value: K1
-      objectReference: {fileID: 0}
     - target: {fileID: 1722930592715963268, guid: b62cde85625fb84478c9f2b04e130433,
         type: 3}
       propertyPath: NextRoom
@@ -457,6 +452,11 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4740905152707555133, guid: b62cde85625fb84478c9f2b04e130433,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4740905152707555107, guid: b62cde85625fb84478c9f2b04e130433,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -484,6 +484,11 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 1167138684}
+    - target: {fileID: 4361141215309050288, guid: b62cde85625fb84478c9f2b04e130433,
+        type: 3}
+      propertyPath: NextScene
+      value: K1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4740905152707555104, guid: b62cde85625fb84478c9f2b04e130433, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b62cde85625fb84478c9f2b04e130433, type: 3}
@@ -747,7 +752,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: fe87d28dd6cee2545ae17c185861c3ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1140,11 +1145,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4361141215309050288, guid: b62cde85625fb84478c9f2b04e130433,
-        type: 3}
-      propertyPath: NextScene
-      value: K2
-      objectReference: {fileID: 0}
     - target: {fileID: 1722930592715963268, guid: b62cde85625fb84478c9f2b04e130433,
         type: 3}
       propertyPath: NextRoom
@@ -1204,6 +1204,11 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 1167138684}
+    - target: {fileID: 4361141215309050288, guid: b62cde85625fb84478c9f2b04e130433,
+        type: 3}
+      propertyPath: NextScene
+      value: K2
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4740905152707555104, guid: b62cde85625fb84478c9f2b04e130433, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b62cde85625fb84478c9f2b04e130433, type: 3}
@@ -1465,6 +1470,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 1878359369843143203, guid: 230ef9334a416a947a665c270dc4123d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1878359369843143231, guid: 230ef9334a416a947a665c270dc4123d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1570,6 +1580,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1878359369582698367, guid: 230ef9334a416a947a665c270dc4123d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1878359371420962528, guid: 230ef9334a416a947a665c270dc4123d,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1593,11 +1608,6 @@ PrefabInstance:
     - target: {fileID: 1878359369456265898, guid: 230ef9334a416a947a665c270dc4123d,
         type: 3}
       propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1878359369582698367, guid: 230ef9334a416a947a665c270dc4123d,
-        type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1878359369582698362, guid: 230ef9334a416a947a665c270dc4123d,

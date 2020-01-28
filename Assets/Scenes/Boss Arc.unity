@@ -165,7 +165,7 @@ PrefabInstance:
     - target: {fileID: 8630136101723397851, guid: 7e0d683b84c66ff41b83d2e6736d4d53,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8630136101723397851, guid: 7e0d683b84c66ff41b83d2e6736d4d53,
         type: 3}
@@ -857,22 +857,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
---- !u!1 &275318340
-GameObject:
-=======
 --- !u!114 &258434668
 MonoBehaviour:
->>>>>>> master
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
+  m_GameObject: {fileID: 258434664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11ea5508614104f21b40c947bc72c76e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 1534977662}
+  Music: {fileID: 0}
+--- !u!1 &363788208
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 275318341}
-  - component: {fileID: 275318342}
+  - component: {fileID: 363788209}
+  - component: {fileID: 363788210}
   m_Layer: 0
   m_Name: s
   m_TagString: Untagged
@@ -880,27 +888,27 @@ MonoBehaviour:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &275318341
+--- !u!4 &363788209
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 275318340}
+  m_GameObject: {fileID: 363788208}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -16.152857, y: -2.2003622, z: 11.57332}
+  m_LocalPosition: {x: -16.12, y: -2.13, z: 11.57332}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 1962229865}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &275318342
+--- !u!212 &363788210
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 275318340}
+  m_GameObject: {fileID: 363788208}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -943,16 +951,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-=======
-  m_GameObject: {fileID: 258434664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11ea5508614104f21b40c947bc72c76e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 1534977662}
-  Music: {fileID: 0}
->>>>>>> master
 --- !u!1 &872967582 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 846948032768658030, guid: cd88a39854c2993498e4f1605583e308,
@@ -1002,6 +1000,7 @@ GameObject:
   - component: {fileID: 1002287162}
   - component: {fileID: 1002287160}
   - component: {fileID: 1002287163}
+  - component: {fileID: 1002287161}
   m_Layer: 0
   m_Name: BeatGenerator
   m_TagString: Untagged
@@ -1105,6 +1104,360 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1002287161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002287159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43706e30f126347618bb8ccfcfc297f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beatLog:
+  - SpawnTimer: 0
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 0.6
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 1.2
+    Row: 1
+    BeatType: 1
+  - SpawnTimer: 1.8
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 2.4
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 3
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 3.6
+    Row: 1
+    BeatType: 1
+  - SpawnTimer: 4.2
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 4.5
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 4.8
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 5.4
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 6
+    Row: 1
+    BeatType: 1
+  - SpawnTimer: 6.6
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 7.2
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 7.8
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 8.4
+    Row: 1
+    BeatType: 1
+  - SpawnTimer: 9
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 9.3
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 9.6
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 10.2
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 10.8
+    Row: 1
+    BeatType: 1
+  - SpawnTimer: 11.4
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 12
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 12.6
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 13.2
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 13.8
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 12.1
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 14.4
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 15
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 15.6
+    Row: 1
+    BeatType: 1
+  - SpawnTimer: 16.2
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 16.8
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 17.4
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 18
+    Row: 1
+    BeatType: 1
+  - SpawnTimer: 18.6
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 19.2
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 19.8
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 20.4
+    Row: 1
+    BeatType: 1
+  - SpawnTimer: 21
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 21.6
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 22.2
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 22.8
+    Row: 1
+    BeatType: 1
+  - SpawnTimer: 23.4
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 23.7
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 24
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 24.6
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 25.2
+    Row: 1
+    BeatType: 1
+  - SpawnTimer: 25.8
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 26.4
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 27
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 27.6
+    Row: 1
+    BeatType: 1
+  - SpawnTimer: 28.2
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 28.5
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 28.8
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 29.4
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 30
+    Row: 1
+    BeatType: 1
+  - SpawnTimer: 30.6
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 31.2
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 31.8
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 32.4
+    Row: 1
+    BeatType: 1
+  - SpawnTimer: 33
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 33.3
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 33.6
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 34.2
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 34.8
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 35.4
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 36
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 36.6
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 37.2
+    Row: 1
+    BeatType: 1
+  - SpawnTimer: 37.8
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 38.4
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 39
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 39.6
+    Row: 1
+    BeatType: 1
+  - SpawnTimer: 40.2
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 40.8
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 41.4
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 42
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 42.6
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 42.9
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 43.2
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 43.8
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 44.4
+    Row: 1
+    BeatType: 1
+  - SpawnTimer: 45
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 45.6
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 46.8
+    Row: 1
+    BeatType: 1
+  - SpawnTimer: 19.2
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 47.4
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 47.7
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 48
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 48.6
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 48.9
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 49.2
+    Row: 1
+    BeatType: 1
+  - SpawnTimer: 50.1
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 50.4
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 51
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 51.3
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 51.6
+    Row: 1
+    BeatType: 1
+  - SpawnTimer: 52.5
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 52.5
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 52.8
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 53.1
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 53.7
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 54
+    Row: 1
+    BeatType: 1
+  - SpawnTimer: 55.2
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 55.5
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 55.1
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 56.4
+    Row: 1
+    BeatType: 1
+  - SpawnTimer: 57.6
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 58.2
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 58.8
+    Row: 1
+    BeatType: 1
+  travelTime: 8.63
+  songTime: 0
+  BasicBeat: {fileID: 1967779788}
+  StickBeat: {fileID: 0}
+  BouncBeat: {fileID: 0}
+  MultiTapBeat: {fileID: 0}
+  bossAttack: 0
+  start: 0
+  Button1Pos: {fileID: 1433596191}
+  Button2Pos: {fileID: 1982015240}
+  Button3Pos: {fileID: 1064439028}
 --- !u!4 &1002287162
 Transform:
   m_ObjectHideFlags: 0
@@ -1113,7 +1466,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1002287159}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.51, y: -4, z: 1}
+  m_LocalPosition: {x: 7.15, y: -1.68, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1126,7 +1479,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1002287159}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 898ce54e275fa46f0b90af7a464b1153, type: 3}
   m_Name: 
@@ -1271,16 +1624,12 @@ PrefabInstance:
     - target: {fileID: 846948032768658028, guid: cd88a39854c2993498e4f1605583e308,
         type: 3}
       propertyPath: m_LocalPosition.y
-<<<<<<< HEAD
-      value: -1.58
-=======
-      value: -3.96
->>>>>>> master
+      value: -1.91
       objectReference: {fileID: 0}
     - target: {fileID: 846948032768658028, guid: cd88a39854c2993498e4f1605583e308,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.6604123
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 846948032768658028, guid: cd88a39854c2993498e4f1605583e308,
         type: 3}
@@ -1348,6 +1697,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -5642473230598579920, guid: 5c7a7d51bb74be944b5462541dd94dd8,
         type: 3}
+    - target: {fileID: 846948032768658031, guid: cd88a39854c2993498e4f1605583e308,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd88a39854c2993498e4f1605583e308, type: 3}
 --- !u!1 &1064439027 stripped
@@ -1418,7 +1772,7 @@ PrefabInstance:
     - target: {fileID: 113145079922835068, guid: 1c952e62400314c74aa305e9992860b3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 113145079922835068, guid: 1c952e62400314c74aa305e9992860b3,
         type: 3}
@@ -2440,7 +2794,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 1962229865}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1768613936
 SpriteRenderer:
@@ -2533,7 +2887,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 33bc736460d954c19938e9fb3062ba24, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 4cec5cc1d70154b2f9f792b0523dced6, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2661,10 +3015,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2133794901}
-  - {fileID: 275318341}
   - {fileID: 1768613935}
+  - {fileID: 363788209}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1967779788 stripped
 GameObject:
@@ -2688,7 +3042,7 @@ MonoBehaviour:
   button2: {fileID: 1982015240}
   button3: {fileID: 1064439028}
   BPM: 86
-  dropSpeed: 1
+  dropSpeed: 10
   ProjectileSpeed: 0.09
   ArchMod: 60
   hasStarted: 1

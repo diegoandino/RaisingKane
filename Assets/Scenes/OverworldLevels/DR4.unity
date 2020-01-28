@@ -420,11 +420,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4361141215309050288, guid: b62cde85625fb84478c9f2b04e130433,
-        type: 3}
-      propertyPath: NextScene
-      value: DR3
-      objectReference: {fileID: 0}
     - target: {fileID: 1722930592715963268, guid: b62cde85625fb84478c9f2b04e130433,
         type: 3}
       propertyPath: NextRoom
@@ -484,6 +479,11 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 1167138684}
+    - target: {fileID: 4361141215309050288, guid: b62cde85625fb84478c9f2b04e130433,
+        type: 3}
+      propertyPath: NextScene
+      value: DR3
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4740905152707555104, guid: b62cde85625fb84478c9f2b04e130433, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b62cde85625fb84478c9f2b04e130433, type: 3}
@@ -1050,6 +1050,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 1878359369843143203, guid: 230ef9334a416a947a665c270dc4123d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1878359369843143231, guid: 230ef9334a416a947a665c270dc4123d,
         type: 3}
