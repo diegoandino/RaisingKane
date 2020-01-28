@@ -44,14 +44,14 @@ public class Movement_Test : MonoBehaviour
         {
             movement.x = speed;
 
-            transform.localRotation = Quaternion.Euler(0, 0, 0);
+            transform.localRotation = Quaternion.Euler(0, 180, 0);
         }
 
         if (Input.GetAxis("Horizontal") < 0)    // && checkEdge(new Vector2(-7.5f, -1.5f)))
         {
             movement.x = -speed;
 
-            transform.localRotation = Quaternion.Euler(0, 180, 0);
+            transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
 
         if (Input.GetAxis("Vertical") > 0)      // && checkEdge(new Vector2(-7.5f, -1.5f)))

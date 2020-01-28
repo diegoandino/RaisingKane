@@ -875,7 +875,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MonsterAnimateController: {fileID: 872967584}
-  bg: {fileID: 1002287163}
 --- !u!95 &872967584
 Animator:
   serializedVersion: 3
