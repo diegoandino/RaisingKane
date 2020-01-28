@@ -875,7 +875,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MonsterAnimateController: {fileID: 872967584}
-  bg: {fileID: 1002287161}
+  bg: {fileID: 1002287163}
 --- !u!95 &872967584
 Animator:
   serializedVersion: 3
@@ -904,8 +904,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1002287162}
-  - component: {fileID: 1002287161}
   - component: {fileID: 1002287160}
+  - component: {fileID: 1002287163}
   m_Layer: 0
   m_Name: BeatGenerator
   m_TagString: Untagged
@@ -1009,7 +1009,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1002287161
+--- !u!4 &1002287162
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002287159}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.51, y: -4, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1002287163
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1018,7 +1032,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1002287159}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d67b119a2a48bc45bb57e2a8285d0f2, type: 3}
+  m_Script: {fileID: 11500000, guid: 898ce54e275fa46f0b90af7a464b1153, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   beatLog:
@@ -1030,7 +1044,6 @@ MonoBehaviour:
   - 3.5
   - 4.5
   - 5
-  - 6
   - 6.5
   - 7.5
   - 8
@@ -1062,31 +1075,17 @@ MonoBehaviour:
   - 27.5
   - 28.5
   - 29
+  - 29.5
   travelTime: 6.661315
   songTime: 0
   beatPrefab: {fileID: 1967779788}
-  stickyBeat: {fileID: 8630136101723397850, guid: 8f493511a89a64393ace64848bc94848,
-    type: 3}
+  stickyBeat: {fileID: 0}
   bossAttack: 0
-  beatPositionY: 6
+  beatPositionY: 0
   start: 1
   Button1Pos: {fileID: 1433596191}
   Button2Pos: {fileID: 1982015240}
   Button3Pos: {fileID: 1064439028}
---- !u!4 &1002287162
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1002287159}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.51, y: -4, z: 1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1030405494
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1176,7 +1175,7 @@ PrefabInstance:
     - target: {fileID: 846948032768658028, guid: cd88a39854c2993498e4f1605583e308,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.18
+      value: -3.96
       objectReference: {fileID: 0}
     - target: {fileID: 846948032768658028, guid: cd88a39854c2993498e4f1605583e308,
         type: 3}
@@ -2337,7 +2336,7 @@ MonoBehaviour:
   button3: {fileID: 1064439028}
   BPM: 86
   dropSpeed: 1
-  ProjectileSpeed: 0.05
+  ProjectileSpeed: 0.09
   ArchMod: 60
   hasStarted: 1
   StartPoint: {x: 0, y: 0, z: 0}

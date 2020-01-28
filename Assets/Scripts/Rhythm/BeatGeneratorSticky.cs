@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //-- This Class generates beats in different positions using random Array positions --//
-public class BeatGenerator : MonoBehaviour
+public class BeatGeneratorSticky : MonoBehaviour
 {
     //-- Float Array of logged distances for the beats --// 
 	public float[] beatLog = new float[]
@@ -63,7 +63,7 @@ public class BeatGenerator : MonoBehaviour
 
 		if (randVal < .25f) 
 		{
-			GameObject beat = Instantiate(stickyBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
+			GameObject beat = Instantiate(beatPrefab, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
             //Change the lane speed for left lane
             //beat.GetComponent<BP2_RhythmSpeed>().laneSpeed = 1f;
 			//beat.GetComponent<ArchProjectile>().EndPoint = Button1Pos.position;

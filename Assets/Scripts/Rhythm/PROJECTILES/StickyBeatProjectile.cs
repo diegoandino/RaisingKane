@@ -167,7 +167,7 @@ public class StickyBeatProjectile : Projectile
 
     public void SetPoints()
     {
-        BPM = BPM / 60f;        //I believe this is the tempo / by 60 seconds to make it a minute.
+        BPM = BPM / 60f; //I believe this is the tempo / by 60 seconds to make it a minute.
         StartPoint = this.transform.position;
         points = new List<Vector3>();
 
