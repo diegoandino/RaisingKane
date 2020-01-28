@@ -5,7 +5,6 @@ using UnityEngine;
 public class MonsterAnimation : MonoBehaviour
 {
     [SerializeField] private Animator MonsterAnimateController;
-    public BeatGenerator bg;
 
     // Start is called before the first frame update
     void Start()
@@ -16,7 +15,7 @@ public class MonsterAnimation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!bg.start)
+        if(Input.GetKeyDown(KeyCode.Space))
         {
             MonsterAnimateController.SetBool("playAttack", true);
         }
