@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 544}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -332,6 +332,7 @@ MonoBehaviour:
   m_ViewTransforms:
     m_KeySerializationHelper:
     - {fileID: -5426851353601043196, guid: 3ac4ee9a7cb1f414b8ca6bb0eadb3d18, type: 2}
+>>>>>>> master
     - {fileID: 4478052356159612606, guid: 85b70ebfdf42f442f8157f47f49674f4, type: 2}
     - {fileID: -6205938524160682939, guid: 6a3f2e451a2f1464ab44641af1105173, type: 2}
     - {fileID: 4912639599048883014, guid: 85fe0f340cf7cc446902d8864f5caa86, type: 2}
@@ -342,6 +343,13 @@ MonoBehaviour:
     - e00: 1
       e01: 0
       e02: 0
+<<<<<<< HEAD
+      e03: -220
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 13
+=======
       e03: 0
       e10: 0
       e11: 1
@@ -534,12 +542,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Art
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Art
   m_LastFoldersGridSize: -1
+<<<<<<< HEAD
+  m_LastProjectPath: C:\Users\worth\Documents\GitProjects\RaisingKane
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 7}
+    m_SelectedIDs: 22300000
+    m_LastClickedID: 12322
+    m_ExpandedIDs: 00000000bc2d0000ee330000da36000000ca9a3b
+=======
   m_LastProjectPath: /Users/u1075562/Documents/RaisingKane/RaisingKane
   m_LockTracker:
     m_IsLocked: 0
@@ -630,6 +648,9 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
+<<<<<<< HEAD
+  m_DirectoriesAreaWidth: 207
+=======
   m_DirectoriesAreaWidth: 115
 --- !u!114 &16
 MonoBehaviour:
@@ -723,6 +744,9 @@ MonoBehaviour:
     m_LockTracker:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
+<<<<<<< HEAD
+  m_WindowGUID: 31efc7f31a2151c4db7b3f4166e7cb5e
+=======
   m_WindowGUID: c6514d39b670246448eaf7612014ce41
 --- !u!114 &18
 MonoBehaviour:
@@ -872,7 +896,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
