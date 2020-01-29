@@ -59,7 +59,7 @@ public class BeatGeneratorTest : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		print(start);
+		//print(start);
 		songTime = boss2.time;
 		if (Input.GetKeyDown(KeyCode.Space) && start)
 		{

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6755761817696158337}
   m_Layer: 8
   m_Name: Boss2Beat
-  m_TagString: Untagged
+  m_TagString: Beat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

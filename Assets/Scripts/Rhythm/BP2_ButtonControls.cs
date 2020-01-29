@@ -25,6 +25,8 @@ public class BP2_ButtonControls : MonoBehaviour
     public Transform button;
     public Sprite defaultImage;
     public Sprite pressedImage;
+    public Sprite correctImage;
+    public Sprite incorrectImage;
 
     public static bool pressed;
     public static bool aPressed;
@@ -144,4 +146,21 @@ public class BP2_ButtonControls : MonoBehaviour
 			_button3 = button3;
 		}
     }
+
+    //private void OnTriggerEnter2D(Collider2D other)
+    //{
+    //    //Make sure it is the button collider
+    //    if (other.tag == "Beat")
+    //    {
+    //        spriteChanger.sprite = correctImage;
+    //    }
+    //}
+    //private void OnTriggerExit2D(Collider2D other)
+    //{
+    //    //Make sure it is the button collider
+    //    if (other.tag == "Beat")
+    //    {
+    //        spriteChanger.sprite = incorrectImage;
+    //    }
+    //}
 }

@@ -15,18 +15,23 @@ using UnityEngine.UI;
  */
 public class BP2_Projectiles : MonoBehaviour
 {
-	private bool normalHit;
-	private bool goodHit;
-	private bool perfectHit;
+	public static bool normalHit;
+	public static bool goodHit;
+	public static bool perfectHit;
 	private bool canBePressed; //If the button can be pressed or not. NOTE: Currently allows you not to miss early
 	private bool pressed;
-    private SpriteRenderer buttonSprite;
+
+    private IEnumerator buttonSpriteChange;
+
+    public bool wasHit;
 
     public Transform button1;
     public Transform button2;
     public Transform button3;
 
-	public GameObject badBeat; 
+	public GameObject badBeat;
+
+    
 
 	// Start is called before the first frame update
 	void Start()
@@ -57,8 +62,9 @@ public class BP2_Projectiles : MonoBehaviour
         if (other.tag == "Button")
         {
 			canBePressed = true;
-            buttonSprite = other.gameObject.GetComponent<SpriteRenderer>();
         }
+
+
     }
 
 
@@ -71,6 +77,7 @@ public class BP2_Projectiles : MonoBehaviour
         //Make sure it is the button collider
         if (other.tag == "Button")
         {
+            Debug.Log(other.gameObject.name);
             
             if (gameObject.activeSelf)
             {
@@ -137,8 +144,6 @@ public class BP2_Projectiles : MonoBehaviour
 					normalHit = false; perfectHit = true; goodHit = false; pressed = true;
 
 					ScoreCount.score += 6;
-
-                    //buttonSprite.sprite = hitButton;
 
 
                     Destroy(this.gameObject);
