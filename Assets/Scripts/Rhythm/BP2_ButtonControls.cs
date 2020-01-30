@@ -24,9 +24,12 @@ public class BP2_ButtonControls : MonoBehaviour
     public Transform plush;
     public Transform button;
     public Sprite defaultImage;
-    public Sprite pressedImage;
+    public Sprite collisionImage;
     public Sprite correctImage;
     public Sprite incorrectImage;
+
+    public bool isColliding;
+    private IEnumerator imageChangeCoRoutine;
 
     public static bool pressed;
     public static bool aPressed;
@@ -59,6 +62,7 @@ public class BP2_ButtonControls : MonoBehaviour
         spriteChanger = GetComponent<SpriteRenderer>();
 
         pressed = false;
+        isColliding = false;
 
         ButtonPos = -4.9f;
     }
@@ -80,25 +84,29 @@ public class BP2_ButtonControls : MonoBehaviour
 
         //Button Pressed
         if (Input.GetKeyDown(KEY))
-        {
-            spriteChanger.sprite = pressedImage;
+        {           
             pressed = true;
 
             musicManager.Playsound("plushFire");
 
             staticKey = KEY;
             staticPlushPos = plush.position;
+
+            IsButtonRight();
         }
 
         //Button Release
         if (Input.GetKeyUp(KEY))
         {
-            spriteChanger.sprite = defaultImage;
+            //spriteChanger.sprite = defaultImage;
             pressed = false;
 
             button1.GetComponent<Collider2D>().enabled = true;
             button2.GetComponent<Collider2D>().enabled = true;
             button3.GetComponent<Collider2D>().enabled = true;
+
+            imageChangeCoRoutine = WaitAndResetDefaultImage(0.1f);
+            StartCoroutine(imageChangeCoRoutine);
         }
     }
 
@@ -147,20 +155,43 @@ public class BP2_ButtonControls : MonoBehaviour
 		}
     }
 
-    //private void OnTriggerEnter2D(Collider2D other)
-    //{
-    //    //Make sure it is the button collider
-    //    if (other.tag == "Beat")
-    //    {
-    //        spriteChanger.sprite = correctImage;
-    //    }
-    //}
-    //private void OnTriggerExit2D(Collider2D other)
-    //{
-    //    //Make sure it is the button collider
-    //    if (other.tag == "Beat")
-    //    {
-    //        spriteChanger.sprite = incorrectImage;
-    //    }
-    //}
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.tag == "Beat")
+        {
+            // is no longer colliding
+            isColliding = false;
+            imageChangeCoRoutine = WaitAndResetDefaultImage(0.1f);
+            StartCoroutine(imageChangeCoRoutine);
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Beat")
+        {
+            // Changes to colliding button  sprite
+            spriteChanger.sprite = collisionImage;
+            isColliding = true;
+        }
+    }
+    private void IsButtonRight()
+    {
+        // Changes image based on if the press is right or wrong
+        if (isColliding)
+        {
+
+            spriteChanger.sprite = correctImage;
+        }
+        else
+        {
+            spriteChanger.sprite = incorrectImage;
+        }
+
+    }
+    private IEnumerator WaitAndResetDefaultImage(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        spriteChanger.sprite = defaultImage;
+    }
 }
