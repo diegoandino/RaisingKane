@@ -6,12 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 88e78da666a6d486bb826e6574026165
+  - enabled: 0
     path: Assets/Scenes/Old Scenes/Gymnasium Hub.unity
     guid: d5ac3698ea588c74c8006c4df2b7458a
   - enabled: 0
     path: Assets/Scenes/Old Scenes/BeatCreator.unity
     guid: 5d869de5ebfb2c84f94b2430cfb84ef3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Overworld_Move.unity
     guid: 1aa5a456f110ce549b5f1b4f926b14c2
   - enabled: 0
@@ -19,13 +22,13 @@ EditorBuildSettings:
     guid: fa531ad5ac2c3534181a1ec3ce93212a
   - enabled: 0
     path: 
-    guid: d30052a2e471f054ebb1ec8dd4419e0b
-  - enabled: 1
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: Assets/Scenes/Old Scenes/Boss2.unity
     guid: 6aac50a47273a1641887940deb9e8da5
   - enabled: 0
     path: 
-    guid: 2cda990e2423bbf4892e6590ba056729
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: Assets/Scenes/Old Scenes/Rhythm Testing2.unity
     guid: afdb75354f0344147ad5fa8aec0d23dd
@@ -74,9 +77,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OpeningAnimatic.unity
     guid: 2ce202eb5faea4729a7a49fab1e75b12
-  - enabled: 1
-    path: Assets/Scenes/Main Menu.unity
-    guid: 88e78da666a6d486bb826e6574026165
   - enabled: 1
     path: Assets/Scenes/Level Select.unity
     guid: 40668164d52ef4cae8a24aeb3b0c9251
