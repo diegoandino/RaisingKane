@@ -1,7 +1,64 @@
 fileFormatVersion: 2
 guid: 67e35bd47048da04397803e43573940f
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -6343656553800835527
+    second: Monster_3_Idle_Sprites_0
+  - first:
+      213: -5892741062455809299
+    second: Monster_3_Idle_Sprites_1
+  - first:
+      213: -2158584864911080238
+    second: Monster_3_Idle_Sprites_2
+  - first:
+      213: 3409239925097143444
+    second: Monster_3_Idle_Sprites_3
+  - first:
+      213: 3906909423945499119
+    second: Monster_3_Idle_Sprites_4
+  - first:
+      213: -6119804535850273918
+    second: Monster_3_Idle_Sprites_5
+  - first:
+      213: 5731161434712125929
+    second: Monster_3_Idle_Sprites_6
+  - first:
+      213: 9111212699980496014
+    second: Monster_3_Idle_Sprites_7
+  - first:
+      213: -3868110664934885143
+    second: Monster_3_Idle_Sprites_8
+  - first:
+      213: 1280809573685778645
+    second: Monster_3_Idle_Sprites_9
+  - first:
+      213: 3825547228945600327
+    second: Monster_3_Idle_Sprites_10
+  - first:
+      213: -5302809367036614227
+    second: Monster_3_Idle_Sprites_11
+  - first:
+      213: 276763975155879633
+    second: Monster_3_Idle_Sprites_12
+  - first:
+      213: -968471742880343604
+    second: Monster_3_Idle_Sprites_13
+  - first:
+      213: 5390784625940949011
+    second: Monster_3_Idle_Sprites_14
+  - first:
+      213: 2331206215537815064
+    second: Monster_3_Idle_Sprites_15
+  - first:
+      213: -1961794380817546326
+    second: Monster_3_Idle_Sprites_16
+  - first:
+      213: 6623789965788172786
+    second: Monster_3_Idle_Sprites_17
+  - first:
+      213: 6755304394968939310
+    second: Monster_3_Idle_Sprites_18
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +97,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +127,420 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Monster_3_Idle_Sprites_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 679
+        width: 753
+        height: 586
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91cb70c1e82e7a448adadeebaddeb891
+      internalID: -6343656553800835527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster_3_Idle_Sprites_1
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 940
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd38905d13d372c4aa5e88a90b76ec68
+      internalID: -5892741062455809299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster_3_Idle_Sprites_2
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 681
+        width: 745
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64b0e6b349fe88e43b3f0a1d62c50afb
+      internalID: -2158584864911080238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster_3_Idle_Sprites_3
+      rect:
+        serializedVersion: 2
+        x: 1517
+        y: 940
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d65261cd5e2d590408fd7971244e81ec
+      internalID: 3409239925097143444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster_3_Idle_Sprites_4
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 681
+        width: 743
+        height: 575
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 666a9f8fd05191844b57877297253688
+      internalID: 3906909423945499119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster_3_Idle_Sprites_5
+      rect:
+        serializedVersion: 2
+        x: 2276
+        y: 940
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa600bfc55580a4ca56415e5d6fcb2b
+      internalID: -6119804535850273918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster_3_Idle_Sprites_6
+      rect:
+        serializedVersion: 2
+        x: 2290
+        y: 681
+        width: 740
+        height: 570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b8ae64fe5496904b8ae22e8af75584c
+      internalID: 5731161434712125929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster_3_Idle_Sprites_7
+      rect:
+        serializedVersion: 2
+        x: 3034
+        y: 940
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e73624a5a9e1d5a43ac9b7e1383dc17a
+      internalID: 9111212699980496014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster_3_Idle_Sprites_8
+      rect:
+        serializedVersion: 2
+        x: 3049
+        y: 681
+        width: 746
+        height: 570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe8c893f202c73c469110a3a32d23d51
+      internalID: -3868110664934885143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster_3_Idle_Sprites_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 292
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae96a47b88a194e4fa9109e0f6ef3cf8
+      internalID: 1280809573685778645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster_3_Idle_Sprites_10
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 32
+        width: 732
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c78a6cd9869e1054b941d67654d4e2a8
+      internalID: 3825547228945600327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster_3_Idle_Sprites_11
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 292
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d94e2593832cea84e90ae77d83db8685
+      internalID: -5302809367036614227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster_3_Idle_Sprites_12
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 33
+        width: 735
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cedb03a8e7e1674c9e23f038f85d6df
+      internalID: 276763975155879633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster_3_Idle_Sprites_13
+      rect:
+        serializedVersion: 2
+        x: 1517
+        y: 292
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 768f28e54c69d794ab2527032b47b9f3
+      internalID: -968471742880343604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster_3_Idle_Sprites_14
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 32
+        width: 739
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bda523f43070f5641a3c3fb84f2a6b18
+      internalID: 5390784625940949011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster_3_Idle_Sprites_15
+      rect:
+        serializedVersion: 2
+        x: 2276
+        y: 292
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab860c81f253e7e40a66b3a62b42d092
+      internalID: 2331206215537815064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster_3_Idle_Sprites_16
+      rect:
+        serializedVersion: 2
+        x: 2287
+        y: 32
+        width: 743
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a72aa4ce1371cd46b3b9697ead8d4db
+      internalID: -1961794380817546326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster_3_Idle_Sprites_17
+      rect:
+        serializedVersion: 2
+        x: 3034
+        y: 292
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 554a0b4377c978c4aad76a8ff275abb3
+      internalID: 6623789965788172786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster_3_Idle_Sprites_18
+      rect:
+        serializedVersion: 2
+        x: 3042
+        y: 32
+        width: 753
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79483302951186343b338ef3638ac4be
+      internalID: 6755304394968939310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
