@@ -5,7 +5,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     public float moveSpeed;
-    public Animator Animator;
+    public Animator animator;
     [System.NonSerialized]
     public bool isMoving;
 
@@ -15,7 +15,7 @@ public class Movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Animator = GetComponent<Animator>();
+        Animator animator = GetComponent<Animator>();
         moveSpeed = 6;
         shrinkManager = GetComponent<ShrinkRythmManager>();
         Door = GameObject.FindWithTag("Door");
