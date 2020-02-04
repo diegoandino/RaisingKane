@@ -28,7 +28,7 @@ public class BP2_ButtonControls : MonoBehaviour
     public Sprite correctImage;
     public Sprite incorrectImage;
 
-    public bool isColliding;
+    private bool isColliding;
     private IEnumerator imageChangeCoRoutine;
 
     public static bool pressed;
@@ -43,6 +43,8 @@ public class BP2_ButtonControls : MonoBehaviour
     public GameObject button1;
     public GameObject button2;
     public GameObject button3;
+
+    public GameObject niceText;
 
 	public static GameObject _button1;
 	public static GameObject _button2;
@@ -105,7 +107,7 @@ public class BP2_ButtonControls : MonoBehaviour
             button2.GetComponent<Collider2D>().enabled = true;
             button3.GetComponent<Collider2D>().enabled = true;
 
-            imageChangeCoRoutine = WaitAndResetDefaultImage(0.1f);
+            imageChangeCoRoutine = WaitAndResetDefaultImage(0.15f);
             StartCoroutine(imageChangeCoRoutine);
         }
     }
@@ -162,7 +164,7 @@ public class BP2_ButtonControls : MonoBehaviour
         {
             // is no longer colliding
             isColliding = false;
-            imageChangeCoRoutine = WaitAndResetDefaultImage(0.1f);
+            imageChangeCoRoutine = WaitAndResetDefaultImage(0.15f);
             StartCoroutine(imageChangeCoRoutine);
         }
     }
@@ -180,8 +182,10 @@ public class BP2_ButtonControls : MonoBehaviour
         // Changes image based on if the press is right or wrong
         if (isColliding)
         {
-
             spriteChanger.sprite = correctImage;
+            Animator niceAnimator = niceText.GetComponent<Animator>();
+            niceText.SetActive(true);
+            niceAnimator.Play("Okay!", 1, 1);
         }
         else
         {
