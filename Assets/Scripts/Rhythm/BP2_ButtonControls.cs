@@ -183,8 +183,8 @@ public class BP2_ButtonControls : MonoBehaviour
         if (isColliding)
         {
             spriteChanger.sprite = correctImage;
+
             Animator niceAnimator = niceText.GetComponent<Animator>();
-            niceText.SetActive(true);
             niceAnimator.Play("Okay!", 1, 1);
         }
         else
