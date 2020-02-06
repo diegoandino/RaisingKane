@@ -16,18 +16,16 @@ using UnityEngine.UI;
  */
 public class Projectile : MonoBehaviour
 {
-    private bool normalHit;
-    private bool goodHit;
-    private bool perfectHit;
-    private bool canBePressed; //If the button can be pressed or not. NOTE: Currently allows you not to miss early
-    private bool pressed;
+    public bool normalHit;
+    public bool goodHit;
+    public bool perfectHit;
+    public bool canBePressed; //If the button can be pressed or not. NOTE: Currently allows you not to miss early
+    public bool pressed;
 
     public Transform button1;
     public Transform button2;
     public Transform button3;
 
-    private GameObject stickyBeat;
-    private GameObject archBeat;
 
     // Start is called before the first frame update
     void Start()
@@ -39,7 +37,6 @@ public class Projectile : MonoBehaviour
         canBePressed = false;
         pressed = true;
 
-        stickyBeat.GetComponent<StickyBeatProjectile>();
     }
 
 
@@ -47,6 +44,7 @@ public class Projectile : MonoBehaviour
     void Update()
     {
         BeatCheck(true);
+        //MissCheck(true);
     }
 
 
@@ -76,10 +74,24 @@ public class Projectile : MonoBehaviour
             if (gameObject.activeSelf)
             {
                 canBePressed = false;
-                BP2_MusicSettings.instance.NoteMiss();
+                //BP2_MusicSettings.instance.NoteMiss();
 
-                MissCount.miss++; //Increments the Miss count on GUI
+                //MissCount.miss++; //Increments the Miss count on GUI
             }
+        }
+    }
+
+    public void MissCheck(Boolean destroy)
+	{
+
+
+        if(transform.position.y < (button2.position.y-3))
+		{
+            MissCount.miss++; //Increments the Miss count on GUI
+            if (destroy == true)
+                Destroy(this.gameObject);
+            else
+                destroy = false;
         }
     }
 

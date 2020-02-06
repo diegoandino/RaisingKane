@@ -28,7 +28,7 @@ public class BeatGeneratorTest : MonoBehaviour
 		};
 
 	//travel time is how far the spawned beat is away from the target
-	public float travelTime = 5.295986f;
+	public float travelTime;
 	public float songTime;
 	AudioSource boss2;
 
@@ -59,11 +59,9 @@ public class BeatGeneratorTest : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		//print(start);
 		songTime = boss2.time;
 		if (Input.GetKeyDown(KeyCode.Space) && start)
 		{
-			print("Test");
 			start = false;
 			for (int i = 0; i < beatLog.Length; i++)
 			{
@@ -76,8 +74,6 @@ public class BeatGeneratorTest : MonoBehaviour
 	{
 
 		yield return new WaitForSeconds(beat.SpawnTimer);
-		print(beat);
-
 		if (beat.BeatType == 1)
 		{
 			if (beat.Row == 1)
@@ -101,17 +97,17 @@ public class BeatGeneratorTest : MonoBehaviour
 			if (beat.Row == 1)
 			{
 				GameObject NewBeat = Instantiate(StickBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
-				NewBeat.GetComponent<ArchProjectile>().EndPoint = Button1Pos.position;
+				NewBeat.GetComponent<StickyProjectile>().EndPoint = Button1Pos.position;
 			}
 			else if (beat.Row == 2)
 			{
 				GameObject NewBeat = Instantiate(StickBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
-				NewBeat.GetComponent<ArchProjectile>().EndPoint = Button2Pos.position;
+				NewBeat.GetComponent<StickyProjectile>().EndPoint = Button2Pos.position;
 			}
 			else if (beat.Row == 3)
 			{
 				GameObject NewBeat = Instantiate(StickBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
-				NewBeat.GetComponent<ArchProjectile>().EndPoint = Button3Pos.position;
+				NewBeat.GetComponent<StickyProjectile>().EndPoint = Button3Pos.position;
 			}
 		}
 		else if (beat.BeatType == 3)

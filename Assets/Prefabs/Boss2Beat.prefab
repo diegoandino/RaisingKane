@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8630136101723397846}
   - component: {fileID: 8061264359969168526}
   - component: {fileID: 6755761817696158337}
+  - component: {fileID: 87981433191847266}
   m_Layer: 8
   m_Name: Boss2Beat
   m_TagString: Beat
@@ -118,3 +119,25 @@ CircleCollider2D:
   m_Offset: {x: -0.046019554, y: -0.95720756}
   serializedVersion: 2
   m_Radius: 1.2238117
+--- !u!114 &87981433191847266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8630136101723397850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9088cdab1d6167f41bf6b463e26c99cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button1: {fileID: 0}
+  button2: {fileID: 0}
+  button3: {fileID: 0}
+  BPM: 86
+  dropSpeed: 10
+  ProjectileSpeed: 0.09
+  ArchMod: 60
+  hasStarted: 1
+  StartPoint: {x: 0, y: 0, z: 0}
+  EndPoint: {x: 0, y: 0, z: 0}

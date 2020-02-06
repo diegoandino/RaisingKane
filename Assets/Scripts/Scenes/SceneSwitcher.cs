@@ -12,7 +12,7 @@ public class SceneSwitcher : MonoBehaviour
 
 	public void Boss2()
 	{
-		SceneManager.LoadScene("Boss2");
+		SceneManager.LoadScene("Boss Arc");
 	}
 
     public void startGame()
@@ -29,4 +29,6 @@ public class SceneSwitcher : MonoBehaviour
     {
         SceneManager.LoadScene("Level Select");
     }
+
+
 }

@@ -29,6 +29,7 @@ public class ArchProjectile : Projectile
     {
         this.BeatCheck(true);
         ArchMove();
+        this.MissCheck(true);
     }
 
 
@@ -66,10 +67,8 @@ public class ArchProjectile : Projectile
 
     public void SetPoints()
     {
-        BPM = BPM / 60f;        //I believe this is the tempo / by 60 seconds to make it a minute.
         StartPoint = this.transform.position;
         points = new List<Vector3>();
-
         points.Add(new Vector3(StartPoint.x, StartPoint.y, 1));
         points.Add(new Vector3(EndPoint.x, EndPoint.y, 1));
         points.Add(points[0] + (points[1] - points[0]) / 2 + Vector3.up * ArchMod);
