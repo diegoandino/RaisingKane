@@ -85,7 +85,7 @@ public class Projectile : MonoBehaviour
 	{
 
 
-        if(transform.position.y < (button2.position.y-3))
+        if(transform.position.y < (button2.position.y-10))
 		{
             MissCount.miss++; //Increments the Miss count on GUI
             if (destroy == true)

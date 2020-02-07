@@ -98,16 +98,20 @@ public class BeatGeneratorTest : MonoBehaviour
 			{
 				GameObject NewBeat = Instantiate(StickBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
 				NewBeat.GetComponent<StickyProjectile>().EndPoint = Button1Pos.position;
+				NewBeat.GetComponent<StickyProjectile>().DestinationButton = Button1Pos.gameObject;
+
 			}
 			else if (beat.Row == 2)
 			{
 				GameObject NewBeat = Instantiate(StickBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
 				NewBeat.GetComponent<StickyProjectile>().EndPoint = Button2Pos.position;
+				NewBeat.GetComponent<StickyProjectile>().DestinationButton = Button2Pos.gameObject;
 			}
 			else if (beat.Row == 3)
 			{
 				GameObject NewBeat = Instantiate(StickBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
 				NewBeat.GetComponent<StickyProjectile>().EndPoint = Button3Pos.position;
+				NewBeat.GetComponent<StickyProjectile>().DestinationButton = Button3Pos.gameObject;
 			}
 		}
 		else if (beat.BeatType == 3)

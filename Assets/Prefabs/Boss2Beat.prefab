@@ -131,6 +131,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9088cdab1d6167f41bf6b463e26c99cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  normalHit: 0
+  goodHit: 0
+  perfectHit: 0
+  canBePressed: 0
+  pressed: 0
   button1: {fileID: 0}
   button2: {fileID: 0}
   button3: {fileID: 0}
