@@ -12,6 +12,7 @@ TagManager:
   - Button1
   - Button2
   - Button3
+  - Damage
   layers:
   - Default
   - TransparentFX

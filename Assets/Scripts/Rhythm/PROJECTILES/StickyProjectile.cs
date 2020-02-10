@@ -22,6 +22,7 @@ public class StickyProjectile : ArchProjectile
 		{
             this.ArchMove();
         }
+
         beatCheck(true);
         MissCheck(true);
     }

@@ -12,17 +12,27 @@ public class ArchProjectile : Projectile
     public float ProjectileSpeed;
     public float ArchMod; //Higher the Value, higher the arch;
     private float count = 0.0f;
-    private List<Vector3> points;
+	
+	private List<Vector3> points;
 
     public bool hasStarted;     //If gameplay has started 
     public Vector3 StartPoint;
     public Vector3 EndPoint;
 
-    // Start is called before the first frame update
-    void Start()
+
+	public int maxValue = 100;
+	public int currValue = 0;
+	public Meter meter;
+
+	// Start is called before the first frame update
+	void Start()
     {
         SetPoints();
-    }
+
+		meter.setValue(currValue);
+		meter.setMaxValue(maxValue);
+	}
+
 
     // Update is called once per frame
     void Update()
@@ -30,10 +40,19 @@ public class ArchProjectile : Projectile
         this.BeatCheck(true);
         ArchMove();
         this.MissCheck(true);
-    }
+
+		if (Input.GetKeyDown(KeyCode.Space)) { scoreUp(5); }
+	}
 
 
-    public void ArchMove()
+	public void scoreUp(int score)
+	{
+		currValue += score;
+		meter.setValue(currValue);
+	}
+
+
+	public void ArchMove()
     {
         if (hasStarted)
         {

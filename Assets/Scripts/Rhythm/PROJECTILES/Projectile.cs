@@ -10,7 +10,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
 /**
  * Controls the projectiles and their collisions
  */
@@ -26,18 +25,15 @@ public class Projectile : MonoBehaviour
     public Transform button2;
     public Transform button3;
 
-
-    // Start is called before the first frame update
-    void Start()
+	// Start is called before the first frame update
+	void Start()
     {
         normalHit = false;
         goodHit = false;
         perfectHit = false;
-
         canBePressed = false;
         pressed = true;
-
-    }
+	}
 
 
     // Update is called once per frame
@@ -81,11 +77,10 @@ public class Projectile : MonoBehaviour
         }
     }
 
+
     public void MissCheck(Boolean destroy)
 	{
-
-
-        if(transform.position.y < (button2.position.y-10))
+        if(transform.position.y < (button2.position.y - 10))
 		{
             MissCount.miss++; //Increments the Miss count on GUI
             if (destroy == true)
@@ -96,11 +91,10 @@ public class Projectile : MonoBehaviour
     }
 
 
-
-    /**
+	/**
      * Checks for Beat position and key presses 
      */
-    public void BeatCheck(Boolean destroy)
+	public void BeatCheck(Boolean destroy)
     {
 
         if (Input.GetKeyDown(BP2_ButtonControls.staticKey))
@@ -116,7 +110,6 @@ public class Projectile : MonoBehaviour
                     normalHit = true; perfectHit = false; goodHit = false; pressed = true;
 
                     ScoreCount.score += 2;
-
 
                     if (destroy == true)
                         Destroy(this.gameObject);
@@ -136,7 +129,7 @@ public class Projectile : MonoBehaviour
 
                     ScoreCount.score += 4;
 
-                    if (destroy == true)
+					if (destroy == true)
                         Destroy(this.gameObject);
                     else
                         destroy = false;
@@ -154,7 +147,7 @@ public class Projectile : MonoBehaviour
 
                     ScoreCount.score += 6;
 
-                    if (destroy == true)
+					if (destroy == true)
                         Destroy(this.gameObject);
                     else
                         destroy = false;
