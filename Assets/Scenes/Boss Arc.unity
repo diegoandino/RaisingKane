@@ -551,7 +551,7 @@ MonoBehaviour:
   RSpeed: {fileID: 1688583058}
   UI: {fileID: 1340253418}
   startPlaying: 0
-  StartOffset: 2.5
+  StartOffset: 1.6
   songSpeed: 1
 --- !u!4 &258434667
 Transform:
@@ -677,7 +677,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &369576354
 RectTransform:
   m_ObjectHideFlags: 0
@@ -796,7 +796,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 1, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1941,11 +1941,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PressAButtonToStart
       objectReference: {fileID: 0}
-    - target: {fileID: 1878359369843143230, guid: 230ef9334a416a947a665c270dc4123d,
-        type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 25
-      objectReference: {fileID: 0}
     - target: {fileID: 1878359371420962535, guid: 230ef9334a416a947a665c270dc4123d,
         type: 3}
       propertyPath: m_IsActive
@@ -2686,7 +2681,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1678881897
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3463,7 +3458,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1962229865
 Transform:
   m_ObjectHideFlags: 0
@@ -3822,9 +3817,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.046019554, y: -0.95720756}
+  m_Offset: {x: 0.03363195, y: 1.0830016}
   serializedVersion: 2
-  m_Radius: 1.2238117
+  m_Radius: 0.47508633
 --- !u!95 &8061264359999633999
 Animator:
   serializedVersion: 3

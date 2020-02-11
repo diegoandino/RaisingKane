@@ -15,6 +15,7 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
     x: 0
     y: 45
     width: 1440
@@ -25,6 +26,12 @@ MonoBehaviour:
     width: 1904
     height: 981
 >>>>>>> Meditation Idle
+=======
+    x: 0
+    y: 43.2
+    width: 1536
+    height: 780.8
+>>>>>>> Fixed projectile colliders
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
@@ -79,6 +86,7 @@ MonoBehaviour:
     x: 0
     y: 30
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
     width: 1440
     height: 805
   m_MinSize: {x: 887, y: 344}
@@ -91,8 +99,14 @@ MonoBehaviour:
     height: 931
   m_MinSize: {x: 679, y: 494}
   m_MaxSize: {x: 14002, y: 14044}
+=======
+    width: 1536
+    height: 731
+  m_MinSize: {x: 681, y: 494}
+  m_MaxSize: {x: 14004, y: 14044}
+>>>>>>> Fixed projectile colliders
   vertical: 0
-  controlID: 155
+  controlID: 103
 --- !u!114 &3
 >>>>>>> Meditation Idle
 MonoBehaviour:
@@ -110,6 +124,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
     x: 1150
     y: 0
     width: 290
@@ -119,11 +134,14 @@ MonoBehaviour:
   m_ActualView: {fileID: 17}
 =======
     x: 1521
+=======
+    x: 1225
+>>>>>>> Fixed projectile colliders
     y: 0
-    width: 383
-    height: 931
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+    width: 311
+    height: 731
+  m_MinSize: {x: 277, y: 72}
+  m_MaxSize: {x: 4002, y: 4022}
   m_ActualView: {fileID: 15}
 >>>>>>> Meditation Idle
   m_Panes:
@@ -148,6 +166,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
     width: 257
     height: 487
   m_MinSize: {x: 200, y: 200}
@@ -156,6 +175,10 @@ MonoBehaviour:
 =======
     width: 340
     height: 564
+=======
+    width: 303
+    height: 442
+>>>>>>> Fixed projectile colliders
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
@@ -181,6 +204,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
     y: 487
     width: 1150
     height: 318
@@ -191,6 +215,11 @@ MonoBehaviour:
     y: 564
     width: 1521
     height: 367
+=======
+    y: 442
+    width: 1225
+    height: 289
+>>>>>>> Fixed projectile colliders
   m_MinSize: {x: 232, y: 272}
   m_MaxSize: {x: 10002, y: 10022}
   m_ActualView: {fileID: 14}
@@ -227,12 +256,17 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
     width: 1440
     height: 855
 =======
     width: 1904
     height: 981
 >>>>>>> Meditation Idle
+=======
+    width: 1536
+    height: 781
+>>>>>>> Fixed projectile colliders
   m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
@@ -253,10 +287,14 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
     width: 1440
 =======
     width: 1904
 >>>>>>> Meditation Idle
+=======
+    width: 1536
+>>>>>>> Fixed projectile colliders
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -278,12 +316,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
     y: 835
     width: 1440
 =======
     y: 961
     width: 1904
 >>>>>>> Meditation Idle
+=======
+    y: 761
+    width: 1536
+>>>>>>> Fixed projectile colliders
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -307,6 +350,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
     width: 1150
     height: 805
   m_MinSize: {x: 610, y: 344}
@@ -317,10 +361,14 @@ MonoBehaviour:
 =======
     width: 1521
     height: 931
+=======
+    width: 1225
+    height: 731
+>>>>>>> Fixed projectile colliders
   m_MinSize: {x: 404, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
-  controlID: 47
+  controlID: 104
 --- !u!114 &10
 >>>>>>> Meditation Idle
 MonoBehaviour:
@@ -342,6 +390,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
     width: 1150
     height: 487
   m_MinSize: {x: 610, y: 222}
@@ -352,10 +401,14 @@ MonoBehaviour:
 =======
     width: 1521
     height: 564
+=======
+    width: 1225
+    height: 442
+>>>>>>> Fixed projectile colliders
   m_MinSize: {x: 404, y: 222}
   m_MaxSize: {x: 8004, y: 4022}
   vertical: 0
-  controlID: 48
+  controlID: 105
 --- !u!114 &11
 >>>>>>> Meditation Idle
 MonoBehaviour:
@@ -373,6 +426,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
     x: 257
     y: 0
     width: 231
@@ -389,13 +443,22 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
 >>>>>>> Meditation Idle
+=======
+    x: 303
+    y: 0
+    width: 922
+    height: 442
+  m_MinSize: {x: 204, y: 222}
+  m_MaxSize: {x: 4004, y: 4022}
+  m_ActualView: {fileID: 17}
+>>>>>>> Fixed projectile colliders
   m_Panes:
   - {fileID: 17}
-  - {fileID: 13}
   - {fileID: 18}
+  - {fileID: 13}
   - {fileID: 12}
-  m_Selected: 2
-  m_LastSelected: 3
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -417,49 +480,15 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 348
-    y: 81
-    width: 1179
-    height: 545
+    x: 303.2
+    y: 73.6
+    width: 920
+    height: 423
   m_ViewDataDictionary: {fileID: 0}
   m_ViewTransforms:
     m_KeySerializationHelper:
-    - {fileID: 6229703765274596469, guid: 0ed8365a07b074db8a3742b330c32de7, type: 2}
-    - {fileID: -2253876201638027769, guid: adcd23152f41f194290297777f37cf2a, type: 2}
     - {fileID: 265544378407084632, guid: 088848157529f9647984a2855ebbc811, type: 2}
     m_ValueSerializationHelper:
-    - e00: 1
-      e01: 0
-      e02: 0
-      e03: -14
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 103
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
     - e00: 1
       e01: 0
       e02: 0
@@ -491,7 +520,7 @@ MonoBehaviour:
   m_MiniTool: 0
   m_LockTracker:
     m_IsLocked: 0
-  m_CurrentEditor: 1
+  m_CurrentEditor: 0
   m_LayerEditor:
     m_SelectedLayerIndex: 0
 <<<<<<< refs/remotes/origin/master
@@ -548,10 +577,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 503
-    y: 73
-    width: 317
-    height: 796
+    x: 468
+    y: 181
+    width: 973
+    height: 501
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &14
 MonoBehaviour:
@@ -575,6 +604,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
     x: 0
     y: 562
     width: 1150
@@ -585,6 +615,12 @@ MonoBehaviour:
     width: 1521
     height: 348
 >>>>>>> Meditation Idle
+=======
+    x: 0
+    y: 515.2
+    width: 1225
+    height: 270
+>>>>>>> Fixed projectile colliders
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -613,7 +649,7 @@ MonoBehaviour:
   - Assets/Art/Animations
 >>>>>>> Meditation Idle
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\u1001862\Documents\GitHub\RaisingKane
+  m_LastProjectPath: C:\Users\tails\Desktop\SENIOR PROJECT\RaisingKane
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
@@ -624,10 +660,16 @@ MonoBehaviour:
     m_ExpandedIDs: 00000000ac2f0000ac320000e63200002e3300005638000076380000143c0000
 =======
     scrollPos: {x: 0, y: 0}
+<<<<<<< refs/remotes/origin/master
     m_SelectedIDs: 2a4a0000
     m_LastClickedID: 18986
     m_ExpandedIDs: 00000000244a0000f04b0000e051000000ca9a3b
 >>>>>>> Meditation Idle
+=======
+    m_SelectedIDs: 4e430000
+    m_LastClickedID: 17230
+    m_ExpandedIDs: 000000004843000014450000c44a000000ca9a3b
+>>>>>>> Fixed projectile colliders
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -656,10 +698,14 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
     m_ExpandedIDs: 00000000ac2f0000ac320000e63200002e3300005638000076380000143c0000
 =======
     m_ExpandedIDs: 00000000244a0000ca4b0000f04b00002a4c0000904f0000aa4f0000e0510000
 >>>>>>> Meditation Idle
+=======
+    m_ExpandedIDs: 000000004843000014450000c44a0000
+>>>>>>> Fixed projectile colliders
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -692,9 +738,14 @@ MonoBehaviour:
 =======
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
+<<<<<<< refs/remotes/origin/master
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000f0510000e8510000
 >>>>>>> Meditation Idle
+=======
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c6230000
+>>>>>>> Fixed projectile colliders
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -710,7 +761,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 5}
+      m_ClientGUIView: {fileID: 0}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -722,10 +773,14 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
   m_DirectoriesAreaWidth: 160
 --- !u!114 &17
 =======
   m_DirectoriesAreaWidth: 592
+=======
+  m_DirectoriesAreaWidth: 115
+>>>>>>> Fixed projectile colliders
 --- !u!114 &15
 >>>>>>> Meditation Idle
 MonoBehaviour:
@@ -749,6 +804,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
     x: 1150
     y: 75
     width: 288
@@ -759,6 +815,12 @@ MonoBehaviour:
     width: 381
     height: 912
 >>>>>>> Meditation Idle
+=======
+    x: 1224.8
+    y: 73.6
+    width: 309
+    height: 712
+>>>>>>> Fixed projectile colliders
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
   m_ObjectsLockedBeforeSerialization: []
@@ -766,7 +828,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewResizer:
-    m_CachedPref: -160
+    m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
@@ -794,6 +856,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
     x: 0
     y: 75
     width: 257
@@ -817,6 +880,19 @@ MonoBehaviour:
       m_LastClickedID: 0
       m_ExpandedIDs: 2edaffff44550000
 >>>>>>> Meditation Idle
+=======
+    x: 0
+    y: 73.6
+    width: 303
+    height: 423
+  m_ViewDataDictionary: {fileID: 0}
+  m_SceneHierarchy:
+    m_TreeViewState:
+      scrollPos: {x: 0, y: 74}
+      m_SelectedIDs: f24a0000
+      m_LastClickedID: 19186
+      m_ExpandedIDs: 18e3ffff6ae3ffff6ce3ffffc4e4ffff
+>>>>>>> Fixed projectile colliders
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -832,14 +908,14 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 4}
+        m_ClientGUIView: {fileID: 0}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
     m_LockTracker:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
-  m_WindowGUID: 946c3d30e0cb745bf8740e80d3524182
+  m_WindowGUID: 758f0e0d52a0bb74dac31ca94c32e3de
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -862,6 +938,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
     x: 257
     y: 75
     width: 229
@@ -872,17 +949,24 @@ MonoBehaviour:
     width: 786
     height: 545
 >>>>>>> Meditation Idle
+=======
+    x: 303.2
+    y: 73.6
+    width: 920
+    height: 423
+>>>>>>> Fixed projectile colliders
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
-  m_WindowGUID: a5b272c0d05a844c98e29389917776dc
+  m_WindowGUID: bc6e4a3f4ce1e0e40a2dadce5ef52117
   m_Gizmos: 1
-  m_SceneIsLit: 0
+  m_SceneIsLit: 1
   m_SceneLighting: 1
   m_2DMode: 1
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< refs/remotes/origin/master
 <<<<<<< refs/remotes/origin/master
     m_Target: {x: 441.3172, y: 337.13022, z: -1615}
     speed: 2
@@ -892,6 +976,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -4.1000004, y: -3.8262846, z: 4.332068}
 >>>>>>> Meditation Idle
+=======
+    m_Target: {x: -7.3500967, y: -3.0592823, z: 0}
+    speed: 2
+    m_Value: {x: -7.3500967, y: -3.0592823, z: 0}
+>>>>>>> Fixed projectile colliders
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -902,7 +991,7 @@ MonoBehaviour:
   m_SceneViewState:
     showFog: 1
     showMaterialUpdate: 0
-    showSkybox: 0
+    showSkybox: 1
     showFlares: 1
     showImageEffects: 1
     showParticleSystems: 1
@@ -925,6 +1014,7 @@ MonoBehaviour:
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
     m_Target: 22
     speed: 2
     m_Value: 22
@@ -933,6 +1023,11 @@ MonoBehaviour:
     speed: 2
     m_Value: 31.668646
 >>>>>>> Meditation Idle
+=======
+    m_Target: 10
+    speed: 2
+    m_Value: 10
+>>>>>>> Fixed projectile colliders
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -980,6 +1075,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
     x: 488
     y: 75
     width: 660
@@ -990,6 +1086,12 @@ MonoBehaviour:
     width: 1179
     height: 545
 >>>>>>> Meditation Idle
+=======
+    x: 303.2
+    y: 73.6
+    width: 920
+    height: 423
+>>>>>>> Fixed projectile colliders
   m_ViewDataDictionary: {fileID: 0}
   m_VSyncEnabled: 0
   m_MaximizeOnPlay: 0
@@ -1003,6 +1105,7 @@ MonoBehaviour:
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
     m_HBaseRangeMin: -165
     m_HBaseRangeMax: 165
     m_VBaseRangeMin: -112.75
@@ -1013,6 +1116,12 @@ MonoBehaviour:
     m_VBaseRangeMin: -264
     m_VBaseRangeMax: 264
 >>>>>>> Meditation Idle
+=======
+    m_HBaseRangeMin: -368
+    m_HBaseRangeMax: 368
+    m_VBaseRangeMin: -162.40001
+    m_VBaseRangeMax: 162.40001
+>>>>>>> Fixed projectile colliders
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1021,7 +1130,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -1030,6 +1139,7 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
+<<<<<<< refs/remotes/origin/master
 <<<<<<< refs/remotes/origin/master
       width: 660
       height: 451
@@ -1041,12 +1151,19 @@ MonoBehaviour:
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 589.5, y: 264}
 >>>>>>> Meditation Idle
+=======
+      width: 920
+      height: 406
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 460, y: 203}
+>>>>>>> Fixed projectile colliders
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< refs/remotes/origin/master
 <<<<<<< refs/remotes/origin/master
       x: -165
       y: -112.75
@@ -1058,15 +1175,25 @@ MonoBehaviour:
       width: 1179
       height: 528
 >>>>>>> Meditation Idle
+=======
+      x: -460
+      y: -203
+      width: 920
+      height: 406
+>>>>>>> Fixed projectile colliders
     m_MinimalGUI: 1
   m_defaultScale: 2
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
   m_LastWindowPixelSize: {x: 1320, y: 936}
 =======
   m_LastWindowPixelSize: {x: 1179, y: 545}
 >>>>>>> Meditation Idle
+=======
+  m_LastWindowPixelSize: {x: 1150, y: 528.75}
+>>>>>>> Fixed projectile colliders
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -1092,8 +1219,15 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< refs/remotes/origin/master
     x: 0
     y: 562
     width: 1150
     height: 299
+=======
+    x: 8
+    y: 718
+    width: 1366
+    height: 308
+>>>>>>> Fixed projectile colliders
   m_ViewDataDictionary: {fileID: 0}
