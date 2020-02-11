@@ -185,7 +185,7 @@ public class BP2_ButtonControls : MonoBehaviour
             spriteChanger.sprite = correctImage;
 
             Animator niceAnimator = niceText.GetComponent<Animator>();
-            niceAnimator.Play("Okay!", 1, 1);
+            niceAnimator.Play("Nice!", 10);
         }
         else
         {
