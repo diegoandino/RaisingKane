@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 //-- This Class generates beats in different positions using random Array positions --//
 public class BeatGeneratorTest : MonoBehaviour
@@ -70,6 +71,31 @@ public class BeatGeneratorTest : MonoBehaviour
 		}
 	}
 
+
+	private IEnumerator EndSong()
+	{
+		GameObject[] activeBeats;
+        activeBeats = GameObject.FindGameObjectsWithTag("Beat");
+        
+		if (activeBeats.Length > 0)
+		{
+			yield return new WaitForSeconds(1f);
+		} else
+		{
+			print("Song Over");
+            StartCoroutine(LoadSceneAFterTransition());
+		}
+	}
+
+	private IEnumerator LoadSceneAFterTransition()
+	{
+		//show animate out animation
+		//anim.SetBool("AnimateOut", true);
+		yield return new WaitForSeconds(1f);
+		//load the scene we want
+		SceneManager.LoadScene("Main Menu");
+	}
+
 	private IEnumerator SpawnBeat(BeatItem beat)
 	{
 
@@ -119,17 +145,17 @@ public class BeatGeneratorTest : MonoBehaviour
 			if (beat.Row == 1)
 			{
 				GameObject NewBeat = Instantiate(BouncBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
-				NewBeat.GetComponent<ArchProjectile>().EndPoint = Button1Pos.position;
+				NewBeat.GetComponent<BounceProjectile>().EndPoint = Button1Pos.position;
 			}
 			else if (beat.Row == 2)
 			{
 				GameObject NewBeat = Instantiate(BouncBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
-				NewBeat.GetComponent<ArchProjectile>().EndPoint = Button2Pos.position;
+				NewBeat.GetComponent<BounceProjectile>().EndPoint = Button2Pos.position;
 			}
 			else if (beat.Row == 3)
 			{
 				GameObject NewBeat = Instantiate(BouncBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
-				NewBeat.GetComponent<ArchProjectile>().EndPoint = Button3Pos.position;
+				NewBeat.GetComponent<BounceProjectile>().EndPoint = Button3Pos.position;
 			}
 		}
 		else if (beat.BeatType == 4)

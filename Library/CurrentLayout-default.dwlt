@@ -3,9 +3,8 @@
 --- !u!114 &1
 MonoBehaviour:
   m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
@@ -18,9 +17,11 @@ MonoBehaviour:
 <<<<<<< refs/remotes/origin/master
     x: 0
     y: 45
+<<<<<<< refs/remotes/origin/master
     width: 1440
     height: 855
 =======
+<<<<<<< refs/remotes/origin/master
     x: 8
     y: 51
     width: 1904
@@ -32,17 +33,21 @@ MonoBehaviour:
     width: 1536
     height: 780.8
 >>>>>>> Fixed projectile colliders
+=======
+    width: 2560
+    height: 1391
+>>>>>>> Playtest Build
+>>>>>>> Playtest Build
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 544}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
 <<<<<<< refs/remotes/origin/master
@@ -87,6 +92,9 @@ MonoBehaviour:
     y: 30
 <<<<<<< refs/remotes/origin/master
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
+=======
+>>>>>>> Playtest Build
     width: 1440
     height: 805
   m_MinSize: {x: 887, y: 344}
@@ -95,6 +103,7 @@ MonoBehaviour:
   controlID: 109
 --- !u!114 &4
 =======
+<<<<<<< refs/remotes/origin/master
     width: 1904
     height: 931
   m_MinSize: {x: 679, y: 494}
@@ -109,11 +118,20 @@ MonoBehaviour:
   controlID: 103
 --- !u!114 &3
 >>>>>>> Meditation Idle
+=======
+    width: 2560
+    height: 1341
+  m_MinSize: {x: 683, y: 492}
+  m_MaxSize: {x: 14004, y: 14042}
+  vertical: 0
+  controlID: 615
+--- !u!114 &3
+>>>>>>> Playtest Build
+>>>>>>> Playtest Build
 MonoBehaviour:
   m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
@@ -125,6 +143,9 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< refs/remotes/origin/master
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
+=======
+>>>>>>> Playtest Build
     x: 1150
     y: 0
     width: 290
@@ -133,6 +154,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4002, y: 4022}
   m_ActualView: {fileID: 17}
 =======
+<<<<<<< refs/remotes/origin/master
     x: 1521
 =======
     x: 1225
@@ -144,16 +166,25 @@ MonoBehaviour:
   m_MaxSize: {x: 4002, y: 4022}
   m_ActualView: {fileID: 15}
 >>>>>>> Meditation Idle
+=======
+    x: 2041
+    y: 0
+    width: 519
+    height: 1341
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 14}
+>>>>>>> Playtest Build
+>>>>>>> Playtest Build
   m_Panes:
-  - {fileID: 15}
+  - {fileID: 14}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
@@ -167,12 +198,16 @@ MonoBehaviour:
     y: 0
 <<<<<<< refs/remotes/origin/master
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
+=======
+>>>>>>> Playtest Build
     width: 257
     height: 487
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
 =======
+<<<<<<< refs/remotes/origin/master
     width: 340
     height: 564
 =======
@@ -183,16 +218,23 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
 >>>>>>> Meditation Idle
+=======
+    width: 505
+    height: 811
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 15}
+>>>>>>> Playtest Build
+>>>>>>> Playtest Build
   m_Panes:
-  - {fileID: 16}
+  - {fileID: 15}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
@@ -205,6 +247,9 @@ MonoBehaviour:
     x: 0
 <<<<<<< refs/remotes/origin/master
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
+=======
+>>>>>>> Playtest Build
     y: 487
     width: 1150
     height: 318
@@ -228,6 +273,18 @@ MonoBehaviour:
   - {fileID: 14}
 <<<<<<< refs/remotes/origin/master
   m_Selected: 1
+=======
+    y: 811
+    width: 2041
+    height: 530
+  m_MinSize: {x: 232, y: 271}
+  m_MaxSize: {x: 10002, y: 10021}
+  m_ActualView: {fileID: 13}
+  m_Panes:
+  - {fileID: 13}
+  - {fileID: 18}
+  m_Selected: 0
+>>>>>>> Playtest Build
   m_LastSelected: 0
 --- !u!114 &7
 =======
@@ -238,9 +295,8 @@ MonoBehaviour:
 >>>>>>> Meditation Idle
 MonoBehaviour:
   m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
@@ -257,6 +313,7 @@ MonoBehaviour:
     y: 0
 <<<<<<< refs/remotes/origin/master
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
     width: 1440
     height: 855
 =======
@@ -267,14 +324,21 @@ MonoBehaviour:
     width: 1536
     height: 781
 >>>>>>> Fixed projectile colliders
+=======
+    width: 1440
+    height: 855
+=======
+    width: 2560
+    height: 1391
+>>>>>>> Playtest Build
+>>>>>>> Playtest Build
   m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
@@ -288,6 +352,7 @@ MonoBehaviour:
     y: 0
 <<<<<<< refs/remotes/origin/master
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
     width: 1440
 =======
     width: 1904
@@ -295,16 +360,21 @@ MonoBehaviour:
 =======
     width: 1536
 >>>>>>> Fixed projectile colliders
+=======
+    width: 1440
+=======
+    width: 2560
+>>>>>>> Playtest Build
+>>>>>>> Playtest Build
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
-  m_LastLoadedLayoutName: 
+  m_LastLoadedLayoutName: Default
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
@@ -317,6 +387,7 @@ MonoBehaviour:
     x: 0
 <<<<<<< refs/remotes/origin/master
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
     y: 835
     width: 1440
 =======
@@ -327,15 +398,22 @@ MonoBehaviour:
     y: 761
     width: 1536
 >>>>>>> Fixed projectile colliders
+=======
+    y: 835
+    width: 1440
+=======
+    y: 1371
+    width: 2560
+>>>>>>> Playtest Build
+>>>>>>> Playtest Build
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
@@ -351,6 +429,9 @@ MonoBehaviour:
     y: 0
 <<<<<<< refs/remotes/origin/master
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
+=======
+>>>>>>> Playtest Build
     width: 1150
     height: 805
   m_MinSize: {x: 610, y: 344}
@@ -359,6 +440,7 @@ MonoBehaviour:
   controlID: 110
 --- !u!114 &11
 =======
+<<<<<<< refs/remotes/origin/master
     width: 1521
     height: 931
 =======
@@ -371,11 +453,20 @@ MonoBehaviour:
   controlID: 104
 --- !u!114 &10
 >>>>>>> Meditation Idle
+=======
+    width: 2041
+    height: 1341
+  m_MinSize: {x: 406, y: 492}
+  m_MaxSize: {x: 10002, y: 14042}
+  vertical: 1
+  controlID: 547
+--- !u!114 &10
+>>>>>>> Playtest Build
+>>>>>>> Playtest Build
 MonoBehaviour:
   m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
@@ -391,6 +482,9 @@ MonoBehaviour:
     y: 0
 <<<<<<< refs/remotes/origin/master
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
+=======
+>>>>>>> Playtest Build
     width: 1150
     height: 487
   m_MinSize: {x: 610, y: 222}
@@ -399,6 +493,7 @@ MonoBehaviour:
   controlID: 66
 --- !u!114 &12
 =======
+<<<<<<< refs/remotes/origin/master
     width: 1521
     height: 564
 =======
@@ -411,11 +506,20 @@ MonoBehaviour:
   controlID: 105
 --- !u!114 &11
 >>>>>>> Meditation Idle
+=======
+    width: 2041
+    height: 811
+  m_MinSize: {x: 406, y: 221}
+  m_MaxSize: {x: 8006, y: 4021}
+  vertical: 0
+  controlID: 548
+--- !u!114 &11
+>>>>>>> Playtest Build
+>>>>>>> Playtest Build
 MonoBehaviour:
   m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
@@ -427,6 +531,9 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< refs/remotes/origin/master
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
+=======
+>>>>>>> Playtest Build
     x: 257
     y: 0
     width: 231
@@ -451,17 +558,29 @@ MonoBehaviour:
   m_MinSize: {x: 204, y: 222}
   m_MaxSize: {x: 4004, y: 4022}
   m_ActualView: {fileID: 17}
+<<<<<<< refs/remotes/origin/master
 >>>>>>> Fixed projectile colliders
+=======
+=======
+    x: 505
+    y: 0
+    width: 1536
+    height: 811
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
+  m_ActualView: {fileID: 16}
+>>>>>>> Playtest Build
+>>>>>>> Playtest Build
   m_Panes:
+  - {fileID: 16}
   - {fileID: 17}
-  - {fileID: 18}
-  - {fileID: 13}
   - {fileID: 12}
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
+<<<<<<< refs/remotes/origin/master
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -530,6 +649,10 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+=======
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+>>>>>>> Playtest Build
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -568,6 +691,7 @@ MonoBehaviour:
   m_Script: {fileID: 12111, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_AutoRepaintOnSceneChange: 0
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 2048, y: 2048}
   m_TitleContent:
@@ -575,25 +699,25 @@ MonoBehaviour:
     m_Image: {fileID: 357073275683767465, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
+  m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
     x: 468
     y: 181
     width: 973
     height: 501
-  m_ViewDataDictionary: {fileID: 0}
---- !u!114 &14
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_AutoRepaintOnSceneChange: 0
   m_MinSize: {x: 230, y: 250}
   m_MaxSize: {x: 10000, y: 10000}
   m_TitleContent:
@@ -601,11 +725,13 @@ MonoBehaviour:
     m_Image: {fileID: -7501376956915960154, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
+  m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
 <<<<<<< refs/remotes/origin/master
 <<<<<<< refs/remotes/origin/master
     x: 0
+<<<<<<< refs/remotes/origin/master
     y: 562
     width: 1150
     height: 299
@@ -622,18 +748,21 @@ MonoBehaviour:
     height: 270
 >>>>>>> Fixed projectile colliders
   m_ViewDataDictionary: {fileID: 0}
+=======
+    y: 905
+    width: 2039
+    height: 509
+>>>>>>> Playtest Build
   m_SearchFilter:
     m_NameFilter: 
     m_ClassNames: []
     m_AssetLabels: []
     m_AssetBundleNames: []
     m_VersionControlStates: []
-    m_SoftLockControlStates: []
     m_ReferencingInstanceIDs: 
-    m_SceneHandles: 
+    m_ScenePaths: []
     m_ShowAllHits: 0
-    m_SkipHidden: 0
-    m_SearchArea: 1
+    m_SearchArea: 0
     m_Folders:
 <<<<<<< refs/remotes/origin/master
     - Assets/Scripts/Rhythm/PROJECTILES
@@ -642,21 +771,30 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Scripts/Rhythm/PROJECTILES
 =======
+<<<<<<< refs/remotes/origin/master
     - Assets/Art/Animations
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
   - Assets/Art/Animations
 >>>>>>> Meditation Idle
+=======
+    - Assets
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets
+>>>>>>> Playtest Build
+>>>>>>> Playtest Build
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\tails\Desktop\SENIOR PROJECT\RaisingKane
-  m_LockTracker:
-    m_IsLocked: 0
+  m_LastProjectPath: /Users/danielbrauer/Unity Projects/New Unity Project 20
+  m_IsLocked: 0
   m_FolderTreeState:
 <<<<<<< refs/remotes/origin/master
     scrollPos: {x: 0, y: 373}
     m_SelectedIDs: d2380000
     m_LastClickedID: 14546
+<<<<<<< refs/remotes/origin/master
     m_ExpandedIDs: 00000000ac2f0000ac320000e63200002e3300005638000076380000143c0000
 =======
     scrollPos: {x: 0, y: 0}
@@ -670,6 +808,15 @@ MonoBehaviour:
     m_LastClickedID: 17230
     m_ExpandedIDs: 000000004843000014450000c44a000000ca9a3b
 >>>>>>> Fixed projectile colliders
+=======
+    m_ExpandedIDs: 00000000ae2f0000ae320000e8320000303300005838000078380000183c000000ca9a3b
+=======
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: b0230000
+    m_LastClickedID: 9136
+    m_ExpandedIDs: 00000000b023000000ca9a3bffffff7f
+>>>>>>> Playtest Build
+>>>>>>> Playtest Build
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -686,17 +833,19 @@ MonoBehaviour:
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 0}
-    m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
       m_Path: 
       m_Icon: {fileID: 0}
       m_ResourceFile: 
+    m_SearchString: 
+    m_ColumnWidths: []
   m_AssetTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< refs/remotes/origin/master
 <<<<<<< refs/remotes/origin/master
 <<<<<<< refs/remotes/origin/master
     m_ExpandedIDs: 00000000ac2f0000ac320000e63200002e3300005638000076380000143c0000
@@ -706,6 +855,12 @@ MonoBehaviour:
 =======
     m_ExpandedIDs: 000000004843000014450000c44a0000
 >>>>>>> Fixed projectile colliders
+=======
+    m_ExpandedIDs: 00000000ae2f0000ae320000e8320000303300005838000078380000183c0000
+=======
+    m_ExpandedIDs: 00000000b023000000ca9a3bffffff7f
+>>>>>>> Playtest Build
+>>>>>>> Playtest Build
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -722,18 +877,24 @@ MonoBehaviour:
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 0}
-    m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
       m_Path: 
       m_Icon: {fileID: 0}
       m_ResourceFile: 
+    m_SearchString: 
+    m_ColumnWidths: []
   m_ListAreaState:
 <<<<<<< refs/remotes/origin/master
     m_SelectedInstanceIDs: 683d0000
     m_LastClickedInstanceID: 15720
     m_HadKeyboardFocusLastEvent: 1
+=======
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 0
+>>>>>>> Playtest Build
     m_ExpandedInstanceIDs: c6230000
 =======
     m_SelectedInstanceIDs: 
@@ -771,29 +932,36 @@ MonoBehaviour:
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
+<<<<<<< refs/remotes/origin/master
   m_SkipHiddenPackages: 0
 <<<<<<< refs/remotes/origin/master
 <<<<<<< refs/remotes/origin/master
   m_DirectoriesAreaWidth: 160
 --- !u!114 &17
 =======
+<<<<<<< refs/remotes/origin/master
   m_DirectoriesAreaWidth: 592
 =======
   m_DirectoriesAreaWidth: 115
 >>>>>>> Fixed projectile colliders
 --- !u!114 &15
 >>>>>>> Meditation Idle
+=======
+  m_DirectoriesAreaWidth: 115
+--- !u!114 &14
+>>>>>>> Playtest Build
+>>>>>>> Playtest Build
 MonoBehaviour:
   m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_AutoRepaintOnSceneChange: 0
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
@@ -801,10 +969,14 @@ MonoBehaviour:
     m_Image: {fileID: -6905738622615590433, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
+  m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
 <<<<<<< refs/remotes/origin/master
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
+=======
+>>>>>>> Playtest Build
     x: 1150
     y: 75
     width: 288
@@ -827,25 +999,42 @@ MonoBehaviour:
   m_InstanceIDsLockedBeforeSerialization: 
   m_LockTracker:
     m_IsLocked: 0
+=======
+    x: 2043
+    y: 94
+    width: 517
+    height: 1320
+  m_ScrollPosition: {x: 0, y: 0}
+  m_InspectorMode: 0
+>>>>>>> Playtest Build
   m_PreviewResizer:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
+<<<<<<< refs/remotes/origin/master
   m_LastInspectedObjectInstanceID: -1
+<<<<<<< refs/remotes/origin/master
   m_LastVerticalScrollValue: 0
 --- !u!114 &16
+=======
+  m_LastVerticalScrollValue: 210
+--- !u!114 &18
+=======
+--- !u!114 &15
+>>>>>>> Playtest Build
+>>>>>>> Playtest Build
 MonoBehaviour:
   m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_AutoRepaintOnSceneChange: 0
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
@@ -853,11 +1042,13 @@ MonoBehaviour:
     m_Image: {fileID: -590624980919486359, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
+  m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
 <<<<<<< refs/remotes/origin/master
 <<<<<<< refs/remotes/origin/master
     x: 0
+<<<<<<< refs/remotes/origin/master
     y: 75
     width: 257
     height: 468
@@ -917,17 +1108,56 @@ MonoBehaviour:
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 758f0e0d52a0bb74dac31ca94c32e3de
 --- !u!114 &17
+=======
+    y: 94
+    width: 503
+    height: 790
+  m_TreeViewState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 00000000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 0
+      m_ClientGUIView: {fileID: 0}
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+    m_SearchString: 
+    m_ColumnWidths: []
+  m_ExpandedScenes: []
+  m_CurrenRootInstanceID: 0
+  m_Locked: 0
+  m_CurrentSortingName: TransformSorting
+--- !u!114 &16
+>>>>>>> Playtest Build
 MonoBehaviour:
   m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12013, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_AutoRepaintOnSceneChange: 1
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
@@ -935,10 +1165,14 @@ MonoBehaviour:
     m_Image: {fileID: 2318424515335265636, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
+  m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
 <<<<<<< refs/remotes/origin/master
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
+=======
+>>>>>>> Playtest Build
     x: 257
     y: 75
     width: 229
@@ -960,18 +1194,28 @@ MonoBehaviour:
   m_WindowGUID: bc6e4a3f4ce1e0e40a2dadce5ef52117
   m_Gizmos: 1
   m_SceneIsLit: 1
+=======
+    x: 507
+    y: 94
+    width: 1532
+    height: 790
+>>>>>>> Playtest Build
   m_SceneLighting: 1
-  m_2DMode: 1
+  lastFramingTime: 0
+  m_2DMode: 0
   m_isRotationLocked: 0
-  m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
 <<<<<<< refs/remotes/origin/master
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
+=======
+>>>>>>> Playtest Build
     m_Target: {x: 441.3172, y: 337.13022, z: -1615}
     speed: 2
     m_Value: {x: 441.3172, y: 337.13022, z: -1615}
 =======
+<<<<<<< refs/remotes/origin/master
     m_Target: {x: -4.1000004, y: -3.8262846, z: 4.332068}
     speed: 2
     m_Value: {x: -4.1000004, y: -3.8262846, z: 4.332068}
@@ -981,37 +1225,36 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -7.3500967, y: -3.0592823, z: 0}
 >>>>>>> Fixed projectile colliders
+=======
+    m_Target: {x: 0, y: 0, z: 0}
+    speed: 2
+    m_Value: {x: 0, y: 0, z: 0}
+>>>>>>> Playtest Build
+>>>>>>> Playtest Build
   m_RenderMode: 0
-  m_CameraMode:
-    drawMode: 0
-    name: Shaded
-    section: Shading Mode
-  m_ValidateTrueMetals: 0
-  m_DoValidateTrueMetals: 0
   m_SceneViewState:
     showFog: 1
     showMaterialUpdate: 0
     showSkybox: 1
     showFlares: 1
     showImageEffects: 1
-    showParticleSystems: 1
   grid:
     xGrid:
       m_Target: 0
       speed: 2
       m_Value: 0
     yGrid:
-      m_Target: 0
-      speed: 2
-      m_Value: 0
-    zGrid:
       m_Target: 1
       speed: 2
       m_Value: 1
+    zGrid:
+      m_Target: 0
+      speed: 2
+      m_Value: 0
   m_Rotation:
-    m_Target: {x: 0, y: 0, z: 0, w: 1}
+    m_Target: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0, w: 1}
+    m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_Size:
 <<<<<<< refs/remotes/origin/master
 <<<<<<< refs/remotes/origin/master
@@ -1029,42 +1272,27 @@ MonoBehaviour:
     m_Value: 10
 >>>>>>> Fixed projectile colliders
   m_Ortho:
-    m_Target: 1
+    m_Target: 0
     speed: 2
-    m_Value: 1
-  m_CameraSettings:
-    m_Speed: 1
-    m_SpeedNormalized: 0.5
-    m_SpeedMin: 0.01
-    m_SpeedMax: 2
-    m_EasingEnabled: 1
-    m_EasingDuration: 0.4
-    m_AccelerationEnabled: 1
-    m_FieldOfView: 90
-    m_NearClip: 0.03
-    m_FarClip: 10000
-    m_DynamicClip: 1
-    m_OcclusionCulling: 0
-  m_ShowGlobalGrid: 1
-  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+    m_Value: 0
+  m_LastSceneViewRotation: {x: 0, y: 0, z: 0, w: 0}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
-  m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &18
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_AutoRepaintOnSceneChange: 1
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
@@ -1072,10 +1300,14 @@ MonoBehaviour:
     m_Image: {fileID: -2087823869225018852, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
+  m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
 <<<<<<< refs/remotes/origin/master
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
+=======
+>>>>>>> Playtest Build
     x: 488
     y: 75
     width: 660
@@ -1094,14 +1326,21 @@ MonoBehaviour:
 >>>>>>> Fixed projectile colliders
   m_ViewDataDictionary: {fileID: 0}
   m_VSyncEnabled: 0
+=======
+    x: 507
+    y: 94
+    width: 1532
+    height: 790
+>>>>>>> Playtest Build
   m_MaximizeOnPlay: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 000000000000000000000000000000000000000000000000000000000000000000000000
   m_TargetDisplay: 0
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
+<<<<<<< refs/remotes/origin/master
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
 <<<<<<< refs/remotes/origin/master
@@ -1111,6 +1350,7 @@ MonoBehaviour:
     m_VBaseRangeMin: -112.75
     m_VBaseRangeMax: 112.75
 =======
+<<<<<<< refs/remotes/origin/master
     m_HBaseRangeMin: -589.5
     m_HBaseRangeMax: 589.5
     m_VBaseRangeMin: -264
@@ -1122,6 +1362,13 @@ MonoBehaviour:
     m_VBaseRangeMin: -162.40001
     m_VBaseRangeMax: 162.40001
 >>>>>>> Fixed projectile colliders
+=======
+    m_HBaseRangeMin: -383
+    m_HBaseRangeMax: 383
+    m_VBaseRangeMin: -193.25
+    m_VBaseRangeMax: 193.25
+>>>>>>> Playtest Build
+>>>>>>> Playtest Build
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1130,9 +1377,8 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
-    m_EnableSliderZoomHorizontal: 0
-    m_EnableSliderZoomVertical: 0
+    m_EnableMouseInput: 1
+    m_EnableSliderZoom: 0
     m_UniformScale: 1
     m_UpDirection: 1
     m_DrawArea:
@@ -1141,11 +1387,15 @@ MonoBehaviour:
       y: 17
 <<<<<<< refs/remotes/origin/master
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
+=======
+>>>>>>> Playtest Build
       width: 660
       height: 451
     m_Scale: {x: 2, y: 2}
     m_Translation: {x: 330, y: 225.5}
 =======
+<<<<<<< refs/remotes/origin/master
       width: 1179
       height: 528
     m_Scale: {x: 1, y: 1}
@@ -1157,6 +1407,13 @@ MonoBehaviour:
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 460, y: 203}
 >>>>>>> Fixed projectile colliders
+=======
+      width: 1532
+      height: 773
+    m_Scale: {x: 2, y: 2}
+    m_Translation: {x: 766, y: 386.5}
+>>>>>>> Playtest Build
+>>>>>>> Playtest Build
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -1165,6 +1422,9 @@ MonoBehaviour:
       serializedVersion: 2
 <<<<<<< refs/remotes/origin/master
 <<<<<<< refs/remotes/origin/master
+<<<<<<< refs/remotes/origin/master
+=======
+>>>>>>> Playtest Build
       x: -165
       y: -112.75
       width: 330
@@ -1189,27 +1449,38 @@ MonoBehaviour:
 <<<<<<< refs/remotes/origin/master
   m_LastWindowPixelSize: {x: 1320, y: 936}
 =======
+<<<<<<< refs/remotes/origin/master
   m_LastWindowPixelSize: {x: 1179, y: 545}
 >>>>>>> Meditation Idle
 =======
   m_LastWindowPixelSize: {x: 1150, y: 528.75}
 >>>>>>> Fixed projectile colliders
+=======
+      x: -383
+      y: -193.25
+      width: 766
+      height: 386.5
+    m_MinimalGUI: 1
+  m_defaultScale: 2
+  m_TargetTexture: {fileID: 0}
+  m_CurrentColorSpace: 1
+  m_LastWindowPixelSize: {x: 3064, y: 1580}
+>>>>>>> Playtest Build
+>>>>>>> Playtest Build
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
-  m_LowResolutionForAspectRatios: 01000000000000000000
-  m_XRRenderMode: 0
---- !u!114 &19
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_AutoRepaintOnSceneChange: 0
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
@@ -1217,6 +1488,7 @@ MonoBehaviour:
     m_Image: {fileID: 111653112392082826, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
+  m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
 <<<<<<< refs/remotes/origin/master
@@ -1231,3 +1503,9 @@ MonoBehaviour:
     height: 308
 >>>>>>> Fixed projectile colliders
   m_ViewDataDictionary: {fileID: 0}
+=======
+    x: 8
+    y: 718
+    width: 1366
+    height: 308
+>>>>>>> Playtest Build
