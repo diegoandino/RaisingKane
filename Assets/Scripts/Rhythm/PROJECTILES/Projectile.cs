@@ -20,6 +20,7 @@ public class Projectile : MonoBehaviour
     public bool perfectHit;
     public bool canBePressed; //If the button can be pressed or not. NOTE: Currently allows you not to miss early
     public bool pressed;
+    public static bool _destroy;
 
     public Transform button1;
     public Transform button2;
@@ -33,7 +34,7 @@ public class Projectile : MonoBehaviour
         perfectHit = false;
         canBePressed = false;
         pressed = true;
-	}
+    }
 
 
     // Update is called once per frame
@@ -95,7 +96,7 @@ public class Projectile : MonoBehaviour
      * Checks for Beat position and key presses 
      */
 	public void BeatCheck(Boolean destroy)
-    {
+	{
 
         if (Input.GetKeyDown(BP2_ButtonControls.staticKey))
         {
@@ -108,13 +109,19 @@ public class Projectile : MonoBehaviour
                     musicManager.Playsound("implode");
 
                     normalHit = true; perfectHit = false; goodHit = false; pressed = true;
-
+                    
                     ScoreCount.score += 2;
 
                     if (destroy == true)
+                    {
+                        _destroy = true;
                         Destroy(this.gameObject);
+                    }
+
                     else
+                    {
                         destroy = false;
+                    }
                 }
 
                 //Good Check
@@ -128,7 +135,7 @@ public class Projectile : MonoBehaviour
                     normalHit = false; perfectHit = false; goodHit = true; pressed = true;
 
                     ScoreCount.score += 4;
-
+                    
 					if (destroy == true)
                         Destroy(this.gameObject);
                     else

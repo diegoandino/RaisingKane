@@ -19,19 +19,11 @@ public class ArchProjectile : Projectile
     public Vector3 StartPoint;
     public Vector3 EndPoint;
 
-
-	public int maxValue = 100;
-	public int currValue = 0;
-	public Meter meter;
-
 	// Start is called before the first frame update
 	void Start()
     {
         SetPoints();
-
-		meter.setValue(currValue);
-		meter.setMaxValue(maxValue);
-	}
+    }
 
 
     // Update is called once per frame
@@ -40,15 +32,6 @@ public class ArchProjectile : Projectile
         this.BeatCheck(true);
         ArchMove();
         this.MissCheck(true);
-
-		if (Input.GetKeyDown(KeyCode.Space)) { scoreUp(5); }
-	}
-
-
-	public void scoreUp(int score)
-	{
-		currValue += score;
-		meter.setValue(currValue);
 	}
 
 
