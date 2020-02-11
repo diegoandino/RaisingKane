@@ -26,6 +26,8 @@ public class Projectile : MonoBehaviour
     public Transform button2;
     public Transform button3;
 
+	public playerTest meter; 
+
 	// Start is called before the first frame update
 	void Start()
     {
@@ -114,7 +116,8 @@ public class Projectile : MonoBehaviour
 
                     if (destroy == true)
                     {
-                        _destroy = true;
+						//_destroy = destroy;
+						meter.damage(5);
                         Destroy(this.gameObject);
                     }
 
@@ -135,9 +138,13 @@ public class Projectile : MonoBehaviour
                     normalHit = false; perfectHit = false; goodHit = true; pressed = true;
 
                     ScoreCount.score += 4;
-                    
+
 					if (destroy == true)
-                        Destroy(this.gameObject);
+                    {
+						meter.damage(5);
+						Destroy(this.gameObject);
+					}
+                        
                     else
                         destroy = false;
                 }
@@ -155,7 +162,11 @@ public class Projectile : MonoBehaviour
                     ScoreCount.score += 6;
 
 					if (destroy == true)
-                        Destroy(this.gameObject);
+                    {
+						meter.damage(5);
+						Destroy(this.gameObject);
+					}
+         
                     else
                         destroy = false;
                 }

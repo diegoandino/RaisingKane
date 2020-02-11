@@ -7,8 +7,10 @@ public class playerTest : MonoBehaviour
 {
     private bool destroy;
 
-	public int maxValue = 10000;
+	public int maxValue = 100;
 	public int currValue = 0;
+
+
 	public Meter meter;
 
 	// Start is called before the first frame update
@@ -23,9 +25,9 @@ public class playerTest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Projectile._destroy == true)
+        if (Input.GetKeyDown(KeyCode.F))
         {
-            StartCoroutine(increment());
+			damage(5);
         }
     }
 
