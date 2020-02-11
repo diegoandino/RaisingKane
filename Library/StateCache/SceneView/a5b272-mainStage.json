@@ -1,1 +1,5 @@
+<<<<<<< refs/remotes/origin/master
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":1184.914306640625,"y":394.2891540527344,"z":-3407.309326171875},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":2763.038330078125,"orthographic":true}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":-29.684152603149415,"y":31.894622802734376,"z":-1696.2398681640625},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":438.5936279296875,"orthographic":true}
+>>>>>>> Meditation Idle
