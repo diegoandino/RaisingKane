@@ -8,8 +8,8 @@ public class PauseLogic : MonoBehaviour
     public static bool isPaused = false;
     public GameObject pauseMenu;
 
-	[SerializeField]
-	private AudioSource Music; 
+    //[SerializeField]
+    //private AudioSource Music;
 
     // Start is called before the first frame update
     void Start()
@@ -36,7 +36,7 @@ public class PauseLogic : MonoBehaviour
         }
     }
 
-    void Resume()
+    public void Resume()
     {
         isPaused = false;
         pauseMenu.gameObject.SetActive(false);
@@ -48,7 +48,7 @@ public class PauseLogic : MonoBehaviour
         isPaused = true;
         pauseMenu.gameObject.SetActive(true);
         Time.timeScale = 0f;
-		Music.Pause(); 
+        //Music.Pause();
     }
 
     public void DisplayControls()
@@ -56,10 +56,17 @@ public class PauseLogic : MonoBehaviour
         Debug.Log("displaying controls");
     }
 
-    public void ReturnToHub()
+    public void ReturnToMainMenu()
     {
         Resume();
         SceneManager.LoadScene("Main Menu");
+    }
+
+    public void ReloadScene()
+    {
+        Resume();
+        Scene loadedLevel = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(loadedLevel.buildIndex);
     }
 
     public void QuitGame()
