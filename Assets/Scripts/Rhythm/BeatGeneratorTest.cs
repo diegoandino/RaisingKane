@@ -33,6 +33,9 @@ public class BeatGeneratorTest : MonoBehaviour
 	public float songTime;
 	AudioSource boss2;
 
+	//Next Room
+	public string NextRoom;
+
 	public GameObject BasicBeat;
 	public GameObject StickBeat;
 	public GameObject BouncBeat;
@@ -77,14 +80,13 @@ public class BeatGeneratorTest : MonoBehaviour
 		GameObject[] activeBeats;
         activeBeats = GameObject.FindGameObjectsWithTag("Beat");
         
-		if (activeBeats.Length > 0)
+		while (activeBeats.Length > 0)
 		{
-			yield return new WaitForSeconds(1f);
-		} else
-		{
-			print("Song Over");
-            StartCoroutine(LoadSceneAFterTransition());
+			activeBeats = GameObject.FindGameObjectsWithTag("Beat");
+			yield return null;
 		}
+        StartCoroutine(LoadSceneAFterTransition());
+		
 	}
 
 	private IEnumerator LoadSceneAFterTransition()
@@ -93,7 +95,7 @@ public class BeatGeneratorTest : MonoBehaviour
 		//anim.SetBool("AnimateOut", true);
 		yield return new WaitForSeconds(1f);
 		//load the scene we want
-		SceneManager.LoadScene("Main Menu");
+		SceneManager.LoadScene(NextRoom);
 	}
 
 	private IEnumerator SpawnBeat(BeatItem beat)
@@ -104,18 +106,17 @@ public class BeatGeneratorTest : MonoBehaviour
 		{
 			if (beat.Row == 1)
 			{
-				GameObject NewBeat = Instantiate(BasicBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
+				GameObject NewBeat = Instantiate(BasicBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(180, Vector3.forward));
                 NewBeat.GetComponent<ArchProjectile>().EndPoint = Button1Pos.position;
-				print(NewBeat.GetComponent<ArchProjectile>().EndPoint);
 			}
 			else if (beat.Row == 2)
 			{
-				GameObject NewBeat = Instantiate(BasicBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
+				GameObject NewBeat = Instantiate(BasicBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(180, Vector3.forward));
 				NewBeat.GetComponent<ArchProjectile>().EndPoint = Button2Pos.position;
 			}
 			else if (beat.Row == 3)
 			{
-				GameObject NewBeat = Instantiate(BasicBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
+				GameObject NewBeat = Instantiate(BasicBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(180, Vector3.forward));
 				NewBeat.GetComponent<ArchProjectile>().EndPoint = Button3Pos.position;
 			}
 		}
@@ -123,20 +124,20 @@ public class BeatGeneratorTest : MonoBehaviour
 		{
 			if (beat.Row == 1)
 			{
-				GameObject NewBeat = Instantiate(StickBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
+				GameObject NewBeat = Instantiate(StickBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(180, Vector3.forward));
 				NewBeat.GetComponent<StickyProjectile>().EndPoint = Button1Pos.position;
 				NewBeat.GetComponent<StickyProjectile>().DestinationButton = Button1Pos.gameObject;
 
 			}
 			else if (beat.Row == 2)
 			{
-				GameObject NewBeat = Instantiate(StickBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
+				GameObject NewBeat = Instantiate(StickBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(180, Vector3.forward));
 				NewBeat.GetComponent<StickyProjectile>().EndPoint = Button2Pos.position;
 				NewBeat.GetComponent<StickyProjectile>().DestinationButton = Button2Pos.gameObject;
 			}
 			else if (beat.Row == 3)
 			{
-				GameObject NewBeat = Instantiate(StickBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
+				GameObject NewBeat = Instantiate(StickBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(180, Vector3.forward));
 				NewBeat.GetComponent<StickyProjectile>().EndPoint = Button3Pos.position;
 				NewBeat.GetComponent<StickyProjectile>().DestinationButton = Button3Pos.gameObject;
 			}
@@ -145,17 +146,17 @@ public class BeatGeneratorTest : MonoBehaviour
 		{
 			if (beat.Row == 1)
 			{
-				GameObject NewBeat = Instantiate(BouncBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
+				GameObject NewBeat = Instantiate(BouncBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(180, Vector3.forward));
 				NewBeat.GetComponent<BounceProjectile>().EndPoint = Button1Pos.position;
 			}
 			else if (beat.Row == 2)
 			{
-				GameObject NewBeat = Instantiate(BouncBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
+				GameObject NewBeat = Instantiate(BouncBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(180, Vector3.forward));
 				NewBeat.GetComponent<BounceProjectile>().EndPoint = Button2Pos.position;
 			}
 			else if (beat.Row == 3)
 			{
-				GameObject NewBeat = Instantiate(BouncBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
+				GameObject NewBeat = Instantiate(BouncBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(180, Vector3.forward));
 				NewBeat.GetComponent<BounceProjectile>().EndPoint = Button3Pos.position;
 			}
 		}
@@ -163,20 +164,23 @@ public class BeatGeneratorTest : MonoBehaviour
 		{
 			if (beat.Row == 1)
 			{
-				GameObject NewBeat = Instantiate(MultiTapBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
+				GameObject NewBeat = Instantiate(MultiTapBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(180, Vector3.forward));
 				NewBeat.GetComponent<ArchProjectile>().EndPoint = Button1Pos.position;
 			}
 			else if (beat.Row == 2)
 			{
-				GameObject NewBeat = Instantiate(MultiTapBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
+				GameObject NewBeat = Instantiate(MultiTapBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(180, Vector3.forward));
 				NewBeat.GetComponent<ArchProjectile>().EndPoint = Button2Pos.position;
 			}
 			else if (beat.Row == 3)
 			{
-				GameObject NewBeat = Instantiate(MultiTapBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
+				GameObject NewBeat = Instantiate(MultiTapBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(180, Vector3.forward));
 				NewBeat.GetComponent<ArchProjectile>().EndPoint = Button3Pos.position;
 			}
 		}
-
+        else if (beat.BeatType == 5)
+        {
+			StartCoroutine(EndSong());
+        }
 	}
 }

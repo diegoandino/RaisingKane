@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Meter.cs" />
+    <Compile Include="Assets\MultiTapProjectile.cs" />
     <Compile Include="Assets\Scripts\Alt Controller\LoadImage.cs" />
     <Compile Include="Assets\Scripts\Alt Controller\WebCam.cs" />
     <Compile Include="Assets\Scripts\Dialogue\Dialogue.cs" />

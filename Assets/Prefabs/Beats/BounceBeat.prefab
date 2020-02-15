@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: -1422857333
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1235477479367889486, guid: d8bb9c3dd2f4fa648b22f103a1874e47,
+  m_Sprite: {fileID: -8607202730763941399, guid: 49955aacc49827648ad96b0dc12245f1,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -139,6 +139,7 @@ MonoBehaviour:
   button1: {fileID: 0}
   button2: {fileID: 0}
   button3: {fileID: 0}
+  meter: {fileID: 0}
   BPM: 86
   dropSpeed: 0.1
   ProjectileSpeed: 0.09
@@ -146,8 +147,6 @@ MonoBehaviour:
   hasStarted: 1
   StartPoint: {x: 0, y: 0, z: 0}
   EndPoint: {x: 0, y: 0, z: 0}
-  maxValue: 100
-  currValue: 0
-  meter: {fileID: 0}
   bouncing: 0
   firstPress: 0
+  hangtime: 0.5
