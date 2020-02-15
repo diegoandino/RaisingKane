@@ -105,7 +105,8 @@ public class BeatGeneratorTest : MonoBehaviour
 			if (beat.Row == 1)
 			{
 				GameObject NewBeat = Instantiate(BasicBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(90, Vector3.forward));
-				NewBeat.GetComponent<ArchProjectile>().EndPoint = Button1Pos.position;
+                NewBeat.GetComponent<ArchProjectile>().EndPoint = Button1Pos.position;
+				print(NewBeat.GetComponent<ArchProjectile>().EndPoint);
 			}
 			else if (beat.Row == 2)
 			{

@@ -23,6 +23,7 @@ public class ArchProjectile : Projectile
 	void Start()
     {
         SetPoints();
+        print(EndPoint);
     }
 
 
@@ -53,7 +54,6 @@ public class ArchProjectile : Projectile
                 Quaternion NewRot = Quaternion.identity;
                 NewRot.eulerAngles = new Vector3(0, 0, (rot.eulerAngles.x - 90));
                 transform.rotation = NewRot;
-
             }
 
             if (count > 1f)
@@ -69,6 +69,7 @@ public class ArchProjectile : Projectile
 
     public void SetPoints()
     {
+        print(EndPoint);
         StartPoint = this.transform.position;
         points = new List<Vector3>();
         points.Add(new Vector3(StartPoint.x, StartPoint.y, 1));

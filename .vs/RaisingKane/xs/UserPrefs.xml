@@ -1,35 +1,14 @@
-﻿<Properties>
-<<<<<<< refs/remotes/origin/master
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Meter.cs">
+﻿<Properties StartupConfiguration="{7BBC6D7A-050F-7091-4BAD-F4932F6D0ECD}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Rhythm/PROJECTILES/ArchProjectile.cs">
     <Files>
-      <File FileName="Assets/Scripts/Rhythm/PROJECTILES/Projectile.cs" Line="29" Column="27" />
-      <File FileName="Assets/Scripts/Rhythm/PROJECTILES/ArchProjectile.cs" />
-      <File FileName="Assets/Meter.cs" Line="14" Column="3" />
-      <File FileName="Assets/Scripts/Player/playerTest.cs" Line="35" Column="9" />
-=======
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Rhythm/BeatGeneratorTest.cs">
-    <Files>
-      <File FileName="Assets/Scripts/Rhythm/PROJECTILES/Projectile.cs" Line="158" Column="2" />
-      <File FileName="Assets/Scripts/Rhythm/PROJECTILES/ArchProjectile.cs" />
-      <File FileName="Assets/Scripts/Rhythm/BeatGeneratorTest.cs" Line="72" Column="32" />
-      <File FileName="Assets/Scripts/Rhythm/PROJECTILES/StickyProjectile.cs" />
-      <File FileName="Assets/Scripts/Rhythm/PROJECTILES/BounceProjectile.cs" />
-      <File FileName="Assets/Scripts/Scenes/DoorTransition.cs" />
->>>>>>> Playtest Build
+      <File FileName="Assets/Scripts/Rhythm/BeatGeneratorTest.cs" Line="110" Column="60" />
+      <File FileName="Assets/Scripts/Rhythm/PROJECTILES/ArchProjectile.cs" Line="75" Column="84" />
+      <File FileName="Assets/Scripts/Rhythm/PROJECTILES/Projectile.cs" Line="1" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="RaisingKane" expanded="True" selected="True" />
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <DisabledProjects>
-    <String>Assembly-CSharp.csproj</String>
-  </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="3e02e355-955c-4939-96be-137202e7f4d3" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
