@@ -64,7 +64,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Meter.cs" />
-    <Compile Include="Assets\MultiTapProjectile.cs" />
     <Compile Include="Assets\Scripts\Alt Controller\LoadImage.cs" />
     <Compile Include="Assets\Scripts\Alt Controller\WebCam.cs" />
     <Compile Include="Assets\Scripts\Dialogue\Dialogue.cs" />
@@ -114,6 +113,7 @@
     <Compile Include="Assets\Scripts\Rhythm\Old Script\StickToButton.cs" />
     <Compile Include="Assets\Scripts\Rhythm\PROJECTILES\ArchProjectile.cs" />
     <Compile Include="Assets\Scripts\Rhythm\PROJECTILES\BounceProjectile.cs" />
+    <Compile Include="Assets\Scripts\Rhythm\PROJECTILES\MultiTapProjectile.cs" />
     <Compile Include="Assets\Scripts\Rhythm\PROJECTILES\Projectile.cs" />
     <Compile Include="Assets\Scripts\Rhythm\PROJECTILES\StickyBeatProjectile.cs" />
     <Compile Include="Assets\Scripts\Rhythm\PROJECTILES\StickyProjectile.cs" />

@@ -165,17 +165,17 @@ public class BeatGeneratorTest : MonoBehaviour
 			if (beat.Row == 1)
 			{
 				GameObject NewBeat = Instantiate(MultiTapBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(180, Vector3.forward));
-				NewBeat.GetComponent<ArchProjectile>().EndPoint = Button1Pos.position;
+				NewBeat.GetComponent<MultiTapProjectile>().EndPoint = Button1Pos.position;
 			}
 			else if (beat.Row == 2)
 			{
 				GameObject NewBeat = Instantiate(MultiTapBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(180, Vector3.forward));
-				NewBeat.GetComponent<ArchProjectile>().EndPoint = Button2Pos.position;
+				NewBeat.GetComponent<MultiTapProjectile>().EndPoint = Button2Pos.position;
 			}
 			else if (beat.Row == 3)
 			{
 				GameObject NewBeat = Instantiate(MultiTapBeat, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, 0f), Quaternion.AngleAxis(180, Vector3.forward));
-				NewBeat.GetComponent<ArchProjectile>().EndPoint = Button3Pos.position;
+				NewBeat.GetComponent<MultiTapProjectile>().EndPoint = Button3Pos.position;
 			}
 		}
         else if (beat.BeatType == 5)
