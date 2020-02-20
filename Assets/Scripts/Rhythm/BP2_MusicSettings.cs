@@ -16,7 +16,7 @@ public class BP2_MusicSettings : MonoBehaviour
 {
     public AudioSource Music; //music file
     public AudioSource ghostMusic;// ghost song file
-    public BP2_RhythmSpeed RSpeed;
+    //public BP2_RhythmSpeed RSpeed;
     public static BP2_MusicSettings instance;
 	public GameObject UI; 
 
@@ -52,7 +52,7 @@ public class BP2_MusicSettings : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 startPlaying = true;
-                RSpeed.hasStarted = true;
+                //RSpeed.hasStarted = true;
                 Music.PlayDelayed(StartOffset / songSpeed);
                 //playing ghost music as well
                 ghostMusic.PlayDelayed(StartOffset / songSpeed);//Slows or speeds up the delay based on the speed given.

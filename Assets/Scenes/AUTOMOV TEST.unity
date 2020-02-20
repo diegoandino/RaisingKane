@@ -1857,12 +1857,12 @@ PrefabInstance:
     - target: {fileID: 7035354146612348139, guid: 20b72313f02c54958bc713ccc75a12ad,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.13
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 7035354146612348139, guid: 20b72313f02c54958bc713ccc75a12ad,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.49
+      value: -2.65
       objectReference: {fileID: 0}
     - target: {fileID: 7035354146612348139, guid: 20b72313f02c54958bc713ccc75a12ad,
         type: 3}
@@ -1914,5 +1914,90 @@ PrefabInstance:
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 107023835}
+    - target: {fileID: 5823366092441250388, guid: 20b72313f02c54958bc713ccc75a12ad,
+        type: 3}
+      propertyPath: movPoints.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5823366092441250388, guid: 20b72313f02c54958bc713ccc75a12ad,
+        type: 3}
+      propertyPath: movPoints.Array.data[0].x
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5823366092441250388, guid: 20b72313f02c54958bc713ccc75a12ad,
+        type: 3}
+      propertyPath: movPoints.Array.data[0].y
+      value: -2.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5823366092441250388, guid: 20b72313f02c54958bc713ccc75a12ad,
+        type: 3}
+      propertyPath: movPoints.Array.data[3].x
+      value: 3.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 5823366092441250388, guid: 20b72313f02c54958bc713ccc75a12ad,
+        type: 3}
+      propertyPath: movPoints.Array.data[3].y
+      value: 1.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 5823366092441250388, guid: 20b72313f02c54958bc713ccc75a12ad,
+        type: 3}
+      propertyPath: movPoints.Array.data[3].z
+      value: -0.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 5823366092441250388, guid: 20b72313f02c54958bc713ccc75a12ad,
+        type: 3}
+      propertyPath: movPoints.Array.data[4].x
+      value: 6.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 5823366092441250388, guid: 20b72313f02c54958bc713ccc75a12ad,
+        type: 3}
+      propertyPath: movPoints.Array.data[4].y
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5823366092441250388, guid: 20b72313f02c54958bc713ccc75a12ad,
+        type: 3}
+      propertyPath: movPoints.Array.data[4].z
+      value: -0.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 5823366092441250388, guid: 20b72313f02c54958bc713ccc75a12ad,
+        type: 3}
+      propertyPath: movPoints.Array.data[5].x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5823366092441250388, guid: 20b72313f02c54958bc713ccc75a12ad,
+        type: 3}
+      propertyPath: movPoints.Array.data[5].y
+      value: -2.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5823366092441250388, guid: 20b72313f02c54958bc713ccc75a12ad,
+        type: 3}
+      propertyPath: movPoints.Array.data[5].z
+      value: -0.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 5823366092441250388, guid: 20b72313f02c54958bc713ccc75a12ad,
+        type: 3}
+      propertyPath: movPoints.Array.data[1].x
+      value: -6.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 5823366092441250388, guid: 20b72313f02c54958bc713ccc75a12ad,
+        type: 3}
+      propertyPath: movPoints.Array.data[1].y
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5823366092441250388, guid: 20b72313f02c54958bc713ccc75a12ad,
+        type: 3}
+      propertyPath: movPoints.Array.data[2].x
+      value: -4.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 5823366092441250388, guid: 20b72313f02c54958bc713ccc75a12ad,
+        type: 3}
+      propertyPath: movPoints.Array.data[2].y
+      value: 1.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 5823366092441250388, guid: 20b72313f02c54958bc713ccc75a12ad,
+        type: 3}
+      propertyPath: speed
+      value: 0.025
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20b72313f02c54958bc713ccc75a12ad, type: 3}
