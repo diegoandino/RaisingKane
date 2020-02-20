@@ -298,7 +298,7 @@ PrefabInstance:
         type: 3}
       propertyPath: collisionImage
       value: 
-      objectReference: {fileID: 21300000, guid: bab7322e86f2941418e6afc48dd9e854,
+      objectReference: {fileID: 21300000, guid: 61cace6e073ca3a4b91795093aadfb87,
         type: 3}
     - target: {fileID: 2997508506960647971, guid: df13c5f1d0ae4430e9b812636fba34c5,
         type: 3}
@@ -321,7 +321,7 @@ PrefabInstance:
         type: 3}
       propertyPath: collisionImage
       value: 
-      objectReference: {fileID: 21300000, guid: bab7322e86f2941418e6afc48dd9e854,
+      objectReference: {fileID: 21300000, guid: b68a39ea6e5560647813843102db9b70,
         type: 3}
     - target: {fileID: 2997508507180376558, guid: df13c5f1d0ae4430e9b812636fba34c5,
         type: 3}
@@ -332,7 +332,7 @@ PrefabInstance:
         type: 3}
       propertyPath: collisionImage
       value: 
-      objectReference: {fileID: 21300000, guid: bab7322e86f2941418e6afc48dd9e854,
+      objectReference: {fileID: 21300000, guid: 9153a35fb33eec84d97b11fdd4755895,
         type: 3}
     - target: {fileID: 2997508507646783115, guid: df13c5f1d0ae4430e9b812636fba34c5,
         type: 3}
@@ -1141,7 +1141,7 @@ MonoBehaviour:
     BeatType: 1
   - SpawnTimer: 0.6
     Row: 3
-    BeatType: 1
+    BeatType: 2
   - SpawnTimer: 1.2
     Row: 1
     BeatType: 1
@@ -1150,19 +1150,19 @@ MonoBehaviour:
     BeatType: 1
   - SpawnTimer: 2.4
     Row: 2
-    BeatType: 1
+    BeatType: 3
   - SpawnTimer: 3
     Row: 3
-    BeatType: 1
+    BeatType: 3
   - SpawnTimer: 3.6
     Row: 1
     BeatType: 1
   - SpawnTimer: 4.2
     Row: 3
-    BeatType: 1
+    BeatType: 4
   - SpawnTimer: 4.5
     Row: 2
-    BeatType: 1
+    BeatType: 4
   - SpawnTimer: 4.8
     Row: 2
     BeatType: 1
@@ -1809,7 +1809,7 @@ PrefabInstance:
     - target: {fileID: 1878359369843143203, guid: 230ef9334a416a947a665c270dc4123d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1878359369843143231, guid: 230ef9334a416a947a665c270dc4123d,
         type: 3}
@@ -3874,6 +3874,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7055817644068167587, guid: 25d811a829ea24c80b18a6f9ca58b591,
+        type: 3}
+      propertyPath: button1
+      value: 
+      objectReference: {fileID: 1433596191}
+    - target: {fileID: 7055817644068167587, guid: 25d811a829ea24c80b18a6f9ca58b591,
+        type: 3}
+      propertyPath: button2
+      value: 
+      objectReference: {fileID: 1982015240}
+    - target: {fileID: 7055817644068167587, guid: 25d811a829ea24c80b18a6f9ca58b591,
+        type: 3}
+      propertyPath: button3
+      value: 
+      objectReference: {fileID: 1064439028}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25d811a829ea24c80b18a6f9ca58b591, type: 3}
 --- !u!1001 &6260975473484259773
@@ -4110,7 +4125,7 @@ PrefabInstance:
     - target: {fileID: 699326045805915424, guid: 80646fa2ccbfc45ada09f319dedcb6a1,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 699326045805915425, guid: 80646fa2ccbfc45ada09f319dedcb6a1,
         type: 3}
