@@ -15,7 +15,7 @@ public class AutoMovement : MonoBehaviour
     //public int num_of_mov_points;
     public Vector3 start;
     public Vector3 end;
-    public Vector3 objectPos;
+    private Vector3 objectPos;
     public bool clockwise;
 
     // Start is called before the first frame update
