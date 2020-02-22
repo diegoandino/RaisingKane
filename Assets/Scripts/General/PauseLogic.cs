@@ -40,6 +40,7 @@ public class PauseLogic : MonoBehaviour
     {
         isPaused = false;
         pauseMenu.gameObject.SetActive(false);
+        this.GetComponent<AutoMovement>().enabled = true;
         Time.timeScale = 1f;
     }
 
@@ -47,6 +48,7 @@ public class PauseLogic : MonoBehaviour
     {
         isPaused = true;
         pauseMenu.gameObject.SetActive(true);
+        this.GetComponent<AutoMovement>().enabled = false;
         Time.timeScale = 0f;
         //Music.Pause();
     }
