@@ -43,6 +43,7 @@ public class BounceProjectile : ArchProjectile
             Quaternion upRot = Quaternion.identity;
             upRot.eulerAngles = new Vector3(0, 0, 180);
             transform.rotation = upRot;
+            this.GetComponent<CircleCollider2D>().enabled = false;
         }
         else if (hangtimer > hangtime)
         {
@@ -50,6 +51,7 @@ public class BounceProjectile : ArchProjectile
             Quaternion downRot = Quaternion.identity;
             downRot.eulerAngles = new Vector3(0, 0, 0);
             transform.rotation = downRot;
+            this.GetComponent<CircleCollider2D>().enabled = true;
         }
 	}
 

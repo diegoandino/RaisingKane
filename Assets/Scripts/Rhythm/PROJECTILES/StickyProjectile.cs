@@ -62,7 +62,7 @@ public class StickyProjectile : ArchProjectile
     public new void MissCheck(Boolean destroy)
     {
 
-        if (transform.position.y < (DestinationButton.transform.position.y - 3))
+        if (transform.position.y < (DestinationButton.transform.position.y -10))
         {
             //MissCount.miss++; //Increments the Miss count on GUI
             print("Miss");

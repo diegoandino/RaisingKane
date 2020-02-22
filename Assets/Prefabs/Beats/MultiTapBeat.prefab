@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 2589986201162477232}
   - component: {fileID: 2589986201162477231}
   - component: {fileID: 2589986201162477230}
-  - component: {fileID: 2589986201162477228}
   - component: {fileID: 6561155836071673212}
   m_Layer: 8
   m_Name: MultiTapBeat
@@ -120,37 +119,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.71}
   serializedVersion: 2
   m_Radius: 0.63
---- !u!114 &2589986201162477228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2589986201162477226}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5896894c0c6dd4b37a96b4d8694d5512, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  normalHit: 0
-  goodHit: 0
-  perfectHit: 0
-  canBePressed: 0
-  pressed: 0
-  button1: {fileID: 0}
-  button2: {fileID: 0}
-  button3: {fileID: 0}
-  meter: {fileID: 0}
-  BPM: 86
-  dropSpeed: 0.1
-  ProjectileSpeed: 0.09
-  ArchMod: 60
-  hasStarted: 1
-  StartPoint: {x: 0, y: 0, z: 0}
-  EndPoint: {x: 0, y: 0, z: 0}
-  bouncing: 0
-  firstPress: 0
-  hangtime: 0.1
 --- !u!114 &6561155836071673212
 MonoBehaviour:
   m_ObjectHideFlags: 0

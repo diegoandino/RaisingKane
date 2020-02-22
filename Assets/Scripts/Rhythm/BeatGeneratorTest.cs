@@ -29,7 +29,7 @@ public class BeatGeneratorTest : MonoBehaviour
 		};
 
 	//travel time is how far the spawned beat is away from the target
-	public float travelTime;
+	//public float travelTime;
 	public float songTime;
 	AudioSource boss2;
 
@@ -102,6 +102,8 @@ public class BeatGeneratorTest : MonoBehaviour
 	{
 
 		yield return new WaitForSeconds(beat.SpawnTimer);
+
+        //Basic Beat
 		if (beat.BeatType == 1)
 		{
 			if (beat.Row == 1)
@@ -120,7 +122,8 @@ public class BeatGeneratorTest : MonoBehaviour
 				NewBeat.GetComponent<ArchProjectile>().EndPoint = Button3Pos.position;
 			}
 		}
-		else if (beat.BeatType == 2)
+        //Sticky Beat
+        else if (beat.BeatType == 2)
 		{
 			if (beat.Row == 1)
 			{
@@ -142,7 +145,8 @@ public class BeatGeneratorTest : MonoBehaviour
 				NewBeat.GetComponent<StickyProjectile>().DestinationButton = Button3Pos.gameObject;
 			}
 		}
-		else if (beat.BeatType == 3)
+        //Bounce Beat
+        else if (beat.BeatType == 3)
 		{
 			if (beat.Row == 1)
 			{
@@ -160,7 +164,8 @@ public class BeatGeneratorTest : MonoBehaviour
 				NewBeat.GetComponent<BounceProjectile>().EndPoint = Button3Pos.position;
 			}
 		}
-		else if (beat.BeatType == 4)
+        //Multi Beat
+        else if (beat.BeatType == 4)
 		{
 			if (beat.Row == 1)
 			{
@@ -178,6 +183,7 @@ public class BeatGeneratorTest : MonoBehaviour
 				NewBeat.GetComponent<MultiTapProjectile>().EndPoint = Button3Pos.position;
 			}
 		}
+        //End Song
         else if (beat.BeatType == 5)
         {
 			StartCoroutine(EndSong());

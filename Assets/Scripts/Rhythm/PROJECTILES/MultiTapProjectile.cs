@@ -36,6 +36,7 @@ public class MultiTapProjectile : ArchProjectile
                     Debug.Log("Normal Hit");
                     musicManager.Playsound("implode");
                     TapCount += 1;
+                    StartCoroutine(Hang());
                 }
             }
         }
@@ -50,6 +51,17 @@ public class MultiTapProjectile : ArchProjectile
             Destroy(this.gameObject);
         
         }
+    }
+
+    IEnumerator Hang()
+    {
+        float previousSpeed = this.ProjectileSpeed;
+        float prevDropSpeed = this.dropSpeed;
+        this.ProjectileSpeed = 0f;
+        this.dropSpeed = 0f;
+        yield return new WaitForSeconds(1); //Hold in place
+        this.ProjectileSpeed = previousSpeed;
+        this.dropSpeed = prevDropSpeed;
     }
 
 }
