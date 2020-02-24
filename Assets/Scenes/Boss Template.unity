@@ -3620,6 +3620,11 @@ PrefabInstance:
       propertyPath: dropSpeed
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 6561155836071673212, guid: 8b916683946984e71ade44d05680a90e,
+        type: 3}
+      propertyPath: BeatTaps
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2589986201162477228, guid: 8b916683946984e71ade44d05680a90e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8b916683946984e71ade44d05680a90e, type: 3}
