@@ -1,14 +1,14 @@
 ﻿<Properties StartupConfiguration="{7BBC6D7A-050F-7091-4BAD-F4932F6D0ECD}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/AutoMovement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/General/PauseLogic.cs">
     <Files>
-      <File FileName="Assets/Scripts/Player/AutoMovement.cs" Line="44" Column="39" />
+      <File FileName="Assets/Scripts/Player/AutoMovement.cs" Line="44" Column="21" />
       <File FileName="Assets/Scripts/Scenes/DoorTransition.cs" Line="24" Column="51" />
-      <File FileName="Assets/Scripts/General/PauseLogic.cs" Line="43" Column="58" />
+      <File FileName="Assets/Scripts/General/PauseLogic.cs" Line="58" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f6095113-23a3-4622-b6b8-d818278aa0af" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
