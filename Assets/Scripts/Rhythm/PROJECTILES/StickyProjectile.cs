@@ -24,16 +24,18 @@ public class StickyProjectile : ArchProjectile
         }
 
         beatCheck(true);
-        MissCheck(true);
+        MissCheck(false);
     }
 
     public IEnumerator FreezeButton()
 	{
         frozen = true;
+        MissCheck(true);
         this.gameObject.GetComponent<SpriteRenderer>().enabled = false;
         DestinationButton.GetComponent<Collider2D>().enabled = false;
         DestinationButton.GetComponent<SpriteRenderer>().color = Color.black;
         yield return new WaitForSeconds(freezeTime);
+        MissCheck(false);
         DestinationButton.GetComponent<Collider2D>().enabled = true;
         DestinationButton.GetComponent<SpriteRenderer>().color = Color.white;
         Destroy(this.gameObject);
@@ -59,17 +61,20 @@ public class StickyProjectile : ArchProjectile
             }   
     }
 
-    public void MissCheck(Boolean destroy)
+    public new void MissCheck(Boolean destroy)
     {
 
-        if (transform.position.y < (button2.position.y - 3))
+        if (transform.position.y < (DestinationButton.transform.position.y -10))
         {
             //MissCount.miss++; //Increments the Miss count on GUI
             print("Miss");
             if (destroy == true)
+            {
+                meter.damage(1);
                 Destroy(this.gameObject);
-            else
-                destroy = false;
+            }
+
+            else destroy = false;
         }
     }
 

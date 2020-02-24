@@ -7,6 +7,8 @@ public class BounceProjectile : ArchProjectile
 {
     public bool bouncing;
     public bool firstPress;
+    public float hangtime;
+    private float hangtimer = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -14,6 +16,7 @@ public class BounceProjectile : ArchProjectile
         this.SetPoints();
         bouncing = false;
         firstPress = true;
+        
     }
 
     // Update is called once per frame
@@ -32,10 +35,27 @@ public class BounceProjectile : ArchProjectile
 
     public void BounceMove()
 	{
-        print("Bounce");
+        hangtimer += ProjectileSpeed * Time.deltaTime;
+        print(hangtimer);
+        if (hangtimer < hangtime)
+        {
+            transform.position += new Vector3(0f, (BPM * Time.deltaTime) * BP2_MusicSettings.instance.songSpeed * dropSpeed, 0f);
+            Quaternion upRot = Quaternion.identity;
+            upRot.eulerAngles = new Vector3(0, 0, 180);
+            transform.rotation = upRot;
+            this.GetComponent<CircleCollider2D>().enabled = false;
+        }
+        else if (hangtimer > hangtime)
+        {
+            transform.position -= new Vector3(0f, (BPM * Time.deltaTime) * BP2_MusicSettings.instance.songSpeed * dropSpeed, 0f);
+            Quaternion downRot = Quaternion.identity;
+            downRot.eulerAngles = new Vector3(0, 0, 0);
+            transform.rotation = downRot;
+            this.GetComponent<CircleCollider2D>().enabled = true;
+        }
 	}
 
-    public void BeatCheck(Boolean destroy)
+    public new void BeatCheck(Boolean destroy)
     {
         if (firstPress)
         {
@@ -108,9 +128,12 @@ public class BounceProjectile : ArchProjectile
 
 
                         if (destroy == true)
+                        {
+                            meter.damage(1);
                             Destroy(this.gameObject);
-                        else
-                            destroy = false;
+                        }
+
+                        else destroy = false;
                     }
 
                     //Good Check
@@ -126,9 +149,12 @@ public class BounceProjectile : ArchProjectile
                         ScoreCount.score += 4;
 
                         if (destroy == true)
+                        {
+                            meter.damage(1);
                             Destroy(this.gameObject);
-                        else
-                            destroy = false;
+                        }
+
+                        else destroy = false;
                     }
 
                     //Perfect Check
@@ -144,9 +170,12 @@ public class BounceProjectile : ArchProjectile
                         ScoreCount.score += 6;
 
                         if (destroy == true)
+                        {
+                            meter.damage(1);
                             Destroy(this.gameObject);
-                        else
-                            destroy = false;
+                        }
+
+                        else destroy = false;
                     }
                 }
             }

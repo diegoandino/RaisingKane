@@ -86,10 +86,18 @@ public class Projectile : MonoBehaviour
         if(transform.position.y < (button2.position.y - 10))
 		{
             MissCount.miss++; //Increments the Miss count on GUI
-            if (destroy == true)
-                Destroy(this.gameObject);
-            else
-                destroy = false;
+		    if (destroy == true)
+		    {
+		        //_destroy = destroy;
+		        meter.decrementMeter(1);
+		        Destroy(this.gameObject);
+                Debug.Log("PAST THE BUTTON");
+		    }
+
+		    else
+		    {
+		        destroy = false;
+		    }
         }
     }
 
@@ -117,7 +125,7 @@ public class Projectile : MonoBehaviour
                     if (destroy == true)
                     {
 						//_destroy = destroy;
-						meter.damage(5);
+						meter.damage(1);
                         Destroy(this.gameObject);
                     }
 
@@ -141,7 +149,7 @@ public class Projectile : MonoBehaviour
 
 					if (destroy == true)
                     {
-						meter.damage(5);
+						meter.damage(1);
 						Destroy(this.gameObject);
 					}
                         
@@ -163,7 +171,7 @@ public class Projectile : MonoBehaviour
 
 					if (destroy == true)
                     {
-						meter.damage(5);
+						meter.damage(1);
 						Destroy(this.gameObject);
 					}
          

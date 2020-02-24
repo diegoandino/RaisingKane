@@ -81,7 +81,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Level Select.unity
     guid: 40668164d52ef4cae8a24aeb3b0c9251
   - enabled: 1
-    path: Assets/Scenes/Boss Arc.unity
+    path: Assets/Scenes/Boss Template.unity
     guid: 559f1e666591a9d4b9b2f126caf97d99
   - enabled: 1
     path: Assets/Scenes/Boss Arc - Sticky.unity

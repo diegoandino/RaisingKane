@@ -1,14 +1,15 @@
 ﻿<Properties StartupConfiguration="{7BBC6D7A-050F-7091-4BAD-F4932F6D0ECD}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Rhythm/PROJECTILES/ArchProjectile.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/General/PauseLogic.cs">
     <Files>
-      <File FileName="Assets/Scripts/Rhythm/BeatGeneratorTest.cs" Line="110" Column="60" />
-      <File FileName="Assets/Scripts/Rhythm/PROJECTILES/ArchProjectile.cs" Line="75" Column="84" />
-      <File FileName="Assets/Scripts/Rhythm/PROJECTILES/Projectile.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Player/AutoMovement.cs" Line="11" Column="1" />
+      <File FileName="Assets/Scripts/Scenes/DoorTransition.cs" />
+      <File FileName="Assets/Scripts/General/PauseLogic.cs" Line="50" Column="1" />
+      <File FileName="Assets/Scripts/Rhythm/BP2_MusicSettings.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="3e02e355-955c-4939-96be-137202e7f4d3" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="be09f7aa-9b51-45a6-ac16-0cc26e3c0a0c" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
