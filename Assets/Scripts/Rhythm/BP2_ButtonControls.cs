@@ -7,6 +7,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 /// <summary>
 /// Changes the button's sprite.
@@ -44,7 +45,9 @@ public class BP2_ButtonControls : MonoBehaviour
     public GameObject button2;
     public GameObject button3;
 
-    public GameObject niceText;
+    public GameObject rhythmText;
+    private Animator textAnimator;
+    private TextMeshPro textMesh;
 
 	public static GameObject _button1;
 	public static GameObject _button2;
@@ -67,6 +70,10 @@ public class BP2_ButtonControls : MonoBehaviour
         isColliding = false;
 
         ButtonPos = -4.9f;
+
+        textAnimator = rhythmText.GetComponent<Animator>();
+        textMesh = rhythmText.GetComponent<TextMeshPro>();
+        textAnimator.SetBool("Nice", false);
     }
 
     // Update is called once per frame
@@ -107,7 +114,7 @@ public class BP2_ButtonControls : MonoBehaviour
             button2.GetComponent<Collider2D>().enabled = true;
             button3.GetComponent<Collider2D>().enabled = true;
 
-            imageChangeCoRoutine = WaitAndResetDefaultImage(0.15f);
+            imageChangeCoRoutine = WaitAndResetDefaultImage(0.1f);
             StartCoroutine(imageChangeCoRoutine);
         }
     }
@@ -164,7 +171,7 @@ public class BP2_ButtonControls : MonoBehaviour
         {
             // is no longer colliding
             isColliding = false;
-            imageChangeCoRoutine = WaitAndResetDefaultImage(0.15f);
+            imageChangeCoRoutine = WaitAndResetDefaultImage(0.1f);
             StartCoroutine(imageChangeCoRoutine);
         }
     }
@@ -184,12 +191,18 @@ public class BP2_ButtonControls : MonoBehaviour
         {
             spriteChanger.sprite = correctImage;
 
-            Animator niceAnimator = niceText.GetComponent<Animator>();
-            niceAnimator.Play("Nice!", 10);
+
+            textMesh.text = "Nice!";
+            textMesh.color = new Color(.3f, .3f, .7f);
+            textAnimator.SetBool("Nice", true);
         }
         else
         {
             spriteChanger.sprite = incorrectImage;
+
+            textMesh.text = "Oops";
+            textMesh.color = new Color(.7f, .3f, .3f);
+            textAnimator.SetBool("Nice", true);
         }
 
     }
@@ -197,5 +210,9 @@ public class BP2_ButtonControls : MonoBehaviour
     {
         yield return new WaitForSeconds(waitTime);
         spriteChanger.sprite = defaultImage;
+        yield return new WaitForSeconds(waitTime * 2);
+        textAnimator.SetBool("Nice", false);
+
+
     }
 }

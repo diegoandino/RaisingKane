@@ -21,6 +21,10 @@ public class AutoMovement : MonoBehaviour
     private bool leftPress;
     private bool rightPress;
 
+    public Animator animator;
+    private Vector3 Scale;
+    private Vector3 invertScale;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,13 +34,29 @@ public class AutoMovement : MonoBehaviour
         leftPress = false;
         rightPress = false;
 
+        Scale = transform.localScale;
+        invertScale = transform.localScale;
+        invertScale.x *= -1;
     }
 
     // Update is called once per frame
     void Update()
     {
         objectPos = transform.position;
+        CheckDirection();
         Move();
+    }
+
+    public void CheckDirection()
+    {
+        if(start.x > end.x)
+        {
+            transform.localScale = invertScale;
+        }
+        else
+        {
+            transform.localScale = Scale;
+        }
     }
 
     public void Move()
@@ -46,6 +66,7 @@ public class AutoMovement : MonoBehaviour
         {
             leftPress = true;
             rightPress = false;
+            animator.SetBool("Walking", true);
         }
 
         //Right Press
@@ -53,12 +74,14 @@ public class AutoMovement : MonoBehaviour
         {
             leftPress = false;
             rightPress = true;
+            animator.SetBool("Walking", true);
         }
 
         if (Input.GetAxisRaw("Horizontal") == 0)
         {
             leftPress = false;
             rightPress = false;
+            animator.SetBool("Walking", false); ;
         }
  
         if (leftPress != rightPress)
