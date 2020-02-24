@@ -47,7 +47,10 @@ public class PauseLogic : MonoBehaviour
             optionsMenu.gameObject.SetActive(false);
             optionsOpen = false;
         }
-        this.GetComponent<AutoMovement>().enabled = true;
+        if(this.GetComponent<AutoMovement>() != null)
+        {
+            this.GetComponent<AutoMovement>().enabled = true;
+        }
         Time.timeScale = 1f;
         AudioListener.pause = false;
     }
@@ -56,7 +59,10 @@ public class PauseLogic : MonoBehaviour
     {
         isPaused = true;
         pauseMenu.gameObject.SetActive(true);
-        this.GetComponent<AutoMovement>().enabled = false;
+        if (this.GetComponent<AutoMovement>() != null)
+        {
+            this.GetComponent<AutoMovement>().enabled = false;
+        }
         Time.timeScale = 0f;
         AudioListener.pause = true;
         //Music.Pause();
