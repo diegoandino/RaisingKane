@@ -25,10 +25,7 @@ public class playerTest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-			damage(5);
-        }
+       
     }
 
 
@@ -37,6 +34,23 @@ public class playerTest : MonoBehaviour
 		currValue += damage;
 		meter.setValue(currValue);
 	}
+
+
+    public void decrementMeter(int damage)
+    {
+        currValue -= damage;
+        meter.setValue(currValue);
+    }
+
+
+    public void winState()
+    {
+        if (currValue == maxValue)
+        {
+           
+        }
+    }
+
 
     private IEnumerator increment()
     {

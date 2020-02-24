@@ -18,7 +18,13 @@ public class DialogueManager : MonoBehaviour
 		sentences = new Queue<string>();
     }
 
-	public void startDialogue(Dialogue dialogue)
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space)) DisplayNextSentence();
+    }
+
+    public void startDialogue(Dialogue dialogue)
     {
 		animator.SetBool("isOpen", true);
 

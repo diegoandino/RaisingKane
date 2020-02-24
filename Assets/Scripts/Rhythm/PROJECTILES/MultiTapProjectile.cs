@@ -49,7 +49,7 @@ public class MultiTapProjectile : ArchProjectile
             ScoreCount.score += 2;
 
             Destroy(this.gameObject);
-        
+            meter.damage(1);
         }
     }
 

@@ -128,9 +128,12 @@ public class BounceProjectile : ArchProjectile
 
 
                         if (destroy == true)
+                        {
+                            meter.damage(1);
                             Destroy(this.gameObject);
-                        else
-                            destroy = false;
+                        }
+
+                        else destroy = false;
                     }
 
                     //Good Check
@@ -146,9 +149,12 @@ public class BounceProjectile : ArchProjectile
                         ScoreCount.score += 4;
 
                         if (destroy == true)
+                        {
+                            meter.damage(1);
                             Destroy(this.gameObject);
-                        else
-                            destroy = false;
+                        }
+
+                        else destroy = false;
                     }
 
                     //Perfect Check
@@ -164,9 +170,12 @@ public class BounceProjectile : ArchProjectile
                         ScoreCount.score += 6;
 
                         if (destroy == true)
+                        {
+                            meter.damage(1);
                             Destroy(this.gameObject);
-                        else
-                            destroy = false;
+                        }
+
+                        else destroy = false;
                     }
                 }
             }
