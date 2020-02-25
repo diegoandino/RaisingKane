@@ -556,6 +556,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dialogue Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 7694576065219987341, guid: 27c7ddd9720ff7b44b496ddd9960209e,
+        type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 1696242039}
+    - target: {fileID: 7694576065219987341, guid: 27c7ddd9720ff7b44b496ddd9960209e,
+        type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 1696242038}
+    - target: {fileID: 7694576065219987341, guid: 27c7ddd9720ff7b44b496ddd9960209e,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1696242037}
     - target: {fileID: 7694576065219987342, guid: 27c7ddd9720ff7b44b496ddd9960209e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -611,21 +626,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7694576065219987341, guid: 27c7ddd9720ff7b44b496ddd9960209e,
-        type: 3}
-      propertyPath: nameText
-      value: 
-      objectReference: {fileID: 1696242039}
-    - target: {fileID: 7694576065219987341, guid: 27c7ddd9720ff7b44b496ddd9960209e,
-        type: 3}
-      propertyPath: dialogueText
-      value: 
-      objectReference: {fileID: 1696242038}
-    - target: {fileID: 7694576065219987341, guid: 27c7ddd9720ff7b44b496ddd9960209e,
-        type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 1696242037}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27c7ddd9720ff7b44b496ddd9960209e, type: 3}
 --- !u!1 &112263004
@@ -1730,6 +1730,11 @@ PrefabInstance:
       propertyPath: start.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5823366092441250388, guid: 20b72313f02c54958bc713ccc75a12ad,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1078771174}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20b72313f02c54958bc713ccc75a12ad, type: 3}
 --- !u!1 &1078771171 stripped
@@ -1785,6 +1790,12 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &1078771174 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5823366093574698452, guid: 20b72313f02c54958bc713ccc75a12ad,
+    type: 3}
+  m_PrefabInstance: {fileID: 1078771170}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1098977121
 PrefabInstance:
   m_ObjectHideFlags: 0

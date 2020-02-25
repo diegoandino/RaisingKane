@@ -1361,6 +1361,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dialogue Box
       objectReference: {fileID: 0}
+    - target: {fileID: 2665459311449394149, guid: 98270260f1116014d96bacbc66b42815,
+        type: 3}
+      propertyPath: m_Text
+      value: Adult Kane
+      objectReference: {fileID: 0}
     - target: {fileID: 2665459311791231643, guid: 98270260f1116014d96bacbc66b42815,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1465,11 +1470,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2665459311449394149, guid: 98270260f1116014d96bacbc66b42815,
-        type: 3}
-      propertyPath: m_Text
-      value: Adult Kane
       objectReference: {fileID: 0}
     - target: {fileID: 2665459312997282020, guid: 98270260f1116014d96bacbc66b42815,
         type: 3}
@@ -2113,6 +2113,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dialogue Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 7694576065219987341, guid: 27c7ddd9720ff7b44b496ddd9960209e,
+        type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 813157739}
+    - target: {fileID: 7694576065219987341, guid: 27c7ddd9720ff7b44b496ddd9960209e,
+        type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 813157738}
+    - target: {fileID: 7694576065219987341, guid: 27c7ddd9720ff7b44b496ddd9960209e,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 813157737}
     - target: {fileID: 7694576065219987342, guid: 27c7ddd9720ff7b44b496ddd9960209e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2168,21 +2183,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7694576065219987341, guid: 27c7ddd9720ff7b44b496ddd9960209e,
-        type: 3}
-      propertyPath: nameText
-      value: 
-      objectReference: {fileID: 813157739}
-    - target: {fileID: 7694576065219987341, guid: 27c7ddd9720ff7b44b496ddd9960209e,
-        type: 3}
-      propertyPath: dialogueText
-      value: 
-      objectReference: {fileID: 813157738}
-    - target: {fileID: 7694576065219987341, guid: 27c7ddd9720ff7b44b496ddd9960209e,
-        type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 813157737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27c7ddd9720ff7b44b496ddd9960209e, type: 3}
 --- !u!1001 &1401640007
@@ -2955,6 +2955,11 @@ PrefabInstance:
       propertyPath: start.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5823366092441250388, guid: 20b72313f02c54958bc713ccc75a12ad,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1517793575}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20b72313f02c54958bc713ccc75a12ad, type: 3}
 --- !u!1 &1517793572 stripped
@@ -3010,6 +3015,12 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &1517793575 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5823366093574698452, guid: 20b72313f02c54958bc713ccc75a12ad,
+    type: 3}
+  m_PrefabInstance: {fileID: 1517793571}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1697848701
 GameObject:
   m_ObjectHideFlags: 0
@@ -3199,6 +3210,21 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1878359369456265896, guid: 230ef9334a416a947a665c270dc4123d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1878359369582698365, guid: 230ef9334a416a947a665c270dc4123d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1878359371420962535, guid: 230ef9334a416a947a665c270dc4123d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1878359371420962528, guid: 230ef9334a416a947a665c270dc4123d,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -3242,21 +3268,6 @@ PrefabInstance:
     - target: {fileID: 1878359371420962529, guid: 230ef9334a416a947a665c270dc4123d,
         type: 3}
       propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1878359369456265896, guid: 230ef9334a416a947a665c270dc4123d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1878359369582698365, guid: 230ef9334a416a947a665c270dc4123d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1878359371420962535, guid: 230ef9334a416a947a665c270dc4123d,
-        type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

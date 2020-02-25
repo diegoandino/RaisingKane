@@ -1712,26 +1712,6 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1878359369843143230, guid: 230ef9334a416a947a665c270dc4123d,
-        type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 1878359369843143229, guid: 230ef9334a416a947a665c270dc4123d,
-        type: 3}
-      propertyPath: m_UiScaleMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1878359369843143229, guid: 230ef9334a416a947a665c270dc4123d,
-        type: 3}
-      propertyPath: m_ReferenceResolution.x
-      value: 1920
-      objectReference: {fileID: 0}
-    - target: {fileID: 1878359369843143229, guid: 230ef9334a416a947a665c270dc4123d,
-        type: 3}
-      propertyPath: m_ReferenceResolution.y
-      value: 1080
-      objectReference: {fileID: 0}
     - target: {fileID: 1878359369582698366, guid: 230ef9334a416a947a665c270dc4123d,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1766,6 +1746,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1878359369843143230, guid: 230ef9334a416a947a665c270dc4123d,
+        type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1878359369843143229, guid: 230ef9334a416a947a665c270dc4123d,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1878359369843143229, guid: 230ef9334a416a947a665c270dc4123d,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 1878359369843143229, guid: 230ef9334a416a947a665c270dc4123d,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
       objectReference: {fileID: 0}
     - target: {fileID: 1878359371420962535, guid: 230ef9334a416a947a665c270dc4123d,
         type: 3}
@@ -2740,27 +2740,51 @@ PrefabInstance:
     - target: {fileID: 5041028008207125537, guid: 14eff09f372fd443387f00e253c1f885,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 0
+      value: 186
       objectReference: {fileID: 0}
     - target: {fileID: 5041028008207125537, guid: 14eff09f372fd443387f00e253c1f885,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 0
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 5041028008207125537, guid: 14eff09f372fd443387f00e253c1f885,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 0
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 5041028008207125537, guid: 14eff09f372fd443387f00e253c1f885,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5041028008207125537, guid: 14eff09f372fd443387f00e253c1f885,
         type: 3}
       propertyPath: m_textInfo.pageCount
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5041028008207125537, guid: 14eff09f372fd443387f00e253c1f885,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: ba279bda3d0442540b4afbfc1150b415,
+        type: 2}
+    - target: {fileID: 5041028008207125537, guid: 14eff09f372fd443387f00e253c1f885,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -5573263277686609374, guid: ba279bda3d0442540b4afbfc1150b415,
+        type: 2}
+    - target: {fileID: 5041028008207125537, guid: 14eff09f372fd443387f00e253c1f885,
+        type: 3}
+      propertyPath: m_text
+      value: '
+
+        Press the the correct button as the corresponding blasts fall towards you
+        but watch out for the green blasts! They will bounce back at you after hitting
+        them.
+
+
+        Press any Button to Start'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14eff09f372fd443387f00e253c1f885, type: 3}

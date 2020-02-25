@@ -887,6 +887,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: optionsMenu
+      value: 
+      objectReference: {fileID: 778546359}
     - target: {fileID: 7937656619935002399, guid: f17f678c862bb4daf8723dae772b1d5b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1171,11 +1176,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ReturnToMainMenu
       objectReference: {fileID: 0}
-    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: optionsMenu
-      value: 
-      objectReference: {fileID: 778546359}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f17f678c862bb4daf8723dae772b1d5b, type: 3}
 --- !u!1 &650293281 stripped
@@ -1386,6 +1386,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7937656619935002392, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7937656619068920099, guid: f17f678c862bb4daf8723dae772b1d5b,
         type: 3}
       propertyPath: m_LocalScale.y
@@ -1491,6 +1496,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.25
       objectReference: {fileID: 0}
+    - target: {fileID: 7937656618247104687, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937656618800860451, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937656618800860451, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: m_Name
+      value: Back Button
+      objectReference: {fileID: 0}
     - target: {fileID: 7937656619068920098, guid: f17f678c862bb4daf8723dae772b1d5b,
         type: 3}
       propertyPath: m_Color.r
@@ -1520,6 +1540,11 @@ PrefabInstance:
     - target: {fileID: 7937656619068920098, guid: f17f678c862bb4daf8723dae772b1d5b,
         type: 3}
       propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937656619823613668, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7937656618247104684, guid: f17f678c862bb4daf8723dae772b1d5b,
@@ -1609,31 +1634,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ReturnToMainMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 7937656619935002392, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: m_RenderMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7937656618247104687, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7937656618800860451, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7937656618800860451, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: m_Name
-      value: Back Button
-      objectReference: {fileID: 0}
-    - target: {fileID: 7937656619823613668, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b, type: 3}
@@ -1816,6 +1816,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dialogue Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 7694576065219987341, guid: 27c7ddd9720ff7b44b496ddd9960209e,
+        type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 172013177}
+    - target: {fileID: 7694576065219987341, guid: 27c7ddd9720ff7b44b496ddd9960209e,
+        type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 172013176}
+    - target: {fileID: 7694576065219987341, guid: 27c7ddd9720ff7b44b496ddd9960209e,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 172013175}
     - target: {fileID: 7694576065219987342, guid: 27c7ddd9720ff7b44b496ddd9960209e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1871,21 +1886,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7694576065219987341, guid: 27c7ddd9720ff7b44b496ddd9960209e,
-        type: 3}
-      propertyPath: nameText
-      value: 
-      objectReference: {fileID: 172013177}
-    - target: {fileID: 7694576065219987341, guid: 27c7ddd9720ff7b44b496ddd9960209e,
-        type: 3}
-      propertyPath: dialogueText
-      value: 
-      objectReference: {fileID: 172013176}
-    - target: {fileID: 7694576065219987341, guid: 27c7ddd9720ff7b44b496ddd9960209e,
-        type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 172013175}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27c7ddd9720ff7b44b496ddd9960209e, type: 3}
 --- !u!1 &970626682
@@ -2903,6 +2903,11 @@ PrefabInstance:
       propertyPath: start.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5823366092441250388, guid: 20b72313f02c54958bc713ccc75a12ad,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1453598005}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20b72313f02c54958bc713ccc75a12ad, type: 3}
 --- !u!1 &1453598002 stripped
@@ -2958,6 +2963,12 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &1453598005 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5823366093574698452, guid: 20b72313f02c54958bc713ccc75a12ad,
+    type: 3}
+  m_PrefabInstance: {fileID: 1453598001}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1489283976
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3038,7 +3049,7 @@ PrefabInstance:
     - target: {fileID: 3884388400819327776, guid: b8f03d45bdd52fa48898ce3bf82b9b60,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: This is where I bumbed the cake and landed on Dad. . .
+      value: This is where I bumped the cake and landed on Dad. . .
       objectReference: {fileID: 0}
     - target: {fileID: 3884388400819327776, guid: b8f03d45bdd52fa48898ce3bf82b9b60,
         type: 3}
@@ -3241,6 +3252,21 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1878359369456265896, guid: 230ef9334a416a947a665c270dc4123d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1878359369582698365, guid: 230ef9334a416a947a665c270dc4123d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1878359371420962535, guid: 230ef9334a416a947a665c270dc4123d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1878359371420962528, guid: 230ef9334a416a947a665c270dc4123d,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -3284,21 +3310,6 @@ PrefabInstance:
     - target: {fileID: 1878359371420962529, guid: 230ef9334a416a947a665c270dc4123d,
         type: 3}
       propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1878359369456265896, guid: 230ef9334a416a947a665c270dc4123d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1878359369582698365, guid: 230ef9334a416a947a665c270dc4123d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1878359371420962535, guid: 230ef9334a416a947a665c270dc4123d,
-        type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

@@ -814,6 +814,11 @@ PrefabInstance:
       propertyPath: start.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5823366092441250388, guid: 20b72313f02c54958bc713ccc75a12ad,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 263349037}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20b72313f02c54958bc713ccc75a12ad, type: 3}
 --- !u!1 &263349034 stripped
@@ -869,6 +874,12 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &263349037 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5823366093574698452, guid: 20b72313f02c54958bc713ccc75a12ad,
+    type: 3}
+  m_PrefabInstance: {fileID: 263349033}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &275515568
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3241,6 +3252,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dialogue Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 7694576065219987341, guid: 27c7ddd9720ff7b44b496ddd9960209e,
+        type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 567909090}
+    - target: {fileID: 7694576065219987341, guid: 27c7ddd9720ff7b44b496ddd9960209e,
+        type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 567909089}
+    - target: {fileID: 7694576065219987341, guid: 27c7ddd9720ff7b44b496ddd9960209e,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 825879330}
     - target: {fileID: 7694576065219987342, guid: 27c7ddd9720ff7b44b496ddd9960209e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3296,21 +3322,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7694576065219987341, guid: 27c7ddd9720ff7b44b496ddd9960209e,
-        type: 3}
-      propertyPath: nameText
-      value: 
-      objectReference: {fileID: 567909090}
-    - target: {fileID: 7694576065219987341, guid: 27c7ddd9720ff7b44b496ddd9960209e,
-        type: 3}
-      propertyPath: dialogueText
-      value: 
-      objectReference: {fileID: 567909089}
-    - target: {fileID: 7694576065219987341, guid: 27c7ddd9720ff7b44b496ddd9960209e,
-        type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 825879330}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27c7ddd9720ff7b44b496ddd9960209e, type: 3}
 --- !u!1 &1941189329
