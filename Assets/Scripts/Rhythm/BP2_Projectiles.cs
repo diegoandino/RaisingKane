@@ -82,7 +82,7 @@ public class BP2_Projectiles : MonoBehaviour
             if (gameObject.activeSelf)
             {
 				canBePressed = false;
-                BP2_MusicSettings.instance.NoteMiss();
+                ///BP2_MusicSettings.instance.NoteMiss();
 
 
                 MissCount.miss++; //Increments the Miss count on GUI
