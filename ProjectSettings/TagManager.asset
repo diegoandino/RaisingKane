@@ -13,6 +13,7 @@ TagManager:
   - Button2
   - Button3
   - Damage
+  - Music
   layers:
   - Default
   - TransparentFX

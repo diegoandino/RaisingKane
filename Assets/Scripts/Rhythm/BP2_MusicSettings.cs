@@ -18,7 +18,10 @@ public class BP2_MusicSettings : MonoBehaviour
     public AudioSource ghostMusic;// ghost song file
     //public BP2_RhythmSpeed RSpeed;
     public static BP2_MusicSettings instance;
-	public GameObject UI; 
+	public GameObject UI;
+
+    GameObject OverworldMusic;
+
 
     public bool startPlaying = false;
     public float StartOffset;       //The wait before a the song plays 
@@ -60,6 +63,7 @@ public class BP2_MusicSettings : MonoBehaviour
 				UI.SetActive(false);
             }
         }
+        MuteOverworldMusic();
     }
 
     /// <summary>
@@ -77,4 +81,16 @@ public class BP2_MusicSettings : MonoBehaviour
     {
         //Debug.Log("Miss");
     }
+
+  
+
+    public void MuteOverworldMusic()
+    {
+        if (startPlaying)
+        {
+            OverworldMusic = GameObject.FindGameObjectWithTag("Music");
+            OverworldMusic.GetComponent<AudioSource>().volume -= 0.01f;
+        }
+    }
+
 }
