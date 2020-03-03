@@ -91,7 +91,6 @@ public class Projectile : MonoBehaviour
 		        //_destroy = destroy;
 		        meter.decrementMeter(1);
 		        Destroy(this.gameObject);
-                Debug.Log("PAST THE BUTTON");
 		    }
 
 		    else
@@ -126,7 +125,7 @@ public class Projectile : MonoBehaviour
                     {
 						//_destroy = destroy;
 						meter.damage(1);
-                        Destroy(this.gameObject);
+                        StartCoroutine(DestroyBeat(0));
                     }
 
                     else
@@ -150,9 +149,9 @@ public class Projectile : MonoBehaviour
 					if (destroy == true)
                     {
 						meter.damage(1);
-						Destroy(this.gameObject);
-					}
-                        
+                        StartCoroutine(DestroyBeat(0));
+                    }
+
                     else
                         destroy = false;
                 }
@@ -172,7 +171,8 @@ public class Projectile : MonoBehaviour
 					if (destroy == true)
                     {
 						meter.damage(1);
-						Destroy(this.gameObject);
+                        StartCoroutine(DestroyBeat(0));
+						
 					}
          
                     else
@@ -180,5 +180,17 @@ public class Projectile : MonoBehaviour
                 }
             }
         }
+    }
+
+    public IEnumerator DestroyBeat(float delay)
+    {
+        this.GetComponent<CircleCollider2D>().enabled = false;
+        Animator anim = this.GetComponent<Animator>();
+        //anim.SetBool("AnimatorVariable",true);
+        print("Waiting to destroy");
+        yield return new WaitForSeconds(delay);
+        print("Destory");
+        Destroy(this.gameObject);
+
     }
 }

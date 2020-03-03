@@ -89,7 +89,10 @@ public class BP2_MusicSettings : MonoBehaviour
         if (startPlaying)
         {
             OverworldMusic = GameObject.FindGameObjectWithTag("Music");
-            OverworldMusic.GetComponent<AudioSource>().volume -= 0.01f;
+            if(OverworldMusic != null)
+            {
+                OverworldMusic.GetComponent<AudioSource>().volume -= 0.01f;
+            }
         }
     }
 
