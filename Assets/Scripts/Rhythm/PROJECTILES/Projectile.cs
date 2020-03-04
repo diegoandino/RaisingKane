@@ -186,9 +186,9 @@ public class Projectile : MonoBehaviour
     {
         this.GetComponent<CircleCollider2D>().enabled = false;
         Animator anim = this.GetComponent<Animator>();
-        //anim.SetBool("AnimatorVariable",true);
+        anim.SetBool("Hit",true);
         print("Waiting to destroy");
-        yield return new WaitForSeconds(delay);
+        yield return new WaitForSeconds(1);
         print("Destory");
         Destroy(this.gameObject);
 

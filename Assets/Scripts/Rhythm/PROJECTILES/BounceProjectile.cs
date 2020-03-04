@@ -130,7 +130,7 @@ public class BounceProjectile : ArchProjectile
                         if (destroy == true)
                         {
                             meter.damage(1);
-                            Destroy(this.gameObject);
+                            StartCoroutine(DestroyBeat(0));
                         }
 
                         else destroy = false;
@@ -151,7 +151,7 @@ public class BounceProjectile : ArchProjectile
                         if (destroy == true)
                         {
                             meter.damage(1);
-                            Destroy(this.gameObject);
+                            StartCoroutine(DestroyBeat(0));
                         }
 
                         else destroy = false;
@@ -172,7 +172,7 @@ public class BounceProjectile : ArchProjectile
                         if (destroy == true)
                         {
                             meter.damage(1);
-                            Destroy(this.gameObject);
+                            StartCoroutine(DestroyBeat(0));
                         }
 
                         else destroy = false;
@@ -180,5 +180,16 @@ public class BounceProjectile : ArchProjectile
                 }
             }
         }
+    }
+    public IEnumerator DestroyBeat(float delay)
+    {
+        this.GetComponent<CircleCollider2D>().enabled = false;
+        Animator anim = this.GetComponent<Animator>();
+        anim.SetBool("Hit", true);
+        print("Waiting to destroy");
+        yield return new WaitForSeconds(1);
+        print("Destory");
+        Destroy(this.gameObject);
+
     }
 }
