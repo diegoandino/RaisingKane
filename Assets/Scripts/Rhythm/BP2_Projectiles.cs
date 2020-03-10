@@ -97,7 +97,7 @@ public class BP2_Projectiles : MonoBehaviour
 	void BeatCheck()
     {
 
-        if (Input.GetKeyDown(BP2_ButtonControls.staticKey))
+        if (Input.GetButtonDown(BP2_ButtonControls.staticButton))
         {
             if (canBePressed == true)
             {

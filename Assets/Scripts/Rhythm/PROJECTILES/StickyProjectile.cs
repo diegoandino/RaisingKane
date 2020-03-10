@@ -46,7 +46,7 @@ public class StickyProjectile : ArchProjectile
 
     public void beatCheck(Boolean destroy)
 	{
-         if (Input.GetKeyDown(BP2_ButtonControls.staticKey))
+         if (Input.GetButtonDown(BP2_ButtonControls.staticButton))
             {
                 if (canBePressed == true)
                 {

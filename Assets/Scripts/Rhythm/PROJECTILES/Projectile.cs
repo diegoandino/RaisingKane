@@ -107,7 +107,7 @@ public class Projectile : MonoBehaviour
 	public void BeatCheck(Boolean destroy)
 	{
 
-        if (Input.GetKeyDown(BP2_ButtonControls.staticKey))
+        if (Input.GetButtonDown(BP2_ButtonControls.staticButton))
         {
             if (canBePressed == true)
             {

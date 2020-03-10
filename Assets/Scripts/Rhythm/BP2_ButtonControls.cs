@@ -20,7 +20,8 @@ public class BP2_ButtonControls : MonoBehaviour
     private SpriteRenderer spriteChanger;
 
     [SerializeField]
-    private KeyCode KEY;
+    public string InputButton;
+     
 
     public Transform plush;
     public Transform button;
@@ -33,12 +34,12 @@ public class BP2_ButtonControls : MonoBehaviour
     private IEnumerator imageChangeCoRoutine;
 
     public static bool pressed;
-    public static bool aPressed;
-    public static bool sPressed;
-    public static bool dPressed;
+    public static bool Pressed1;
+    public static bool Pressed2;
+    public static bool Pressed3;
 
     public static float ButtonPos; //the x,y cordinates of the button
-    public static KeyCode staticKey;
+    public static string staticButton;
     public static Vector3 staticPlushPos;
 
     public GameObject button1;
@@ -92,20 +93,20 @@ public class BP2_ButtonControls : MonoBehaviour
     {
 
         //Button Pressed
-        if (Input.GetKeyDown(KEY))
+        if (Input.GetButtonDown(InputButton))
         {           
             pressed = true;
 
             musicManager.Playsound("plushFire");
 
-            staticKey = KEY;
+            staticButton = InputButton;
             staticPlushPos = plush.position;
 
             IsButtonRight();
         }
 
         //Button Release
-        if (Input.GetKeyUp(KEY))
+        if (Input.GetButtonUp(InputButton))
         {
             //spriteChanger.sprite = defaultImage;
             pressed = false;
@@ -122,11 +123,11 @@ public class BP2_ButtonControls : MonoBehaviour
 
     void Pressed()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetButtonDown("LeftButton"))
         {
-            aPressed = true;
-            sPressed = false;
-            dPressed = false;
+            Pressed1 = true;
+            Pressed2 = false;
+            Pressed3 = false;
 
             button1.GetComponent<Collider2D>().enabled = true;
             button2.GetComponent<Collider2D>().enabled = false;
@@ -136,11 +137,11 @@ public class BP2_ButtonControls : MonoBehaviour
         }
 
 
-        else if (Input.GetKeyDown(KeyCode.S))
+        else if (Input.GetButtonDown("MiddleButton"))
         {
-            aPressed = false;
-            sPressed = true;
-            dPressed = false;
+            Pressed1 = false;
+            Pressed2 = true;
+            Pressed3 = false;
 
             button1.GetComponent<Collider2D>().enabled = false;
             button2.GetComponent<Collider2D>().enabled = true;
@@ -150,11 +151,11 @@ public class BP2_ButtonControls : MonoBehaviour
 		}
 
 
-        else if (Input.GetKeyDown(KeyCode.D))
+        else if (Input.GetButtonDown("RightButton"))
         {
-            aPressed = false;
-            sPressed = false;
-            dPressed = true;
+            Pressed1 = false;
+            Pressed2 = false;
+            Pressed3 = true;
 
             button1.GetComponent<Collider2D>().enabled = false;
             button2.GetComponent<Collider2D>().enabled = false;

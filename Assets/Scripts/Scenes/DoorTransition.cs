@@ -21,7 +21,7 @@ public class DoorTransition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (PlayerHere && Input.GetAxisRaw("Vertical")<0)
+        if (PlayerHere && Input.GetAxisRaw("Submit")>0)
         {
             StartCoroutine(LoadSceneAFterTransition()); 
         }

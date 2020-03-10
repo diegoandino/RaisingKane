@@ -59,7 +59,7 @@ public class BounceProjectile : ArchProjectile
     {
         if (firstPress)
         {
-            if (Input.GetKeyDown(BP2_ButtonControls.staticKey))
+            if (Input.GetButtonDown(BP2_ButtonControls.staticButton))
             {
                 if (canBePressed == true)
                 {
@@ -112,7 +112,7 @@ public class BounceProjectile : ArchProjectile
             }
         } else
 		{
-            if (Input.GetKeyDown(BP2_ButtonControls.staticKey))
+            if (Input.GetButtonDown(BP2_ButtonControls.staticButton))
             {
                 if (canBePressed == true)
                 {

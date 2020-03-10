@@ -1,20 +1,26 @@
 ﻿<Properties StartupConfiguration="{7BBC6D7A-050F-7091-4BAD-F4932F6D0ECD}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Rhythm/PROJECTILES/Projectile.cs">
     <Files>
-      <File FileName="Assets/Scripts/Rhythm/BP2_MusicSettings.cs" Line="91" Column="72" />
-      <File FileName="Assets/OverwoldMusicManager.cs" Line="25" Column="9" />
+      <File FileName="Assets/Scripts/Rhythm/BP2_MusicSettings.cs" Line="94" Column="76" />
       <File FileName="Assets/Scripts/General/musicManager.cs" />
       <File FileName="Assets/Scripts/Rhythm/BeatGeneratorTest.cs" />
       <File FileName="Assets/Scripts/Rhythm/BP2_ButtonControls.cs" />
-      <File FileName="Assets/Scripts/Rhythm/PROJECTILES/ArchProjectile.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Rhythm/PROJECTILES/Projectile.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Rhythm/PROJECTILES/ArchProjectile.cs" />
+      <File FileName="Assets/Scripts/Rhythm/PROJECTILES/Projectile.cs" Line="110" Column="1" />
+      <File FileName="Assets/Scripts/Scenes/DoorTransition.cs" />
+      <File FileName="Assets/Scripts/Rhythm/BP2_Projectiles.cs" />
+      <File FileName="Assets/Scripts/Rhythm/PROJECTILES/BounceProjectile.cs" />
+      <File FileName="Assets/Scripts/Rhythm/PROJECTILES/MultiTapProjectile.cs" />
+      <File FileName="Assets/Scripts/Rhythm/PROJECTILES/StickyProjectile.cs" Line="49" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="bcf39b70-0d70-484e-ab31-81069b89a76c" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c94ddad5-a54e-4a42-8d07-fa84bdfd195f" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/davidross/Documents/RaisingKane/Temp/UnityTempFile-c59b1e100828a44ee99807b3241a6548" relfile="Temp/UnityTempFile-c59b1e100828a44ee99807b3241a6548" line="154" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

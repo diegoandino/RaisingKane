@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 699326045805915425}
   - component: {fileID: 699326045805915436}
   - component: {fileID: 1274443256204455796}
-  - component: {fileID: 2572030163095302523}
+  - component: {fileID: 969792367000618272}
   - component: {fileID: 9171709281923573400}
   m_Layer: 8
   m_Name: BasicBeat
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 1235477479367889486, guid: d8bb9c3dd2f4fa648b22f103a1874e47,
     type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -103,7 +103,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!58 &2572030163095302523
+--- !u!58 &969792367000618272
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -116,9 +116,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.05, y: 1.1}
+  m_Offset: {x: 0, y: 1.1}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.53
 --- !u!114 &9171709281923573400
 MonoBehaviour:
   m_ObjectHideFlags: 0
