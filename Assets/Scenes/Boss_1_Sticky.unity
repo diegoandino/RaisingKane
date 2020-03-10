@@ -1892,7 +1892,7 @@ MonoBehaviour:
     BeatType: 1
   - SpawnTimer: 2.4
     Row: 3
-    BeatType: 1
+    BeatType: 2
   - SpawnTimer: 3
     Row: 2
     BeatType: 1
@@ -1907,7 +1907,7 @@ MonoBehaviour:
     BeatType: 1
   - SpawnTimer: 5.1
     Row: 2
-    BeatType: 1
+    BeatType: 2
   - SpawnTimer: 5.4
     Row: 2
     BeatType: 1
@@ -1916,7 +1916,7 @@ MonoBehaviour:
     BeatType: 1
   - SpawnTimer: 6.6
     Row: 1
-    BeatType: 1
+    BeatType: 2
   - SpawnTimer: 7.2
     Row: 3
     BeatType: 1
@@ -1946,7 +1946,7 @@ MonoBehaviour:
     BeatType: 1
   - SpawnTimer: 12.6
     Row: 2
-    BeatType: 1
+    BeatType: 2
   - SpawnTimer: 13.2
     Row: 3
     BeatType: 1
@@ -1997,7 +1997,7 @@ MonoBehaviour:
     BeatType: 1
   - SpawnTimer: 21.6
     Row: 3
-    BeatType: 1
+    BeatType: 2
   - SpawnTimer: 22.2
     Row: 2
     BeatType: 1
@@ -2015,7 +2015,7 @@ MonoBehaviour:
     BeatType: 1
   - SpawnTimer: 24.6
     Row: 2
-    BeatType: 1
+    BeatType: 2
   - SpawnTimer: 25.2
     Row: 1
     BeatType: 1
@@ -2057,7 +2057,7 @@ MonoBehaviour:
     BeatType: 1
   - SpawnTimer: 33
     Row: 1
-    BeatType: 1
+    BeatType: 2
   - SpawnTimer: 33.6
     Row: 3
     BeatType: 1
@@ -2099,7 +2099,7 @@ MonoBehaviour:
     BeatType: 1
   - SpawnTimer: 39.9
     Row: 3
-    BeatType: 1
+    BeatType: 2
   - SpawnTimer: 40.2
     Row: 1
     BeatType: 1
@@ -2117,7 +2117,7 @@ MonoBehaviour:
     BeatType: 1
   - SpawnTimer: 42.6
     Row: 1
-    BeatType: 1
+    BeatType: 2
   - SpawnTimer: 43.5
     Row: 2
     BeatType: 1
@@ -2162,7 +2162,7 @@ MonoBehaviour:
     BeatType: 1
   - SpawnTimer: 51
     Row: 2
-    BeatType: 1
+    BeatType: 2
   - SpawnTimer: 51.6
     Row: 3
     BeatType: 1
@@ -2210,7 +2210,7 @@ MonoBehaviour:
     BeatType: 1
   - SpawnTimer: 59.1
     Row: 3
-    BeatType: 1
+    BeatType: 2
   - SpawnTimer: 59.4
     Row: 1
     BeatType: 1
@@ -2252,7 +2252,7 @@ MonoBehaviour:
     BeatType: 1
   - SpawnTimer: 65.7
     Row: 3
-    BeatType: 1
+    BeatType: 2
   - SpawnTimer: 66.3
     Row: 3
     BeatType: 1
