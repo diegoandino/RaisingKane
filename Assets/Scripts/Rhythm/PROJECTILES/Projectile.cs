@@ -34,6 +34,7 @@ public class Projectile : MonoBehaviour
         normalHit = false;
         goodHit = false;
         perfectHit = false;
+
         canBePressed = false;
         pressed = true;
     }
@@ -83,7 +84,7 @@ public class Projectile : MonoBehaviour
 
     public void MissCheck(Boolean destroy)
 	{
-        if(transform.position.y < (button2.position.y - 10))
+        if(transform.position.y < (button2.position.y - 20))
 		{
             MissCount.miss++; //Increments the Miss count on GUI
 		    if (destroy == true)
@@ -148,7 +149,7 @@ public class Projectile : MonoBehaviour
 
 					if (destroy == true)
                     {
-						meter.damage(1);
+						meter.damage(2);
                         StartCoroutine(DestroyBeat(0));
                     }
 
@@ -170,7 +171,7 @@ public class Projectile : MonoBehaviour
 
 					if (destroy == true)
                     {
-						meter.damage(1);
+						meter.damage(3);
                         StartCoroutine(DestroyBeat(0));
 						
 					}

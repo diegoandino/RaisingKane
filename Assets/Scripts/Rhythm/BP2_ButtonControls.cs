@@ -54,8 +54,14 @@ public class BP2_ButtonControls : MonoBehaviour
 	public static GameObject _button2;
 	public static GameObject _button3;
 
-	//--Vector 3 Instantiantion Variables for location --//
-	Vector3 pos1 = new Vector3(-4.9f, -1.75f, -2f);
+    private List<string> perfectHit;
+    private List<string> goodHit;
+    private List<string> normalHit;
+
+    private List<string> missHit;
+
+    //--Vector 3 Instantiantion Variables for location --//
+    Vector3 pos1 = new Vector3(-4.9f, -1.75f, -2f);
     Vector3 pos2 = new Vector3(-4.9f, -2.5f, -2f);
     Vector3 pos3 = new Vector3(-4.9f, -3.25f, -2f);
     Vector3 pos4 = new Vector3(-4.9f, -4f, -2f);
@@ -75,6 +81,13 @@ public class BP2_ButtonControls : MonoBehaviour
         textAnimator = rhythmText.GetComponent<Animator>();
         textMesh = rhythmText.GetComponent<TextMeshPro>();
         textAnimator.SetBool("Nice", false);
+
+        perfectHit = new List<string>() { "Great!!", "Marvelous", "Excellent", "Epic!!",  };
+        goodHit = new List<string>() { "Good", "Cool", "Nice", "Not Bad", "Super", "Great" };
+        normalHit = new List<string>() { "Better", "Not Bad", "Nice"};
+
+        missHit = new List<string>() { "Poor", "Miss", "Low", "Lousy" };
+
     }
 
     // Update is called once per frame
@@ -192,18 +205,24 @@ public class BP2_ButtonControls : MonoBehaviour
         {
             spriteChanger.sprite = correctImage;
 
-
-            textMesh.text = "Nice!";
-            textMesh.color = new Color(.3f, .3f, .7f);
-            textAnimator.SetBool("Nice", true);
+            // text doesnt change when large
+            if(textMesh.gameObject.transform.localScale.x < .01)
+            {
+                textMesh.text = perfectHit[Random.Range(0, perfectHit.Count)];
+                textMesh.color = new Color(.3f, .3f, .7f);
+                textAnimator.SetBool("Nice", true);
+            }
         }
         else
         {
             spriteChanger.sprite = incorrectImage;
 
-            textMesh.text = "Oops";
-            textMesh.color = new Color(.7f, .3f, .3f);
-            textAnimator.SetBool("Nice", true);
+            if (textMesh.gameObject.transform.localScale.x < .01)
+            {
+                textMesh.text = missHit[Random.Range(0, missHit.Count)];
+                textMesh.color = new Color(.7f, .3f, .3f);
+                textAnimator.SetBool("Nice", true);
+            }
         }
 
     }
@@ -213,7 +232,5 @@ public class BP2_ButtonControls : MonoBehaviour
         spriteChanger.sprite = defaultImage;
         yield return new WaitForSeconds(waitTime * 2);
         textAnimator.SetBool("Nice", false);
-
-
     }
 }
