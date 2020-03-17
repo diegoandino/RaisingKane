@@ -64,7 +64,8 @@ public class BeatGeneratorTest : MonoBehaviour
 	void Update()
 	{
 		songTime = boss2.time;
-		if (Input.GetKeyDown(KeyCode.Space) && start)
+
+		if (Input.anyKeyDown && start)
 		{
 			start = false;
 			for (int i = 0; i < beatLog.Length; i++)

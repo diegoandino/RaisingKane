@@ -52,7 +52,7 @@ public class BP2_MusicSettings : MonoBehaviour
         if (!startPlaying)
         {
             //The confirm button to start the music and projectiles 
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.anyKeyDown)
             {
                 startPlaying = true;
                 //RSpeed.hasStarted = true;
