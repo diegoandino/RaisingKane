@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 1175874498}
   - component: {fileID: 1175874501}
   m_Layer: 0
-  m_Name: TempVid
+  m_Name: Animatic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -295,6 +295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e3834a8628f043a28675b39f062bc69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NextRoom: DR1
 --- !u!1 &2099114564
 GameObject:
   m_ObjectHideFlags: 0

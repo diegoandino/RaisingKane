@@ -10,9 +10,9 @@ public class SceneSwitcher : MonoBehaviour
 		SceneManager.LoadScene("Overworld_Move");
 	}
 
-	public void Boss2()
+	public void Credits()
 	{
-		SceneManager.LoadScene("Boss Arc");
+		SceneManager.LoadScene("Credits");
 	}
 
     public void startGame()
