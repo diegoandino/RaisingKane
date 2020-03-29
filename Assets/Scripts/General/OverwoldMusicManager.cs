@@ -13,12 +13,12 @@ public class OverwoldMusicManager : MonoBehaviour
     void Start()
     {
         audioSrc = GetComponent<AudioSource>();
+        audioSrc.volume = musicVolume;
     }
 
     // Update is called once per frame
     void Update()
     {
-        audioSrc.volume = musicVolume;
     }
 
     //
