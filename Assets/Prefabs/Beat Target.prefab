@@ -143,7 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a6363344e4f88242adfe94163825721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  KEY: 100
+  InputButton: RightButton
   plush: {fileID: 2997508507966678521}
   button: {fileID: 2997508506960647969}
   defaultImage: {fileID: 21300000, guid: 61cace6e073ca3a4b91795093aadfb87, type: 3}
@@ -153,7 +153,7 @@ MonoBehaviour:
   button1: {fileID: 2997508507646783113}
   button2: {fileID: 2997508507180376555}
   button3: {fileID: 2997508506960647968}
-  niceText: {fileID: 0}
+  rhythmText: {fileID: 0}
 --- !u!114 &2997508506960647970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,7 +312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a6363344e4f88242adfe94163825721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  KEY: 115
+  InputButton: MiddleButton
   plush: {fileID: 2997508507966678521}
   button: {fileID: 2997508507180376556}
   defaultImage: {fileID: 21300000, guid: b68a39ea6e5560647813843102db9b70, type: 3}
@@ -322,7 +322,7 @@ MonoBehaviour:
   button1: {fileID: 2997508507646783113}
   button2: {fileID: 2997508507180376555}
   button3: {fileID: 2997508506960647968}
-  niceText: {fileID: 0}
+  rhythmText: {fileID: 0}
 --- !u!114 &2997508507180376557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -481,7 +481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a6363344e4f88242adfe94163825721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  KEY: 97
+  InputButton: LeftButton
   plush: {fileID: 2997508507966678521}
   button: {fileID: 2997508507646783119}
   defaultImage: {fileID: 21300000, guid: 9153a35fb33eec84d97b11fdd4755895, type: 3}
@@ -491,7 +491,7 @@ MonoBehaviour:
   button1: {fileID: 2997508507646783113}
   button2: {fileID: 2997508507180376555}
   button3: {fileID: 2997508506960647968}
-  niceText: {fileID: 0}
+  rhythmText: {fileID: 0}
 --- !u!114 &2997508507646783114
 MonoBehaviour:
   m_ObjectHideFlags: 0

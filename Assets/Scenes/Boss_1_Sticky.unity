@@ -715,11 +715,6 @@ PrefabInstance:
       propertyPath: rhythmText
       value: 
       objectReference: {fileID: 1781150021}
-    - target: {fileID: 2997508506960647971, guid: df13c5f1d0ae4430e9b812636fba34c5,
-        type: 3}
-      propertyPath: InputButton
-      value: RightButton
-      objectReference: {fileID: 0}
     - target: {fileID: 2997508507180376558, guid: df13c5f1d0ae4430e9b812636fba34c5,
         type: 3}
       propertyPath: correctImage
@@ -748,11 +743,6 @@ PrefabInstance:
       propertyPath: rhythmText
       value: 
       objectReference: {fileID: 1781150021}
-    - target: {fileID: 2997508507180376558, guid: df13c5f1d0ae4430e9b812636fba34c5,
-        type: 3}
-      propertyPath: InputButton
-      value: MiddleButton
-      objectReference: {fileID: 0}
     - target: {fileID: 2997508507646783115, guid: df13c5f1d0ae4430e9b812636fba34c5,
         type: 3}
       propertyPath: collisionImage
@@ -780,11 +770,6 @@ PrefabInstance:
       propertyPath: rhythmText
       value: 
       objectReference: {fileID: 1781150021}
-    - target: {fileID: 2997508507646783115, guid: df13c5f1d0ae4430e9b812636fba34c5,
-        type: 3}
-      propertyPath: InputButton
-      value: LeftButton
-      objectReference: {fileID: 0}
     - target: {fileID: 2997508507966678471, guid: df13c5f1d0ae4430e9b812636fba34c5,
         type: 3}
       propertyPath: m_Enabled
@@ -2535,7 +2520,7 @@ MonoBehaviour:
     BeatType: 1
   - SpawnTimer: 36
     Row: 3
-    BeatType: 1
+    BeatType: 2
   - SpawnTimer: 36.6
     Row: 2
     BeatType: 1
