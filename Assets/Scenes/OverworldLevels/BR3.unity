@@ -1282,7 +1282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6e66dd3274dc4ad9a6dd0cff60cdee1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextScene: Boss Arc
+  NextScene: Boss_3_Multi
 --- !u!1 &785429754
 GameObject:
   m_ObjectHideFlags: 0
