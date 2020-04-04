@@ -37,6 +37,10 @@ public class AfterAnimaticTransition : MonoBehaviour
         {
             SceneManager.LoadScene(NextRoom);
         }
+        if (Input.anyKey)
+        {
+            SceneManager.LoadScene(NextRoom);
+        }
     }
 
     void vidDone(VideoPlayer player)

@@ -30,5 +30,8 @@ public class SceneSwitcher : MonoBehaviour
         SceneManager.LoadScene("Level Select");
     }
 
-
+    public void quitGame()
+    {
+        Application.Quit();
+    }
 }
