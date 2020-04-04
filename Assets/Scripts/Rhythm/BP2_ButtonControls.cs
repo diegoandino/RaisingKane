@@ -82,9 +82,8 @@ public class BP2_ButtonControls : MonoBehaviour
         textMesh = rhythmText.GetComponent<TextMeshPro>();
         textAnimator.SetBool("Nice", false);
 
-        perfectHit = new List<string>() { "Great!!", "Marvelous", "Excellent", "Epic!!",  };
-        goodHit = new List<string>() { "Good", "Cool", "Nice", "Not Bad", "Super", "Great" };
-        normalHit = new List<string>() { "Better", "Not Bad", "Nice"};
+        perfectHit = new List<string>() { "Great!!", "Marvelous", "Excellent", "Epic!!", "Good", "Cool", "Nice", "Not Bad", "Super", "Great", "Not Bad", "Nice" };
+
 
         missHit = new List<string>() { "Poor", "Miss", "Low", "Lousy" };
 
