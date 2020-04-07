@@ -2,13 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class PauseLogic : MonoBehaviour
 {
     public static bool isPaused = false;
     public static bool optionsOpen = false;
+    public static bool flip = false;
     public GameObject pauseMenu;
     public GameObject optionsMenu;
+    public EventSystem myEventSystem;
+    public float timeSpan = 1.0f;
+    private float time;
 
     //[SerializeField]
     //private AudioSource Music;
@@ -36,6 +41,33 @@ public class PauseLogic : MonoBehaviour
                 Resume();
             }
         }
+        if (Input.GetButton("LeftButton") && Input.GetButton("RightButton"))
+        {
+            Debug.Log("both buttons pressed");
+            if (!flip)
+            {
+                time += Time.deltaTime;
+            }
+            if (time > timeSpan)
+            {
+                flip = true;
+                time = 0f;
+                Debug.Log("pause");
+                if (!isPaused)
+                {
+                    Pause();
+                }
+                else
+                {
+                    Resume();
+                }
+            }
+        }
+        if (Input.GetButtonUp("LeftButton") || Input.GetButtonUp("RightButton"))
+        {
+            time = 0f;
+            flip = false;
+        }
     }
 
     public void Resume()
@@ -47,12 +79,20 @@ public class PauseLogic : MonoBehaviour
             optionsMenu.gameObject.SetActive(false);
             optionsOpen = false;
         }
-        if(this.GetComponent<AutoMovement>() != null)
+        if (this.GetComponent<AutoMovement>() != null)
         {
             this.GetComponent<AutoMovement>().enabled = true;
         }
         Time.timeScale = 1f;
         AudioListener.pause = false;
+    }
+
+    IEnumerator highlightBtn()
+    {
+        Debug.Log("sdfg");
+        myEventSystem.SetSelectedGameObject(null);
+        yield return null;
+        myEventSystem.SetSelectedGameObject(myEventSystem.firstSelectedGameObject);
     }
 
     void Pause()
@@ -65,6 +105,7 @@ public class PauseLogic : MonoBehaviour
         }
         Time.timeScale = 0f;
         AudioListener.pause = true;
+        StartCoroutine("highlightBtn");
         //Music.Pause();
     }
 
@@ -90,12 +131,14 @@ public class PauseLogic : MonoBehaviour
     {
         optionsMenu.gameObject.SetActive(true);
         optionsOpen = true;
+        pauseMenu.gameObject.SetActive(false);
     }
 
     public void CloseOptionsMenu()
     {
         optionsMenu.gameObject.SetActive(false);
         optionsOpen = false;
+        Pause();
     }
 
     public void QuitGame()
