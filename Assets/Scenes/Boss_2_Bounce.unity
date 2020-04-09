@@ -619,59 +619,59 @@ MonoBehaviour:
     BeatType: 1
   - SpawnTimer: 8.3
     Row: 2
-    BeatType: 3
+    BeatType: 1
   - SpawnTimer: 9.1
     Row: 2
     BeatType: 1
   - SpawnTimer: 9.4
     Row: 1
-    BeatType: 1
+    BeatType: 3
   - SpawnTimer: 9.9
     Row: 2
     BeatType: 1
   - SpawnTimer: 10.4
     Row: 2
-    BeatType: 3
+    BeatType: 1
   - SpawnTimer: 11.2
     Row: 2
     BeatType: 1
   - SpawnTimer: 11.5
     Row: 1
-    BeatType: 1
+    BeatType: 3
   - SpawnTimer: 11.75
     Row: 2
     BeatType: 1
   - SpawnTimer: 12
     Row: 3
-    BeatType: 3
+    BeatType: 1
   - SpawnTimer: 12.25
     Row: 3
     BeatType: 1
-  - SpawnTimer: 1012.5
+  - SpawnTimer: 12.5
     Row: 2
     BeatType: 1
-  - SpawnTimer: 13.3
+  - SpawnTimer: 1013.3
     Row: 2
     BeatType: 1
-  - SpawnTimer: 13.6
+  - SpawnTimer: 1013.6
     Row: 1
     BeatType: 1
   - SpawnTimer: 14.1
     Row: 2
     BeatType: 1
-  - SpawnTimer: 1014.6
+  - SpawnTimer: 14.6
     Row: 2
     BeatType: 1
   - SpawnTimer: 15.4
     Row: 2
     BeatType: 1
-  - SpawnTimer: 15.7
+  - SpawnTimer: 1015.7
     Row: 1
     BeatType: 1
   - SpawnTimer: 15.95
     Row: 2
     BeatType: 1
-  - SpawnTimer: 1016.2
+  - SpawnTimer: 16.2
     Row: 3
     BeatType: 1
   - SpawnTimer: 16.45
@@ -745,7 +745,7 @@ MonoBehaviour:
     BeatType: 1
   - SpawnTimer: 26.15
     Row: 3
-    BeatType: 1
+    BeatType: 3
   - SpawnTimer: 26.4
     Row: 3
     BeatType: 1
@@ -760,7 +760,7 @@ MonoBehaviour:
     BeatType: 1
   - SpawnTimer: 28.25
     Row: 1
-    BeatType: 1
+    BeatType: 3
   - SpawnTimer: 28.75
     Row: 2
     BeatType: 1
@@ -769,8 +769,8 @@ MonoBehaviour:
     BeatType: 1
   - SpawnTimer: 30
     Row: 2
-    BeatType: 2
-  - SpawnTimer: 30.3
+    BeatType: 1
+  - SpawnTimer: 1030.3
     Row: 3
     BeatType: 1
   - SpawnTimer: 30.55
@@ -785,99 +785,174 @@ MonoBehaviour:
   - SpawnTimer: 32.1
     Row: 2
     BeatType: 1
-  - SpawnTimer: 32.4
+  - SpawnTimer: 1032.4
     Row: 1
-    BeatType: 2
+    BeatType: 1
   - SpawnTimer: 32.9
     Row: 2
     BeatType: 1
   - SpawnTimer: 33.4
     Row: 2
     BeatType: 1
-  - SpawnTimer: 45
+  - SpawnTimer: 34.15
     Row: 2
     BeatType: 1
-  - SpawnTimer: 45.6
+  - SpawnTimer: 34.55
     Row: 3
     BeatType: 1
-  - SpawnTimer: 46.8
-    Row: 3
-    BeatType: 1
-  - SpawnTimer: 47.2
-    Row: 2
-    BeatType: 1
-  - SpawnTimer: 47.7
-    Row: 2
-    BeatType: 1
-  - SpawnTimer: 48
-    Row: 2
-    BeatType: 1
-  - SpawnTimer: 48.6
-    Row: 1
-    BeatType: 1
-  - SpawnTimer: 48.9
-    Row: 2
-    BeatType: 1
-  - SpawnTimer: 49.2
-    Row: 1
-    BeatType: 1
-  - SpawnTimer: 50.1
-    Row: 3
-    BeatType: 1
-  - SpawnTimer: 50.4
-    Row: 2
-    BeatType: 1
-  - SpawnTimer: 51
-    Row: 3
-    BeatType: 1
-  - SpawnTimer: 51.3
+  - SpawnTimer: 34.8
     Row: 3
     BeatType: 3
-  - SpawnTimer: 51.6
+  - SpawnTimer: 35.05
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 35.55
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 36.35
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 37.65
     Row: 1
     BeatType: 1
-  - SpawnTimer: 52.5
+  - SpawnTimer: 38.15
+    Row: 2
+    BeatType: 3
+  - SpawnTimer: 38.65
     Row: 2
     BeatType: 1
-  - SpawnTimer: 52.5
+  - SpawnTimer: 39.4
     Row: 2
+    BeatType: 1
+  - SpawnTimer: 39.7
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 1039.95
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 40.2
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 40.7
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 41.5
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 41.8
+    Row: 1
+    BeatType: 1
+  - SpawnTimer: 1042.3
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 42.8
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 43.6
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 43.9
+    Row: 1
+    BeatType: 3
+  - SpawnTimer: 44.4
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 44.9
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 45.7
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 46
+    Row: 1
+    BeatType: 3
+  - SpawnTimer: 46.25
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 46.5
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 46.75
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 47
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 47.8
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 1048.1
+    Row: 1
+    BeatType: 1
+  - SpawnTimer: 48.6
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 49.1
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 49.9
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 1050.2
+    Row: 1
+    BeatType: 1
+  - SpawnTimer: 50.45
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 50.7
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 50.95
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 51.2
+    Row: 2
+    BeatType: 3
+  - SpawnTimer: 52
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 52.3
+    Row: 1
     BeatType: 1
   - SpawnTimer: 52.8
     Row: 2
     BeatType: 1
-  - SpawnTimer: 53.1
-    Row: 3
-    BeatType: 1
-  - SpawnTimer: 53.7
-    Row: 3
-    BeatType: 3
-  - SpawnTimer: 54
-    Row: 1
-    BeatType: 1
-  - SpawnTimer: 55.2
-    Row: 2
-    BeatType: 1
-  - SpawnTimer: 55.5
-    Row: 3
-    BeatType: 1
-  - SpawnTimer: 55.1
-    Row: 3
-    BeatType: 1
-  - SpawnTimer: 56.4
-    Row: 1
-    BeatType: 1
-  - SpawnTimer: 57.6
+  - SpawnTimer: 53.3
     Row: 2
     BeatType: 3
-  - SpawnTimer: 58.2
+  - SpawnTimer: 54.1
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 54.4
+    Row: 1
+    BeatType: 1
+  - SpawnTimer: 54.65
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 54.9
     Row: 3
     BeatType: 1
-  - SpawnTimer: 58.8
+  - SpawnTimer: 55.15
+    Row: 3
+    BeatType: 1
+  - SpawnTimer: 1055.4
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 56.2
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 56.5
     Row: 1
-    BeatType: 3
-  - SpawnTimer: 60
+    BeatType: 1
+  - SpawnTimer: 57
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 1058
+    Row: 2
+    BeatType: 1
+  - SpawnTimer: 70
     Row: 1
-    BeatType: 3
+    BeatType: 5
   songTime: 0
   NextRoom: Main Menu
   BasicBeat: {fileID: 405581492}
@@ -2068,6 +2143,11 @@ PrefabInstance:
       propertyPath: m_RenderMode
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7937656619935002392, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7937656618800860450, guid: f17f678c862bb4daf8723dae772b1d5b,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -2153,21 +2233,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.25
       objectReference: {fileID: 0}
-    - target: {fileID: 7937656618247104687, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7937656618800860451, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7937656618800860451, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: m_Name
-      value: Back Button
-      objectReference: {fileID: 0}
     - target: {fileID: 7937656619068920098, guid: f17f678c862bb4daf8723dae772b1d5b,
         type: 3}
       propertyPath: m_Color.r
@@ -2197,11 +2262,6 @@ PrefabInstance:
     - target: {fileID: 7937656619068920098, guid: f17f678c862bb4daf8723dae772b1d5b,
         type: 3}
       propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7937656619823613668, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7937656618247104684, guid: f17f678c862bb4daf8723dae772b1d5b,
@@ -2291,6 +2351,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ReturnToMainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937656618247104687, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937656618800860451, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937656618800860451, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: m_Name
+      value: Back Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937656619823613668, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b, type: 3}
