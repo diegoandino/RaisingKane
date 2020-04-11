@@ -1,7 +1,58 @@
 fileFormatVersion: 2
 guid: 156cb714e8c6cf341a9d3b16a0b4819d
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -824918283753504355
+    second: Beat_NoHit 1_0
+  - first:
+      213: -1162975877066711758
+    second: Beat_NoHit 1_1
+  - first:
+      213: 8911702953291791364
+    second: Beat_NoHit 1_2
+  - first:
+      213: 6928435907438514740
+    second: Beat_NoHit 1_3
+  - first:
+      213: 8036074477224987404
+    second: Beat_NoHit 1_4
+  - first:
+      213: -8111416052958389476
+    second: Beat_NoHit 1_5
+  - first:
+      213: -8981844297769310880
+    second: Beat_NoHit 1_6
+  - first:
+      213: -841306069357046154
+    second: Beat_NoHit 1_7
+  - first:
+      213: 4679074428764973971
+    second: Beat_NoHit 1_8
+  - first:
+      213: -5264174776258417237
+    second: Beat_NoHit 1_9
+  - first:
+      213: -8388402518528037734
+    second: Beat_NoHit 1_10
+  - first:
+      213: -4484564756882937740
+    second: Beat_NoHit 1_11
+  - first:
+      213: 2121448876294156097
+    second: Beat_NoHit 1_12
+  - first:
+      213: 348434103662075644
+    second: Beat_NoHit 1_13
+  - first:
+      213: -1791213291075168203
+    second: Beat_NoHit 1_14
+  - first:
+      213: 4153793746213632412
+    second: Beat_NoHit 1_15
+  - first:
+      213: 8548317321658232870
+    second: Beat_NoHit 1_16
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +91,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +121,390 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Beat_NoHit 1_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 233
+        width: 127
+        height: 164
+      alignment: 9
+      pivot: {x: 0.44950625, y: 0.46089804}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 705f3d3ad0f14554796027d5a98f1031
+      internalID: -824918283753504355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_NoHit 1_1
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 394
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a132851b5b94b5c41a0c7a448dc3f52a
+      internalID: -1162975877066711758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_NoHit 1_2
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 388
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adea46255fbf7b24487a6700cc71d96e
+      internalID: 8911702953291791364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_NoHit 1_3
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 386
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10a7323b6c360594584e6899e2a39e24
+      internalID: 6928435907438514740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_NoHit 1_4
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 318
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd329c8556b54b4c9763bda54565b45
+      internalID: 8036074477224987404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_NoHit 1_5
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 254
+        width: 140
+        height: 130
+      alignment: 9
+      pivot: {x: 0.5317113, y: 0.47343844}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5b343cb1a74ed84eafd573816dbbe29
+      internalID: -8111416052958389476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_NoHit 1_6
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 231
+        width: 154
+        height: 162
+      alignment: 9
+      pivot: {x: 0.48078105, y: 0.45737052}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51289b457e28bd4478e79e5e2f1ff043
+      internalID: -8981844297769310880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_NoHit 1_7
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 311
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ac2dfe332bf6e741a1f4afef6329c91
+      internalID: -841306069357046154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_NoHit 1_8
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 304
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92390218d4e7b9043866a628067612e9
+      internalID: 4679074428764973971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_NoHit 1_9
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 297
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88c606b006d24004ea75f1616ae06901
+      internalID: -5264174776258417237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_NoHit 1_10
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 288
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73641619cb9be1d40ae2d1e1daaae1d8
+      internalID: -8388402518528037734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_NoHit 1_11
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 259
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41ce5cb1bc1316d4495f498ff0fc40d7
+      internalID: -4484564756882937740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_NoHit 1_12
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 237
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1100142be3ac27045821573a5ef97e28
+      internalID: 2121448876294156097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_NoHit 1_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 25
+        width: 147
+        height: 167
+      alignment: 9
+      pivot: {x: 0.47651023, y: 0.40843225}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02b81ff7420513b4b8f6616315965cb0
+      internalID: 348434103662075644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_NoHit 1_14
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 38
+        width: 118
+        height: 161
+      alignment: 9
+      pivot: {x: 0.4540157, y: 0.3958281}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b03880bea0afb46bb084b0d3f8de71
+      internalID: -1791213291075168203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_NoHit 1_15
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 34
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfc6ccb42f975064b9a2c017a0f66938
+      internalID: 4153793746213632412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_NoHit 1_16
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 32
+        width: 138
+        height: 150
+      alignment: 9
+      pivot: {x: 0.48927662, y: 0.4046315}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49035ad719af95c46a8d3bb99148209a
+      internalID: 8548317321658232870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
