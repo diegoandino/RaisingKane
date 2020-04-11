@@ -3,17 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class PauseLogic : MonoBehaviour
 {
     public static bool isPaused = false;
     public static bool optionsOpen = false;
     public static bool flip = false;
+    public static bool changeVol = false;
     public GameObject pauseMenu;
     public GameObject optionsMenu;
+    public GameObject firstPauseButton;
+    public GameObject firstOptionsButton;
+    public GameObject sliderButton;
     public EventSystem myEventSystem;
     public float timeSpan = 1.0f;
+    public Slider volSlider;
+    private float volFloat = 1.0f;
     private float time;
+    private GameObject currentSelected;
+
+
+    //volume logic
+    //bool to change vol
+    //if changing to the left, reselect button
 
     //[SerializeField]
     //private AudioSource Music;
@@ -41,9 +54,39 @@ public class PauseLogic : MonoBehaviour
                 Resume();
             }
         }
+
+        currentSelected = EventSystem.current.currentSelectedGameObject;
+        if (currentSelected.name == "Slider")
+        {
+            if(Input.GetButtonDown("MiddleButton"))
+            {
+                volFloat += 1.0f;
+                if(volFloat%2==0)
+                {
+                    changeVol = true;
+                }
+                else
+                {
+                    changeVol = false;
+                }
+            }
+        }
+        if(changeVol)
+        {
+            if (Input.GetButtonDown("RightButton"))
+            {
+                volSlider.value += 0.025f;
+            }
+            if (Input.GetButtonDown("LeftButton"))
+            {
+                volSlider.value -= 0.025f;
+                StartCoroutine("highlightBtn");
+            }
+        }
+        Debug.Log(changeVol);
+
         if (Input.GetButton("LeftButton") && Input.GetButton("RightButton"))
         {
-            Debug.Log("both buttons pressed");
             if (!flip)
             {
                 time += Time.deltaTime;
@@ -89,10 +132,20 @@ public class PauseLogic : MonoBehaviour
 
     IEnumerator highlightBtn()
     {
-        Debug.Log("sdfg");
         myEventSystem.SetSelectedGameObject(null);
+        if (!optionsOpen)
+        {
+            myEventSystem.SetSelectedGameObject(firstPauseButton);
+        }
+        if (optionsOpen && !changeVol)
+        {
+            myEventSystem.SetSelectedGameObject(firstOptionsButton);
+        }
+        if (optionsOpen && changeVol)
+        {
+            myEventSystem.SetSelectedGameObject(sliderButton);
+        }
         yield return null;
-        myEventSystem.SetSelectedGameObject(myEventSystem.firstSelectedGameObject);
     }
 
     void Pause()
@@ -131,14 +184,16 @@ public class PauseLogic : MonoBehaviour
     {
         optionsMenu.gameObject.SetActive(true);
         optionsOpen = true;
+        StartCoroutine("highlightBtn");
         pauseMenu.gameObject.SetActive(false);
     }
 
     public void CloseOptionsMenu()
     {
-        optionsMenu.gameObject.SetActive(false);
         optionsOpen = false;
-        Pause();
+        pauseMenu.gameObject.SetActive(true);
+        StartCoroutine("highlightBtn");
+        optionsMenu.gameObject.SetActive(false);
     }
 
     public void QuitGame()
