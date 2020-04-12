@@ -24,19 +24,9 @@ public class PauseLogic : MonoBehaviour
     private GameObject currentSelected;
 
 
-    //volume logic
-    //bool to change vol
-    //if changing to the left, reselect button
-
-    //[SerializeField]
-    //private AudioSource Music;
-
     // Start is called before the first frame update
     void Start()
     {
-        isPaused = false;
-        //pauseMenu = GetComponent<GameObject>();
-        //canvas = canvas.GetComponent<Canvas>();
     }
 
     // Update is called once per frame
@@ -58,10 +48,10 @@ public class PauseLogic : MonoBehaviour
         currentSelected = EventSystem.current.currentSelectedGameObject;
         if (currentSelected.name == "Slider")
         {
-            if(Input.GetButtonDown("MiddleButton"))
+            if (Input.GetButtonDown("MiddleButton"))
             {
                 volFloat += 1.0f;
-                if(volFloat%2==0)
+                if (volFloat % 2 == 0)
                 {
                     changeVol = true;
                 }
@@ -71,21 +61,20 @@ public class PauseLogic : MonoBehaviour
                 }
             }
         }
-        if(changeVol)
+        if (changeVol)
         {
-            if (Input.GetButtonDown("RightButton"))
+            if (Input.GetButton("RightButton"))
             {
-                volSlider.value += 0.025f;
+                volSlider.value += 0.005f;
             }
-            if (Input.GetButtonDown("LeftButton"))
+            if (Input.GetButton("LeftButton"))
             {
-                volSlider.value -= 0.025f;
+                volSlider.value -= 0.005f;
                 StartCoroutine("highlightBtn");
             }
         }
-        Debug.Log(changeVol);
 
-        if (Input.GetButton("LeftButton") && Input.GetButton("RightButton"))
+        if ((Input.GetButton("LeftButton") && Input.GetButton("RightButton")) || (Input.GetButton("LeftButton") && Input.GetButton("RightButton") && Input.GetButton("MiddleButton")))
         {
             if (!flip)
             {
@@ -95,7 +84,6 @@ public class PauseLogic : MonoBehaviour
             {
                 flip = true;
                 time = 0f;
-                Debug.Log("pause");
                 if (!isPaused)
                 {
                     Pause();
@@ -159,7 +147,6 @@ public class PauseLogic : MonoBehaviour
         Time.timeScale = 0f;
         AudioListener.pause = true;
         StartCoroutine("highlightBtn");
-        //Music.Pause();
     }
 
     public void DisplayControls()

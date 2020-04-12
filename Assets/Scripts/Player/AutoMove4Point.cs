@@ -39,9 +39,12 @@ public class AutoMove4Point : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        objectPos = transform.position;
-        CheckDirection();
-        Move();
+        if (!PauseLogic.isPaused) //setting Time.timescale to 0.0f doesn't freeze this script, so this if statement takes care of freezing movement when paused
+        {
+            objectPos = transform.position;
+            CheckDirection();
+            Move();
+        }
     }
 
     public void CheckDirection()
