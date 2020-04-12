@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 0
-    y: 43
-    width: 1920
-    height: 997
+    x: 0.8
+    y: 50.4
+    width: 964.8
+    height: 772.8
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
@@ -654,13 +654,13 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes/OverworldLevels
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes/OverworldLevels
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\Capstone Github\RaisingKane
+  m_LastProjectPath: C:\Users\tails\Desktop\SENIOR PROJECT\RaisingKane
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
@@ -720,8 +720,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: e0750000
+    m_LastClickedInstanceID: 30176
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000563c0000903e0000fe4b0000e4310000f0350100
     m_RenameOverlay:
