@@ -31,7 +31,7 @@ public class playerTest : MonoBehaviour
 
 	public void damage(int damage)
 	{
-		currValue += damage;
+		currValue -= damage;
 		meter.setValue(currValue);
 	}
 

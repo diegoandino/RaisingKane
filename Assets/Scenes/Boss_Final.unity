@@ -255,460 +255,460 @@ MonoBehaviour:
   beatLog:
   - SpawnTimer: 05.143
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 05.571
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 06.857
     Row: 2
-    BeatType: 4
+    BeatType: 4
   - SpawnTimer: 08.000
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 08.429
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 09.714
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 10.286
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 10.857
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 10.714
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 11.429
     Row: 1
-    BeatType: 4
+    BeatType: 4
   - SpawnTimer: 12.000
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 12.286
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 12.857
     Row: 1
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 13.143
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 13.571
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 13.714
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 14.286
     Row: 1
-    BeatType: 3
+    BeatType: 3
   - SpawnTimer: 14.857
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 15.429
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 15.857
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 16.000
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 16.571
     Row: 1
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 17.143
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 17.429
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 18.000
     Row: 1
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 18.286
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 18.714
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 18.857
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 19.429
     Row: 1
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 20.000
     Row: 2
-    BeatType: 3
+    BeatType: 3
   - SpawnTimer: 20.571
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 20.762
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 21.143
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 21.333
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 21.714
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 21.905
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 22.286
     Row: 1
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 22.286
     Row: 3
-    BeatType: 2
+    BeatType: 2
   - SpawnTimer: 22.857
     Row: 3
-    BeatType: 4
+    BeatType: 4
   - SpawnTimer: 23.048
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 23.429
     Row: 2
-    BeatType: 3
+    BeatType: 3
   - SpawnTimer: 23.619
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 24.000
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 24.190
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 24.571
     Row: 1
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 25.143
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 25.333
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 25.714
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 25.714
     Row: 3
-    BeatType: 2
+    BeatType: 2
   - SpawnTimer: 25.905
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 26.286
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 26.476
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 26.857
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 27.048
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 27.429
     Row: 1
-    BeatType: 2
+    BeatType: 2
   - SpawnTimer: 27.429
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 28.000
     Row: 2
-    BeatType: 3
+    BeatType: 3
   - SpawnTimer: 28.190
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 28.571
     Row: 1
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 28.571
     Row: 3
-    BeatType: 2
+    BeatType: 2
   - SpawnTimer: 28.762
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 29.143
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 29.333
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 29.714
     Row: 1
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 29.714
     Row: 3
-    BeatType: 2
+    BeatType: 2
   - SpawnTimer: 30.286
     Row: 1
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 30.476
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 30.857
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 30.857
     Row: 1
-    BeatType: 2
+    BeatType: 2
   - SpawnTimer: 31.048
     Row: 3
-    BeatType: 4
+    BeatType: 4
   - SpawnTimer: 31.429
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 31.619
     Row: 2
-    BeatType: 3
+    BeatType: 3
   - SpawnTimer: 32.000
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 32.190
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 32.571
     Row: 1
-    BeatType: 2
+    BeatType: 2
   - SpawnTimer: 32.571
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 33.143
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 33.333
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 33.714
     Row: 1
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 33.714
     Row: 3
-    BeatType: 2
+    BeatType: 2
   - SpawnTimer: 33.905
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 34.286
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 34.476
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 34.857
     Row: 1
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 34.857
     Row: 3
-    BeatType: 2
+    BeatType: 2
   - SpawnTimer: 35.429
     Row: 1
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 35.619
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 36.000
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 36.000
     Row: 1
-    BeatType: 2
+    BeatType: 2
   - SpawnTimer: 36.190
     Row: 2
-    BeatType: 4
+    BeatType: 4
   - SpawnTimer: 36.571
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 36.762
     Row: 3
-    BeatType: 3
+    BeatType: 3
   - SpawnTimer: 37.143
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 37.333
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 37.714
     Row: 1
-    BeatType: 2
+    BeatType: 2
   - SpawnTimer: 37.714
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 38.286
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 38.476
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 38.857
     Row: 1
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 38.857
     Row: 3
-    BeatType: 2
+    BeatType: 2
   - SpawnTimer: 39.048
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 39.429
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 39.619
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 40.000
     Row: 1
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 40.000
     Row: 3
-    BeatType: 2
+    BeatType: 2
   - SpawnTimer: 40.571
     Row: 1
-    BeatType: 4
+    BeatType: 4
   - SpawnTimer: 40.762
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 41.143
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 41.571
     Row: 1
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 42.286
     Row: 1
-    BeatType: 4
+    BeatType: 4
   - SpawnTimer: 42.857
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 43.714
     Row: 1
-    BeatType: 4
+    BeatType: 4
   - SpawnTimer: 44.000
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 44.429
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 45.143
     Row: 1
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 45.714
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 46.286
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 46.714
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 46.857
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 47.429
     Row: 1
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 48.000
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 48.286
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 48.857
     Row: 1
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 49.143
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 49.571
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 49.714
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 50.286
     Row: 1
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 50.857
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 51.429
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 51.857
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 52.000
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 52.571
     Row: 1
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 53.143
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 53.429
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 54.000
     Row: 1
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 54.286
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 54.714
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 54.857
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 55.429
     Row: 1
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 56.000
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 56.571
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 57.000
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 57.143
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 57.714
     Row: 1
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 58.286
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 58.571
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 59.143
     Row: 1
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 59.429
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 59.857
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 60.000
     Row: 3
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 60.567
     Row: 1
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 61.143
     Row: 2
-    BeatType: 1
+    BeatType: 1
   - SpawnTimer: 61.150
     Row: 2
     BeatType: 5
@@ -1418,7 +1418,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c0254fabc6d9f234e9fa9d8d27325fbb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 880c2d16cad434de0b55a1570b5875dd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3320,6 +3320,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7937656619068920099, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5007106
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937656619068920099, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.250592
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937656619068920099, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.250592
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937656619068920099, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7937656618800860451, guid: f17f678c862bb4daf8723dae772b1d5b,
         type: 3}
       propertyPath: m_IsActive
@@ -3439,26 +3459,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RenderMode
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7937656619068920099, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.5007106
-      objectReference: {fileID: 0}
-    - target: {fileID: 7937656619068920099, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.250592
-      objectReference: {fileID: 0}
-    - target: {fileID: 7937656619068920099, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.250592
-      objectReference: {fileID: 0}
-    - target: {fileID: 7937656619068920099, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7937656618800860450, guid: f17f678c862bb4daf8723dae772b1d5b,
         type: 3}
@@ -5498,7 +5498,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxValue: 100
-  currValue: 0
+  currValue: 100
   meter: {fileID: 1894400602}
 --- !u!4 &1952690442
 Transform:

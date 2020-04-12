@@ -48,7 +48,7 @@ public class MultiTapProjectile : ArchProjectile
         {
             ScoreCount.score += 2;
 
-            meter.damage(1);
+            //meter.damage(1);
             StartCoroutine(DestroyBeat(0));
         }
     }
@@ -63,5 +63,4 @@ public class MultiTapProjectile : ArchProjectile
         this.ProjectileSpeed = previousSpeed;
         this.dropSpeed = prevDropSpeed;
     }
-
 }
