@@ -26,10 +26,11 @@ public class Projectile : MonoBehaviour
     public Transform button2;
     public Transform button3;
 
-	public playerTest meter; 
+	public playerTest meter;
+    private Shake shake;
 
-	// Start is called before the first frame update
-	void Start()
+    // Start is called before the first frame update
+    void Start()
     {
         normalHit = false;
         goodHit = false;
@@ -37,6 +38,8 @@ public class Projectile : MonoBehaviour
 
         canBePressed = false;
         pressed = true;
+
+        shake = GameObject.FindGameObjectWithTag("ScreenShake").GetComponent<Shake>();
     }
 
 
@@ -127,6 +130,7 @@ public class Projectile : MonoBehaviour
 						//_destroy = destroy;
 						meter.damage(1);
                         StartCoroutine(DestroyBeat(0));
+                        shake.shake();
                     }
 
                     else
@@ -151,6 +155,7 @@ public class Projectile : MonoBehaviour
                     {
 						meter.damage(2);
                         StartCoroutine(DestroyBeat(0));
+                        shake.shake();
                     }
 
                     else
@@ -173,8 +178,8 @@ public class Projectile : MonoBehaviour
                     {
 						meter.damage(3);
                         StartCoroutine(DestroyBeat(0));
-						
-					}
+                        shake.shake();
+                    }
          
                     else
                         destroy = false;
@@ -192,6 +197,5 @@ public class Projectile : MonoBehaviour
         yield return new WaitForSeconds(1);
         print("Destory");
         Destroy(this.gameObject);
-
     }
 }

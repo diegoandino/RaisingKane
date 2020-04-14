@@ -8,11 +8,12 @@ public class StickyProjectile : ArchProjectile
     bool frozen = false;
     public float freezeTime = 4;
     public GameObject DestinationButton;
+    private Shake shake; 
 
     void Start()
     {
         this.SetPoints();
-       
+        shake = GameObject.FindGameObjectWithTag("ScreenShake").GetComponent<Shake>();
     }
 
     // Update is called once per frame
@@ -55,6 +56,8 @@ public class StickyProjectile : ArchProjectile
                     {
                         Debug.Log("Sticky Hit");
                         musicManager.Playsound("implode");
+
+                        shake.shake();
                         StartCoroutine(FreezeButton());
                     }
                 }

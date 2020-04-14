@@ -1,29 +1,38 @@
 ﻿<Properties StartupConfiguration="{7BBC6D7A-050F-7091-4BAD-F4932F6D0ECD}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Scenes/AfterAnimaticTransition.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Rhythm/PROJECTILES/StickyProjectile.cs">
     <Files>
-      <File FileName="Assets/Scripts/Rhythm/BP2_MusicSettings.cs" Line="97" Column="6" />
-      <File FileName="Assets/Scripts/General/musicManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Rhythm/BeatGeneratorTest.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Rhythm/BP2_ButtonControls.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Rhythm/PROJECTILES/ArchProjectile.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Rhythm/PROJECTILES/Projectile.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Scenes/DoorTransition.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Rhythm/BP2_Projectiles.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Rhythm/PROJECTILES/BounceProjectile.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Rhythm/PROJECTILES/MultiTapProjectile.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Rhythm/PROJECTILES/StickyProjectile.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Scenes/AfterAnimaticTransition.cs" Line="18" Column="14" />
-      <File FileName="Assets/Scripts/Scenes/SceneSwitcher.cs" Line="35" Column="28" />
-      <File FileName="Assets/Scripts/General/OverwoldMusicManager.cs" Line="10" Column="36" />
-      <File FileName="Assets/Scripts/General/PauseLogic.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Rhythm/PROJECTILES/ArchProjectile.cs" Line="25" Column="21" />
+      <File FileName="Assets/Scripts/Rhythm/PROJECTILES/BounceProjectile.cs" Line="192" Column="34" />
+      <File FileName="Assets/Scripts/Rhythm/PROJECTILES/MultiTapProjectile.cs" />
+      <File FileName="Assets/Scripts/Rhythm/PROJECTILES/StickyProjectile.cs" Line="60" Column="25" />
+      <File FileName="Assets/Scripts/Rhythm/PROJECTILES/Projectile.cs" Line="42" Column="87" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="RaisingKane" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="General" expanded="True" />
+                <Node name="Rhythm" expanded="True">
+                  <Node name="PROJECTILES" expanded="True">
+                    <Node name="StickyProjectile.cs" selected="True" />
+                  </Node>
+                </Node>
+                <Node name="Scenes" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="07f06759-5778-4090-8261-22f287e0afc0" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/KelseyFink/Documents/Capstone Github/RaisingKane/Temp/UnityTempFile-c59b1e100828a44ee99807b3241a6548" relfile="Temp/UnityTempFile-c59b1e100828a44ee99807b3241a6548" line="154" column="1" />
+      <Breakpoint file="/Users/u1075562/Documents/RaisingKane/RaisingKane/Temp/UnityTempFile-c59b1e100828a44ee99807b3241a6548" relfile="Temp/UnityTempFile-c59b1e100828a44ee99807b3241a6548" line="154" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

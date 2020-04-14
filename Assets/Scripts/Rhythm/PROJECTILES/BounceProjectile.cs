@@ -190,6 +190,5 @@ public class BounceProjectile : ArchProjectile
         yield return new WaitForSeconds(1);
         print("Destory");
         Destroy(this.gameObject);
-
     }
 }
