@@ -4537,48 +4537,10 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2751569138596280424, guid: a1e7db0d5ec5a7240b5c4e6444462f87,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: -923489819638330871, guid: 07abeb8759c4b3945b4da31136114771,
-        type: 2}
     - target: {fileID: 6880634494526733873, guid: a1e7db0d5ec5a7240b5c4e6444462f87,
         type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5335696409355320795, guid: a1e7db0d5ec5a7240b5c4e6444462f87,
-        type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 07abeb8759c4b3945b4da31136114771,
-        type: 2}
-    - target: {fileID: 5335696409355320795, guid: a1e7db0d5ec5a7240b5c4e6444462f87,
-        type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: -923489819638330871, guid: 07abeb8759c4b3945b4da31136114771,
-        type: 2}
-    - target: {fileID: 5335696409355320795, guid: a1e7db0d5ec5a7240b5c4e6444462f87,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5335696409355320795, guid: a1e7db0d5ec5a7240b5c4e6444462f87,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5335696409355320795, guid: a1e7db0d5ec5a7240b5c4e6444462f87,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5335696409355320795, guid: a1e7db0d5ec5a7240b5c4e6444462f87,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1e7db0d5ec5a7240b5c4e6444462f87, type: 3}
@@ -4588,25 +4550,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1781150020}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &1781150022
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1781150021}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: adcd23152f41f194290297777f37cf2a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1797574042
 GameObject:
   m_ObjectHideFlags: 0

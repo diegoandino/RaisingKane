@@ -1,7 +1,106 @@
 fileFormatVersion: 2
 guid: ed0cd9936d73cda43b502a4e636927d5
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -8038101777337204651
+    second: Beat_Bounce_0
+  - first:
+      213: -4937987353570075148
+    second: Beat_Bounce_1
+  - first:
+      213: 530251072423548833
+    second: Beat_Bounce_2
+  - first:
+      213: -8134302602847493715
+    second: Beat_Bounce_3
+  - first:
+      213: -8705788460013059675
+    second: Beat_Bounce_4
+  - first:
+      213: -1312455378789815556
+    second: Beat_Bounce_5
+  - first:
+      213: -7497784189811553550
+    second: Beat_Bounce_6
+  - first:
+      213: 1680752585552592737
+    second: Beat_Bounce_7
+  - first:
+      213: -7247700457301130466
+    second: Beat_Bounce_8
+  - first:
+      213: -4856610267023647865
+    second: Beat_Bounce_9
+  - first:
+      213: 102682239575985958
+    second: Beat_Bounce_10
+  - first:
+      213: 1247915266067725163
+    second: Beat_Bounce_11
+  - first:
+      213: -4067311992028926144
+    second: Beat_Bounce_12
+  - first:
+      213: 5276471763053245961
+    second: Beat_Bounce_13
+  - first:
+      213: 4721552368292271692
+    second: Beat_Bounce_14
+  - first:
+      213: 1937321795033684796
+    second: Beat_Bounce_15
+  - first:
+      213: 1038122400437271261
+    second: Beat_Bounce_16
+  - first:
+      213: 3962492410722241126
+    second: Beat_Bounce_17
+  - first:
+      213: -7425597200059287676
+    second: Beat_Bounce_18
+  - first:
+      213: 3880703263486583833
+    second: Beat_Bounce_19
+  - first:
+      213: 6717386847723004098
+    second: Beat_Bounce_20
+  - first:
+      213: -9191428394840708942
+    second: Beat_Bounce_21
+  - first:
+      213: 8833851306257129504
+    second: Beat_Bounce_22
+  - first:
+      213: 1713749879167133332
+    second: Beat_Bounce_23
+  - first:
+      213: -7480547837287423118
+    second: Beat_Bounce_24
+  - first:
+      213: 6763557791016686345
+    second: Beat_Bounce_25
+  - first:
+      213: -4667770736577094921
+    second: Beat_Bounce_26
+  - first:
+      213: 2132102881573177873
+    second: Beat_Bounce_27
+  - first:
+      213: -2409674641954452993
+    second: Beat_Bounce_28
+  - first:
+      213: -531524019249714046
+    second: Beat_Bounce_29
+  - first:
+      213: -4396439052755398820
+    second: Beat_Bounce_30
+  - first:
+      213: 1029828394175512957
+    second: Beat_Bounce_31
+  - first:
+      213: 1858167786483943618
+    second: Beat_Bounce_32
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -96,7 +195,700 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Beat_Bounce_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 257
+        width: 134
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc2c966a45a84ad48a4133f0d04e001e
+      internalID: -8038101777337204651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Bounce_1
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 249
+        width: 140
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c475c63906716334b97823b3aa454f29
+      internalID: -4937987353570075148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Bounce_2
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 390
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 341c6920a1365de468accf2f80a43437
+      internalID: 530251072423548833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Bounce_3
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 250
+        width: 112
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0206089fb045ac74aaed1431ea670e89
+      internalID: -8134302602847493715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Bounce_4
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 341
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 434d7c4c93aef17499b8abe6789ef1c7
+      internalID: -8705788460013059675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Bounce_5
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 311
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2d0fe368dd12d3479e66c7c3292ce06
+      internalID: -1312455378789815556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Bounce_6
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 280
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c584e619e3ca41409a50ab74dd986b6
+      internalID: -7497784189811553550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Bounce_7
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 249
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59771f9af76f81d4b8a4572bc4501d97
+      internalID: 1680752585552592737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Bounce_8
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 237
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 138e177305caf534d89df9958d0330cd
+      internalID: -7247700457301130466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Bounce_9
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 238
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c40959d0eb0ba42b7939642a334c46
+      internalID: -4856610267023647865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Bounce_10
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 251
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70a65cfb862957040a85eda0ea6a8d3f
+      internalID: 102682239575985958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Bounce_11
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 235
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f537c26845968174d9b2ba183c263de4
+      internalID: 1247915266067725163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Bounce_12
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 235
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 938253e0953d7f540bdf16f63ae09877
+      internalID: -4067311992028926144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Bounce_13
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 224
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5bdb535226546a488c68a99093107ad
+      internalID: 5276471763053245961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Bounce_14
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 154
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6dfbaaddc5b418429870e55e6b18089
+      internalID: 4721552368292271692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Bounce_15
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 160
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 288238aaa965fcc47bbccd17d558f6c7
+      internalID: 1937321795033684796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Bounce_16
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 49
+        width: 134
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef89ebc923022ac408e6b7e53745e736
+      internalID: 1038122400437271261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Bounce_17
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 20
+        width: 87
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c437d4d117a5edb4484b48d5662b5242
+      internalID: 3962492410722241126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Bounce_18
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 149
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe9f7e41b3abe7147b854a306f548cf6
+      internalID: -7425597200059287676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Bounce_19
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 121
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b592b3fd6e1434f97c3d0b36989432
+      internalID: 3880703263486583833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Bounce_20
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 120
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9db7d6cb11e26564290d3a24cfa02985
+      internalID: 6717386847723004098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Bounce_21
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 122
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be07f262f8743be40be15f872ed9d804
+      internalID: -9191428394840708942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Bounce_22
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 40
+        width: 137
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80449138a9edc9444aeccf3f17e04b32
+      internalID: 8833851306257129504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Bounce_23
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 107
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 842b49c4c88ee904faeb60e3239eff82
+      internalID: 1713749879167133332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Bounce_24
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 105
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a018c36e836a96e41b5f05071cfc71c9
+      internalID: -7480547837287423118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Bounce_25
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 80
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aecd597b57210d64bb9c6256b59956e7
+      internalID: 6763557791016686345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Bounce_26
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 70
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d0316d4881544e4c89ba1ff211f0abc
+      internalID: -4667770736577094921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Bounce_27
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 41
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd0c08beb21bdd4aaf4344523b63c5f
+      internalID: 2132102881573177873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Bounce_28
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 53
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb78dc4695e0fd940ac32725fa7e074c
+      internalID: -2409674641954452993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Bounce_29
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 46
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95a59979603c80143a4b8a0a231ea299
+      internalID: -531524019249714046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Bounce_30
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 41
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be8fcf7b5939d90499289fe540f709f0
+      internalID: -4396439052755398820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Bounce_31
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 36
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a64d0efe602b5e45b86e98b388055d0
+      internalID: 1029828394175512957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Bounce_32
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 26
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a5f45c7f885ca54b9b339b672e3968a
+      internalID: 1858167786483943618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

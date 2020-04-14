@@ -1,7 +1,58 @@
 fileFormatVersion: 2
 guid: f6e9b5e712a91594ea0ef7acf2d61f92
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 6044479815947469867
+    second: Beat_Dbl_0
+  - first:
+      213: 2602603081558379273
+    second: Beat_Dbl_1
+  - first:
+      213: -4202780318351773923
+    second: Beat_Dbl_2
+  - first:
+      213: -3349814331830076179
+    second: Beat_Dbl_3
+  - first:
+      213: 1662926516411948441
+    second: Beat_Dbl_4
+  - first:
+      213: -5564585165542354108
+    second: Beat_Dbl_5
+  - first:
+      213: -7450318213330486604
+    second: Beat_Dbl_6
+  - first:
+      213: -8070023292066463668
+    second: Beat_Dbl_7
+  - first:
+      213: -44237992074857496
+    second: Beat_Dbl_8
+  - first:
+      213: 3319286803034696245
+    second: Beat_Dbl_9
+  - first:
+      213: 3564464328800677243
+    second: Beat_Dbl_10
+  - first:
+      213: -6393264198853978185
+    second: Beat_Dbl_11
+  - first:
+      213: 7264500918007042586
+    second: Beat_Dbl_12
+  - first:
+      213: 2622726113205524712
+    second: Beat_Dbl_13
+  - first:
+      213: 6340127929362188422
+    second: Beat_Dbl_14
+  - first:
+      213: 3345412400457556048
+    second: Beat_Dbl_15
+  - first:
+      213: 5557139082085107300
+    second: Beat_Dbl_16
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -96,7 +147,364 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Beat_Dbl_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 277
+        width: 127
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53dddd2f90920854898cf7f120356d1c
+      internalID: 6044479815947469867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Dbl_1
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 205
+        width: 145
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 079bb34b4a8e40047b6a32efb782eb5b
+      internalID: 2602603081558379273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Dbl_2
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 180
+        width: 131
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb5fe637a0232cf459b26197085667cf
+      internalID: -4202780318351773923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Dbl_3
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 368
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d8029c4ae4d7247acbc9664e7cbded
+      internalID: -3349814331830076179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Dbl_4
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 365
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fff499a95ad0b564997bb09de65cf1eb
+      internalID: 1662926516411948441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Dbl_5
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 275
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f7c983fe9115ac45821f3ae36ebe1ab
+      internalID: -5564585165542354108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Dbl_6
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 258
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85f31b7d7aa4a7b449c2a9289ec54470
+      internalID: -7450318213330486604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Dbl_7
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 243
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2123e69f08669f4597f65e5d0bed9c4
+      internalID: -8070023292066463668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Dbl_8
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 203
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d8eb5ef36a44f4468ecf4a64e1910ab
+      internalID: -44237992074857496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Dbl_9
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 203
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22bd68b0606dc148911fd74f7d253f4
+      internalID: 3319286803034696245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Dbl_10
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 212
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b202aad98c26214595f57ffc7ebe3ff
+      internalID: 3564464328800677243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Dbl_11
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 5
+        width: 143
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 475aead53043fa445b77403c1e2b17e1
+      internalID: -6393264198853978185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Dbl_12
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 153
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f72c7208bbcdcc49987448374fc1117
+      internalID: 7264500918007042586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Dbl_13
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 1
+        width: 143
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 359910d793772ae429cc51d84740d659
+      internalID: 2622726113205524712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Dbl_14
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 1
+        width: 129
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a728ed41da3a1542a3e1acd9b6af641
+      internalID: 6340127929362188422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Dbl_15
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 73
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8335eade80e2d3b468d22abde910a8e4
+      internalID: 3345412400457556048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beat_Dbl_16
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df12eb1d02dfb44bbf701d8feb59e1e
+      internalID: 5557139082085107300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

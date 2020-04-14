@@ -58,6 +58,8 @@ public class MultiTapProjectile : ArchProjectile
         float previousSpeed = this.ProjectileSpeed;
         float prevDropSpeed = this.dropSpeed;
         this.ProjectileSpeed = 0f;
+        Animator anim = this.GetComponent<Animator>();
+        anim.SetBool("Hang", true);
         this.dropSpeed = 0f;
         yield return new WaitForSeconds(1); //Hold in place
         this.ProjectileSpeed = previousSpeed;

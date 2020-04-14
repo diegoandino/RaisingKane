@@ -63,6 +63,8 @@ public class BounceProjectile : ArchProjectile
             {
                 if (canBePressed == true)
                 {
+                    Animator anim = this.GetComponent<Animator>();
+                    anim.SetBool("Bounce", true);
                     //Okay Check
                     if (((transform.position.y > BP2_ButtonControls.ButtonPos + 0.25) || (transform.position.y < BP2_ButtonControls.ButtonPos - 0.25)))
                     {
