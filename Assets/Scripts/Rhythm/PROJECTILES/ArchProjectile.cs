@@ -74,4 +74,20 @@ public class ArchProjectile : Projectile
         points.Add(new Vector3(EndPoint.x, EndPoint.y, 1));
         points.Add(points[0] + (points[1] - points[0]) / 2 + Vector3.up * ArchMod);
     }
+
+
+    //I think this works?
+    public IEnumerator DestroyBeat(float delay)
+    {
+        this.GetComponent<CircleCollider2D>().enabled = false;
+        Animator anim = this.GetComponent<Animator>();
+        dropSpeed = 0;
+        ProjectileSpeed = 0;
+        anim.SetBool("Hit", true);
+        //print("Waiting to destroy");
+        yield return new WaitForSeconds(2);
+        //print("Destory");
+        Destroy(this.gameObject);
+    }
+
 }

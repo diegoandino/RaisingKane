@@ -28,6 +28,7 @@ public class Projectile : MonoBehaviour
 
 	public playerTest meter;
     private Shake shake;
+    private ArchProjectile AP;
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +41,7 @@ public class Projectile : MonoBehaviour
         pressed = true;
 
         shake = GameObject.FindGameObjectWithTag("ScreenShake").GetComponent<Shake>();
+        AP = this.GetComponent<ArchProjectile>();
     }
 
 
@@ -118,7 +120,7 @@ public class Projectile : MonoBehaviour
                 //Okay Check
                 if (((transform.position.y > BP2_ButtonControls.ButtonPos + 0.25) || (transform.position.y < BP2_ButtonControls.ButtonPos - 0.25)))
                 {
-                    Debug.Log("Normal Hit");
+                    //Debug.Log("Normal Hit");
                     musicManager.Playsound("implode");
 
                     normalHit = true; perfectHit = false; goodHit = false; pressed = true;
@@ -127,10 +129,8 @@ public class Projectile : MonoBehaviour
 
                     if (destroy == true)
                     {
-						//_destroy = destroy;
 						meter.damage(1);
                         StartCoroutine(DestroyBeat(0));
-                        shake.shake();
                     }
 
                     else
@@ -142,10 +142,8 @@ public class Projectile : MonoBehaviour
                 //Good Check
                 else if (((transform.position.y > BP2_ButtonControls.ButtonPos + 0.15) || (transform.position.y < BP2_ButtonControls.ButtonPos - 0.15)))
                 {
-                    Debug.Log("Good Hit");
+                    //Debug.Log("Good Hit");
                     musicManager.Playsound("implode");
-
-                    // Destroy(this.gameObject);
 
                     normalHit = false; perfectHit = false; goodHit = true; pressed = true;
 
@@ -155,7 +153,6 @@ public class Projectile : MonoBehaviour
                     {
 						meter.damage(2);
                         StartCoroutine(DestroyBeat(0));
-                        shake.shake();
                     }
 
                     else
@@ -165,8 +162,7 @@ public class Projectile : MonoBehaviour
                 //Perfect Check
                 else
                 {
-                    Debug.Log("Perfect Hit");
-                    // Destroy(this.gameObject);
+                    //Debug.Log("Perfect Hit");
 
                     musicManager.Playsound("implode");
 
@@ -178,7 +174,6 @@ public class Projectile : MonoBehaviour
                     {
 						meter.damage(3);
                         StartCoroutine(DestroyBeat(0));
-                        shake.shake();
                     }
          
                     else
@@ -188,6 +183,7 @@ public class Projectile : MonoBehaviour
         }
     }
 
+    
     public IEnumerator DestroyBeat(float delay)
     {
         this.GetComponent<CircleCollider2D>().enabled = false;

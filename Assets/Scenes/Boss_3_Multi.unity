@@ -315,27 +315,39 @@ PrefabInstance:
     - target: {fileID: 5824333901269739209, guid: f307a6a3ef7a67944b9d8de53d1457c2,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 0
+      value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 5824333901269739209, guid: f307a6a3ef7a67944b9d8de53d1457c2,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 0
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 5824333901269739209, guid: f307a6a3ef7a67944b9d8de53d1457c2,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 0
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5824333901269739209, guid: f307a6a3ef7a67944b9d8de53d1457c2,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5824333901269739209, guid: f307a6a3ef7a67944b9d8de53d1457c2,
         type: 3}
       propertyPath: m_textInfo.pageCount
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5824333901269739209, guid: f307a6a3ef7a67944b9d8de53d1457c2,
+        type: 3}
+      propertyPath: m_text
+      value: '
+
+        As the Shadows get stronger, so do their blasts. Watch out ffor the powerful
+        purple blasts and hit them 3 times to defend yourself!
+
+
+
+        Press any Button to Start'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f307a6a3ef7a67944b9d8de53d1457c2, type: 3}
@@ -1645,7 +1657,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &607469628
 Transform:
   m_ObjectHideFlags: 0
@@ -1831,7 +1843,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25c3c79ca9c574c939551782a4360e33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 1478874826}
 --- !u!4 &684883101
 Transform:
   m_ObjectHideFlags: 0
@@ -3042,6 +3054,7 @@ GameObject:
   - component: {fileID: 1478874824}
   - component: {fileID: 1478874823}
   - component: {fileID: 1478874822}
+  - component: {fileID: 1478874826}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3210,6 +3223,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1478874826
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478874821}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8a4eae8f9c880495782b56935a1196de, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1529414107
 GameObject:
   m_ObjectHideFlags: 0
@@ -4162,6 +4194,25 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1800302449}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1800302451
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800302450}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: adcd23152f41f194290297777f37cf2a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1825314260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4964,7 +5015,7 @@ MonoBehaviour:
     Row: 2
     BeatType: 5
   songTime: 0
-  NextRoom: Main Menu
+  NextRoom: BR3
   BasicBeat: {fileID: 542260097}
   StickBeat: {fileID: 1271808184}
   BouncBeat: {fileID: 232924099}

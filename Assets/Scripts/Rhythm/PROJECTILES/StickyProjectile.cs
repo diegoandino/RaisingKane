@@ -54,7 +54,7 @@ public class StickyProjectile : ArchProjectile
                     //Okay Check
                     if (((transform.position.y > BP2_ButtonControls.ButtonPos + 0.25) || (transform.position.y < BP2_ButtonControls.ButtonPos - 0.25)))
                     {
-                        Debug.Log("Sticky Hit");
+                        //Debug.Log("Sticky Hit");
                         musicManager.Playsound("implode");
 
                         shake.shake();
@@ -69,8 +69,7 @@ public class StickyProjectile : ArchProjectile
 
         if (transform.position.y < (DestinationButton.transform.position.y -10))
         {
-            //MissCount.miss++; //Increments the Miss count on GUI
-            print("Miss");
+            //print("Miss");
             if (destroy == true)
             {
                 meter.damage(1);

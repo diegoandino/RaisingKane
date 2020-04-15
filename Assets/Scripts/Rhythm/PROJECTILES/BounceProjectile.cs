@@ -36,7 +36,6 @@ public class BounceProjectile : ArchProjectile
     public void BounceMove()
 	{
         hangtimer += ProjectileSpeed * Time.deltaTime;
-        print(hangtimer);
         if (hangtimer < hangtime)
         {
             transform.position += new Vector3(0f, (BPM * Time.deltaTime) * BP2_MusicSettings.instance.songSpeed * dropSpeed, 0f);
