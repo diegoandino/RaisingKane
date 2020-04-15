@@ -2055,7 +2055,7 @@ MonoBehaviour:
   - SpawnTimer: 24.3
     Row: 2
     BeatType: 1
-  - SpawnTimer: 24.6
+  - SpawnTimer: 24.7
     Row: 2
     BeatType: 2
   - SpawnTimer: 25.2
@@ -2139,7 +2139,7 @@ MonoBehaviour:
   - SpawnTimer: 39.6
     Row: 3
     BeatType: 1
-  - SpawnTimer: 39.9
+  - SpawnTimer: 40
     Row: 3
     BeatType: 2
   - SpawnTimer: 40.2
@@ -2157,7 +2157,7 @@ MonoBehaviour:
   - SpawnTimer: 42.3
     Row: 3
     BeatType: 1
-  - SpawnTimer: 42.6
+  - SpawnTimer: 42.7
     Row: 1
     BeatType: 2
   - SpawnTimer: 43.5
@@ -2250,7 +2250,7 @@ MonoBehaviour:
   - SpawnTimer: 58.8
     Row: 3
     BeatType: 1
-  - SpawnTimer: 59.1
+  - SpawnTimer: 59.2
     Row: 3
     BeatType: 2
   - SpawnTimer: 59.4
@@ -2292,7 +2292,7 @@ MonoBehaviour:
   - SpawnTimer: 65.4
     Row: 2
     BeatType: 1
-  - SpawnTimer: 65.7
+  - SpawnTimer: 65.8
     Row: 3
     BeatType: 2
   - SpawnTimer: 66.3
@@ -3727,16 +3727,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 7937656618800860451, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7937656618800860451, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: m_Name
-      value: Back Button
-      objectReference: {fileID: 0}
     - target: {fileID: 7937656619935002399, guid: f17f678c862bb4daf8723dae772b1d5b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3842,11 +3832,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7937656619935002392, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: m_RenderMode
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7937656619935002393, guid: f17f678c862bb4daf8723dae772b1d5b,
         type: 3}
       propertyPath: m_UiScaleMode
@@ -3937,11 +3922,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.25
       objectReference: {fileID: 0}
-    - target: {fileID: 7937656618247104687, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7937656619068920098, guid: f17f678c862bb4daf8723dae772b1d5b,
         type: 3}
       propertyPath: m_Color.r
@@ -3971,11 +3951,6 @@ PrefabInstance:
     - target: {fileID: 7937656619068920098, guid: f17f678c862bb4daf8723dae772b1d5b,
         type: 3}
       propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7937656619823613668, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7937656618247104684, guid: f17f678c862bb4daf8723dae772b1d5b,
@@ -4095,6 +4070,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ReturnToMainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937656618800860451, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937656618800860451, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: m_Name
+      value: Back Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937656619935002392, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937656618247104687, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937656619823613668, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b, type: 3}
