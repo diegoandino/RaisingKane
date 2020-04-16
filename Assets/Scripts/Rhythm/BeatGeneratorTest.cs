@@ -41,6 +41,9 @@ public class BeatGeneratorTest : MonoBehaviour
 	public GameObject BouncBeat;
 	public GameObject MultiTapBeat;
 
+	Animator anim;
+
+
 	public bool bossAttack;
 
 	//checked for each beat needing to be spawned
@@ -86,6 +89,11 @@ public class BeatGeneratorTest : MonoBehaviour
 			activeBeats = GameObject.FindGameObjectsWithTag("Beat");
 			yield return null;
 		}
+        BossTracker tracker = GameObject.FindGameObjectWithTag("Music").GetComponent<BossTracker>();
+        if (SceneManager.GetActiveScene().name == "Boss_1_Sticky") { tracker.Boss1Finished = true; }
+		if (SceneManager.GetActiveScene().name == "Boss_2_Bounce") { tracker.Boss2Finished = true; }
+		if (SceneManager.GetActiveScene().name == "Boss_3_Multi") { tracker.Boss3Finished = true; }
+
         StartCoroutine(LoadSceneAFterTransition());
 		
 	}
@@ -93,10 +101,12 @@ public class BeatGeneratorTest : MonoBehaviour
 	private IEnumerator LoadSceneAFterTransition()
 	{
 		//show animate out animation
-		//anim.SetBool("AnimateOut", true);
+		anim = GameObject.Find("TransitionPanel").GetComponent<Animator>();
+		anim.SetBool("AnimateOut", true);
 		yield return new WaitForSeconds(1f);
 		//load the scene we want
 		SceneManager.LoadScene(NextRoom);
+
 	}
 
 	private IEnumerator SpawnBeat(BeatItem beat)

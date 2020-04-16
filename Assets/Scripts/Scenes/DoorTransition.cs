@@ -16,6 +16,7 @@ public class DoorTransition : MonoBehaviour
     {
         PlayerHere = false;
         anim = GameObject.Find("TransitionPanel").GetComponent<Animator>();
+        MonsterCheck();
     }
 
     // Update is called once per frame
@@ -50,6 +51,24 @@ public class DoorTransition : MonoBehaviour
         yield return new WaitForSeconds(1f);
         //load the scene we want
         SceneManager.LoadScene(NextScene);
+    }
+
+    void MonsterCheck()
+    {
+        BossTracker tracker = GameObject.FindGameObjectWithTag("Music").GetComponent<BossTracker>();
+        if (this.name == "Monster 1" && tracker.Boss1Finished)
+        {
+            this.gameObject.SetActive(false);
+        }
+        if (this.name == "Monster 2" && tracker.Boss2Finished)
+        {
+            this.gameObject.SetActive(false);
+        }
+        if (this.name == "Monster 3" && tracker.Boss3Finished)
+        {
+            this.gameObject.SetActive(false);
+        }
+
     }
 
 }

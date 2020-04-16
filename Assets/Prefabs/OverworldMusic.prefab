@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4379312434617123400}
   - component: {fileID: 4379312434617123406}
   - component: {fileID: 4379312434617123401}
+  - component: {fileID: 8759249056815468861}
   m_Layer: 0
   m_Name: OverworldMusic
   m_TagString: Music
@@ -46,7 +47,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.242
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -140,4 +141,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ea11dfc8d84646f88624826b075eb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultMusicValue: 0.242
+--- !u!114 &8759249056815468861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4379312434617123405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e154eed0a283d4ad38f09b844e919f7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Boss1Finished: 0
+  Boss2Finished: 0
+  Boss3Finished: 0
