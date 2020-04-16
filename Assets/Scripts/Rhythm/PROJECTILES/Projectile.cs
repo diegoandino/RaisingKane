@@ -95,7 +95,7 @@ public class Projectile : MonoBehaviour
 
 		    if (destroy == true)
 		    {
-		        meter.decrementMeter(2);
+		        meter.decrementMeter(5);
 		        Destroy(this.gameObject);
 		    }
 

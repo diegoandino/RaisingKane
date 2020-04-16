@@ -5567,7 +5567,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxValue: 100
-  currValue: 2
+  currValue: 100
   meter: {fileID: 1894400602}
 --- !u!4 &1952690442
 Transform:

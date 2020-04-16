@@ -109,7 +109,7 @@ public class BP2_ButtonControls : MonoBehaviour
         {           
             pressed = true;
 
-            musicManager.Playsound("plushFire");
+            //musicManager.Playsound("plushFire");
 
             staticButton = InputButton;
             staticPlushPos = plush.position;
