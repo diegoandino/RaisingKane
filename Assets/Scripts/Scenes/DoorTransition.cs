@@ -17,7 +17,6 @@ public class DoorTransition : MonoBehaviour
         PlayerHere = false;
         anim = GameObject.Find("TransitionPanel").GetComponent<Animator>();
         MonsterCheck();
-        BossLock();
     }
 
     // Update is called once per frame
@@ -68,20 +67,6 @@ public class DoorTransition : MonoBehaviour
         if (this.name == "Monster 3" && tracker.Boss3Finished)
         {
             this.gameObject.SetActive(false);
-        }
-
-    }
-
-    void BossLock()
-    {
-        BossTracker tracker = GameObject.FindGameObjectWithTag("Music").GetComponent<BossTracker>();
-        if (SceneManager.GetActiveScene().name == "DR2" && !tracker.Boss1Finished && this.name != "Monster 1")
-        {
-            this.GetComponent<BoxCollider2D>().enabled = false;
-        }
-        if (SceneManager.GetActiveScene().name == "LR2" && !tracker.Boss2Finished && this.name != "Monster 2")
-        {
-            this.GetComponent<BoxCollider2D>().enabled = false;
         }
 
     }
