@@ -2,11 +2,7 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
-<<<<<<< HEAD
-    <CscToolPath>C:\Program Files\Unity\Hub\Editor\2019.2.3f1\Editor\Data\Tools\RoslynScripts</CscToolPath>
-=======
     <CscToolPath>C:\UnityEditor\2019.2.3f1\Editor\Data\Tools\RoslynScripts</CscToolPath>
->>>>>>> Development
     <CscToolExe>unity_csc.bat</CscToolExe>
   </PropertyGroup>
   <PropertyGroup>
@@ -73,13 +69,17 @@
     <Compile Include="Assets\Scripts\Dialogue\Dialogue.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueManager.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueTrigger.cs" />
+    <Compile Include="Assets\Scripts\GameOver\gameOver1.cs" />
+    <Compile Include="Assets\Scripts\GameOver\gameOver2.cs" />
+    <Compile Include="Assets\Scripts\GameOver\gameOver3.cs" />
+    <Compile Include="Assets\Scripts\GameOver\gameOver4.cs" />
     <Compile Include="Assets\Scripts\General\DoorCollision.cs" />
     <Compile Include="Assets\Scripts\General\GameManager.cs" />
     <Compile Include="Assets\Scripts\General\MissCount.cs" />
     <Compile Include="Assets\Scripts\General\musicManager.cs" />
     <Compile Include="Assets\Scripts\General\OverwoldMusicManager.cs" />
     <Compile Include="Assets\Scripts\General\PauseLogic.cs" />
-    <Compile Include="Assets\Scripts\General\SceneManagerScript.cs" />
+    <Compile Include="Assets\Scripts\General\ScenesManagerScript.cs" />
     <Compile Include="Assets\Scripts\General\ScoreCount.cs" />
     <Compile Include="Assets\Scripts\General\Shake.cs" />
     <Compile Include="Assets\Scripts\Gym\Boss1Click.cs" />
@@ -130,6 +130,7 @@
     <Compile Include="Assets\Scripts\Scenes\DoorTransition.cs" />
     <Compile Include="Assets\Scripts\Scenes\Return to Main Menu.cs" />
     <Compile Include="Assets\Scripts\Scenes\RhythmDoorTransition.cs" />
+    <Compile Include="Assets\Scripts\Scenes\ScenesManager.cs" />
     <Compile Include="Assets\Scripts\Scenes\SceneSwitcher.cs" />
     <Compile Include="Assets\TeachControls.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
@@ -152,63 +153,6 @@
     <None Include="Assets\READ ME\readMe.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="Unity.Timeline.Editor">
-<<<<<<< HEAD
-      <HintPath>C:/Users/Owner/Desktop/RaisingKane/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.multiplayer-hlapi.Editor">
-      <HintPath>C:/Users/Owner/Desktop/RaisingKane/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/Owner/Desktop/RaisingKane/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/Owner/Desktop/RaisingKane/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/Owner/Desktop/RaisingKane/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/Owner/Desktop/RaisingKane/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/Owner/Desktop/RaisingKane/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.multiplayer-weaver.Editor">
-      <HintPath>C:/Users/Owner/Desktop/RaisingKane/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-      <HintPath>C:/Users/Owner/Desktop/RaisingKane/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/Owner/Desktop/RaisingKane/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>C:/Users/Owner/Desktop/RaisingKane/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>C:/Users/Owner/Desktop/RaisingKane/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.SpatialTracking">
-      <HintPath>C:/Users/Owner/Desktop/RaisingKane/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>C:/Users/Owner/Desktop/RaisingKane/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Owner/Desktop/RaisingKane/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/Owner/Desktop/RaisingKane/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-      <HintPath>C:/Users/Owner/Desktop/RaisingKane/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/Owner/Desktop/RaisingKane/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.multiplayer-hlapi.Runtime">
-      <HintPath>C:/Users/Owner/Desktop/RaisingKane/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
-=======
       <HintPath>E:/RaisingKane/RaisingKane/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Editor">
@@ -264,7 +208,6 @@
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Runtime">
       <HintPath>E:/RaisingKane/RaisingKane/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
->>>>>>> Development
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/UnityEditor/2019.2.3f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -444,15 +387,6 @@
       <HintPath>C:/UnityEditor/2019.2.3f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-<<<<<<< HEAD
-      <HintPath>C:/Users/Owner/Desktop/RaisingKane/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/Owner/Desktop/RaisingKane/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/Owner/Desktop/RaisingKane/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
-=======
       <HintPath>E:/RaisingKane/RaisingKane/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
@@ -460,7 +394,6 @@
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>E:/RaisingKane/RaisingKane/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
->>>>>>> Development
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/UnityEditor/2019.2.3f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

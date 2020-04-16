@@ -46,6 +46,7 @@ public class PauseLogic : MonoBehaviour
         }
 
         currentSelected = EventSystem.current.currentSelectedGameObject;
+
         if (currentSelected.name == "Slider")
         {
             if (Input.GetButtonDown("MiddleButton"))

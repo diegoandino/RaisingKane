@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/Game Over.unity
-=======
-- path: Assets/Scenes/Boss_Final.unity
->>>>>>> Development
+- path: Assets/Scenes/Boss_2_Bounce.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

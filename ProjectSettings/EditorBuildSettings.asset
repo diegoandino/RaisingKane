@@ -95,4 +95,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: e58cc94849739446e9d38ba4c2822f7a
+  - enabled: 1
+    path: Assets/Scenes/Boss_2_Bounce.unity
+    guid: 71eb1abca6ab09b4f917b22a733efec7
+  - enabled: 1
+    path: Assets/Scenes/Game Over Scenes/Game Over_1.unity
+    guid: 3d6dbc4754764104092bcd58f02f691d
+  - enabled: 1
+    path: Assets/Scenes/Game Over Scenes/Game Over_2.unity
+    guid: e512e6b7415a65842a608c5317050e3a
+  - enabled: 1
+    path: Assets/Scenes/Game Over Scenes/Game Over_3.unity
+    guid: 23ab4c548bf7e25479a45c815cb8a1b0
+  - enabled: 1
+    path: Assets/Scenes/Game Over Scenes/Game Over_4.unity
+    guid: 4d5dfdaaa10e19c4695b02e2a556ddb1
   m_configObjects: {}

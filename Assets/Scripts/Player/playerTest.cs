@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerTest : MonoBehaviour
 {
@@ -25,7 +26,7 @@ public class playerTest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+ 
     }
 
 
@@ -49,6 +50,21 @@ public class playerTest : MonoBehaviour
         {
            
         }
+    }
+
+    public void loseState1()
+    {
+        if (currValue < 1) SceneManager.LoadScene("Game Over_1");
+    }
+
+    public void loseState2()
+    {
+        if (currValue < 1) SceneManager.LoadScene("Game Over_2");
+    }
+
+    public void loseState3()
+    {
+        if (currValue < 1) SceneManager.LoadScene("Game Over_3");
     }
 
 

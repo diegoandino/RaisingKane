@@ -92,6 +92,7 @@ public class Projectile : MonoBehaviour
            || (transform.position.y < (button3.position.y - 20)))
 		{
             MissCount.miss++; //Increments the Miss count on GUI
+
 		    if (destroy == true)
 		    {
 		        meter.decrementMeter(2);
@@ -106,7 +107,7 @@ public class Projectile : MonoBehaviour
     }
 
 
-	/**
+    /**
      * Checks for Beat position and key presses 
      */
 	public void BeatCheck(Boolean destroy)

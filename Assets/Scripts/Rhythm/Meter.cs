@@ -17,4 +17,9 @@ public class Meter : MonoBehaviour
     {
 		slider.value = value;
     }
+
+    public int getValue()
+    {
+        return (int)slider.value;
+    }
 }
