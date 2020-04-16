@@ -42,20 +42,19 @@ public class AutoMove4Point : MonoBehaviour
         if (!PauseLogic.isPaused) //setting Time.timescale to 0.0f doesn't freeze this script, so this if statement takes care of freezing movement when paused
         {
             objectPos = transform.position;
-            CheckDirection();
             Move();
         }
     }
 
-    public void CheckDirection()
+    private void CheckDirection()
     {
-        if (start.x > end.x)
+        if(start.x > end.x)
         {
-            transform.localScale = invertScale;
+            transform.localScale = Scale;
         }
         else
         {
-            transform.localScale = Scale;
+            transform.localScale = invertScale;
         }
     }
 
@@ -100,7 +99,10 @@ public class AutoMove4Point : MonoBehaviour
                     start = movPoints[0];
                     end = movPoints[1];
                     clockwise = true;
-
+                    // Hardcoded animation settings
+                    transform.localScale = Scale;
+                    animator.SetBool("Walking", true);
+                    animator.SetBool("WalkingForward", false);
                     //reset placing to start of line
                     place = 0.0f;
                 }
@@ -111,7 +113,10 @@ public class AutoMove4Point : MonoBehaviour
                     start = movPoints[1];
                     end = movPoints[2];
                     clockwise = true;
-
+                    // Hardcoded animation settings
+                    transform.localScale = Scale;
+                    animator.SetBool("Walking", true);
+                    animator.SetBool("WalkingForward", false);
                     //reset placing to start of line
                     place = 0.0f;
                 }
@@ -122,7 +127,10 @@ public class AutoMove4Point : MonoBehaviour
                     start = movPoints[2];
                     end = movPoints[3];
                     clockwise = true;
-
+                    // Hardcoded animation settings
+                    transform.localScale = Scale;
+                    animator.SetBool("WalkingForward", true);
+                    animator.SetBool("Walking", true);
                     //reset placing to start of line
                     place = 0.0f;
                 }
@@ -133,7 +141,10 @@ public class AutoMove4Point : MonoBehaviour
                     start = movPoints[3];
                     end = movPoints[0];
                     clockwise = true;
-
+                    // Hardcoded animation settings
+                    transform.localScale = invertScale;
+                    animator.SetBool("Walking", true);
+                    animator.SetBool("WalkingForward", false);
                     //reset placing to start of line
                     place = 0.0f;
                 }
@@ -177,7 +188,10 @@ public class AutoMove4Point : MonoBehaviour
                     start = movPoints[0];
                     end = movPoints[3];
                     clockwise = false;
-
+                    // Hardcoded animation settings
+                    transform.localScale = Scale;
+                    animator.SetBool("Walking", true);
+                    animator.SetBool("WalkingForward", false);
                     //reset placing to start of line
                     place = 0.0f;
                 }
@@ -188,7 +202,10 @@ public class AutoMove4Point : MonoBehaviour
                     start = movPoints[3];
                     end = movPoints[2];
                     clockwise = false;
-
+                    // Hardcoded animation settings
+                    transform.localScale = invertScale;
+                    animator.SetBool("Walking", true);
+                    animator.SetBool("WalkingForward", false);
                     //reset placing to start of line
                     place = 0.0f;
                 }
@@ -199,7 +216,10 @@ public class AutoMove4Point : MonoBehaviour
                     start = movPoints[2];
                     end = movPoints[1];
                     clockwise = false;
-
+                    // Hardcoded animation settings
+                    transform.localScale = invertScale;
+                    animator.SetBool("Walking", true);
+                    animator.SetBool("WalkingForward", false);
                     //reset placing to start of line
                     place = 0.0f;
                 }
@@ -210,7 +230,10 @@ public class AutoMove4Point : MonoBehaviour
                     start = movPoints[1];
                     end = movPoints[0];
                     clockwise = false;
-
+                    // Hardcoded animation settings
+                    transform.localScale = invertScale;
+                    animator.SetBool("WalkingForward", true);
+                    animator.SetBool("Walking", true);
                     //reset placing to start of line
                     place = 0.0f;
                 }
@@ -228,6 +251,8 @@ public class AutoMove4Point : MonoBehaviour
                     // This travels from start vector to end vector, and the place
                     //      is the dist the object is on that line from start to end.
                     transform.position = Vector3.Lerp(start, end, place);
+                    animator.SetBool("Walking", true);
+                    CheckDirection();
                 }
                 else
                 {
@@ -236,6 +261,8 @@ public class AutoMove4Point : MonoBehaviour
                     // This travels from start vector to end vector, and the place
                     //      is the dist the object is on that line from start to end.
                     transform.position = Vector3.Lerp(start, end, place);
+                    animator.SetBool("Walking", true);
+                    CheckDirection();
                 }
 
             }//end of RIGHT check

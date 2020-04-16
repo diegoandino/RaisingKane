@@ -116,6 +116,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 0}
+  optionsMenu: {fileID: 0}
+  firstPauseButton: {fileID: 0}
+  firstOptionsButton: {fileID: 0}
+  sliderButton: {fileID: 0}
+  myEventSystem: {fileID: 0}
+  timeSpan: 1
+  volSlider: {fileID: 0}
 --- !u!114 &5823366092441250388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,4 +143,4 @@ MonoBehaviour:
   - {x: 3.47, y: -2.04, z: -0.68}
   start: {x: 0, y: 0, z: 0}
   end: {x: 0, y: 0, z: 0}
-  clockwise: 0
+  animator: {fileID: 0}
