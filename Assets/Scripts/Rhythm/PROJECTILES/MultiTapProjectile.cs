@@ -20,7 +20,6 @@ public class MultiTapProjectile : ArchProjectile
     {
         BeatCheck(true);
         this.ArchMove();
-        this.MissCheck(true);
         beatHealth();
     }
 
@@ -47,8 +46,6 @@ public class MultiTapProjectile : ArchProjectile
         if(TapCount == BeatTaps)
         {
             ScoreCount.score += 2;
-
-            //meter.damage(1);
             StartCoroutine(DestroyBeat(0));
         }
     }

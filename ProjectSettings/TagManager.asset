@@ -15,6 +15,7 @@ TagManager:
   - Damage
   - Music
   - ScreenShake
+  - DecreaseHealth
   layers:
   - Default
   - TransparentFX
