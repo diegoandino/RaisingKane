@@ -46,6 +46,8 @@ public class BounceProjectile : ArchProjectile
         }
         else if (hangtimer > hangtime)
         {
+            Animator anim = this.GetComponent<Animator>();
+            anim.SetBool("Bounce", false);
             transform.position -= new Vector3(0f, (BPM * Time.deltaTime) * BP2_MusicSettings.instance.songSpeed * dropSpeed, 0f);
             Quaternion downRot = Quaternion.identity;
             downRot.eulerAngles = new Vector3(0, 0, 0);
