@@ -49,7 +49,6 @@ public class Projectile : MonoBehaviour
     void Update()
     {
         BeatCheck(true);
-        //MissCheck(true);
     }
 
 
@@ -89,13 +88,13 @@ public class Projectile : MonoBehaviour
 
     public void MissCheck(Boolean destroy)
 	{
-        if(transform.position.y < (button2.position.y - 20))
+        if((transform.position.y < (button1.position.y - 20)) || (transform.position.y < (button2.position.y - 20))
+           || (transform.position.y < (button3.position.y - 20)))
 		{
             MissCount.miss++; //Increments the Miss count on GUI
 		    if (destroy == true)
 		    {
-		        //_destroy = destroy;
-		        meter.decrementMeter(1);
+		        meter.decrementMeter(2);
 		        Destroy(this.gameObject);
 		    }
 
@@ -129,7 +128,6 @@ public class Projectile : MonoBehaviour
 
                     if (destroy == true)
                     {
-						meter.damage(1);
                         StartCoroutine(DestroyBeat(0));
                     }
 
@@ -151,7 +149,6 @@ public class Projectile : MonoBehaviour
 
 					if (destroy == true)
                     {
-						meter.damage(2);
                         StartCoroutine(DestroyBeat(0));
                     }
 
@@ -172,7 +169,6 @@ public class Projectile : MonoBehaviour
 
 					if (destroy == true)
                     {
-						meter.damage(3);
                         StartCoroutine(DestroyBeat(0));
                     }
          
@@ -182,7 +178,6 @@ public class Projectile : MonoBehaviour
             }
         }
     }
-
     
     public IEnumerator DestroyBeat(float delay)
     {

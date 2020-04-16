@@ -25,7 +25,6 @@ public class StickyProjectile : ArchProjectile
         }
 
         beatCheck(true);
-        MissCheck(true);
     }
 
     public IEnumerator FreezeButton()
@@ -72,7 +71,7 @@ public class StickyProjectile : ArchProjectile
             //print("Miss");
             if (destroy == true)
             {
-                meter.damage(1);
+                //meter.damage(1);
                 Destroy(this.gameObject);
             }
 

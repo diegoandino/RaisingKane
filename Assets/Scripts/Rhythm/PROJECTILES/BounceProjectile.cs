@@ -16,7 +16,6 @@ public class BounceProjectile : ArchProjectile
         this.SetPoints();
         bouncing = false;
         firstPress = true;
-        
     }
 
     // Update is called once per frame
@@ -132,7 +131,6 @@ public class BounceProjectile : ArchProjectile
 
                         if (destroy == true)
                         {
-                            meter.damage(1);
                             StartCoroutine(DestroyBeat(0));
                         }
 
@@ -153,7 +151,6 @@ public class BounceProjectile : ArchProjectile
 
                         if (destroy == true)
                         {
-                            meter.damage(1);
                             StartCoroutine(DestroyBeat(0));
                         }
 
@@ -174,7 +171,6 @@ public class BounceProjectile : ArchProjectile
 
                         if (destroy == true)
                         {
-                            meter.damage(1);
                             StartCoroutine(DestroyBeat(0));
                         }
 

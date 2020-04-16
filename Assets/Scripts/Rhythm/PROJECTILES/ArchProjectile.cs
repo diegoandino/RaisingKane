@@ -90,4 +90,9 @@ public class ArchProjectile : Projectile
         Destroy(this.gameObject);
     }
 
+    /*public void OnTriggerEnter2D(Collider2D collider)
+    {
+        Debug.Log("HEALTH--");
+        if (collider.gameObject.tag == "DecreaseHealth") meter.damage(2);
+    }*/
 }
