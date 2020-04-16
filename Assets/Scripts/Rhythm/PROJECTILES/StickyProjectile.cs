@@ -25,6 +25,7 @@ public class StickyProjectile : ArchProjectile
         }
 
         beatCheck(true);
+        MissCheck(true);
     }
 
     public IEnumerator FreezeButton()
