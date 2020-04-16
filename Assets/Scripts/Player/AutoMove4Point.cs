@@ -42,7 +42,7 @@ public class AutoMove4Point : MonoBehaviour
         if (!PauseLogic.isPaused) //setting Time.timescale to 0.0f doesn't freeze this script, so this if statement takes care of freezing movement when paused
         {
             objectPos = transform.position;
-            CheckDirection();
+            //CheckDirection();
             Move();
         }
     }
@@ -100,7 +100,8 @@ public class AutoMove4Point : MonoBehaviour
                     start = movPoints[0];
                     end = movPoints[1];
                     clockwise = true;
-
+                    animator.SetBool("WalkingForward", false);
+                    transform.localScale = Scale;
                     //reset placing to start of line
                     place = 0.0f;
                 }
@@ -111,7 +112,8 @@ public class AutoMove4Point : MonoBehaviour
                     start = movPoints[1];
                     end = movPoints[2];
                     clockwise = true;
-
+                    animator.SetBool("WalkingForward", false);
+                    transform.localScale = Scale;
                     //reset placing to start of line
                     place = 0.0f;
                 }
@@ -122,7 +124,8 @@ public class AutoMove4Point : MonoBehaviour
                     start = movPoints[2];
                     end = movPoints[3];
                     clockwise = true;
-
+                    animator.SetBool("WalkingForward", true);
+                    transform.localScale = Scale;
                     //reset placing to start of line
                     place = 0.0f;
                 }
@@ -133,7 +136,8 @@ public class AutoMove4Point : MonoBehaviour
                     start = movPoints[3];
                     end = movPoints[0];
                     clockwise = true;
-
+                    animator.SetBool("WalkingForward", false);
+                    transform.localScale = invertScale;
                     //reset placing to start of line
                     place = 0.0f;
                 }
@@ -177,7 +181,8 @@ public class AutoMove4Point : MonoBehaviour
                     start = movPoints[0];
                     end = movPoints[3];
                     clockwise = false;
-
+                    animator.SetBool("WalkingForward", false);
+                    transform.localScale = Scale;
                     //reset placing to start of line
                     place = 0.0f;
                 }
@@ -188,7 +193,8 @@ public class AutoMove4Point : MonoBehaviour
                     start = movPoints[3];
                     end = movPoints[2];
                     clockwise = false;
-
+                    animator.SetBool("WalkingForward", false);
+                    transform.localScale = invertScale;
                     //reset placing to start of line
                     place = 0.0f;
                 }
@@ -199,7 +205,8 @@ public class AutoMove4Point : MonoBehaviour
                     start = movPoints[2];
                     end = movPoints[1];
                     clockwise = false;
-
+                    animator.SetBool("WalkingForward", false);
+                    transform.localScale = invertScale;
                     //reset placing to start of line
                     place = 0.0f;
                 }
@@ -210,7 +217,8 @@ public class AutoMove4Point : MonoBehaviour
                     start = movPoints[1];
                     end = movPoints[0];
                     clockwise = false;
-
+                    animator.SetBool("WalkingForward", true);
+                    transform.localScale = invertScale;
                     //reset placing to start of line
                     place = 0.0f;
                 }

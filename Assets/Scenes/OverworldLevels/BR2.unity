@@ -2377,10 +2377,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 685470422, guid: 6dcb12a0b2656b64e9edb77b788b29fb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dcb12a0b2656b64e9edb77b788b29fb, type: 3}
 --- !u!1 &1410318027
@@ -2687,6 +2683,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: optionsMenu
+      value: 
+      objectReference: {fileID: 184645216}
+    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: timeSpan
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: myEventSystem
+      value: 
+      objectReference: {fileID: 2084083436}
+    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: firstPauseButton
+      value: 
+      objectReference: {fileID: 1564944534}
+    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: firstOptionsButton
+      value: 
+      objectReference: {fileID: 184645218}
+    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: sliderButton
+      value: 
+      objectReference: {fileID: 22112830}
+    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: volSlider
+      value: 
+      objectReference: {fileID: 22112831}
     - target: {fileID: 7937656619935002395, guid: f17f678c862bb4daf8723dae772b1d5b,
         type: 3}
       propertyPath: m_Name
@@ -3076,41 +3107,6 @@ PrefabInstance:
       propertyPath: m_Colors.m_SelectedColor.b
       value: 0.50980395
       objectReference: {fileID: 0}
-    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: optionsMenu
-      value: 
-      objectReference: {fileID: 184645216}
-    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: timeSpan
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: myEventSystem
-      value: 
-      objectReference: {fileID: 2084083436}
-    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: firstPauseButton
-      value: 
-      objectReference: {fileID: 1564944534}
-    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: firstOptionsButton
-      value: 
-      objectReference: {fileID: 184645218}
-    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: sliderButton
-      value: 
-      objectReference: {fileID: 22112830}
-    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: volSlider
-      value: 
-      objectReference: {fileID: 22112831}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f17f678c862bb4daf8723dae772b1d5b, type: 3}
 --- !u!114 &1711270201 stripped

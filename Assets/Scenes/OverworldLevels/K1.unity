@@ -1813,7 +1813,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b88c69540a11c94fa55608ca21b2b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.1
+  speed: 0.08
   place: 0
   movPoints:
   - {x: -7.87, y: -2.4, z: -0.68}
@@ -1892,6 +1892,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937656618800860451, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937656618800860451, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: m_Name
+      value: Back Button
       objectReference: {fileID: 0}
     - target: {fileID: 7937656619935002399, guid: f17f678c862bb4daf8723dae772b1d5b,
         type: 3}
@@ -2117,16 +2127,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7937656618800860451, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7937656618800860451, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: m_Name
-      value: Back Button
       objectReference: {fileID: 0}
     - target: {fileID: 7937656619068920098, guid: f17f678c862bb4daf8723dae772b1d5b,
         type: 3}
@@ -2737,16 +2737,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1878359369582698367, guid: 230ef9334a416a947a665c270dc4123d,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1878359369582698362, guid: 230ef9334a416a947a665c270dc4123d,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1878359369456265896, guid: 230ef9334a416a947a665c270dc4123d,
         type: 3}
       propertyPath: m_IsActive
@@ -2790,6 +2780,16 @@ PrefabInstance:
     - target: {fileID: 1878359369456265898, guid: 230ef9334a416a947a665c270dc4123d,
         type: 3}
       propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1878359369582698367, guid: 230ef9334a416a947a665c270dc4123d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1878359369582698362, guid: 230ef9334a416a947a665c270dc4123d,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1878359369582698361, guid: 230ef9334a416a947a665c270dc4123d,
@@ -3182,41 +3182,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: optionsMenu
-      value: 
-      objectReference: {fileID: 1351918869}
-    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: timeSpan
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: myEventSystem
-      value: 
-      objectReference: {fileID: 526389141}
-    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: firstPauseButton
-      value: 
-      objectReference: {fileID: 1563434264}
-    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: firstOptionsButton
-      value: 
-      objectReference: {fileID: 680944773}
-    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: sliderButton
-      value: 
-      objectReference: {fileID: 1835869563}
-    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: volSlider
-      value: 
-      objectReference: {fileID: 1835869564}
     - target: {fileID: 7937656619935002395, guid: f17f678c862bb4daf8723dae772b1d5b,
         type: 3}
       propertyPath: m_Name
@@ -3606,5 +3571,40 @@ PrefabInstance:
       propertyPath: m_Colors.m_SelectedColor.b
       value: 0.50980395
       objectReference: {fileID: 0}
+    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: optionsMenu
+      value: 
+      objectReference: {fileID: 1351918869}
+    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: timeSpan
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: myEventSystem
+      value: 
+      objectReference: {fileID: 526389141}
+    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: firstPauseButton
+      value: 
+      objectReference: {fileID: 1563434264}
+    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: firstOptionsButton
+      value: 
+      objectReference: {fileID: 680944773}
+    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: sliderButton
+      value: 
+      objectReference: {fileID: 1835869563}
+    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: volSlider
+      value: 
+      objectReference: {fileID: 1835869564}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f17f678c862bb4daf8723dae772b1d5b, type: 3}

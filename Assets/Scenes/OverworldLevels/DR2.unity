@@ -207,41 +207,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: optionsMenu
-      value: 
-      objectReference: {fileID: 507697805}
-    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: timeSpan
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: myEventSystem
-      value: 
-      objectReference: {fileID: 259195928}
-    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: firstPauseButton
-      value: 
-      objectReference: {fileID: 69955191}
-    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: firstOptionsButton
-      value: 
-      objectReference: {fileID: 1004196440}
-    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: sliderButton
-      value: 
-      objectReference: {fileID: 775136225}
-    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: volSlider
-      value: 
-      objectReference: {fileID: 775136226}
     - target: {fileID: 7937656619935002395, guid: f17f678c862bb4daf8723dae772b1d5b,
         type: 3}
       propertyPath: m_Name
@@ -631,6 +596,41 @@ PrefabInstance:
       propertyPath: m_Colors.m_SelectedColor.b
       value: 0.50980395
       objectReference: {fileID: 0}
+    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: optionsMenu
+      value: 
+      objectReference: {fileID: 507697805}
+    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: timeSpan
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: myEventSystem
+      value: 
+      objectReference: {fileID: 259195928}
+    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: firstPauseButton
+      value: 
+      objectReference: {fileID: 69955191}
+    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: firstOptionsButton
+      value: 
+      objectReference: {fileID: 1004196440}
+    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: sliderButton
+      value: 
+      objectReference: {fileID: 775136225}
+    - target: {fileID: 7937656619935002398, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: volSlider
+      value: 
+      objectReference: {fileID: 775136226}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f17f678c862bb4daf8723dae772b1d5b, type: 3}
 --- !u!1 &69955191 stripped
@@ -1523,6 +1523,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7937656618800860451, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937656618800860451, guid: f17f678c862bb4daf8723dae772b1d5b,
+        type: 3}
+      propertyPath: m_Name
+      value: Back Button
+      objectReference: {fileID: 0}
     - target: {fileID: 7937656619935002399, guid: f17f678c862bb4daf8723dae772b1d5b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1747,16 +1757,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7937656618800860451, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7937656618800860451, guid: f17f678c862bb4daf8723dae772b1d5b,
-        type: 3}
-      propertyPath: m_Name
-      value: Back Button
       objectReference: {fileID: 0}
     - target: {fileID: 7937656619068920098, guid: f17f678c862bb4daf8723dae772b1d5b,
         type: 3}
@@ -2437,15 +2437,15 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2665459312997282020, guid: 98270260f1116014d96bacbc66b42815,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2665459311449394149, guid: 98270260f1116014d96bacbc66b42815,
         type: 3}
       propertyPath: m_Text
       value: Adult Kane
+      objectReference: {fileID: 0}
+    - target: {fileID: 2665459312997282020, guid: 98270260f1116014d96bacbc66b42815,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98270260f1116014d96bacbc66b42815, type: 3}
@@ -3491,16 +3491,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1878359369582698367, guid: 230ef9334a416a947a665c270dc4123d,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1878359369582698362, guid: 230ef9334a416a947a665c270dc4123d,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1878359369456265896, guid: 230ef9334a416a947a665c270dc4123d,
         type: 3}
       propertyPath: m_IsActive
@@ -3544,6 +3534,16 @@ PrefabInstance:
     - target: {fileID: 1878359369456265898, guid: 230ef9334a416a947a665c270dc4123d,
         type: 3}
       propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1878359369582698367, guid: 230ef9334a416a947a665c270dc4123d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1878359369582698362, guid: 230ef9334a416a947a665c270dc4123d,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1878359369582698361, guid: 230ef9334a416a947a665c270dc4123d,
@@ -4041,7 +4041,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 2335057078979689059, guid: 168b844a3c055894e9768ac3d7357503,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4108,7 +4108,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 846948032793900365}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.45, y: 0.09, z: -3.6604123}
+  m_LocalPosition: {x: 5.45, y: -0.98, z: -3.6604123}
   m_LocalScale: {x: 1, y: 1.45, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
