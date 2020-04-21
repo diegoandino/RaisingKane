@@ -20,11 +20,7 @@ public class BossTracker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Boss1Finished && Boss2Finished && Boss3Finished && !Boss4Started)
-        {
-            Boss4Started = true;
-            SceneManager.LoadScene("Boss_Final");
-        }
+       
     }
 
     void ResetBosses()

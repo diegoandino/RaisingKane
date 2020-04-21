@@ -89,10 +89,14 @@ public class BeatGeneratorTest : MonoBehaviour
 			activeBeats = GameObject.FindGameObjectsWithTag("Beat");
 			yield return null;
 		}
-        BossTracker tracker = GameObject.FindGameObjectWithTag("Music").GetComponent<BossTracker>();
-        if (SceneManager.GetActiveScene().name == "Boss_1_Sticky") { tracker.Boss1Finished = true; }
-		if (SceneManager.GetActiveScene().name == "Boss_2_Bounce") { tracker.Boss2Finished = true; }
-		if (SceneManager.GetActiveScene().name == "Boss_3_Multi") { tracker.Boss3Finished = true; }
+
+        if (GameObject.FindGameObjectsWithTag("Music").Length > 0)
+        {
+			BossTracker tracker = GameObject.FindGameObjectWithTag("Music").GetComponent<BossTracker>();
+			if (SceneManager.GetActiveScene().name == "Boss_1_Sticky") { tracker.Boss1Finished = true; }
+			if (SceneManager.GetActiveScene().name == "Boss_2_Bounce") { tracker.Boss2Finished = true; }
+			if (SceneManager.GetActiveScene().name == "Boss_3_Multi") { tracker.Boss3Finished = true; }
+		}
 
         StartCoroutine(LoadSceneAFterTransition());
 		

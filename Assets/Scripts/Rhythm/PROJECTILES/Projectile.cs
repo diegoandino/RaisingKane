@@ -88,8 +88,8 @@ public class Projectile : MonoBehaviour
 
     public void MissCheck(Boolean destroy)
 	{
-        if((transform.position.y < (button1.position.y - 20)) || (transform.position.y < (button2.position.y - 20))
-           || (transform.position.y < (button3.position.y - 20)))
+        if((transform.position.y < (button1.position.y - 6)) || (transform.position.y < (button2.position.y - 6))
+           || (transform.position.y < (button3.position.y - 6)))
 		{
             MissCount.miss++; //Increments the Miss count on GUI
 

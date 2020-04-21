@@ -55,6 +55,12 @@ public class OverwoldMusicManager : MonoBehaviour
             audioSrc.volume = musicVolume;
         }
 
+        if (SceneManager.GetActiveScene().name == "Credits" || SceneManager.GetActiveScene().name == "Main Menu")
+        {
+            Destroy(this.gameObject);
+        }
+
+
 
     }
 
@@ -71,6 +77,8 @@ public class OverwoldMusicManager : MonoBehaviour
         }
 
         DontDestroyOnLoad(this.gameObject);
+      
+
     }
 
       public void SetVolume(float vol)

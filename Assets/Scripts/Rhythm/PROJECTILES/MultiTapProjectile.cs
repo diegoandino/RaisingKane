@@ -21,6 +21,7 @@ public class MultiTapProjectile : ArchProjectile
         BeatCheck(true);
         this.ArchMove();
         beatHealth();
+        this.MissCheck(true);
     }
 
     new void BeatCheck(Boolean destroy)
