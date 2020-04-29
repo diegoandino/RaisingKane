@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6880634494526733873}
   - component: {fileID: 4731382356549318986}
   - component: {fileID: 5335696409355320795}
-  - component: {fileID: 1781150022}
+  - component: {fileID: 1781150027}
   m_Layer: 0
   m_Name: RhythmText
   m_TagString: Untagged
@@ -207,7 +207,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   m_maskType: 0
---- !u!95 &1781150022
+--- !u!95 &1781150027
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
